@@ -1,0 +1,32 @@
+# dependencies
+atum-app/node_modules/
+atum-app/.pnp
+atum-app/.pnp.*
+atum-app/.yarn/*
+!atum-app/.yarn/patches
+!atum-app/.yarn/plugins
+!atum-app/.yarn/releases
+!atum-app/.yarn/versions
+
+# next.js
+atum-app/.next/
+atum-app/out/
+
+# production
+atum-app/build
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# env files
+.env*
+atum-app/.env*
+
+# vercel
+atum-app/.vercel
+
+# typescript
+atum-app/*.tsbuildinfo
+atum-app/next-env.d.ts
