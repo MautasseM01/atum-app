@@ -9,7 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-cinzel);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -47,43 +47,43 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* Custom fonts */
   --font-arabic: var(--font-amiri), serif;
   --font-cinzel: var(--font-cinzel), serif;
   --font-serif: var(--font-source-serif), serif;
 
-  /* Custom brand colors */
-  --color-atum: #22c55e;
-  --color-bull: #ef4444;
-  --color-tor: #3b82f6;
-  --color-accent-custom: #f39c12;
+  --color-atum: #22C55E;
+  --color-bull: #EF4444;
+  --color-tor: #3B82F6;
+  --color-gold: #F4A01B;
+  --color-proven: #22C55E;
+  --color-strong: #F59E0B;
+  --color-moderate: #6B7280;
 }
 
 :root {
-  --background: #0d1117;
+  --background: #0d0d0d;
   --foreground: #f4f4f5;
-  --card: #161b22;
+  --card: #1a1a1a;
   --card-foreground: #f4f4f5;
-  --popover: #161b22;
+  --popover: #1a1a1a;
   --popover-foreground: #f4f4f5;
   --primary: #f4f4f5;
-  --primary-foreground: #0d1117;
-  --secondary: #161b22;
+  --primary-foreground: #0d0d0d;
+  --secondary: #1a1a1a;
   --secondary-foreground: #f4f4f5;
   --muted: #21262d;
   --muted-foreground: #8b949e;
-  --accent: #f39c12;
+  --accent: #F4A01B;
   --accent-foreground: #f4f4f5;
-  --destructive: #ef4444;
-  --border: #21262d;
-  --input: #21262d;
+  --destructive: #EF4444;
+  --border: #2a2a2a;
+  --input: #2a2a2a;
   --ring: #8b949e;
   --radius: 0.75rem;
 
   --font-sans: var(--font-geist-sans), sans-serif;
 }
 
-/* Base layers */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -93,18 +93,26 @@
   }
 }
 
-/* Micro-animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
-
 .animate-fade-in {
   animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
