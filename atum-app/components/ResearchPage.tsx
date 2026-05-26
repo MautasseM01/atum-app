@@ -1,12 +1,9 @@
 'use client';
 
 import { useState, useRef, useEffect, useMemo } from 'react';
-import HexGrid from '@/components/HexGrid';
-import Navigation from '@/components/Navigation';
 import SectionHeader from '@/components/SectionHeader';
 import StatCard from '@/components/StatCard';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
-import PageWrapper from '@/components/PageWrapper';
 import Footer from '@/components/Footer';
 
 interface WordItem {
@@ -180,36 +177,32 @@ function SourceCards() {
 export default function ResearchPage({ locale }: ResearchPageProps) {
   return (
     <>
-      <HexGrid />
-      <Navigation currentPage="research" onNavigate={(p) => window.location.href = `/${locale}/${p === 'home' ? '' : p}`} />
-      <PageWrapper>
-        <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
-          <SectionHeader title="Research Dashboard" subtitle="The computational linguistics and statistical evidence behind the three root theory." />
+      <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
+        <SectionHeader title="Research Dashboard" subtitle="The computational linguistics and statistical evidence behind the three root theory." />
 
-          <div style={{ display: 'flex', gap: 13, marginBottom: 55, flexWrap: 'wrap' }}>
-            <StatCard value={99.7} label="CNN Accuracy" color="#22C55E" suffix="%" />
-            <StatCard value={'<0.0001'} label="p-value" color="#3B82F6" prefix="p" />
-            <StatCard value={'0.693'} label="Correlation" color="#EF4444" prefix="r=−" />
-            <StatCard value={96} label="Proven" color="#f39c12" />
-          </div>
-
-          <div style={{ marginBottom: 34 }}>
-            <NetworkGraph words={[]} />
-          </div>
-
-          <div style={{ marginBottom: 34 }}>
-            <ResearchTimeline />
-          </div>
-
-          <div>
-            <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
-              Data Sources
-            </div>
-            <SourceCards />
-          </div>
+        <div style={{ display: 'flex', gap: 13, marginBottom: 55, flexWrap: 'wrap' }}>
+          <StatCard value={99.7} label="CNN Accuracy" color="#22C55E" suffix="%" />
+          <StatCard value={'<0.0001'} label="p-value" color="#3B82F6" prefix="p" />
+          <StatCard value={'0.693'} label="Correlation" color="#EF4444" prefix="r=−" />
+          <StatCard value={96} label="Proven" color="#f39c12" />
         </div>
-        <Footer />
-      </PageWrapper>
+
+        <div style={{ marginBottom: 34 }}>
+          <NetworkGraph words={[]} />
+        </div>
+
+        <div style={{ marginBottom: 34 }}>
+          <ResearchTimeline />
+        </div>
+
+        <div>
+          <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
+            Data Sources
+          </div>
+          <SourceCards />
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }

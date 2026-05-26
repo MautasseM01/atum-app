@@ -2,9 +2,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Amiri, Cinzel_Decorative, Source_Serif_4, Geist, Geist_Mono } from 'next/font/google';
+import { Amiri, Cinzel_Decorative, Source_Serif_4, Geist_Mono } from 'next/font/google';
 import '../globals.css';
-import Navigation from '@/components/Navigation';
+import NavShell from '@/components/NavShell';
 
 const amiri = Amiri({
   subsets: ['arabic'],
@@ -22,11 +22,6 @@ const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-source-serif',
-});
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
@@ -48,10 +43,12 @@ export default async function LocaleLayout({
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <html lang={locale} dir={dir} className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} ${cinzelDecorative.variable} ${sourceSerif.variable}`}>
+    <html lang={locale} dir={dir} className={`${geistMono.variable} ${amiri.variable} ${cinzelDecorative.variable} ${sourceSerif.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <NavShell locale={locale}>
+            {children}
+          </NavShell>
         </NextIntlClientProvider>
       </body>
     </html>

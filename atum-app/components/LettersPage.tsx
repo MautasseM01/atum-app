@@ -1,14 +1,11 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import HexGrid from '@/components/HexGrid';
-import Navigation from '@/components/Navigation';
+import { useRouter } from 'next/navigation';
+import type { RawLetter as LetterItem, WordInfo } from '@/lib/data';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
-import PageWrapper from '@/components/PageWrapper';
 import Footer from '@/components/Footer';
-
-import type { RawLetter as LetterItem, WordInfo } from '@/lib/data';
 
 interface WordItem {
   id: string; european: string; arabicRoot: string; rootId: string; rule: string;
@@ -95,9 +92,9 @@ function EvolutionTimeline({ letter }: { letter: LetterItem }) {
 }
 
 export default function LettersPage({ locale, letters, words }: LettersPageProps) {
+  const router = useRouter();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const letter = letters[selectedIdx] || letters[0];
-  const root = ROOTS_DATA[letter?.dna?.energyType === 'ATUM' ? 'ATUM' : 'TOR'] || ROOTS_DATA.ATUM;
 
   const soundRootMap: Record<string, string> = {
     أ: 'ATUM', م: 'ATUM', و: 'ATUM', ن: 'ATUM', ه: 'ATUM', ل: 'ATUM',
@@ -122,96 +119,92 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
 
   return (
     <>
-      <HexGrid />
-      <Navigation currentPage="letters" onNavigate={(p) => window.location.href = `/${locale}/${p === 'home' ? '' : p}`} />
-      <PageWrapper>
-        <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
-          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 55, flexWrap: 'wrap' }}>
-            {letters.map((l, i) => {
-              const lr = soundRootMap[l.arabic] || 'ATUM';
-              const lRoot = ROOTS_DATA[lr];
-              return (
-                <button
-                  key={l.arabic}
-                  onClick={() => setSelectedIdx(i)}
-                  style={{
-                    width: 48, height: 48, borderRadius: 13,
-                    border: `1px solid ${selectedIdx === i ? lRoot.color : 'rgba(48,54,61,0.4)'}`,
-                    background: selectedIdx === i ? `${lRoot.color}22` : 'transparent',
-                    color: selectedIdx === i ? lRoot.color : '#8b949e',
-                    fontFamily: "'Amiri', serif", fontSize: 24,
-                    cursor: 'pointer', transition: 'all 233ms ease',
-                    direction: 'rtl',
-                  }}
-                >
-                  {l.arabic}
-                </button>
-              );
-            })}
+      <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
+        <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 55, flexWrap: 'wrap' }}>
+          {letters.map((l, i) => {
+            const lr = soundRootMap[l.arabic] || 'ATUM';
+            const lRoot = ROOTS_DATA[lr];
+            return (
+              <button
+                key={l.arabic}
+                onClick={() => setSelectedIdx(i)}
+                style={{
+                  width: 48, height: 48, borderRadius: 13,
+                  border: `1px solid ${selectedIdx === i ? lRoot.color : 'rgba(48,54,61,0.4)'}`,
+                  background: selectedIdx === i ? `${lRoot.color}22` : 'transparent',
+                  color: selectedIdx === i ? lRoot.color : '#8b949e',
+                  fontFamily: "'Amiri', serif", fontSize: 24,
+                  cursor: 'pointer', transition: 'all 233ms ease',
+                  direction: 'rtl',
+                }}
+              >
+                {l.arabic}
+              </button>
+            );
+          })}
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr 280px', gap: 34, alignItems: 'start' }}>
+          <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
+            <EvolutionTimeline letter={letter} />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr 280px', gap: 34, alignItems: 'start' }}>
-            <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
-              <EvolutionTimeline letter={letter} />
+          <div style={{ textAlign: 'center' }}>
+            <div style={{
+              fontFamily: "'Amiri', serif", fontSize: 144, color: '#f39c12',
+              lineHeight: 1, direction: 'rtl',
+              textShadow: `0 0 40px ${letterRoot.color}44, 0 0 80px ${letterRoot.color}22`,
+              marginBottom: 13,
+              transition: 'all 610ms cubic-bezier(0.23, 1, 0.32, 1)',
+            }}>
+              {letter?.arabic}
             </div>
-
-            <div style={{ textAlign: 'center' }}>
-              <div style={{
-                fontFamily: "'Amiri', serif", fontSize: 144, color: '#f39c12',
-                lineHeight: 1, direction: 'rtl',
-                textShadow: `0 0 40px ${letterRoot.color}44, 0 0 80px ${letterRoot.color}22`,
-                marginBottom: 13,
-                transition: 'all 610ms cubic-bezier(0.23, 1, 0.32, 1)',
-              }}>
-                {letter?.arabic}
-              </div>
-              <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px', marginBottom: 4 }}>
-                {letter?.name}
-              </div>
-              {letter?.dna?.fundamentalFreqHz && (
-                <div style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", marginBottom: 8 }}>
-                  Hz: {letter.dna.fundamentalFreqHz}
-                </div>
-              )}
-              <RootBadge rootId={letterRootId} size="md" />
-
-              <div style={{ marginTop: 34, display: 'flex', justifyContent: 'center', background: 'rgba(22,27,34,0.4)', borderRadius: 21, padding: 21, border: '1px solid rgba(48,54,61,0.3)' }}>
-                <RadarChart data={radarData} color={letterRoot.color} size={280} />
-              </div>
-              <div style={{ marginTop: 13, fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>
-                DNA Profile — Linguistic Dimensions
-              </div>
+            <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px', marginBottom: 4 }}>
+              {letter?.name}
             </div>
-
-            <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
-              <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
-                Etymologies
+            {letter?.dna?.fundamentalFreqHz && (
+              <div style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", marginBottom: 8 }}>
+                Hz: {letter.dna.fundamentalFreqHz}
               </div>
-              {relatedWords.map(w => (
-                <div key={w.id} style={{ padding: '10px 0', borderBottom: '1px solid rgba(48,54,61,0.3)', cursor: 'pointer' }}
-                  onClick={() => window.location.href = `/${locale}/explorer?search=${encodeURIComponent(w.european)}`}
-                >
-                  <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3', marginBottom: 4 }}>
-                    {w.european}
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontFamily: "'Amiri', serif", fontSize: 16, color: '#f39c12', direction: 'rtl' }}>
-                      {w.arabicRoot}
-                    </span>
-                    <ConfidenceBadge level={w.confidence} showLabel={false} />
-                  </div>
-                </div>
-              ))}
-              {relatedWords.length === 0 && (
-                <div style={{ fontSize: 14, color: '#484f58', textAlign: 'center', padding: '21px 0' }}>
-                  No words linked to this letter
-                </div>
-              )}
+            )}
+            <RootBadge rootId={letterRootId} size="md" />
+
+            <div style={{ marginTop: 34, display: 'flex', justifyContent: 'center', background: 'rgba(22,27,34,0.4)', borderRadius: 21, padding: 21, border: '1px solid rgba(48,54,61,0.3)' }}>
+              <RadarChart data={radarData} color={letterRoot.color} size={280} />
             </div>
+            <div style={{ marginTop: 13, fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>
+              DNA Profile — Linguistic Dimensions
+            </div>
+          </div>
+
+          <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
+            <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
+              Etymologies
+            </div>
+            {relatedWords.map(w => (
+              <div key={w.id} style={{ padding: '10px 0', borderBottom: '1px solid rgba(48,54,61,0.3)', cursor: 'pointer' }}
+                onClick={() => router.push(`/${locale}/explorer?search=${encodeURIComponent(w.european)}`)}
+              >
+                <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3', marginBottom: 4 }}>
+                  {w.european}
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ fontFamily: "'Amiri', serif", fontSize: 16, color: '#f39c12', direction: 'rtl' }}>
+                    {w.arabicRoot}
+                  </span>
+                  <ConfidenceBadge level={w.confidence} showLabel={false} />
+                </div>
+              </div>
+            ))}
+            {relatedWords.length === 0 && (
+              <div style={{ fontSize: 14, color: '#484f58', textAlign: 'center', padding: '21px 0' }}>
+                No words linked to this letter
+              </div>
+            )}
           </div>
         </div>
-        <Footer />
-      </PageWrapper>
+      </div>
+      <Footer />
     </>
   );
 }

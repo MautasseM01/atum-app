@@ -1,21 +1,18 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import HexGrid from '@/components/HexGrid';
 import SearchBar from '@/components/SearchBar';
 import SectionHeader from '@/components/SectionHeader';
 import StatCard from '@/components/StatCard';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
 import Footer from '@/components/Footer';
-import Navigation from '@/components/Navigation';
-import PageWrapper from '@/components/PageWrapper';
 
 const TorusCanvas = dynamic(() => import('@/components/TorusCanvas'), { ssr: false });
 
-const ROOTS = {
+const ROOTS: Record<string, { id: string; arabic: string; transliteration: string; meaning: string; principle: string; color: string; colorDim: string; colorGlow: string }> = {
   ATUM: { id: 'ATUM', arabic: 'أتم', transliteration: 'Atum', meaning: 'Unity, to complete', principle: 'Unity · Inertia · Containment', color: '#22C55E', colorDim: 'rgba(34,197,94,0.15)', colorGlow: 'rgba(34,197,94,0.4)' },
   BULL: { id: 'BULL', arabic: 'بول', transliteration: 'Bull', meaning: 'Radiation, expansion', principle: 'Radiation · Expansion · Outward', color: '#EF4444', colorDim: 'rgba(239,68,68,0.15)', colorGlow: 'rgba(239,68,68,0.4)' },
   TOR: { id: 'TOR', arabic: 'طور', transliteration: 'Tor', meaning: 'Cycle, rotation', principle: 'Structure · Rotation · Cycles', color: '#3B82F6', colorDim: 'rgba(59,130,246,0.15)', colorGlow: 'rgba(59,130,246,0.4)' },
@@ -170,10 +167,7 @@ function StatsStrip() {
 
 export default function HomePage({ locale, words }: HomePageProps) {
   const router = useRouter();
-  const pathname = usePathname();
   const [searchVal, setSearchVal] = useState('');
-
-  const currentPage = 'home';
 
   const handleNavigate = (page: string, filter?: string, search?: string) => {
     if (page === 'home') { router.push(`/${locale}`); return; }
@@ -193,60 +187,56 @@ export default function HomePage({ locale, words }: HomePageProps) {
 
   return (
     <>
-      <HexGrid />
-      <Navigation currentPage={currentPage} onNavigate={(p) => handleNavigate(p)} />
-      <PageWrapper>
-        <section style={{
-          minHeight: '100vh', display: 'flex', flexDirection: 'column',
-          alignItems: 'center', justifyContent: 'center',
-          position: 'relative', overflow: 'hidden',
-          padding: '120px 34px 55px',
-        }}>
-          <TorusCanvas />
+      <section style={{
+        minHeight: '100vh', display: 'flex', flexDirection: 'column',
+        alignItems: 'center', justifyContent: 'center',
+        position: 'relative', overflow: 'hidden',
+        padding: '120px 34px 55px',
+      }}>
+        <TorusCanvas />
 
-          <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', maxWidth: 900 }}>
-            <h1 style={{
-              fontFamily: "'Cinzel Decorative', serif",
-              fontSize: 'clamp(34px, 6vw, 89px)',
-              color: '#e6edf3', lineHeight: 1.15,
-              marginBottom: 21,
-              textShadow: '0 0 40px rgba(243,156,18,0.15)',
-              letterSpacing: '3px',
-            }}>
-              Every Word Has a Root
-            </h1>
-            <p style={{
-              fontSize: 'clamp(16px, 2vw, 21px)',
-              color: '#8b949e', maxWidth: 550,
-              margin: '0 auto 55px', lineHeight: 1.7,
-            }}>
-              Three electromagnetic roots — ATUM, BULL, TOR — form the hidden architecture beneath all world languages.
-            </p>
+        <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', maxWidth: 900 }}>
+          <h1 style={{
+            fontFamily: "'Cinzel Decorative', serif",
+            fontSize: 'clamp(34px, 6vw, 89px)',
+            color: '#e6edf3', lineHeight: 1.15,
+            marginBottom: 21,
+            textShadow: '0 0 40px rgba(243,156,18,0.15)',
+            letterSpacing: '3px',
+          }}>
+            Every Word Has a Root
+          </h1>
+          <p style={{
+            fontSize: 'clamp(16px, 2vw, 21px)',
+            color: '#8b949e', maxWidth: 550,
+            margin: '0 auto 55px', lineHeight: 1.7,
+          }}>
+            Three electromagnetic roots — ATUM, BULL, TOR — form the hidden architecture beneath all world languages.
+          </p>
 
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 89 }}>
-              <SearchBar value={searchVal} onChange={setSearchVal} onSubmit={handleSearch} />
-            </div>
-
-            <div style={{ display: 'flex', gap: 34, justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-              <RootCircle rootId="ATUM" onNavigate={handleNavigate} words={words} />
-              <RootCircle rootId="BULL" onNavigate={handleNavigate} words={words} />
-              <RootCircle rootId="TOR" onNavigate={handleNavigate} words={words} />
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 89 }}>
+            <SearchBar value={searchVal} onChange={setSearchVal} onSubmit={handleSearch} />
           </div>
-        </section>
 
-        <section style={{ padding: '89px 34px 55px', position: 'relative', zIndex: 1 }}>
-          <SectionHeader title="Word of the Day" subtitle="Discover the hidden root behind an everyday word" />
-          <WordOfDay words={words} />
-        </section>
+          <div style={{ display: 'flex', gap: 34, justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <RootCircle rootId="ATUM" onNavigate={handleNavigate} words={words} />
+            <RootCircle rootId="BULL" onNavigate={handleNavigate} words={words} />
+            <RootCircle rootId="TOR" onNavigate={handleNavigate} words={words} />
+          </div>
+        </div>
+      </section>
 
-        <section style={{ padding: '55px 34px 89px', position: 'relative', zIndex: 1 }}>
-          <SectionHeader title="The Research" subtitle="Backed by computational linguistics and statistical analysis" />
-          <StatsStrip />
-        </section>
+      <section style={{ padding: '89px 34px 55px', position: 'relative', zIndex: 1 }}>
+        <SectionHeader title="Word of the Day" subtitle="Discover the hidden root behind an everyday word" />
+        <WordOfDay words={words} />
+      </section>
 
-        <Footer />
-      </PageWrapper>
+      <section style={{ padding: '55px 34px 89px', position: 'relative', zIndex: 1 }}>
+        <SectionHeader title="The Research" subtitle="Backed by computational linguistics and statistical analysis" />
+        <StatsStrip />
+      </section>
+
+      <Footer />
     </>
   );
 }

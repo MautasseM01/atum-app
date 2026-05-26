@@ -1,11 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import HexGrid from '@/components/HexGrid';
-import Navigation from '@/components/Navigation';
+import { useRouter } from 'next/navigation';
 import SectionHeader from '@/components/SectionHeader';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
-import PageWrapper from '@/components/PageWrapper';
 import Footer from '@/components/Footer';
 
 interface WordItem {
@@ -209,7 +207,7 @@ function PracticeMode({ words }: { words: WordItem[] }) {
   );
 }
 
-function ExploreGrid({ words }: { words: WordItem[] }) {
+function ExploreGrid({ words, locale }: { words: WordItem[]; locale: string }) {
   const grouped: Record<string, WordItem[]> = { ATUM: [], BULL: [], TOR: [] };
   words.forEach(w => { if (grouped[w.rootId]) grouped[w.rootId].push(w); });
 
@@ -227,7 +225,7 @@ function ExploreGrid({ words }: { words: WordItem[] }) {
               <div key={w.id} style={{ padding: '10px 13px', marginBottom: 4, borderRadius: 8, cursor: 'pointer', transition: 'background 144ms ease', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                 onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.background = `${root.color}11`}
                 onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.background = 'transparent'}
-                onClick={() => window.location.href = `/${window.location.pathname.split('/')[1]}/explorer?search=${encodeURIComponent(w.european)}`}
+                onClick={() => window.location.href = `/${locale}/explorer?search=${encodeURIComponent(w.european)}`}
               >
                 <span style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3' }}>{w.european}</span>
                 <ConfidenceBadge level={w.confidence} showLabel={false} />
@@ -250,44 +248,40 @@ export default function PatternsPage({ locale, words }: PatternsPageProps) {
 
   return (
     <>
-      <HexGrid />
-      <Navigation currentPage="patterns" onNavigate={(p) => window.location.href = `/${locale}/${p === 'home' ? '' : p}`} />
-      <PageWrapper>
-        <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
-          <SectionHeader title="Pattern Learning" subtitle="Understand the three electromagnetic roots through study, practice, and exploration." />
+      <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
+        <SectionHeader title="Pattern Learning" subtitle="Understand the three electromagnetic roots through study, practice, and exploration." />
 
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 55, gap: 4, background: 'rgba(22,27,34,0.6)', borderRadius: 13, padding: 4, width: 'fit-content', margin: '0 auto 55px', border: '1px solid rgba(48,54,61,0.4)' }}>
-            {modes.map(m => (
-              <button
-                key={m.id}
-                onClick={() => setMode(m.id)}
-                style={{
-                  padding: '10px 34px', borderRadius: 10, border: 'none', cursor: 'pointer',
-                  fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '2px', fontWeight: 600,
-                  background: mode === m.id ? 'rgba(243,156,18,0.15)' : 'transparent',
-                  color: mode === m.id ? '#f39c12' : '#484f58',
-                  transition: 'all 233ms ease',
-                }}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-
-          {mode === 'learn' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 21 }}>
-              <LearnCard rootId="ATUM" words={words} />
-              <LearnCard rootId="BULL" words={words} />
-              <LearnCard rootId="TOR" words={words} />
-            </div>
-          )}
-
-          {mode === 'practice' && <PracticeMode words={words} />}
-
-          {mode === 'explore' && <ExploreGrid words={words} />}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 55, gap: 4, background: 'rgba(22,27,34,0.6)', borderRadius: 13, padding: 4, width: 'fit-content', margin: '0 auto 55px', border: '1px solid rgba(48,54,61,0.4)' }}>
+          {modes.map(m => (
+            <button
+              key={m.id}
+              onClick={() => setMode(m.id)}
+              style={{
+                padding: '10px 34px', borderRadius: 10, border: 'none', cursor: 'pointer',
+                fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '2px', fontWeight: 600,
+                background: mode === m.id ? 'rgba(243,156,18,0.15)' : 'transparent',
+                color: mode === m.id ? '#f39c12' : '#484f58',
+                transition: 'all 233ms ease',
+              }}
+            >
+              {m.label}
+            </button>
+          ))}
         </div>
-        <Footer />
-      </PageWrapper>
+
+        {mode === 'learn' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 21 }}>
+            <LearnCard rootId="ATUM" words={words} />
+            <LearnCard rootId="BULL" words={words} />
+            <LearnCard rootId="TOR" words={words} />
+          </div>
+        )}
+
+        {mode === 'practice' && <PracticeMode words={words} />}
+
+        {mode === 'explore' && <ExploreGrid words={words} locale={locale} />}
+      </div>
+      <Footer />
     </>
   );
 }
