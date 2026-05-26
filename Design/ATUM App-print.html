@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATUM — The Root of All Words</title>
+  <link rel="stylesheet" href="atum-tokens.css">
+  <style>
+    #root { min-height: 100vh; }
+
+    @media print {
+      @page { size: landscape; margin: 0; }
+      body { background: #0a0a0f !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .print-page {
+        width: 100vw; height: 100vh;
+        break-after: page; break-inside: avoid;
+        overflow: hidden; position: relative;
+        box-sizing: border-box;
+      }
+      .print-page:last-child { break-after: auto; }
+      .no-print { display: none !important; }
+      canvas { display: none !important; }
+      nav { display: none !important; }
+      * { animation: none !important; transition: none !important; }
+    }
+
+    @media screen {
+      .print-page {
+        width: 100vw; min-height: 100vh;
+        position: relative; overflow: hidden;
+        border-bottom: 2px dashed rgba(48,54,61,0.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Dependencies -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <!-- Data & Canvas (plain JS) -->
+  <script src="atum-data.js"></script>
+  <script src="atum-torus.js"></script>
+
+  <!-- React Components (Babel-transpiled JSX) -->
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="atum-components.jsx"></script>
+  <script type="text/babel" src="atum-home.jsx"></script>
+  <script type="text/babel" src="atum-explorer.jsx"></script>
+  <script type="text/babel" src="atum-patterns.jsx"></script>
+  <script type="text/babel" src="atum-letter.jsx"></script>
+  <script type="text/babel" src="atum-research.jsx"></script>
+
+  <!-- Print-specific app shell -->
+  <script type="text/babel">
+    /* Print layout: all pages rendered statically in sequence */
+
+    function PrintHomePage() {
+      const wod = ATUM_DATA.wordOfDay;
+      const wodRoot = ATUM_DATA.roots[wod.rootId];
+      const s = ATUM_DATA.stats;
+
+      return React.createElement('div', { className: 'print-page', style: {
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', padding: '55px 55px 34px',
+        background: 'radial-gradient(ellipse at center, #161b22 0%, #0a0a0f 70%)',
+      }},
+        /* Title */
+        React.createElement('h1', { style: {
+          fontFamily: "'Cinzel Decorative', serif", fontSize: 72,
+          color: '#e6edf3', textAlign: 'center', marginBottom: 13,
+          letterSpacing: '4px', lineHeight: 1.15,
+        }}, 'Every Word Has a Root'),
+        React.createElement('p', { style: {
+          fontSize: 18, color: '#8b949e', textAlign: 'center',
+          maxWidth: 600, marginBottom: 55, lineHeight: 1.7,
+        }}, 'Three electromagnetic roots — ATUM, BULL, TOR — form the hidden architecture beneath all world languages.'),
+
+        /* Three roots */
+        React.createElement('div', { style: {
+          display: 'flex', gap: 55, justifyContent: 'center', marginBottom: 55,
+        }},
+          ['ATUM', 'BULL', 'TOR'].map(id => {
+            const r = ATUM_DATA.roots[id];
+            return React.createElement('div', { key: id, style: { textAlign: 'center' } },
+              React.createElement('div', { style: {
+                width: 140, height: 140, borderRadius: '50%',
+                border: `2px solid ${r.color}`,
+                background: `radial-gradient(circle, ${r.color}15 0%, transparent 70%)`,
+                display: 'flex', flexDirection: 'column',
+                alignItems: 'center', justifyContent: 'center', margin: '0 auto 13px',
+              }},
+                React.createElement('div', { style: {
+                  fontFamily: "'Cinzel Decorative', serif", fontSize: 24,
+                  color: r.color, letterSpacing: '3px', fontWeight: 900,
+                }}, r.id),
+                React.createElement('div', { style: {
+                  fontFamily: "'Amiri', serif", fontSize: 22, color: '#f39c12', direction: 'rtl',
+                }}, r.arabic),
+              ),
+              React.createElement('div', { style: { fontSize: 13, color: '#8b949e', maxWidth: 180 }}, r.meaning),
+            );
+          })
+        ),
+
+        /* Stats */
+        React.createElement('div', { style: {
+          display: 'flex', gap: 34, flexWrap: 'wrap', justifyContent: 'center',
+        }},
+          [
+            { v: s.totalWords.toLocaleString(), l: 'Words Analyzed', c: '#e6edf3' },
+            { v: s.provenWords, l: 'Proven Roots', c: '#22C55E' },
+            { v: s.sources, l: 'Source Languages', c: '#3B82F6' },
+            { v: s.cnnAccuracy + '%', l: 'CNN Accuracy', c: '#f39c12' },
+          ].map(st =>
+            React.createElement('div', { key: st.l, style: { textAlign: 'center', minWidth: 120 } },
+              React.createElement('div', { style: {
+                fontFamily: "'Cinzel Decorative', serif", fontSize: 28, color: st.c, fontWeight: 700,
+              }}, st.v),
+              React.createElement('div', { style: {
+                fontSize: 11, color: '#8b949e', textTransform: 'uppercase',
+                letterSpacing: '1.5px', fontFamily: "'JetBrains Mono', monospace", marginTop: 4,
+              }}, st.l),
+            )
+          )
+        ),
+
+        /* Footer brand */
+        React.createElement('div', { style: {
+          position: 'absolute', bottom: 21, left: 0, right: 0, textAlign: 'center',
+          fontSize: 11, color: '#484f58', letterSpacing: '3px',
+          fontFamily: "'Cinzel Decorative', serif",
+        }}, 'ATUM — The Root of All Words'),
+      );
+    }
+
+    /* ── Explorer Print Page ── */
+    function PrintExplorerPage() {
+      const words = ATUM_DATA.words;
+      return React.createElement('div', { className: 'print-page', style: {
+        padding: '55px', display: 'flex', flexDirection: 'column',
+      }},
+        React.createElement('div', { style: { marginBottom: 34 } },
+          React.createElement('h2', { style: {
+            fontFamily: "'Cinzel Decorative', serif", fontSize: 34,
+            color: '#e6edf3', letterSpacing: '2px', marginBottom: 8,
+          }}, 'Etymology Explorer'),
+          React.createElement('p', { style: { fontSize: 14, color: '#8b949e' }},
+            `${words.length} root connections mapped across world languages`),
+        ),
+        React.createElement('div', { style: {
+          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16, flex: 1,
+        }},
+          words.map(w => {
+            const root = ATUM_DATA.roots[w.rootId];
+            const conf = ATUM_DATA.confidenceLevels[w.confidence];
+            return React.createElement('div', { key: w.id, style: {
+              background: 'rgba(22,27,34,0.8)', border: `1px solid ${root.color}33`,
+              borderRadius: 10, padding: '16px', position: 'relative',
+              borderLeft: `3px solid ${root.color}`,
+            }},
+              React.createElement('div', { style: {
+                display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6,
+              }},
+                React.createElement('span', { style: {
+                  fontFamily: "'Cinzel Decorative', serif", fontSize: 20, color: '#e6edf3',
+                }}, w.european),
+                React.createElement('span', { style: {
+                  fontSize: 10, padding: '2px 8px', borderRadius: 10,
+                  background: root.colorDim, color: root.color,
+                  fontFamily: "'JetBrains Mono', monospace", fontWeight: 600,
+                }}, root.id),
+              ),
+              React.createElement('div', { style: {
+                fontFamily: "'Amiri', serif", fontSize: 18, color: '#f39c12',
+                direction: 'rtl', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 6,
+              }},
+                React.createElement('span', null, '← '),
+                w.arabicRoot,
+                React.createElement('span', { style: {
+                  fontSize: 11, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", direction: 'ltr',
+                }}, ` (${w.transliteration})`),
+              ),
+              React.createElement('div', { style: {
+                fontFamily: "'JetBrains Mono', monospace", fontSize: 10,
+                color: '#22C55E', background: 'rgba(34,197,94,0.08)',
+                padding: '4px 8px', borderRadius: 6, marginBottom: 6,
+              }}, w.rule),
+              React.createElement('div', { style: {
+                fontSize: 11, color: '#8b949e', fontStyle: 'italic',
+              }}, `"${w.meaning}"`),
+              React.createElement('div', { style: {
+                position: 'absolute', top: 8, right: 8, fontSize: 12,
+              }}, conf.icon),
+            );
+          })
+        ),
+      );
+    }
+
+    /* ── Patterns Print Page ── */
+    function PrintPatternsPage() {
+      return React.createElement('div', { className: 'print-page', style: {
+        padding: '55px', display: 'flex', flexDirection: 'column',
+      }},
+        React.createElement('h2', { style: {
+          fontFamily: "'Cinzel Decorative', serif", fontSize: 34,
+          color: '#e6edf3', letterSpacing: '2px', marginBottom: 8,
+        }}, 'Pattern Learning'),
+        React.createElement('p', { style: { fontSize: 14, color: '#8b949e', marginBottom: 34 }},
+          'The three electromagnetic roots and their word families'),
+
+        React.createElement('div', { style: {
+          display: 'flex', gap: 34, flex: 1,
+        }},
+          ['ATUM', 'BULL', 'TOR'].map(id => {
+            const r = ATUM_DATA.roots[id];
+            const words = ATUM_DATA.words.filter(w => w.rootId === id);
+            return React.createElement('div', { key: id, style: {
+              flex: 1, background: `linear-gradient(135deg, ${r.color}08, ${r.color}03)`,
+              border: `1px solid ${r.color}33`, borderRadius: 16, padding: 28,
+            }},
+              /* Header */
+              React.createElement('div', { style: {
+                textAlign: 'center', marginBottom: 21,
+                paddingBottom: 16, borderBottom: `1px solid ${r.color}22`,
+              }},
+                React.createElement('div', { style: {
+                  width: 70, height: 70, borderRadius: '50%',
+                  border: `2px solid ${r.color}`, margin: '0 auto 13px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                }},
+                  React.createElement('span', { style: {
+                    fontFamily: "'Amiri', serif", fontSize: 34, color: '#f39c12', direction: 'rtl',
+                  }}, r.arabic),
+                ),
+                React.createElement('div', { style: {
+                  fontFamily: "'Cinzel Decorative', serif", fontSize: 24,
+                  color: r.color, letterSpacing: '3px', marginBottom: 8,
+                }}, r.id),
+                React.createElement('div', { style: { fontSize: 13, color: '#8b949e', lineHeight: 1.6 }}, r.principle),
+              ),
+              /* Words */
+              words.map((w, i) =>
+                React.createElement('div', { key: w.id, style: {
+                  display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  padding: '10px 0',
+                  borderBottom: i < words.length - 1 ? '1px solid rgba(48,54,61,0.3)' : 'none',
+                }},
+                  React.createElement('div', null,
+                    React.createElement('span', { style: {
+                      fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3',
+                    }}, w.european),
+                    React.createElement('div', { style: {
+                      fontSize: 10, color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", marginTop: 2,
+                    }}, w.rule.split('→')[0]),
+                  ),
+                  React.createElement('div', { style: { textAlign: 'right' } },
+                    React.createElement('span', { style: {
+                      fontFamily: "'Amiri', serif", fontSize: 18, color: '#f39c12', direction: 'rtl',
+                    }}, w.arabicRoot),
+                    React.createElement('div', { style: { fontSize: 10, color: '#8b949e' }},
+                      ATUM_DATA.confidenceLevels[w.confidence].icon + ' ' + ATUM_DATA.confidenceLevels[w.confidence].label),
+                  ),
+                )
+              ),
+            );
+          })
+        ),
+      );
+    }
+
+    /* ── Letters Print Page ── */
+    function PrintLettersPage() {
+      const letters = ATUM_DATA.letters;
+      return React.createElement('div', { className: 'print-page', style: {
+        padding: '55px', display: 'flex', flexDirection: 'column',
+      }},
+        React.createElement('h2', { style: {
+          fontFamily: "'Cinzel Decorative', serif", fontSize: 34,
+          color: '#e6edf3', letterSpacing: '2px', marginBottom: 8,
+        }}, 'Arabic Letter Index'),
+        React.createElement('p', { style: { fontSize: 14, color: '#8b949e', marginBottom: 34 }},
+          'The foundational letters and their root associations'),
+
+        React.createElement('div', { style: {
+          display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 21, flex: 1,
+        }},
+          letters.map(l => {
+            const r = ATUM_DATA.roots[l.rootAssociation];
+            const words = ATUM_DATA.words.filter(w =>
+              w.arabicRoot.includes(l.letter) || w.rootId === l.rootAssociation
+            ).slice(0, 3);
+            return React.createElement('div', { key: l.letter, style: {
+              background: 'rgba(22,27,34,0.6)', border: `1px solid ${r.color}33`,
+              borderRadius: 13, padding: 21, display: 'flex', flexDirection: 'column',
+            }},
+              React.createElement('div', { style: {
+                display: 'flex', alignItems: 'center', gap: 16, marginBottom: 13,
+                paddingBottom: 13, borderBottom: `1px solid ${r.color}22`,
+              }},
+                React.createElement('div', { style: {
+                  fontFamily: "'Amiri', serif", fontSize: 55, color: '#f39c12',
+                  direction: 'rtl', lineHeight: 1, width: 60, textAlign: 'center',
+                  textShadow: `0 0 20px ${r.color}33`,
+                }}, l.letter),
+                React.createElement('div', null,
+                  React.createElement('div', { style: {
+                    fontSize: 16, color: '#e6edf3', marginBottom: 2,
+                  }}, l.name),
+                  React.createElement('div', { style: {
+                    fontSize: 12, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
+                  }}, `${l.transliteration} · ${l.phoenician}`),
+                  React.createElement('span', { style: {
+                    fontSize: 10, padding: '2px 8px', borderRadius: 10,
+                    background: r.colorDim, color: r.color,
+                    fontFamily: "'JetBrains Mono', monospace",
+                  }}, r.id),
+                ),
+              ),
+              React.createElement('div', { style: { fontSize: 12, color: '#484f58', marginBottom: 8 }},
+                `${l.wordCount} etymologies`),
+              words.map(w =>
+                React.createElement('div', { key: w.id, style: {
+                  display: 'flex', justifyContent: 'space-between',
+                  fontSize: 13, padding: '4px 0', color: '#8b949e',
+                }},
+                  React.createElement('span', { style: { color: '#e6edf3' }}, w.european),
+                  React.createElement('span', { style: {
+                    fontFamily: "'Amiri', serif", color: '#f39c12', direction: 'rtl',
+                  }}, w.arabicRoot),
+                )
+              ),
+            );
+          })
+        ),
+      );
+    }
+
+    /* ── Research Print Page ── */
+    function PrintResearchPage() {
+      const s = ATUM_DATA.stats;
+      const sources = [
+        { name: 'Wehr Dictionary', type: 'Arabic-English Lexicon', count: 2840 },
+        { name: 'Lane Lexicon', type: 'Classical Arabic Reference', count: 1560 },
+        { name: 'Etymonline', type: 'English Etymology Database', count: 3200 },
+        { name: 'Lisan al-Arab', type: 'Comprehensive Arabic Dictionary', count: 980 },
+        { name: 'Comparative Semitic', type: 'Cross-Language Analysis', count: 420 },
+      ];
+      const timeline = [
+        { year: '2019', title: 'Initial Corpus' },
+        { year: '2020', title: 'Root Discovery' },
+        { year: '2021', title: 'CNN Training' },
+        { year: '2022', title: '99.7% Accuracy' },
+        { year: '2023', title: 'Ibdal Rules' },
+        { year: '2024', title: '96 Proven' },
+        { year: '2025', title: 'Cross-Language' },
+        { year: '2026', title: 'Public Release' },
+      ];
+      const colors = ['#22C55E','#3B82F6','#EF4444','#f39c12','#22C55E','#3B82F6','#EF4444','#f39c12'];
+
+      return React.createElement('div', { className: 'print-page', style: {
+        padding: '55px', display: 'flex', flexDirection: 'column',
+      }},
+        React.createElement('h2', { style: {
+          fontFamily: "'Cinzel Decorative', serif", fontSize: 34,
+          color: '#e6edf3', letterSpacing: '2px', marginBottom: 8,
+        }}, 'Research Dashboard'),
+        React.createElement('p', { style: { fontSize: 14, color: '#8b949e', marginBottom: 34 }},
+          'Computational linguistics and statistical evidence'),
+
+        /* Hero stats */
+        React.createElement('div', { style: {
+          display: 'flex', gap: 21, marginBottom: 34,
+        }},
+          [
+            { v: s.cnnAccuracy + '%', l: 'CNN Accuracy', c: '#22C55E' },
+            { v: 'p<0.0001', l: 'p-value', c: '#3B82F6' },
+            { v: 'r=−0.693', l: 'Correlation', c: '#EF4444' },
+            { v: s.provenWords, l: 'Proven', c: '#f39c12' },
+          ].map(st =>
+            React.createElement('div', { key: st.l, style: {
+              flex: 1, textAlign: 'center', padding: '21px',
+              background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
+              borderRadius: 13,
+            }},
+              React.createElement('div', { style: {
+                fontFamily: "'Cinzel Decorative', serif", fontSize: 28, color: st.c, fontWeight: 700,
+              }}, st.v),
+              React.createElement('div', { style: {
+                fontSize: 11, color: '#8b949e', marginTop: 4, textTransform: 'uppercase',
+                letterSpacing: '1.5px', fontFamily: "'JetBrains Mono', monospace",
+              }}, st.l),
+            )
+          )
+        ),
+
+        /* Timeline */
+        React.createElement('div', { style: {
+          display: 'flex', gap: 0, marginBottom: 34,
+          background: 'rgba(22,27,34,0.4)', border: '1px solid rgba(48,54,61,0.4)',
+          borderRadius: 13, padding: '21px',
+        }},
+          timeline.map((e, i) =>
+            React.createElement('div', { key: i, style: {
+              flex: 1, paddingLeft: 13,
+              borderLeft: `2px solid ${colors[i]}33`,
+              position: 'relative',
+            }},
+              React.createElement('div', { style: {
+                width: 8, height: 8, borderRadius: '50%', background: colors[i],
+                position: 'absolute', left: -5, top: 0,
+              }}),
+              React.createElement('div', { style: {
+                fontSize: 11, color: colors[i], fontFamily: "'JetBrains Mono', monospace", fontWeight: 600,
+              }}, e.year),
+              React.createElement('div', { style: { fontSize: 12, color: '#e6edf3', marginTop: 2 }}, e.title),
+            )
+          )
+        ),
+
+        /* Sources */
+        React.createElement('div', { style: { display: 'flex', gap: 16 }},
+          sources.map(src =>
+            React.createElement('div', { key: src.name, style: {
+              flex: 1, background: 'rgba(22,27,34,0.6)',
+              border: '1px solid rgba(48,54,61,0.4)', borderRadius: 13, padding: 16,
+            }},
+              React.createElement('div', { style: { fontSize: 14, color: '#e6edf3', marginBottom: 4 }}, src.name),
+              React.createElement('div', { style: { fontSize: 11, color: '#484f58', marginBottom: 8 }}, src.type),
+              React.createElement('div', { style: {
+                fontSize: 11, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
+              }}, src.count.toLocaleString() + ' entries'),
+            )
+          )
+        ),
+
+        /* Footer brand */
+        React.createElement('div', { style: {
+          marginTop: 'auto', paddingTop: 21, textAlign: 'center',
+          fontSize: 11, color: '#484f58', letterSpacing: '3px',
+          fontFamily: "'Cinzel Decorative', serif",
+        }}, 'ATUM — The Root of All Words'),
+      );
+    }
+
+    /* ── Print App ── */
+    function PrintApp() {
+      return React.createElement(React.Fragment, null,
+        React.createElement(PrintHomePage),
+        React.createElement(PrintExplorerPage),
+        React.createElement(PrintPatternsPage),
+        React.createElement(PrintLettersPage),
+        React.createElement(PrintResearchPage),
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(PrintApp));
+
+    /* Auto-print after fonts and rendering settle */
+    document.fonts.ready.then(() => {
+      setTimeout(() => { window.print(); }, 800);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATUM — The Root of All Words</title>
+  <link rel="stylesheet" href="atum-tokens.css">
+  <template id="__bundler_thumbnail" data-bg-color="#0a0a0f">
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="300" fill="#0a0a0f"/>
+      <!-- Torus rings -->
+      <ellipse cx="200" cy="140" rx="110" ry="50" fill="none" stroke="#22C55E" stroke-width="1.5" opacity="0.5"/>
+      <ellipse cx="200" cy="140" rx="80" ry="36" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.5"/>
+      <ellipse cx="200" cy="140" rx="50" ry="22" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.5"/>
+      <!-- Three root circles -->
+      <circle cx="120" cy="220" r="28" fill="none" stroke="#22C55E" stroke-width="2" opacity="0.7"/>
+      <circle cx="200" cy="220" r="28" fill="none" stroke="#EF4444" stroke-width="2" opacity="0.7"/>
+      <circle cx="280" cy="220" r="28" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.7"/>
+      <!-- Labels -->
+      <text x="200" y="90" text-anchor="middle" fill="#e6edf3" font-family="serif" font-size="22" letter-spacing="4">ATUM</text>
+      <text x="120" cy="220" y="256" text-anchor="middle" fill="#22C55E" font-family="serif" font-size="9" letter-spacing="1">ATUM</text>
+      <text x="200" cy="220" y="256" text-anchor="middle" fill="#EF4444" font-family="serif" font-size="9" letter-spacing="1">BULL</text>
+      <text x="280" cy="220" y="256" text-anchor="middle" fill="#3B82F6" font-family="serif" font-size="9" letter-spacing="1">TOR</text>
+      <!-- Gold accent line -->
+      <line x1="140" y1="105" x2="260" y2="105" stroke="#f39c12" stroke-width="0.5" opacity="0.5"/>
+    </svg>
+  </template>
+  <style>
+    #root { min-height: 100vh; }
+    /* Page transition */
+    .page-enter { animation: fadeUp 610ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(13px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    /* Responsive nav collapse */
+    @media (max-width: 768px) {
+      nav > div:last-child { gap: 13px !important; }
+      nav > div:last-child span { font-size: 11px !important; }
+    }
+    /* Responsive letter page grid */
+    @media (max-width: 900px) {
+      .letter-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Dependencies -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <!-- Data & Canvas (plain JS) -->
+  <script src="atum-data.js"></script>
+  <script src="atum-torus.js"></script>
+
+  <!-- React Components (Babel-transpiled JSX) -->
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="atum-components.jsx"></script>
+  <script type="text/babel" src="atum-home.jsx"></script>
+  <script type="text/babel" src="atum-explorer.jsx"></script>
+  <script type="text/babel" src="atum-patterns.jsx"></script>
+  <script type="text/babel" src="atum-letter.jsx"></script>
+  <script type="text/babel" src="atum-research.jsx"></script>
+  <script type="text/babel" src="atum-app.jsx"></script>
+</body>
+</html>

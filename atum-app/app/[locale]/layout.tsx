@@ -2,9 +2,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Amiri, Cinzel, Source_Serif_4, Geist, Geist_Mono } from 'next/font/google';
+import { Amiri, Cinzel_Decorative, Source_Serif_4, Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css';
-import NavBar from '@/components/NavBar';
+import Navigation from '@/components/Navigation';
 
 const amiri = Amiri({
   subsets: ['arabic'],
@@ -12,10 +12,10 @@ const amiri = Amiri({
   variable: '--font-amiri',
 });
 
-const cinzel = Cinzel({
+const cinzelDecorative = Cinzel_Decorative({
   subsets: ['latin'],
   weight: ['400', '700', '900'],
-  variable: '--font-cinzel',
+  variable: '--font-cinzel-decorative',
 });
 
 const sourceSerif = Source_Serif_4({
@@ -48,10 +48,9 @@ export default async function LocaleLayout({
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <html lang={locale} dir={dir} className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} ${cinzel.variable} ${sourceSerif.variable} h-full antialiased`}>
-      <body className={`min-h-full flex flex-col bg-[#0d0d0d] text-zinc-100 ${locale === 'ar' ? 'font-arabic text-lg' : 'font-serif'}`}>
+    <html lang={locale} dir={dir} className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} ${cinzelDecorative.variable} ${sourceSerif.variable}`}>
+      <body>
         <NextIntlClientProvider messages={messages}>
-          <NavBar locale={locale} />
           {children}
         </NextIntlClientProvider>
       </body>

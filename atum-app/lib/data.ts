@@ -1,0 +1,142 @@
+import fs from 'fs';
+import path from 'path';
+
+export interface RootInfo {
+  id: string;
+  arabic: string;
+  transliteration: string;
+  meaning: string;
+  principle: string;
+  color: string;
+  colorDim: string;
+  colorGlow: string;
+}
+
+export interface WordInfo {
+  id: string;
+  european: string;
+  arabicRoot: string;
+  transliteration: string;
+  rootId: string;
+  rule: string;
+  meaning: string;
+  confidence: string;
+  path: string;
+  languages: string[];
+}
+
+export interface LetterInfo {
+  letter: string;
+  name: string;
+  transliteration: string;
+  rootAssociation: string;
+  wordCount: number;
+  phoenician: string;
+}
+
+export interface AppStats {
+  totalWords: number;
+  provenWords: number;
+  sources: number;
+  cnnAccuracy: string;
+}
+
+export const ROOT_DATA: Record<string, RootInfo> = {
+  ATUM: { id: 'ATUM', arabic: 'أتم', transliteration: 'Atum', meaning: 'Unity, to complete', principle: 'Unity · Inertia · Containment', color: '#22C55E', colorDim: 'rgba(34,197,94,0.15)', colorGlow: 'rgba(34,197,94,0.4)' },
+  BULL: { id: 'BULL', arabic: 'بول', transliteration: 'Bull', meaning: 'Radiation, expansion', principle: 'Radiation · Expansion · Outward', color: '#EF4444', colorDim: 'rgba(239,68,68,0.15)', colorGlow: 'rgba(239,68,68,0.4)' },
+  TOR: { id: 'TOR', arabic: 'طور', transliteration: 'Tor', meaning: 'Cycle, rotation', principle: 'Structure · Rotation · Cycles', color: '#3B82F6', colorDim: 'rgba(59,130,246,0.15)', colorGlow: 'rgba(59,130,246,0.4)' },
+};
+
+export function loadWords(): WordInfo[] {
+  try {
+    const filePath = path.join(process.cwd(), 'data', 'etymologies.json');
+    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const bridge: any[] = parsed.bridge || [];
+    const database: any[] = parsed.database || [];
+
+    const mapConfidence = (c: string) => {
+      if (!c) return 'emerging';
+      const n = c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      if (n.includes('proven') || n.includes('high') || n.includes('عال') || n.includes('مؤكد')) return 'proven';
+      if (n.includes('strong') || n.includes('probable') || n.includes('محتم')) return 'strong';
+      if (n.includes('moderate') || n.includes('exploratory') || n.includes('استكش')) return 'moderate';
+      return 'emerging';
+    };
+
+    const mapRoot = (r: string) => {
+      if (!r) return 'ATUM';
+      const u = r.toUpperCase().replace('ATOM', 'ATUM');
+      if (['ATUM', 'BULL', 'TOR'].includes(u)) return u;
+      return 'ATUM';
+    };
+
+    const words: WordInfo[] = [];
+
+    for (const b of bridge) {
+      words.push({
+        id: b.id || `b-${Math.random()}`,
+        european: b.modernWord || '',
+        arabicRoot: b.arabicRoot || '',
+        transliteration: '',
+        rootId: 'ATUM',
+        rule: b.transformationRule || '',
+        meaning: b.modernMeaning || '',
+        confidence: mapConfidence(b.confidence),
+        path: b.languagePath || '',
+        languages: [b.targetLanguage || ''],
+      });
+    }
+
+    for (const d of database) {
+      words.push({
+        id: `db-${d.id}`,
+        european: d.word || '',
+        arabicRoot: d.arabicRoot || '',
+        transliteration: '',
+        rootId: mapRoot(d.root),
+        rule: '',
+        meaning: d.meaning || '',
+        confidence: mapConfidence(d.confidence),
+        path: d.languagePath || '',
+        languages: [],
+      });
+    }
+
+    return words;
+  } catch {
+    return [];
+  }
+}
+
+export interface RawLetter {
+  id: number;
+  arabic: string;
+  name: string;
+  nameAr: string;
+  abjadValue: number;
+  element: string;
+  transliteration?: string;
+  dna?: {
+    semanticDepth?: number;
+    fundamentalFreqHz?: number;
+    corpusFrequency?: number;
+    energyType?: string;
+    mataqadatClass?: string;
+    phonosemanticVerdict?: string;
+    cnnConfirmed?: boolean;
+  };
+}
+
+export function loadLetters(): RawLetter[] {
+  try {
+    const filePath = path.join(process.cwd(), 'data', 'letters.json');
+    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    return parsed.letters || [];
+  } catch {
+    return [];
+  }
+}
+
+export function loadStats(): AppStats {
+  return { totalWords: 5083, provenWords: 96, sources: 5, cnnAccuracy: '99.7%' };
+}

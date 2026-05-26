@@ -1,97 +1,119 @@
 'use client';
 
 import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import React from 'react';
 import RootBadge from './RootBadge';
 import ConfidenceBadge from './ConfidenceBadge';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
-interface EtymologyCardProps {
-  word: string;
-  arabicRoot?: string;
-  arabicForm?: string;
-  transformationRule?: string;
+interface EtymologyCardWord {
+  id?: string;
+  european: string;
+  arabicRoot: string;
+  transliteration?: string;
+  rule?: string;
   meaning?: string;
+  rootId: string;
   confidence: string;
-  root?: string;
-  etymology?: string;
-  languagePath?: string;
-  notes?: string;
+  path?: string;
+  languages?: string[];
 }
 
-const rootBorderColor: Record<string, string> = {
-  ATOM: 'hover:border-emerald-500/40',
-  BULL: 'hover:border-rose-500/40',
-  TOR: 'hover:border-blue-500/40',
+interface EtymologyCardProps {
+  word: EtymologyCardWord;
+  onClick?: () => void;
+  expanded?: boolean;
+}
+
+const rootColors: Record<string, string> = {
+  ATUM: '#22C55E', BULL: '#EF4444', TOR: '#3B82F6',
 };
 
-export default function EtymologyCard({
-  word, arabicRoot, arabicForm, transformationRule,
-  meaning, confidence, root, etymology, languagePath, notes,
-}: EtymologyCardProps) {
-  const [expanded, setExpanded] = useState(false);
-  const rootKey = root?.toUpperCase() || '';
-  const borderClass = rootBorderColor[rootKey] || 'hover:border-zinc-500/40';
+export default function EtymologyCard({ word, onClick, expanded = false }: EtymologyCardProps) {
+  const root = rootColors[word.rootId?.toUpperCase()] || '#8b949e';
+  const [hover, setHover] = useState(false);
 
   return (
     <div
-      className={cn(
-        'bg-[#1a1a1a]/50 border border-[#2a2a2a] rounded-2xl p-5 transition-all duration-300 cursor-pointer',
-        borderClass, expanded ? 'border-opacity-60' : 'hover:-translate-y-0.5'
-      )}
-      onClick={() => setExpanded(!expanded)}
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        background: expanded ? 'rgba(28, 33, 40, 0.95)' : 'rgba(22, 27, 34, 0.8)',
+        border: `1px solid ${expanded ? root + '44' : 'rgba(48, 54, 61, 0.5)'}`,
+        borderRadius: 13, padding: expanded ? '34px' : '21px',
+        cursor: 'pointer',
+        transition: 'all 377ms ease',
+        position: 'relative', overflow: 'hidden',
+        transform: hover ? 'translateY(-2px)' : 'none',
+        boxShadow: hover ? `0 8px 30px ${root}15` : 'none',
+      }}
     >
-      <div className="flex items-start justify-between mb-3">
-        <h3 className="text-xl font-bold font-cinzel text-zinc-100 tracking-tight">{word}</h3>
-        {root && <RootBadge root={root} size="sm" />}
+      <div style={{
+        position: 'absolute', top: 0, left: 0, width: 3, height: '100%',
+        background: root, borderRadius: '3px 0 0 3px',
+      }} />
+
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+        <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 28, color: '#e6edf3', marginBottom: 8, letterSpacing: '1px' }}>
+          {word.european}
+        </div>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <ConfidenceBadge level={word.confidence} showLabel={false} />
+          <RootBadge rootId={word.rootId} size="sm" />
+        </div>
       </div>
 
-      {(arabicForm || arabicRoot) && (
-        <div className="mb-2">
-          <span className="text-lg font-arabic text-amber-400" dir="rtl">
-            {arabicForm || ''} {arabicRoot ? `← ${arabicRoot}` : ''}
+      <div style={{ fontFamily: "'Amiri', serif", direction: 'rtl', fontSize: 24, color: '#f39c12', marginBottom: 13, display: 'flex', alignItems: 'center', gap: 8 }}>
+        <span>← </span>
+        <span style={{ fontFamily: "'Amiri', serif" }}>{word.arabicRoot}</span>
+        {word.transliteration && (
+          <span style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", direction: 'ltr' }}>
+            ({word.transliteration})
           </span>
-        </div>
-      )}
-
-      {transformationRule && (
-        <div className="inline-block bg-emerald-500/10 border border-emerald-500/20 rounded-md px-2.5 py-1 mb-3">
-          <span className="text-xs font-mono text-emerald-400">{transformationRule}</span>
-        </div>
-      )}
-
-      {meaning && (
-        <p className="text-sm text-zinc-400 italic leading-relaxed mb-3">{meaning}</p>
-      )}
-
-      <div className="flex items-center justify-between">
-        <ConfidenceBadge level={confidence} size="sm" />
-        <button className="text-zinc-500 hover:text-zinc-300 transition-colors">
-          {expanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-        </button>
+        )}
       </div>
+
+      {word.rule && (
+        <div style={{
+          fontFamily: "'JetBrains Mono', monospace",
+          fontSize: 13, color: '#22C55E',
+          padding: '6px 12px', background: 'rgba(34, 197, 94, 0.08)',
+          borderRadius: 8, marginBottom: 13, display: 'inline-block',
+        }}>
+          {word.rule}
+        </div>
+      )}
 
       {expanded && (
-        <div className="mt-4 pt-4 border-t border-[#2a2a2a] space-y-3 text-sm animate-fade-in">
-          {etymology && (
-            <div>
-              <span className="text-[10px] uppercase tracking-wider text-zinc-500 block mb-1">Etymology</span>
-              <p className="text-zinc-300 leading-relaxed">{etymology}</p>
+        <>
+          {word.meaning && (
+            <div style={{ fontSize: 15, color: '#8b949e', fontStyle: 'italic', marginBottom: 13 }}>
+              &ldquo;{word.meaning}&rdquo;
             </div>
           )}
-          {languagePath && (
-            <div className="flex justify-between">
-              <span className="text-zinc-500 text-xs">Language Path</span>
-              <span className="text-xs font-mono text-zinc-400">{languagePath}</span>
+          {word.path && (
+            <div style={{
+              fontFamily: "'Source Serif 4', serif",
+              fontSize: 14, color: '#8b949e', lineHeight: 1.8,
+              padding: '13px 0', borderTop: '1px solid rgba(48,54,61,0.5)',
+              marginTop: 13,
+            }}>
+              <div style={{ color: '#e6edf3', fontSize: 13, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '1px' }}>
+                Language Path
+              </div>
+              {word.path}
             </div>
           )}
-          {notes && (
-            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-3">
-              <span className="text-[10px] font-mono text-zinc-500 block mb-1">NOTES</span>
-              <p className="text-xs text-zinc-400 leading-relaxed">{notes}</p>
+          {word.languages && word.languages.length > 0 && (
+            <div style={{ display: 'flex', gap: 8, marginTop: 13, flexWrap: 'wrap' }}>
+              {word.languages.map(l => (
+                <span key={l} style={{ fontSize: 12, padding: '3px 10px', borderRadius: 21, background: 'rgba(48,54,61,0.5)', color: '#8b949e' }}>
+                  {l}
+                </span>
+              ))}
             </div>
           )}
-        </div>
+        </>
       )}
     </div>
   );

@@ -1,25 +1,35 @@
 import { cn } from '@/lib/utils';
 
 interface RootBadgeProps {
-  root: 'ATUM' | 'BULL' | 'TOR' | string;
+  rootId: string;
   size?: 'sm' | 'md' | 'lg';
+  style?: React.CSSProperties;
 }
 
-const rootConfig = {
-  ATUM: { color: '#22C55E', bg: 'bg-emerald-500/10', border: 'border-emerald-500/30', text: 'text-emerald-400' },
-  BULL: { color: '#EF4444', bg: 'bg-rose-500/10', border: 'border-rose-500/30', text: 'text-rose-400' },
-  TOR: { color: '#3B82F6', bg: 'bg-blue-500/10', border: 'border-blue-500/30', text: 'text-blue-400' },
+const roots: Record<string, { color: string; colorDim: string }> = {
+  ATUM: { color: '#22C55E', colorDim: 'rgba(34,197,94,0.15)' },
+  BULL: { color: '#EF4444', colorDim: 'rgba(239,68,68,0.15)' },
+  TOR: { color: '#3B82F6', colorDim: 'rgba(59,130,246,0.15)' },
 };
 
-export default function RootBadge({ root, size = 'md' }: RootBadgeProps) {
-  const key = root.toUpperCase();
-  const cfg = rootConfig[key as keyof typeof rootConfig] || rootConfig.TOR;
-  const sizeClass = size === 'sm' ? 'text-[10px] px-2 py-0.5' : size === 'lg' ? 'text-sm px-4 py-1.5' : 'text-xs px-3 py-1';
+export default function RootBadge({ rootId, size = 'md', style: extraStyle = {} }: RootBadgeProps) {
+  const root = roots[rootId.toUpperCase()] || roots.TOR;
+  const sizes = { sm: { fontSize: 11, padding: '3px 10px' }, md: { fontSize: 13, padding: '5px 14px' }, lg: { fontSize: 16, padding: '8px 20px' } };
+  const s = sizes[size] || sizes.md;
 
   return (
-    <span className={cn('inline-flex items-center gap-1.5 rounded-full font-bold border tracking-wider uppercase', cfg.bg, cfg.border, cfg.text, sizeClass)}>
-      <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: cfg.color }} />
-      {key}
+    <span style={{
+      display: 'inline-flex', alignItems: 'center', gap: 6,
+      fontFamily: "'JetBrains Mono', monospace",
+      fontSize: s.fontSize, padding: s.padding,
+      borderRadius: 21, fontWeight: 600,
+      color: root.color,
+      background: root.colorDim,
+      border: `1px solid ${root.color}33`,
+      letterSpacing: '1px',
+      ...extraStyle,
+    }}>
+      {rootId.toUpperCase()}
     </span>
   );
 }
