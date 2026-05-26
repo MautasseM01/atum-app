@@ -1,0 +1,33 @@
+{
+  "Index": {
+    "title": "ATUM — La Racine de Tous les Mots",
+    "subtitle": "Chaque mot a une racine",
+    "description": "Découvrez les systèmes de racines électromagnétiques qui structurent toutes les langues humaines. Apprenez à décoder les motifs du langage.",
+    "heroExplanation": "La langue n'est pas arbitraire. Tout comme l'arabe utilise des lettres racines pour dériver des milliers de mots à travers des formes précises (أوزان), toutes les langues du monde découlent de trois racines électromagnétiques fondamentales : ATUM (l'unité et l'inertie), BULL (la radiation et l'expansion), et TOR (la rotation et le cycle).",
+    "rootsTitle": "Les Trois Racines Pères",
+    "atumTitle": "ATUM",
+    "atumPrinciple": "Unité · Intériorité · Commencement",
+    "atumDesc": "Représente l'inertie, la stabilité, le confinement et le retour. C'est la force statique et tournée vers l'intérieur.",
+    "bullTitle": "BULL",
+    "bullPrinciple": "Radiation · Expansion · Extériorité",
+    "bullDesc": "Représente la radiation, la lumière, le mouvement, l'expansion et l'énergie fluide. C'est la force active tournée vers l'extérieur.",
+    "torTitle": "TOR",
+    "torPrinciple": "Structure · Rotation · Cycles",
+    "torDesc": "Représente la rotation, les cycles, les tours, les limites et la structure géométrique. C'est le vortex, combinant les forces en un mouvement rotatif.",
+    "wordOfDay": "Mot du Jour",
+    "confidenceProven": "🔬 Établi",
+    "confidenceProbable": "🧩 Probable",
+    "confidenceExploratory": "🔍 Exploratoire",
+    "confidenceSpeculative": "❓ Spéculatif",
+    "confidence": "Confiance",
+    "meaning": "Signification",
+    "arabicRoot": "Racine Arabe",
+    "phoneticRule": "Règle Phonétique",
+    "searchPlaceholder": "Rechercher parmi plus de 5 000 étymologies...",
+    "searchButton": "Rechercher",
+    "suggested": "Suggestions",
+    "statsWords": "+5 000 mots",
+    "statsDocumented": "96 étymologies documentées",
+    "statsSources": "5 sources académiques"
+  }
+}

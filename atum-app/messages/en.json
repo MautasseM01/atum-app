@@ -1,0 +1,33 @@
+{
+  "Index": {
+    "title": "ATUM — The Root of All Words",
+    "subtitle": "Every Word Has a Root",
+    "description": "Discover the electromagnetic root systems that structure all human languages. Learn to decode the patterns of speech and sound.",
+    "heroExplanation": "Language is not arbitrary. Just as Arabic utilizes root letters to derive thousands of words through defined pattern weights (أوزان), all world languages branch from three fundamental electromagnetic roots: ATUM (unity and inertia), BULL (radiation and expansion), and TOR (rotation and cycle).",
+    "rootsTitle": "The Three Father Roots",
+    "atumTitle": "ATUM",
+    "atumPrinciple": "Unity · Inwardness · Beginning",
+    "atumDesc": "Represents inertia, stability, containment, and return. It is the static, inward-looking force.",
+    "bullTitle": "BULL",
+    "bullPrinciple": "Radiation · Expansion · Outward",
+    "bullDesc": "Represents radiation, light, movement, expansion, and flowing energy. It is the active, outward-moving force.",
+    "torTitle": "TOR",
+    "torPrinciple": "Structure · Rotation · Cycles",
+    "torDesc": "Represents rotation, cycles, towers, boundaries, and geometric structure. It is the vortex, combining forces into dynamic spin.",
+    "wordOfDay": "Word of the Day",
+    "confidenceProven": "🔬 Proven",
+    "confidenceProbable": "🧩 Probable",
+    "confidenceExploratory": "🔍 Exploratory",
+    "confidenceSpeculative": "❓ Speculative",
+    "confidence": "Confidence",
+    "meaning": "Meaning",
+    "arabicRoot": "Arabic Root",
+    "phoneticRule": "Phonetic Rule",
+    "searchPlaceholder": "Search over 5,000 etymologies...",
+    "searchButton": "Search",
+    "suggested": "Suggested",
+    "statsWords": "5,000+ Words",
+    "statsDocumented": "96 Scientifically Documented",
+    "statsSources": "5 Academic Sources"
+  }
+}
