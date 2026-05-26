@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { getMessages, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import QuickSearch from '@/components/QuickSearch';
-import { Sparkles, Globe, Database, BookOpen, ChevronRight, Activity, Zap, RefreshCw } from 'lucide-react';
+import { Sparkles, Globe, Database, BookOpen, ChevronRight, Activity, Zap, RefreshCw, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
 interface Etymology {

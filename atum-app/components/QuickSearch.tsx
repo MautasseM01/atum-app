@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useTransition, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { Search, X, BookOpen, AlertCircle } from 'lucide-react';
+import { Search, X, AlertCircle } from 'lucide-react';
 
 interface Etymology {
   id: string;
@@ -134,7 +134,7 @@ export default function QuickSearch({ etymologies }: QuickSearchProps) {
           ) : (
             <div className="px-5 py-6 text-center text-zinc-500 flex flex-col items-center gap-2">
               <AlertCircle className="w-8 h-8 text-zinc-600" />
-              <span>No results found. Try search for other words like "Motor".</span>
+              <span>No results found. Try search for other words like &quot;Motor&quot;.</span>
             </div>
           )}
         </div>
