@@ -31,15 +31,15 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
         style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}
         onClick={() => onNavigate('home')}
       >
-        <div style={{
+        <div aria-hidden="true" style={{
           width: 38, height: 38, borderRadius: '50%',
           background: 'linear-gradient(135deg, #22C55E 0%, #3B82F6 50%, #EF4444 100%)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 17, fontWeight: 700, color: '#fff',
-          fontFamily: "'Cinzel Decorative', serif",
-          marginRight: 5,
+          fontSize: 20, color: '#fff',
+          userSelect: 'none',
+          flexShrink: 0,
         }}>
-          A
+          ◈
         </div>
         <span style={{
           fontFamily: "'Cinzel Decorative', serif",
