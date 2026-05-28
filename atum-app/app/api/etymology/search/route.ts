@@ -32,15 +32,29 @@ interface DatabaseEntry {
   validated: boolean;
   timestamp: string;
   dataset: 'etymology_database';
-  [key: string]: unknown;
+}
+
+interface SearchResultItem {
+  id: string;
+  european: string;
+  arabicRoot: string;
+  rootId: string;
+  rule: string;
+  meaning: string;
+  confidence: string;
+  language: string;
+}
+
+interface SearchResponse {
+  results: SearchResultItem[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+  counts: { ATUM: number; BULL: number; TOR: number };
 }
 
 interface EtymologyDB {
-  meta: {
-    bridgeCount: number;
-    databaseCount: number;
-    total: number;
-  };
   bridge: BridgeEntry[];
   database: DatabaseEntry[];
 }
@@ -49,72 +63,130 @@ let cachedDb: EtymologyDB | null = null;
 
 async function loadDatabase(): Promise<EtymologyDB> {
   if (cachedDb) return cachedDb;
-
   const filePath = path.join(process.cwd(), 'data', 'etymologies.json');
   const raw = await fs.readFile(filePath, 'utf-8');
   cachedDb = JSON.parse(raw) as EtymologyDB;
   return cachedDb;
 }
 
-export async function GET(req: NextRequest) {
-  const { searchParams } = new URL(req.url);
-  const query = searchParams.get('q')?.toLowerCase().trim() || '';
-  const root = searchParams.get('root')?.toUpperCase().trim() as 'ATOM' | 'BULL' | 'TOR' | '' | undefined;
-  const dataset = searchParams.get('dataset')?.trim() as 'bridge' | 'database' | undefined;
-  const confidence = searchParams.get('confidence')?.trim();
-  const limit = Math.min(Math.max(parseInt(searchParams.get('limit') || '50', 10), 1), 500);
-  const offset = Math.max(parseInt(searchParams.get('offset') || '0', 10), 0);
+const EMPTY_RESPONSE: SearchResponse = {
+  results: [], total: 0, page: 1, limit: 50, hasMore: false, counts: { ATUM: 0, BULL: 0, TOR: 0 },
+};
 
+const mapConfidence = (c: unknown) => {
+  if (!c) return 'emerging';
+  const s = String(c).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  if (s.includes('proven') || s.includes('high') || s.includes('عال') || s.includes('مؤكد')) return 'proven';
+  if (s.includes('strong') || s.includes('probable') || s.includes('محتم')) return 'strong';
+  if (s.includes('moderate') || s.includes('exploratory') || s.includes('استكش') || s.includes('تخم')) return 'moderate';
+  if (s.includes('0.9') || (typeof c === 'number' && c >= 0.9)) return 'proven';
+  if (s.includes('0.7') || (typeof c === 'number' && c >= 0.7)) return 'strong';
+  return 'emerging';
+};
+
+const mapRoot = (r: string | undefined) => {
+  if (!r) return 'ATUM';
+  const u = r.toUpperCase().replace('ATOM', 'ATUM');
+  if (['ATUM', 'BULL', 'TOR'].includes(u)) return u;
+  return 'ATUM';
+};
+
+const detectLanguage = (entry: BridgeEntry | DatabaseEntry): string => {
+  if ('targetLanguage' in entry) {
+    const tl = (entry as BridgeEntry).targetLanguage || '';
+    if (tl.includes('يونانية')) return 'GR';
+    if (tl.includes('لاتينية')) return 'LA';
+    if (tl.includes('فرنسية')) return 'FR';
+    if (tl.includes('عربية')) return 'AR';
+    if (tl.includes('إنكليزية')) return 'EN';
+    return 'EN';
+  }
+  return 'EN';
+};
+
+function precomputeCounts(bridge: BridgeEntry[], database: DatabaseEntry[]) {
+  const counts: Record<string, number> = { ATUM: 0, BULL: 0, TOR: 0 };
+  counts.ATUM += bridge.length;
+  for (const d of database) {
+    const root = mapRoot(d.root);
+    counts[root]++;
+  }
+  return counts as { ATUM: number; BULL: number; TOR: number };
+}
+
+function matchesQuery(val: string | undefined | null, query: string): boolean {
+  if (!val || !query) return true;
+  return val.toLowerCase().includes(query);
+}
+
+function matchesLanguage(lang: string, filter: string | undefined): boolean {
+  if (!filter || filter === 'ALL') return true;
+  return lang === filter;
+}
+
+export async function GET(req: NextRequest) {
   try {
     const db = await loadDatabase();
-    let results: (BridgeEntry | DatabaseEntry)[] = [];
+    const url = new URL(req.url);
+    const q = url.searchParams.get('q')?.trim() || '';
+    const root = url.searchParams.get('root')?.toUpperCase().trim() || '';
+    const lang = url.searchParams.get('lang')?.toUpperCase().trim() || '';
+    const page = Math.max(parseInt(url.searchParams.get('page') || '1', 10), 1);
+    const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit') || '50', 10), 1), 500);
 
-    // Search bridge
-    if (!dataset || dataset === 'bridge') {
-      results = results.concat(
-        db.bridge.filter((entry) => {
-          if (query && !entry.modernWord.toLowerCase().includes(query) &&
-              !entry.arabicRoot.toLowerCase().includes(query) &&
-              !entry.arabicMeaning.toLowerCase().includes(query) &&
-              !entry.notes?.toLowerCase().includes(query)) {
-            return false;
-          }
-          return true;
-        })
-      );
+    const counts = precomputeCounts(db.bridge, db.database);
+
+    let results: SearchResultItem[] = [];
+
+    for (const b of db.bridge) {
+      const item: SearchResultItem = {
+        id: b.id,
+        european: b.modernWord || '',
+        arabicRoot: b.arabicRoot || '',
+        rootId: 'ATUM',
+        rule: b.transformationRule || '',
+        meaning: b.modernMeaning || '',
+        confidence: mapConfidence(b.confidence),
+        language: detectLanguage(b),
+      };
+      if (q && !matchesQuery(item.european, q) && !matchesQuery(item.arabicRoot, q) && !matchesQuery(item.meaning, q)) continue;
+      if (root && root !== 'ALL' && item.rootId !== root) continue;
+      if (!matchesLanguage(item.language, lang)) continue;
+      results.push(item);
     }
 
-    // Search database
-    if (!dataset || dataset === 'database') {
-      results = results.concat(
-        db.database.filter((entry) => {
-          if (query && !entry.word.toLowerCase().includes(query) &&
-              !entry.meaning?.toLowerCase().includes(query) &&
-              !entry.etymology?.toLowerCase().includes(query)) {
-            return false;
-          }
-          if (root && entry.root !== root) return false;
-          if (confidence && entry.source !== confidence) return false;
-          return true;
-        })
-      );
+    for (const d of db.database) {
+      const item: SearchResultItem = {
+        id: `db-${d.id}`,
+        european: d.word || '',
+        arabicRoot: '',
+        rootId: mapRoot(d.root),
+        rule: '',
+        meaning: d.meaning || '',
+        confidence: mapConfidence(d.confidence),
+        language: detectLanguage(d),
+      };
+      if (q && !matchesQuery(item.european, q) && !matchesQuery(item.meaning, q)) continue;
+      if (root && root !== 'ALL' && item.rootId !== root) continue;
+      if (!matchesLanguage(item.language, lang)) continue;
+      results.push(item);
     }
 
-    // Pagination
     const total = results.length;
+    const offset = (page - 1) * limit;
     const paginated = results.slice(offset, offset + limit);
+    const hasMore = offset + limit < total;
 
     return NextResponse.json({
-      success: true,
-      query,
-      filters: { root, dataset, confidence },
-      pagination: { total, offset, limit, returned: paginated.length },
       results: paginated,
+      total,
+      page,
+      limit,
+      hasMore,
+      counts,
     });
-  } catch {
-    return NextResponse.json(
-      { success: false, error: 'Failed to search etymologies' },
-      { status: 500 }
-    );
+  } catch (e) {
+    console.error('Search API error:', e);
+    return NextResponse.json(EMPTY_RESPONSE);
   }
 }

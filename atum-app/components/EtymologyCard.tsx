@@ -16,7 +16,12 @@ interface EtymologyCardWord {
   confidence: string;
   path?: string;
   languages?: string[];
+  language?: string;
 }
+
+const LANG_COLORS: Record<string, string> = {
+  EN: '#3B82F6', GR: '#8B5CF6', LA: '#EF4444', FR: '#10B981', AR: '#f39c12',
+};
 
 interface EtymologyCardProps {
   word: EtymologyCardWord;
@@ -58,6 +63,17 @@ export default function EtymologyCard({ word, onClick, expanded = false }: Etymo
           {word.european}
         </div>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          {word.language && (
+            <span style={{
+              fontSize: 10, padding: '2px 8px', borderRadius: 10,
+              background: (LANG_COLORS[word.language] || '#8b949e') + '22',
+              color: LANG_COLORS[word.language] || '#8b949e',
+              fontFamily: "'JetBrains Mono', monospace",
+              fontWeight: 600, letterSpacing: '1px',
+            }}>
+              {word.language}
+            </span>
+          )}
           <ConfidenceBadge level={word.confidence} showLabel={false} />
           <RootBadge rootId={word.rootId} size="sm" />
         </div>
