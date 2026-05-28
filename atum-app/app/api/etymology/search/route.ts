@@ -115,7 +115,8 @@ function precomputeCounts(bridge: BridgeEntry[], database: DatabaseEntry[]) {
 }
 
 function matchesQuery(val: string | undefined | null, query: string): boolean {
-  if (!val || !query) return true;
+  if (!query) return true;
+  if (!val) return false;
   return val.toLowerCase().includes(query);
 }
 
