@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { RawLetter as LetterItem } from '@/lib/data';
 import RootBadge from '@/components/RootBadge';
@@ -18,26 +18,6 @@ const ROOTS_DATA: Record<string, { id: string; color: string }> = {
   ATUM: { id: 'ATUM', color: '#22C55E' },
   BULL: { id: 'BULL', color: '#EF4444' },
   TOR: { id: 'TOR', color: '#3B82F6' },
-};
-
-const TRANS: Record<string, string> = {
-  أ:'Alif', ب:'Baa', ج:'Jeem', د:'Daal', ه:'Haa', و:'Waaw', ز:'Zay',
-  ح:'Hhaa', ط:'Ttaa', ي:'Yaa', ك:'Kaaf', ل:'Laam', م:'Meem', ن:'Noon',
-  س:'Seen', ع:'Ayn', ف:'Faa', ص:'Saad', ق:'Qaaf', ر:'Raa', ش:'Sheen',
-  ت:'Taa', ث:'Thaa', خ:'Khaa', ذ:'Dhaal', ض:'Ddad', ظ:'Ddhaa', غ:'Ghayn',
-};
-
-const PHOEN: Record<string, string> = {
-  أ:'𐤀', ب:'𐤁', ج:'𐤂', د:'𐤃', ه:'𐤄', و:'𐤅', ز:'𐤆',
-  ح:'𐤇', ط:'𐤈', ي:'𐤉', ك:'𐤊', ل:'𐤋', م:'𐤌', ن:'𐤍',
-  س:'𐤎', ع:'𐤏', ف:'𐤐', ص:'𐤑', ق:'𐤒', ر:'𐤓', ش:'𐤔',
-  ت:'𐤕', ث:'𐤔', خ:'𐤇', ذ:'𐤃', ض:'𐤑', ظ:'𐤈', غ:'𐤏',
-};
-
-const SOUND_ROOT: Record<string, string> = {
-  أ:'ATUM', م:'ATUM', و:'ATUM', ن:'ATUM', ه:'ATUM', ل:'ATUM',
-  ب:'BULL', ر:'BULL', ف:'BULL', ح:'BULL', ع:'BULL',
-  ط:'TOR', د:'TOR', ز:'TOR', ك:'TOR', ت:'TOR', ق:'TOR',
 };
 
 function RadarChart({ data, color, size = 240 }: { data: number[]; color: string; size?: number }) {
@@ -116,7 +96,13 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
   const [selectedIdx, setSelectedIdx] = useState(0);
   const letter = letters[selectedIdx] || letters[0];
 
-  const letterRootId = SOUND_ROOT[letter?.arabic] || 'ATUM';
+  const soundRootMap: Record<string, string> = {
+    أ: 'ATUM', م: 'ATUM', و: 'ATUM', ن: 'ATUM', ه: 'ATUM', ل: 'ATUM',
+    ب: 'BULL', ر: 'BULL', ف: 'BULL', ح: 'BULL', ع: 'BULL',
+    ط: 'TOR', د: 'TOR', ز: 'TOR', ك: 'TOR', ت: 'TOR', ق: 'TOR',
+  };
+
+  const letterRootId = soundRootMap[letter?.arabic] || 'ATUM';
   const letterRoot = ROOTS_DATA[letterRootId];
 
   const radarData = [
@@ -127,24 +113,16 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
     0.55 + Math.sin(selectedIdx * 0.5) * 0.3,
   ];
 
-  const relatedWords = useMemo(() => words.filter(w =>
+  const relatedWords = words.filter(w =>
     w.arabicRoot.includes(letter?.arabic) || w.rootId === letterRootId
-  ).slice(0, 5), [words, letter, letterRootId]);
-
-  if (!letter) {
-    return (
-      <div style={{ padding: '55px 34px 89px', textAlign: 'center', color: '#484f58' }}>
-        Loading letters...
-      </div>
-    );
-  }
+  ).slice(0, 5);
 
   return (
     <>
       <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 55, flexWrap: 'wrap' }}>
           {letters.map((l, i) => {
-            const lr = SOUND_ROOT[l.arabic] || 'ATUM';
+            const lr = soundRootMap[l.arabic] || 'ATUM';
             const lRoot = ROOTS_DATA[lr];
             return (
               <button
@@ -173,62 +151,35 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
 
           <div style={{ textAlign: 'center' }}>
             <div style={{
-              fontFamily: "'Amiri', serif", fontSize: 120, color: '#f39c12',
+              fontFamily: "'Amiri', serif", fontSize: 144, color: '#f39c12',
               lineHeight: 1, direction: 'rtl',
               textShadow: `0 0 40px ${letterRoot.color}44, 0 0 80px ${letterRoot.color}22`,
-              marginBottom: 8,
+              marginBottom: 13,
               transition: 'all 610ms cubic-bezier(0.23, 1, 0.32, 1)',
             }}>
-              {letter.arabic}
+              {letter?.arabic}
             </div>
-            <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px', marginBottom: 2 }}>
-              {letter.name}
+            <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px', marginBottom: 4 }}>
+              {letter?.name}
             </div>
-            <div style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", marginBottom: 4 }}>
-              {TRANS[letter.arabic] || ''}
-            </div>
-            {letter.dna?.fundamentalFreqHz && (
-              <div style={{ fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace", marginBottom: 4 }}>
+            {letter?.dna?.fundamentalFreqHz && (
+              <div style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", marginBottom: 8 }}>
                 Hz: {letter.dna.fundamentalFreqHz}
               </div>
             )}
-            {letter.dna?.energyType && (
-              <div style={{ fontSize: 11, color: '#484f58', fontFamily: "'JetBrains Mono', monospace", marginBottom: 6, fontStyle: 'italic' }}>
-                {letter.dna.energyType}
-              </div>
-            )}
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 8, alignItems: 'center', marginBottom: 8 }}>
-              <RootBadge rootId={letterRootId} size="md" />
-              {letter.dna?.cnnConfirmed && (
-                <span style={{
-                  fontSize: 10, fontWeight: 600, letterSpacing: '1px',
-                  padding: '2px 8px', borderRadius: 6,
-                  background: 'rgba(34,197,94,0.15)', color: '#22C55E',
-                  border: '1px solid rgba(34,197,94,0.3)',
-                  fontFamily: "'JetBrains Mono', monospace",
-                }}>
-                  CNN
-                </span>
-              )}
-            </div>
-            <div style={{ fontSize: 12, color: '#484f58', fontFamily: "'JetBrains Mono', monospace", marginBottom: 8 }}>
-              Phoenician: {PHOEN[letter.arabic] || '?'}
-            </div>
+            <RootBadge rootId={letterRootId} size="md" />
 
-            <div style={{ marginTop: 21, display: 'flex', justifyContent: 'center', background: 'rgba(22,27,34,0.4)', borderRadius: 21, padding: 21, border: '1px solid rgba(48,54,61,0.3)' }}>
+            <div style={{ marginTop: 34, display: 'flex', justifyContent: 'center', background: 'rgba(22,27,34,0.4)', borderRadius: 21, padding: 21, border: '1px solid rgba(48,54,61,0.3)' }}>
               <RadarChart data={radarData} color={letterRoot.color} size={280} />
             </div>
-            <div style={{ marginTop: 8, fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ marginTop: 13, fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>
               DNA Profile — Linguistic Dimensions
             </div>
           </div>
 
           <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
-            <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 13 }}>
+            <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
               Etymologies
-            </div>
-            <div style={{ fontSize: 24, color: '#e6edf3', fontFamily: "'JetBrains Mono', monospace", marginBottom: 13 }}>
-              {words.filter(w => w.rootId === letterRootId).length}
             </div>
             {relatedWords.map(w => (
               <div key={w.id} style={{ padding: '10px 0', borderBottom: '1px solid rgba(48,54,61,0.3)', cursor: 'pointer' }}

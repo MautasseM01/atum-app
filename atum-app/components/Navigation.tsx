@@ -28,7 +28,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
       transition: 'background 377ms ease',
     }}>
       <div
-        style={{ display: 'flex', alignItems: 'center', gap: 13, cursor: 'pointer' }}
+        style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}
         onClick={() => onNavigate('home')}
       >
         <div style={{
@@ -37,6 +37,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           fontSize: 17, fontWeight: 700, color: '#fff',
           fontFamily: "'Cinzel Decorative', serif",
+          marginRight: 5,
         }}>
           A
         </div>
