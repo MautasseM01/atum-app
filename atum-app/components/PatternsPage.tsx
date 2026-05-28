@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import SectionHeader from '@/components/SectionHeader';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
 import Footer from '@/components/Footer';

@@ -36,7 +36,7 @@ export default function StatCard({ value, label, prefix = '', suffix = '', color
     }, { threshold: 0.3 });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
-  }, []);
+  }, [delay, lastVal]);
 
   const formatted = isInt
     ? Math.round(display).toLocaleString()

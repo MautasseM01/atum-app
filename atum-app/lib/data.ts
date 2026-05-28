@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import ethos from '@/data/etymologies.json';
+import ltrs from '@/data/letters.json';
 
 export interface RootInfo {
   id: string;
@@ -49,21 +49,22 @@ export const ROOT_DATA: Record<string, RootInfo> = {
 
 export function loadWords(): WordInfo[] {
   try {
-    const filePath = path.join(process.cwd(), 'data', 'etymologies.json');
-    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const bridge: any[] = parsed.bridge || [];
-    const database: any[] = parsed.database || [];
+    const parsed = ethos as { bridge?: { id?: string; modernWord?: string; arabicRoot?: string; transformationRule?: string; modernMeaning?: string; confidence?: unknown; languagePath?: string; targetLanguage?: string }[]; database?: { id?: number; word?: string; arabicRoot?: string; root?: string; meaning?: string; confidence?: unknown; languagePath?: string }[] };
+    const bridge = parsed.bridge || [];
+    const database = parsed.database || [];
 
-    const mapConfidence = (c: string) => {
+    const mapConfidence = (c: unknown) => {
       if (!c) return 'emerging';
-      const n = c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-      if (n.includes('proven') || n.includes('high') || n.includes('عال') || n.includes('مؤكد')) return 'proven';
-      if (n.includes('strong') || n.includes('probable') || n.includes('محتم')) return 'strong';
-      if (n.includes('moderate') || n.includes('exploratory') || n.includes('استكش')) return 'moderate';
+      const s = String(c).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      if (s.includes('proven') || s.includes('high') || s.includes('عال') || s.includes('مؤكد')) return 'proven';
+      if (s.includes('strong') || s.includes('probable') || s.includes('محتم')) return 'strong';
+      if (s.includes('moderate') || s.includes('exploratory') || s.includes('استكش')) return 'moderate';
+      if (s.includes('0.9') || (typeof c === 'number' && c >= 0.9)) return 'proven';
+      if (s.includes('0.7') || (typeof c === 'number' && c >= 0.7)) return 'strong';
       return 'emerging';
     };
 
-    const mapRoot = (r: string) => {
+    const mapRoot = (r: string | undefined) => {
       if (!r) return 'ATUM';
       const u = r.toUpperCase().replace('ATOM', 'ATUM');
       if (['ATUM', 'BULL', 'TOR'].includes(u)) return u;
@@ -89,7 +90,7 @@ export function loadWords(): WordInfo[] {
 
     for (const d of database) {
       words.push({
-        id: `db-${d.id}`,
+        id: `db-${d.id ?? ''}`,
         european: d.word || '',
         arabicRoot: d.arabicRoot || '',
         transliteration: '',
@@ -129,9 +130,7 @@ export interface RawLetter {
 
 export function loadLetters(): RawLetter[] {
   try {
-    const filePath = path.join(process.cwd(), 'data', 'letters.json');
-    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    return parsed.letters || [];
+    return (ltrs as { letters?: RawLetter[] }).letters || [];
   } catch {
     return [];
   }

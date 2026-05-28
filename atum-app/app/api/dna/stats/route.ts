@@ -40,11 +40,10 @@ export async function GET() {
     }
   }
 
-  const [etymologies, ibdalRules, letters, rootPatterns] = await Promise.all([
+  const [etymologies, ibdalRules, letters] = await Promise.all([
     loadJSON('etymologies.json'),
     loadJSON('ibdalRules.json'),
     loadJSON('letters.json'),
-    loadJSON('rootPatterns.json'),
   ]);
 
   // Root distribution from the database section

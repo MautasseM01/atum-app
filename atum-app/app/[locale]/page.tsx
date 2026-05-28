@@ -1,5 +1,3 @@
-import fs from 'fs';
-import path from 'path';
 import { loadWords } from '@/lib/data';
 import HomePage from '@/components/HomePage';
 

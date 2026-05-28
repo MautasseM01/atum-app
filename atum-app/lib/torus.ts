@@ -169,9 +169,9 @@ export default class TorusField {
       const driftX = Math.sin(t + p.drift) * p.driftAmp;
       const driftY = Math.cos(t * 0.7 + p.drift) * p.driftAmp;
 
-      let x = (this.R + this.r * Math.cos(v)) * Math.cos(u) + driftX;
-      let y = (this.R + this.r * Math.cos(v)) * Math.sin(u) + driftY;
-      let z = this.r * Math.sin(v);
+      const x = (this.R + this.r * Math.cos(v)) * Math.cos(u) + driftX;
+      const y = (this.R + this.r * Math.cos(v)) * Math.sin(u) + driftY;
+      const z = this.r * Math.sin(v);
 
       const y1 = y * cosX - z * sinX;
       const z1 = y * sinX + z * cosX;

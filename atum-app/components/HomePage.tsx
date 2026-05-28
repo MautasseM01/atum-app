@@ -35,8 +35,8 @@ function RootCircle({ rootId, onNavigate, words }: { rootId: string; onNavigate:
   const [reveal, setReveal] = useState(false);
 
   useEffect(() => {
-    if (hover) { const t = setTimeout(() => setReveal(true), 150); return () => clearTimeout(t); }
-    else setReveal(false);
+    const t = setTimeout(() => setReveal(hover), hover ? 150 : 0);
+    return () => clearTimeout(t);
   }, [hover]);
 
   return (

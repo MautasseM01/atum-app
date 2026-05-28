@@ -111,7 +111,7 @@ export async function GET(req: NextRequest) {
       pagination: { total, offset, limit, returned: paginated.length },
       results: paginated,
     });
-  } catch (err) {
+  } catch {
     return NextResponse.json(
       { success: false, error: 'Failed to search etymologies' },
       { status: 500 }

@@ -1,5 +1,3 @@
-import { cn } from '@/lib/utils';
-
 interface RootBadgeProps {
   rootId: string;
   size?: 'sm' | 'md' | 'lg';

@@ -12,11 +12,10 @@ interface WordItem {
 }
 
 interface ExplorerPageProps {
-  locale: string;
   words: WordItem[];
 }
 
-export default function ExplorerPage({ locale, words }: ExplorerPageProps) {
+export default function ExplorerPage({ words }: ExplorerPageProps) {
   const [search, setSearch] = useState('');
   const [activeRoot, setActiveRoot] = useState('ALL');
   const [expandedId, setExpandedId] = useState<string | null>(null);

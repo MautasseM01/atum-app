@@ -32,10 +32,10 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
         onClick={() => onNavigate('home')}
       >
         <div style={{
-          width: 34, height: 34, borderRadius: '50%',
+          width: 38, height: 38, borderRadius: '50%',
           background: 'linear-gradient(135deg, #22C55E 0%, #3B82F6 50%, #EF4444 100%)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 14, fontWeight: 700, color: '#fff',
+          fontSize: 17, fontWeight: 700, color: '#fff',
           fontFamily: "'Cinzel Decorative', serif",
         }}>
           A
