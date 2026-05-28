@@ -223,6 +223,24 @@ export default function HomePage({ locale, words }: HomePageProps) {
             <RootCircle rootId="BULL" onNavigate={handleNavigate} words={words} />
             <RootCircle rootId="TOR" onNavigate={handleNavigate} words={words} />
           </div>
+
+          <div style={{
+            maxWidth: 550, margin: '55px auto 0',
+            background: 'rgba(22, 27, 34, 0.6)',
+            border: '1px solid rgba(243, 156, 18, 0.25)',
+            borderRadius: 13, padding: '21px 34px',
+            textAlign: 'center',
+          }}>
+            <div style={{ fontSize: 14, color: '#f39c12', marginBottom: 13, fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px' }}>
+              How to use ATUM
+            </div>
+            <p style={{ fontSize: 15, color: '#8b949e', fontStyle: 'italic', lineHeight: 1.8, margin: 0 }}>
+              Think of ATUM, BULL, TOR like Arabic verb patterns (أوزان). Once you recognize the pattern, you see it everywhere.
+            </p>
+            <p style={{ fontSize: 15, color: '#8b949e', fontStyle: 'italic', lineHeight: 1.8, margin: '13px 0 0' }}>
+              Try: search &quot;paradise&quot; in Explorer → you&apos;ll find its Arabic root فردس
+            </p>
+          </div>
         </div>
       </section>
 

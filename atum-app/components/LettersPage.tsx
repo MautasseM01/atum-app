@@ -60,8 +60,8 @@ function RadarChart({ data, color, size = 240 }: { data: number[]; color: string
 
 function EvolutionTimeline({ letter }: { letter: LetterItem }) {
   const stages = [
-    { era: '~1800 BCE', label: 'Proto-Sinaitic', glyph: '𓃾', color: '#f39c12' },
-    { era: '~1050 BCE', label: 'Phoenician', glyph: '𐤀', color: '#EF4444' },
+    { era: '~1800 BCE', label: 'Proto-Sinaitic', glyph: letter.protoSinaitic || '𓃾', color: '#f39c12' },
+    { era: '~1050 BCE', label: 'Phoenician', glyph: letter.phoenician || '𐤀', color: '#EF4444' },
     { era: '~800 BCE', label: 'Aramaic', glyph: letter.arabic, color: '#3B82F6' },
     { era: '~400 CE', label: 'Arabic', glyph: letter.arabic, color: '#22C55E' },
     { era: 'Modern', label: 'Present', glyph: letter.arabic, color: '#f39c12' },
@@ -128,6 +128,7 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
               <button
                 key={l.arabic}
                 onClick={() => setSelectedIdx(i)}
+                title={`${l.name} — ${lr} family · ${l.dna?.cnnConfirmed ? 'CNN confirmed' : ''} · Appears in ${(words.filter(w => w.arabicRoot.includes(l.arabic) || w.rootId === lr).length).toLocaleString()} etymologies`}
                 style={{
                   width: 48, height: 48, borderRadius: 13,
                   border: `1px solid ${selectedIdx === i ? lRoot.color : 'rgba(48,54,61,0.4)'}`,

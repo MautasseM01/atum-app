@@ -20,13 +20,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": null,
-        "fundamentalFreqHz": 432.0,
+        "fundamentalFreqHz": 432,
         "corpusFrequency": 8.2,
         "energyType": "الإعلان والنداء",
         "mataqadatClass": "طاقي",
         "phonosemanticVerdict": "🔍",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤀",
+      "protoSinaitic": "𓃾"
     },
     {
       "id": 2,
@@ -37,13 +39,15 @@
       "element": "تراب",
       "dna": {
         "semanticDepth": 9.1,
-        "fundamentalFreqHz": 216.0,
+        "fundamentalFreqHz": 216,
         "corpusFrequency": 7.1,
         "energyType": "استقبال وإعطاء / Earth-نبضة أولى",
         "mataqadatClass": "حاملة / نبضة_أولى [🧩 Bonacci+Tenen]",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤁",
+      "protoSinaitic": "𓉐"
     },
     {
       "id": 3,
@@ -54,13 +58,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 9.2,
-        "fundamentalFreqHz": 144.0,
+        "fundamentalFreqHz": 144,
         "corpusFrequency": 6.4,
         "energyType": "إطلاق وإنجاز",
         "mataqadatClass": "حركية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤂",
+      "protoSinaitic": "𓌙"
     },
     {
       "id": 4,
@@ -71,13 +77,15 @@
       "element": "تراب",
       "dna": {
         "semanticDepth": 8.7,
-        "fundamentalFreqHz": 288.0,
+        "fundamentalFreqHz": 288,
         "corpusFrequency": 5.8,
         "energyType": "التوجيه والإرشاد",
         "mataqadatClass": "توجيهية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤃",
+      "protoSinaitic": "𓋇"
     },
     {
       "id": 5,
@@ -88,13 +96,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 8.3,
-        "fundamentalFreqHz": 480.0,
+        "fundamentalFreqHz": 480,
         "corpusFrequency": 4.6,
         "energyType": "الإلهام والابتكار",
         "mataqadatClass": "روحية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤄",
+      "protoSinaitic": "𓀠"
     },
     {
       "id": 6,
@@ -105,13 +115,15 @@
       "element": "ماء",
       "dna": {
         "semanticDepth": 9.6,
-        "fundamentalFreqHz": 384.0,
+        "fundamentalFreqHz": 384,
         "corpusFrequency": 6.9,
         "energyType": "الوحدة والتضامن",
         "mataqadatClass": "واصلة",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤅",
+      "protoSinaitic": "𓏲"
     },
     {
       "id": 7,
@@ -122,13 +134,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 7.8,
-        "fundamentalFreqHz": 384.0,
+        "fundamentalFreqHz": 384,
         "corpusFrequency": 4.1,
         "energyType": "الإثراء والتجميل",
         "mataqadatClass": "جمالية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤆",
+      "protoSinaitic": "𓌔"
     },
     {
       "id": 8,
@@ -139,13 +153,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 9.8,
-        "fundamentalFreqHz": 108.0,
+        "fundamentalFreqHz": 108,
         "corpusFrequency": 4.2,
         "energyType": "العطاء والرعاية",
         "mataqadatClass": "محيية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤇",
+      "protoSinaitic": "𓉗"
     },
     {
       "id": 9,
@@ -156,13 +172,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 7.9,
-        "fundamentalFreqHz": 486.0,
+        "fundamentalFreqHz": 486,
         "corpusFrequency": 3.2,
         "energyType": "الفطرة والتصميم",
         "mataqadatClass": "طبيعية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤈",
+      "protoSinaitic": "𓄤"
     },
     {
       "id": 10,
@@ -173,13 +191,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 9.2,
-        "fundamentalFreqHz": 480.0,
+        "fundamentalFreqHz": 480,
         "corpusFrequency": 5.7,
         "energyType": "الإنجاز والعمل",
         "mataqadatClass": "فاعلة",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤉",
+      "protoSinaitic": "𓂝"
     },
     {
       "id": 11,
@@ -190,13 +210,15 @@
       "element": "تراب",
       "dna": {
         "semanticDepth": 8.1,
-        "fundamentalFreqHz": 320.0,
+        "fundamentalFreqHz": 320,
         "corpusFrequency": 5.9,
         "energyType": "التنفيذ والإنجاز",
         "mataqadatClass": "تشكيلية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤊",
+      "protoSinaitic": "𓂧"
     },
     {
       "id": 12,
@@ -207,13 +229,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 9.4,
-        "fundamentalFreqHz": 341.0,
+        "fundamentalFreqHz": 341,
         "corpusFrequency": 8.5,
         "energyType": "الانتماء والارتباط / Blue Shift مغناطيسي",
         "mataqadatClass": "توجيهية لطيفة / سائل_مائي [🧩 Bonacci+Tenen]",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤋",
+      "protoSinaitic": "𓌅"
     },
     {
       "id": 13,
@@ -224,13 +248,15 @@
       "element": "ماء",
       "dna": {
         "semanticDepth": 9.7,
-        "fundamentalFreqHz": 256.0,
+        "fundamentalFreqHz": 256,
         "corpusFrequency": 8.1,
         "energyType": "الإنبات والتغذية",
         "mataqadatClass": "أصيلة",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤌",
+      "protoSinaitic": "𓈖"
     },
     {
       "id": 14,
@@ -240,14 +266,16 @@
       "abjadValue": 50,
       "element": "ماء",
       "dna": {
-        "semanticDepth": 9.0,
-        "fundamentalFreqHz": 320.0,
+        "semanticDepth": 9,
+        "fundamentalFreqHz": 320,
         "corpusFrequency": 6.7,
         "energyType": "الإنارة والإرشاد",
         "mataqadatClass": "منيرة",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤍",
+      "protoSinaitic": "𓆓"
     },
     {
       "id": 15,
@@ -258,13 +286,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 8.2,
-        "fundamentalFreqHz": 480.0,
+        "fundamentalFreqHz": 480,
         "corpusFrequency": 6.2,
         "energyType": "التيسير والتسهيل",
         "mataqadatClass": "انسيابية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤎",
+      "protoSinaitic": "𓊽"
     },
     {
       "id": 16,
@@ -274,14 +304,16 @@
       "abjadValue": 70,
       "element": "ماء",
       "dna": {
-        "semanticDepth": 10.0,
-        "fundamentalFreqHz": 280.0,
+        "semanticDepth": 10,
+        "fundamentalFreqHz": 280,
         "corpusFrequency": 7.3,
         "energyType": "المعرفة والعلم",
         "mataqadatClass": "رائية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤏",
+      "protoSinaitic": "𓁹"
     },
     {
       "id": 17,
@@ -292,13 +324,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 8.5,
-        "fundamentalFreqHz": 352.0,
+        "fundamentalFreqHz": 352,
         "corpusFrequency": 5.1,
         "energyType": "التواصل والبيان",
         "mataqadatClass": "تعبيرية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤐",
+      "protoSinaitic": "𓂋"
     },
     {
       "id": 18,
@@ -308,14 +342,16 @@
       "abjadValue": 90,
       "element": "تراب",
       "dna": {
-        "semanticDepth": 8.0,
-        "fundamentalFreqHz": 270.0,
+        "semanticDepth": 8,
+        "fundamentalFreqHz": 270,
         "corpusFrequency": 3.4,
         "energyType": "الجودة والإتقان",
         "mataqadatClass": "تنقوية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤑",
+      "protoSinaitic": "𓇋"
     },
     {
       "id": 19,
@@ -326,13 +362,15 @@
       "element": "تراب",
       "dna": {
         "semanticDepth": 9.5,
-        "fundamentalFreqHz": 192.0,
+        "fundamentalFreqHz": 192,
         "corpusFrequency": 4.4,
         "energyType": "السلطة والقيادة",
         "mataqadatClass": "ملكية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤒",
+      "protoSinaitic": "𓃻"
     },
     {
       "id": 20,
@@ -342,14 +380,16 @@
       "abjadValue": 200,
       "element": "نار",
       "dna": {
-        "semanticDepth": 9.0,
-        "fundamentalFreqHz": 340.0,
+        "semanticDepth": 9,
+        "fundamentalFreqHz": 340,
         "corpusFrequency": 7.8,
         "energyType": "الحركة والسفر / Red Shift إشعاعي",
         "mataqadatClass": "دينامية / سائل_ناري [🧩 Bonacci+Tenen]",
         "phonosemanticVerdict": "🧩",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤓",
+      "protoSinaitic": "𓁶"
     },
     {
       "id": 21,
@@ -360,13 +400,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 8.4,
-        "fundamentalFreqHz": 360.0,
+        "fundamentalFreqHz": 360,
         "corpusFrequency": 4.8,
         "energyType": "الإلهام والإشراق",
         "mataqadatClass": "إشعاعية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤔",
+      "protoSinaitic": "𓌓"
     },
     {
       "id": 22,
@@ -383,7 +425,9 @@
         "mataqadatClass": "مكملة / اكتمال_دوري [🧩 Bonacci+Tenen]",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤕",
+      "protoSinaitic": "𓏴"
     },
     {
       "id": 23,
@@ -394,13 +438,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 6.4,
-        "fundamentalFreqHz": 440.0,
+        "fundamentalFreqHz": 440,
         "corpusFrequency": 3.1,
         "energyType": "تكثيف وتجميع",
         "mataqadatClass": "تجميعية",
         "phonosemanticVerdict": "🧩",
         "cnnConfirmed": true
-      }
+      },
+      "phoenician": "𐤔",
+      "protoSinaitic": "𓌓"
     },
     {
       "id": 24,
@@ -411,13 +457,15 @@
       "element": "نار",
       "dna": {
         "semanticDepth": 7.8,
-        "fundamentalFreqHz": 90.0,
+        "fundamentalFreqHz": 90,
         "corpusFrequency": 2.8,
         "energyType": "الاكتشاف والتنقيب",
         "mataqadatClass": "كاشفة",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤇",
+      "protoSinaitic": "𓉗"
     },
     {
       "id": 25,
@@ -428,13 +476,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 7.5,
-        "fundamentalFreqHz": 350.0,
+        "fundamentalFreqHz": 350,
         "corpusFrequency": 2.6,
         "energyType": "التعريف الذاتي",
         "mataqadatClass": "تمييزية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤃",
+      "protoSinaitic": "𓋇"
     },
     {
       "id": 26,
@@ -444,14 +494,16 @@
       "abjadValue": 800,
       "element": "تراب",
       "dna": {
-        "semanticDepth": 10.0,
-        "fundamentalFreqHz": 160.0,
+        "semanticDepth": 10,
+        "fundamentalFreqHz": 160,
         "corpusFrequency": 2.9,
         "energyType": "التأكيد والفرض",
         "mataqadatClass": "حصرية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤑",
+      "protoSinaitic": "𓇋"
     },
     {
       "id": 27,
@@ -462,13 +514,15 @@
       "element": "هواء",
       "dna": {
         "semanticDepth": 7.2,
-        "fundamentalFreqHz": 200.0,
+        "fundamentalFreqHz": 200,
         "corpusFrequency": 2.1,
         "energyType": "الملاحظة والرصد",
         "mataqadatClass": "ظاهراتية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤈",
+      "protoSinaitic": "𓄤"
     },
     {
       "id": 28,
@@ -479,13 +533,15 @@
       "element": "ماء",
       "dna": {
         "semanticDepth": 9.3,
-        "fundamentalFreqHz": 120.0,
+        "fundamentalFreqHz": 120,
         "corpusFrequency": 2.3,
         "energyType": "الحكمة والتعالي",
         "mataqadatClass": "غيابية",
         "phonosemanticVerdict": "🔬",
         "cnnConfirmed": false
-      }
+      },
+      "phoenician": "𐤏",
+      "protoSinaitic": "𓁹"
     }
   ]
 }

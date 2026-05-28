@@ -269,11 +269,19 @@ export default function PatternsPage({ locale, words }: PatternsPageProps) {
         </div>
 
         {mode === 'learn' && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 21 }}>
-            <LearnCard rootId="ATUM" words={words} />
-            <LearnCard rootId="BULL" words={words} />
-            <LearnCard rootId="TOR" words={words} />
-          </div>
+          <>
+            <div style={{ maxWidth: 700, margin: '0 auto 34px', textAlign: 'center', fontSize: 15, color: '#8b949e', fontStyle: 'italic', lineHeight: 1.9 }}>
+              The same way Arabic <span style={{ fontFamily: "'Amiri', serif", fontSize: 20, color: '#f39c12' }}>أوزان الأفعال</span> give you:<br />
+              كتب → كاتب، مكتوب، كتابة، مكتبة...<br /><br />
+              ATUM, BULL, TOR work across ALL languages:<br />
+              طور → TOR → Tour, Tower, Torus, Tornado...
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 21 }}>
+              <LearnCard rootId="ATUM" words={words} />
+              <LearnCard rootId="BULL" words={words} />
+              <LearnCard rootId="TOR" words={words} />
+            </div>
+          </>
         )}
 
         {mode === 'practice' && <PracticeMode words={words} />}

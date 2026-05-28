@@ -222,12 +222,36 @@ export default function ExplorerPage({
         ) : (
           <div style={{ textAlign: 'center', padding: '89px 34px', color: '#484f58' }}>
             <div style={{ fontSize: 55, marginBottom: 21 }}>⌕</div>
-            <div style={{ fontSize: 18, marginBottom: 8 }}>
-              {search ? `No results for "${search}"` : 'Start typing to explore'}
+            <div style={{ fontSize: 18, marginBottom: 8, color: '#e6edf3' }}>
+              {search ? `No results for "${search}"` : 'Try searching any word'}
             </div>
-            <div style={{ fontSize: 14 }}>
-              Try searching for &quot;atom&quot;, &quot;tower&quot;, or &quot;bold&quot;
+            <div style={{ fontSize: 14, marginBottom: 21, color: '#8b949e' }}>
+              {search ? 'Try a different search term' : 'Click an example to see its root'}
             </div>
+            <div style={{ display: 'flex', gap: 13, justifyContent: 'center', flexWrap: 'wrap' }}>
+              {['paradise', 'atlas', 'alcohol'].map(ex => (
+                <button
+                  key={ex}
+                  onClick={() => onSearch(ex)}
+                  style={{
+                    padding: '10px 24px', borderRadius: 21,
+                    background: 'rgba(243,156,18,0.1)',
+                    border: '1px solid rgba(243,156,18,0.3)',
+                    color: '#f39c12', cursor: 'pointer',
+                    fontFamily: "'Cinzel Decorative', serif",
+                    fontSize: 16, letterSpacing: '1px',
+                    transition: 'all 233ms ease',
+                  }}
+                >
+                  {ex}
+                </button>
+              ))}
+            </div>
+            {!search && (
+              <div style={{ marginTop: 34, fontSize: 14, color: '#484f58' }}>
+                Or browse by root →
+              </div>
+            )}
           </div>
         )}
       </div>

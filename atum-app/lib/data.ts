@@ -116,6 +116,8 @@ export interface RawLetter {
   nameAr: string;
   abjadValue: number;
   element: string;
+  phoenician: string;
+  protoSinaitic: string;
   transliteration?: string;
   dna?: {
     semanticDepth?: number;
