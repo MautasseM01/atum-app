@@ -17,6 +17,10 @@ interface Concept {
   id: string; title: string; topic: string; content: string; sourceFile: string;
 }
 
+interface ScoredConcept extends Concept {
+  relevance: number; matchType: string;
+}
+
 const ROOT_PRINCIPLES: Record<string, { principle: string; physics: string; daily: string[] }> = {
   ATUM: {
     principle: 'Unity · Inertia · Containment',
@@ -46,24 +50,24 @@ export default function WordPage() {
   const locale = params?.locale as string || 'en';
 
   const [word, setWord] = useState<WordData | null>(null);
-  const [concepts, setConcepts] = useState<Concept[]>([]);
+  const [concepts, setConcepts] = useState<ScoredConcept[]>([]);
   const [related, setRelated] = useState<WordData[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!wordSlug) return;
-    Promise.all([
-      fetch(`/api/etymology/search?q=${encodeURIComponent(wordSlug)}&limit=50`).then(r => r.json()),
-      fetch('/api/concepts').then(r => r.json()),
-    ]).then(([wordRes, conceptRes]) => {
+    setLoading(true);
+    fetch(`/api/etymology/search?q=${encodeURIComponent(wordSlug)}&limit=50`).then(r => r.json()).then(wordRes => {
       const results = wordRes.results || [];
       const found = results.find((r: WordData) => r.european.toLowerCase() === wordSlug.toLowerCase()) || results[0];
       setWord(found || null);
       if (found) {
         const sameRoot = results.filter((r: WordData) => r.rootId === found.rootId && r.id !== found.id);
         setRelated(sameRoot.slice(0, 10));
+        fetch(`/api/concepts/related?root=${found.rootId}&word=${encodeURIComponent(found.european)}`).then(r => r.json()).then(cr => {
+          setConcepts(cr.concepts || []);
+        });
       }
-      setConcepts(conceptRes.concepts || []);
     }).finally(() => setLoading(false));
   }, [wordSlug]);
 
@@ -95,13 +99,7 @@ export default function WordPage() {
   }
 
   const rootInfo = ROOT_PRINCIPLES[word.rootId];
-  const filteredConcepts = concepts.filter(c => c.topic === 'roots-explanation' || c.topic === 'physics');
-  const relatedConcept = filteredConcepts.find(c =>
-    c.title.toLowerCase().includes(word.rootId.toLowerCase()) ||
-    c.topic === word.rootId.toLowerCase()
-  );
   const langSteps = ['AR', 'GR', 'LA', 'EN', 'FR'];
-  const langIdx = langSteps.indexOf(word.language);
   const langsBefore = langSteps.slice(0, langSteps.indexOf(word.language) + 1);
 
   return (
@@ -228,21 +226,32 @@ export default function WordPage() {
             <p style={{ fontSize: 16, color: '#8b949e', lineHeight: 1.8 }}>
               {rootInfo?.physics}
             </p>
-            {relatedConcept && (
-              <div style={{
-                marginTop: 21, padding: '21px', borderRadius: 13,
-                background: 'rgba(243,156,18,0.06)',
-                border: '1px solid rgba(243,156,18,0.2)',
-              }}>
-                <div style={{ fontSize: 13, color: '#f39c12', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px', marginBottom: 8, textTransform: 'uppercase' }}>
+            {concepts.length > 0 && (
+              <div style={{ marginTop: 21, display: 'flex', flexDirection: 'column', gap: 13 }}>
+                <div style={{ fontSize: 13, color: '#f39c12', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px', textTransform: 'uppercase' }}>
                   From the Sources
                 </div>
-                <p style={{ fontSize: 15, color: '#8b949e', lineHeight: 1.7, fontStyle: 'italic', margin: 0 }}>
-                  {relatedConcept.content}
-                </p>
-                <div style={{ fontSize: 11, color: '#484f58', marginTop: 8, fontFamily: "'JetBrains Mono', monospace" }}>
-                  — {relatedConcept.sourceFile}
-                </div>
+                {concepts.map(c => (
+                  <div key={c.id} style={{
+                    padding: '21px', borderRadius: 13,
+                    background: 'rgba(243,156,18,0.04)',
+                    border: '1px solid rgba(243,156,18,0.15)',
+                  }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+                      <div style={{ fontSize: 15, color: '#e6edf3', fontWeight: 600 }}>{c.title}</div>
+                      <span style={{
+                        fontSize: 10, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
+                        background: 'rgba(48,54,61,0.5)', padding: '2px 8px', borderRadius: 4, textTransform: 'uppercase',
+                      }}>{c.topic}</span>
+                    </div>
+                    <p style={{ fontSize: 14, color: '#8b949e', lineHeight: 1.7, fontStyle: 'italic', margin: 0 }}>
+                      {c.content}
+                    </p>
+                    <div style={{ fontSize: 11, color: '#484f58', marginTop: 8, fontFamily: "'JetBrains Mono', monospace" }}>
+                      — {c.sourceFile}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
           </div>
