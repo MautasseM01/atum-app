@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "total": 18,
+    "generated": true,
+    "sources": [
+      "ATMOLOGY_The_Source_Code_of_Reality.pdf",
+      "ATOM_BULL_TOR_The_Cosmic_Code.pdf",
+      "The_Universal_Code_ATOM_BULL_TOR.pdf",
+      "The_Universal_Blueprint.pdf",
+      "Physics_The_Mother_Tongue.pdf",
+      "Atmology_Source_Code.pdf"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "c001",
+      "title": "The Three Roots as Cosmic Principles",
+      "topic": "roots-explanation",
+      "content": "ATUM (Unity/Inertia), BULL (Radiation/Expansion), and TOR (Rotation/Cycles) form the fundamental trinity underlying all language, matter, and energy. These three principles manifest in physics as the three laws of motion, in chemistry as the three states of matter, and in language as the three root patterns from which all words derive.",
+      "sourceFile": "ATMOLOGY_The_Source_Code_of_Reality.pdf"
+    },
+    {
+      "id": "c002",
+      "title": "Atom as Indivisible Unit",
+      "topic": "atom",
+      "content": "The word atom comes from Greek atomos meaning indivisible. ATUM in Arabic carries the same meaning: to complete, to make whole, the unified state. This is not coincidence but evidence of a shared conceptual root. ATUM words describe things that are fundamental, unified, and self-contained.",
+      "sourceFile": "ATMOLOGY_The_Source_Code_of_Reality.pdf"
+    },
+    {
+      "id": "c003",
+      "title": "Electromagnetic Nature of Sound",
+      "topic": "electromagnetic",
+      "content": "Every sound produces a specific electromagnetic frequency. Arabic letters each have a measurable Hz value. The CNN achieved 99.7% accuracy matching Arabic letters to their Chladni wave patterns, proving that the phonetic shapes of letters are determined by underlying electromagnetic principles, not arbitrary convention.",
+      "sourceFile": "Physics_The_Mother_Tongue.pdf"
+    },
+    {
+      "id": "c004",
+      "title": "Sacred Geometry in Letter Forms",
+      "topic": "sacred-geometry",
+      "content": "Arabic letters embody sacred geometric proportions. The Alif is a vertical line (unity), the Ba is a cup (receptacle), the Jim is a curve (growth). These shapes correspond to the Platonic solids and the five elements, creating a direct visual-spiritual correspondence between the written letter and its cosmic meaning.",
+      "sourceFile": "The_Universal_Blueprint.pdf"
+    },
+    {
+      "id": "c005",
+      "title": "Language Originates in Wave Patterns",
+      "topic": "language-origin",
+      "content": "Language did not originate as arbitrary symbols but as acoustic imprints of natural phenomena. The sound of thunder (T-R), the sound of water (M-W), the sound of wind (S-F) are echoed in roots across all language families. ATUM/BULL/TOR represent three fundamental wave types: standing (ATUM), radiating (BULL), and rotating (TOR).",
+      "sourceFile": "Physics_The_Mother_Tongue.pdf"
+    },
+    {
+      "id": "c006",
+      "title": "Tor as Spiral Dynamics",
+      "topic": "physics",
+      "content": "TOR represents the toroidal or spiral dynamic — the most common energy pattern in the universe. From galaxies to hurricanes to DNA, energy follows toroidal paths. TOR-root words describe anything that turns, cycles, or structures: tour, tower, tornado, torus, turn, torque.",
+      "sourceFile": "ATOM_BULL_TOR_The_Cosmic_Code.pdf"
+    },
+    {
+      "id": "c007",
+      "title": "Bull as Radiant Expansion",
+      "topic": "physics",
+      "content": "BULL represents radiation — energy expanding outward from a center. This is the principle of fire, light, sound, and all wave propagation. BULL-root words describe anything that expands, radiates, or emits: ball, bulb, boil, bold, blast, bloom, balloon.",
+      "sourceFile": "ATOM_BULL_TOR_The_Cosmic_Code.pdf"
+    },
+    {
+      "id": "c008",
+      "title": "ATUM as Inertial Center",
+      "topic": "physics",
+      "content": "ATUM represents inertia — the tendency of matter to remain at rest or in uniform motion. This is the principle of mass, gravity, and stability. ATUM-root words describe anything that is fundamental, complete, or self-contained: atom, adam, adamant, anatomy, atmosphere.",
+      "sourceFile": "ATOM_BULL_TOR_The_Cosmic_Code.pdf"
+    },
+    {
+      "id": "c009",
+      "title": "Arabic Preserves Original Phonemes",
+      "topic": "language-origin",
+      "content": "Arabic has preserved 28 consonants vs Greek 23 and Latin 16 of the original Proto-Semitic/Phoenician inventory. This means Arabic is the closest living language to the original phonetic system from which all languages descend. This is why ATUM/BULL/TOR patterns are clearest in Arabic.",
+      "sourceFile": "The_Universal_Code_ATOM_BULL_TOR.pdf"
+    },
+    {
+      "id": "c010",
+      "title": "Three Roots as Universal Grammar",
+      "topic": "roots-explanation",
+      "content": "ATUM/BULL/TOR function as a universal deep grammar underlying Chomskyan universal grammar. Where Chomsky proposed abstract syntactic structures, ATMOLOGY proposes concrete phonetic-semantic roots that carry specific meanings based on their electromagnetic properties.",
+      "sourceFile": "ATMOLOGY_The_Source_Code_of_Reality.pdf"
+    },
+    {
+      "id": "c011",
+      "title": "Chladni Patterns and Letter Shapes",
+      "topic": "electromagnetic",
+      "content": "Ernst Chladni showed that sound frequencies create geometric patterns on vibrating plates. Each Arabic letter, when pronounced at its fundamental frequency (Hz), produces a Chladni pattern that matches the letter shape. CNN achieved 99.7% accuracy matching 28 letters to their acoustic signatures.",
+      "sourceFile": "Physics_The_Mother_Tongue.pdf"
+    },
+    {
+      "id": "c012",
+      "title": "The Abjad Numbering System",
+      "topic": "sacred-geometry",
+      "content": "The Arabic Abjad system assigns numerical values to letters: Alif=1, Ba=2, Jim=3, Dal=4, etc., following the same sequence as Hebrew Gematria and Greek Isopsephy. The statistical correlation between Abjad value and letter frequency is r=-0.693. Rare letters have higher numerical values. P<0.0001: less than 1 in 10,000 chance this is coincidence.",
+      "sourceFile": "The_Universal_Blueprint.pdf"
+    },
+    {
+      "id": "c013",
+      "title": "Physics of Sound: Longitudinal Waves",
+      "topic": "physics",
+      "content": "Sound travels as longitudinal pressure waves through air. The frequency determines pitch, amplitude determines loudness, and waveform determines timbre. Human speech modulates these wave parameters to encode meaning. The three root types correspond to wave topologies: ATUM=standing wave, BULL=longitudinal wave, TOR=transverse/spiral wave.",
+      "sourceFile": "Physics_The_Mother_Tongue.pdf"
+    },
+    {
+      "id": "c014",
+      "title": "Atomic Structure and Three Roots",
+      "topic": "atom",
+      "content": "The atom consists of a nucleus (ATUM — center/inertia) surrounded by electrons (BULL — radiation/expansion) in orbital shells (TOR — rotation/structure). These three principles mirror the three roots exactly. Language describing atomic phenomena naturally falls into these root categories.",
+      "sourceFile": "ATMOLOGY_The_Source_Code_of_Reality.pdf"
+    },
+    {
+      "id": "c015",
+      "title": "The Torus as Universal Energy Pattern",
+      "topic": "sacred-geometry",
+      "content": "The torus is the fundamental energy geometry of the universe. A torus has a central axis (ATUM), outward flow (BULL), and return rotation (TOR). This self-contained, self-sustaining energy pattern appears at every scale: atoms, cells, planets, stars, galaxies.",
+      "sourceFile": "Atmology_Source_Code.pdf"
+    },
+    {
+      "id": "c016",
+      "title": "Lam Contraction: Statistical Proof",
+      "topic": "language-origin",
+      "content": "Lam shows a statistically significant contraction effect (p<0.0001). In Arabic, the letter Lam modifies words by pulling energy inward — consistent with ATUM (inertia/contraction). This is the strongest statistical signal that Arabic letters carry inherent meaning rather than being arbitrary symbols.",
+      "sourceFile": "Atmology_Source_Code.pdf"
+    },
+    {
+      "id": "c017",
+      "title": "Ra Expansion: Statistical Signal",
+      "topic": "language-origin",
+      "content": "Ra shows a statistically significant expansion effect (p=0.028). Words containing Ra tend to describe outward, radiating concepts — consistent with BULL (radiation/expansion). This provides evidence that the sound-meaning connection is real and measurable.",
+      "sourceFile": "Atmology_Source_Code.pdf"
+    },
+    {
+      "id": "c018",
+      "title": "Five Elements in Arabic Linguistics",
+      "topic": "roots-explanation",
+      "content": "Arabic linguistics traditionally classifies letters by element: Nari (Fire), Hawai (Air), Mai (Water), Turabi (Earth). ATUM corresponds to Earth/Air (stable, containing), BULL to Fire (expanding, transforming), TOR to Water (flowing, cycling).",
+      "sourceFile": "The_Universal_Code_ATOM_BULL_TOR.pdf"
+    }
+  ]
+}

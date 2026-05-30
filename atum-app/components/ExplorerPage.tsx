@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
+import { useRouter, useParams } from 'next/navigation';
 import SearchBar from '@/components/SearchBar';
 import SectionHeader from '@/components/SectionHeader';
 import EtymologyCard from '@/components/EtymologyCard';
@@ -78,7 +79,9 @@ export default function ExplorerPage({
   rootCounts, search, activeRoot, activeLang,
   onSearch, onRootFilter, onLangFilter, onLoadMore,
 }: ExplorerPageProps) {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const router = useRouter();
+  const params = useParams();
+  const locale = params?.locale as string || 'en';
   const [sortBy, setSortBy] = useState('relevance');
   const sentinelRef = useRef<HTMLDivElement>(null);
 
@@ -202,8 +205,7 @@ export default function ExplorerPage({
                     rootId: word.rootId, rule: word.rule, meaning: word.meaning,
                     confidence: word.confidence, language: word.language,
                   }}
-                  expanded={expandedId === word.id}
-                  onClick={() => setExpandedId(expandedId === word.id ? null : word.id)}
+                  onClick={() => router.push(`/${locale}/etymology/${encodeURIComponent(word.european.toLowerCase())}`)}
                 />
               ))}
             </div>

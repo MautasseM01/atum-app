@@ -184,7 +184,7 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
             </div>
             {relatedWords.map(w => (
               <div key={w.id} style={{ padding: '10px 0', borderBottom: '1px solid rgba(48,54,61,0.3)', cursor: 'pointer' }}
-                onClick={() => router.push(`/${locale}/explorer?search=${encodeURIComponent(w.european)}`)}
+                onClick={() => router.push(`/${locale}/etymology/${encodeURIComponent(w.european.toLowerCase())}`)}
               >
                 <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3', marginBottom: 4 }}>
                   {w.european}
