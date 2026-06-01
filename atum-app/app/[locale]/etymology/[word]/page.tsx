@@ -6,6 +6,7 @@ import SectionHeader from '@/components/SectionHeader';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
 import Pronunciation from '@/components/Pronunciation';
+import InsightContent from '@/components/InsightContent';
 import Footer from '@/components/Footer';
 
 interface WordData {
@@ -19,6 +20,11 @@ interface Concept {
 
 interface ScoredConcept extends Concept {
   relevance: number; matchType: string;
+}
+
+interface Insight {
+  word: string; locale: string; content: string; excerpt: string;
+  meta: { arabicRoot: string; root: string; confidence: string };
 }
 
 const ROOT_PRINCIPLES: Record<string, { principle: string; physics: string; daily: string[] }> = {
@@ -52,6 +58,8 @@ export default function WordPage() {
   const [word, setWord] = useState<WordData | null>(null);
   const [concepts, setConcepts] = useState<ScoredConcept[]>([]);
   const [related, setRelated] = useState<WordData[]>([]);
+  const [insight, setInsight] = useState<Insight | null>(null);
+  const [insightSource, setInsightSource] = useState<'file' | 'fallback' | 'none'>('none');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -69,9 +77,15 @@ export default function WordPage() {
         fetch(`/api/concepts/related?root=${found.rootId}&word=${encodeURIComponent(found.european)}`).then(r => r.json()).then(cr => {
           setConcepts(cr.concepts || []);
         });
+        fetch(`/api/word-insight?word=${encodeURIComponent(found.european.toLowerCase())}&locale=${locale}&root=${found.rootId}`).then(r => r.json()).then(ir => {
+          if (ir.found) {
+            setInsight(ir.insight);
+            setInsightSource(ir.source);
+          }
+        });
       }
     }).finally(() => setLoading(false));
-  }, [wordSlug]);
+  }, [wordSlug, locale]);
 
   if (loading) {
     return (
@@ -138,6 +152,41 @@ export default function WordPage() {
             </p>
           )}
         </section>
+
+        {/* 1.5 SIMPLIFIED EXPLANATION */}
+        {insight && (
+          <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.05s both' }}>
+            <SectionHeader
+              title="Simplified Explanation"
+              subtitle={insightSource === 'file'
+                ? 'A plain-language reading of this word'
+                : 'A generated overview from the root principles'}
+              align="left"
+            />
+            <div style={{
+              background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
+              borderRadius: 21, padding: '34px',
+            }}>
+              <div style={{ display: 'flex', gap: 8, marginBottom: 18, alignItems: 'center', flexWrap: 'wrap' }}>
+                <span style={{
+                  fontSize: 10, color: insightSource === 'file' ? '#22C55E' : '#f39c12',
+                  fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px',
+                  background: insightSource === 'file' ? 'rgba(34,197,94,0.08)' : 'rgba(243,156,18,0.08)',
+                  padding: '3px 9px', borderRadius: 4, textTransform: 'uppercase',
+                  border: `1px solid ${insightSource === 'file' ? 'rgba(34,197,94,0.2)' : 'rgba(243,156,18,0.2)'}`,
+                }}>
+                  {insightSource === 'file' ? 'From Sources' : 'Auto-Generated'}
+                </span>
+                {insight.meta.confidence && (
+                  <span style={{ fontSize: 11, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace" }}>
+                    {insight.meta.confidence}
+                  </span>
+                )}
+              </div>
+              <InsightContent content={insight.content} />
+            </div>
+          </section>
+        )}
 
         {/* 2. TRANSFORMATION */}
         {word.rule && (
