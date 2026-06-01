@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generated": "2026-06-01",
+    "totalConcepts": 8,
+    "totalWordInsights": 20,
+    "languages": ["ar", "en", "fr"]
+  },
+  "concepts": [
+    {
+      "id": "roots-explained",
+      "title": { "ar": "ما هي الجذور الثلاثة؟", "en": "What Are the Three Roots?", "fr": "Que Sont les Trois Racines ?" },
+      "topic": "roots-explanation",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/roots-explained.md",
+        "en": "concepts/en/roots-explained.md",
+        "fr": "concepts/fr/roots-explained.md"
+      },
+      "confidence": "🔬🧩",
+      "relatedWords": ["atom", "bull", "tour", "tower", "alpha"]
+    },
+    {
+      "id": "language-physics",
+      "title": { "ar": "اللغة والفيزياء", "en": "Language and Physics", "fr": "Langue et Physique" },
+      "topic": "electromagnetic",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/language-physics.md",
+        "en": "concepts/en/language-physics.md",
+        "fr": "concepts/fr/language-physics.md"
+      },
+      "confidence": "🔬",
+      "relatedWords": ["atom", "vision", "medicine"]
+    },
+    {
+      "id": "wormhole-letter",
+      "title": { "ar": "الحرف كثقب دودي", "en": "The Letter as Wormhole", "fr": "La Lettre comme Trou de Ver" },
+      "topic": "bonacci-theory",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/wormhole-letter.md",
+        "en": "concepts/en/wormhole-letter.md",
+        "fr": "concepts/fr/wormhole-letter.md"
+      },
+      "confidence": "🔍",
+      "relatedWords": ["atom", "bull", "vision"]
+    },
+    {
+      "id": "phonetic-conservation",
+      "title": { "ar": "لماذا حافظت العربية على الأصوات؟", "en": "Why Did Arabic Preserve the Sounds?", "fr": "Pourquoi l'Arabe a-t-il Préservé les Sons ?" },
+      "topic": "language-origin",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/phonetic-conservation.md",
+        "en": "concepts/en/phonetic-conservation.md",
+        "fr": "concepts/fr/phonetic-conservation.md"
+      },
+      "confidence": "🔬",
+      "relatedWords": ["isis", "caesar", "alpha", "athena"]
+    },
+    {
+      "id": "seven-patterns",
+      "title": { "ar": "الأنماط السبعة واللغة المقدسة", "en": "The Seven Patterns and Sacred Language", "fr": "Les Sept Motifs et la Langue Sacrée" },
+      "topic": "sacred-geometry",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/seven-patterns.md",
+        "en": "concepts/en/seven-patterns.md",
+        "fr": "concepts/fr/seven-patterns.md"
+      },
+      "confidence": "🧩",
+      "relatedWords": ["alpha", "atlas", "paradise"]
+    },
+    {
+      "id": "syncretism-core",
+      "title": { "ar": "عصارة بوناتشي: الأتومولوجيا", "en": "Bonacci Essence: Atomology", "fr": "Essence de Bonacci : Atomologie" },
+      "topic": "bonacci-theory",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/syncretism-core.md"
+      },
+      "confidence": "🔍",
+      "relatedWords": ["atom", "bull", "tour", "tower"]
+    },
+    {
+      "id": "ontology-core",
+      "title": { "ar": "الحرف العربي: البنية الأنطولوجية", "en": "The Arabic Letter: Ontological Structure", "fr": "La Lettre Arabe : Structure Ontologique" },
+      "topic": "ontology",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/ontology-core.md"
+      },
+      "confidence": "🔬🧩",
+      "relatedWords": ["alpha", "human", "medicine", "vision"]
+    },
+    {
+      "id": "research-findings",
+      "title": { "ar": "نتائج البحث الاستقصائي الشامل", "en": "Comprehensive Research Findings", "fr": "Résultats de la Recherche Complète" },
+      "topic": "data-science",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/research-findings.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["atom", "vision", "human"]
+    }
+  ],
+  "wordInsights": [
+    { "word": "atom", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/atom.md", "en": "word-insights/en/atom.md", "fr": "word-insights/fr/atom.md" }, "relatedConcepts": ["roots-explained", "language-physics", "ontology-core"] },
+    { "word": "athena", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/athena.md", "en": "word-insights/en/athena.md", "fr": "word-insights/fr/athena.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation"] },
+    { "word": "europe", "root": "BULL", "confidence": "🔬", "files": { "ar": "word-insights/ar/europe.md", "en": "word-insights/en/europe.md", "fr": "word-insights/fr/europe.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation"] },
+    { "word": "isis", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/isis.md", "en": "word-insights/en/isis.md", "fr": "word-insights/fr/isis.md" }, "relatedConcepts": ["phonetic-conservation", "roots-explained"] },
+    { "word": "paradise", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/paradise.md", "en": "word-insights/en/paradise.md", "fr": "word-insights/fr/paradise.md" }, "relatedConcepts": ["roots-explained", "seven-patterns"] },
+    { "word": "caesar", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/caesar.md", "en": "word-insights/en/caesar.md", "fr": "word-insights/fr/caesar.md" }, "relatedConcepts": ["phonetic-conservation", "roots-explained"] },
+    { "word": "bull", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/bull.md", "en": "word-insights/en/bull.md", "fr": "word-insights/fr/bull.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] },
+    { "word": "baal", "root": "BULL", "confidence": "🔬", "files": { "ar": "word-insights/ar/baal.md", "en": "word-insights/en/baal.md", "fr": "word-insights/fr/baal.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation"] },
+    { "word": "tour", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/tour.md", "en": "word-insights/en/tour.md", "fr": "word-insights/fr/tour.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] },
+    { "word": "tower", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/tower.md", "en": "word-insights/en/tower.md", "fr": "word-insights/fr/tower.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] },
+    { "word": "atlas", "root": "ATUM", "confidence": "🔍", "files": { "ar": "word-insights/ar/atlas.md", "en": "word-insights/en/atlas.md", "fr": "word-insights/fr/atlas.md" }, "relatedConcepts": ["roots-explained", "seven-patterns"] },
+    { "word": "human", "root": "ATUM", "confidence": "🧩", "files": { "ar": "word-insights/ar/human.md", "en": "word-insights/en/human.md", "fr": "word-insights/fr/human.md" }, "relatedConcepts": ["roots-explained", "ontology-core"] },
+    { "word": "alpha", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/alpha.md", "en": "word-insights/en/alpha.md", "fr": "word-insights/fr/alpha.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation", "seven-patterns"] },
+    { "word": "medicine", "root": "TOR", "confidence": "🧩", "files": { "ar": "word-insights/ar/medicine.md", "en": "word-insights/en/medicine.md", "fr": "word-insights/fr/medicine.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
+    { "word": "vision", "root": "BULL", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/vision.md", "en": "word-insights/en/vision.md", "fr": "word-insights/fr/vision.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
+    { "word": "jordan", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/jordan.md", "en": "word-insights/en/jordan.md", "fr": "word-insights/fr/jordan.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation"] },
+    { "word": "italy", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/italy.md", "en": "word-insights/en/italy.md", "fr": "word-insights/fr/italy.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] }
+  ]
+}
