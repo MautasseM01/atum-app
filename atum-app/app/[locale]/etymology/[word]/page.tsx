@@ -62,8 +62,10 @@ export default function WordPage() {
       const found = results.find((r: WordData) => r.european.toLowerCase() === wordSlug.toLowerCase()) || results[0];
       setWord(found || null);
       if (found) {
-        const sameRoot = results.filter((r: WordData) => r.rootId === found.rootId && r.id !== found.id);
-        setRelated(sameRoot.slice(0, 10));
+        fetch(`/api/etymology/search?root=${found.rootId}&limit=8`).then(r => r.json()).then(relatedRes => {
+          const relatedWords = (relatedRes.results || []).filter((r: WordData) => r.european.toLowerCase() !== wordSlug.toLowerCase());
+          setRelated(relatedWords.slice(0, 8));
+        });
         fetch(`/api/concepts/related?root=${found.rootId}&word=${encodeURIComponent(found.european)}`).then(r => r.json()).then(cr => {
           setConcepts(cr.concepts || []);
         });
