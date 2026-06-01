@@ -26,6 +26,8 @@ interface ExplorerPageProps {
   onRootFilter: (root: string) => void;
   onLangFilter: (lang: string) => void;
   onLoadMore: () => void;
+  onRandom: () => void;
+  randomLoading: boolean;
 }
 
 const rootFilterOpts = [
@@ -78,6 +80,7 @@ export default function ExplorerPage({
   results, total, loading, loadingMore, hasMore,
   rootCounts, search, activeRoot, activeLang,
   onSearch, onRootFilter, onLangFilter, onLoadMore,
+  onRandom, randomLoading,
 }: ExplorerPageProps) {
   const router = useRouter();
   const params = useParams();
@@ -165,11 +168,30 @@ export default function ExplorerPage({
           ))}
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 21, padding: '0 4px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 21, padding: '0 4px', flexWrap: 'wrap', gap: 13 }}>
           <span style={{ fontSize: 14, color: '#484f58' }}>
             {loading ? 'Searching...' : `${total} result${total !== 1 ? 's' : ''}`}
           </span>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+            <button
+              onClick={onRandom}
+              disabled={randomLoading}
+              style={{
+                fontSize: 12, padding: '5px 14px', borderRadius: 13,
+                border: '1px solid rgba(243,156,18,0.4)',
+                background: randomLoading ? 'rgba(243,156,18,0.05)' : 'rgba(243,156,18,0.12)',
+                color: '#f39c12', cursor: randomLoading ? 'wait' : 'pointer',
+                fontFamily: "'JetBrains Mono', monospace",
+                fontWeight: 600, letterSpacing: '0.5px',
+                transition: 'all 233ms ease',
+                display: 'flex', alignItems: 'center', gap: 6,
+              }}
+              onMouseEnter={(e) => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.2)'; }}
+              onMouseLeave={(e) => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.12)'; }}
+            >
+              <span style={{ fontSize: 14, lineHeight: 1 }}>{randomLoading ? '◌' : '◈'}</span>
+              {randomLoading ? 'Loading…' : 'Random Word'}
+            </button>
             <span style={{ fontSize: 12, color: '#484f58', marginRight: 4 }}>Sort:</span>
             {['relevance', 'confidence', 'alpha'].map(s => (
               <button

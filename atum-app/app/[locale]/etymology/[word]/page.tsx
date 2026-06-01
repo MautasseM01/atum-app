@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import SectionHeader from '@/components/SectionHeader';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
@@ -52,6 +53,7 @@ const LANGUAGE_DISPLAY: Record<string, string> = {
 export default function WordPage() {
   const params = useParams();
   const router = useRouter();
+  const t = useTranslations('WordPage');
   const wordSlug = params?.word as string;
   const locale = params?.locale as string || 'en';
 
@@ -91,7 +93,7 @@ export default function WordPage() {
     return (
       <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
         <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⟳</div>
-        <div style={{ color: '#484f58', fontSize: 16 }}>Loading etymology...</div>
+        <div style={{ color: '#484f58', fontSize: 16 }}>{t('loadingEtymology')}</div>
       </div>
     );
   }
@@ -101,14 +103,14 @@ export default function WordPage() {
       <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
         <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⌕</div>
         <div style={{ fontSize: 24, color: '#e6edf3', marginBottom: 8, fontFamily: "'Cinzel Decorative', serif" }}>
-          Word not found
+          {t('wordNotFound')}
         </div>
         <div style={{ color: '#8b949e', marginBottom: 34 }}>
-          No etymology data for &ldquo;{wordSlug}&rdquo;
+          {t('wordNotFoundBody', { word: wordSlug })}
         </div>
         <button onClick={() => router.push(`/${locale}/explorer`)}
           style={{ padding: '10px 34px', borderRadius: 21, border: '1px solid #f39c12', background: 'transparent', color: '#f39c12', cursor: 'pointer', fontSize: 14 }}>
-          ← Back to Explorer
+          {t('backToExplorer')}
         </button>
       </div>
     );
@@ -122,6 +124,37 @@ export default function WordPage() {
     <>
       <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <div style={{ padding: '120px 34px 89px', maxWidth: 900, margin: '0 auto' }}>
+        {/* BREADCRUMB */}
+        <nav aria-label="breadcrumb" style={{
+          display: 'flex', alignItems: 'center', gap: 8, marginBottom: 28,
+          fontSize: 13, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
+          flexWrap: 'wrap',
+        }}>
+          <span
+            onClick={() => router.push(`/${locale}/explorer`)}
+            style={{ cursor: 'pointer', color: '#8b949e', transition: 'color 233ms ease' }}
+            onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.color = '#f39c12'}
+            onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.color = '#8b949e'}
+          >
+            {t('breadcrumbExplorer')}
+          </span>
+          <span style={{ color: '#484f58' }}>›</span>
+          <span
+            onClick={() => router.push(`/${locale}/explorer?root=${word.rootId}`)}
+            style={{
+              cursor: 'pointer',
+              color: word.rootId === 'ATUM' ? '#22C55E' : word.rootId === 'BULL' ? '#EF4444' : '#3B82F6',
+              transition: 'opacity 233ms ease', fontWeight: 600,
+            }}
+            onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.opacity = '0.7'}
+            onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.opacity = '1'}
+          >
+            {word.rootId}
+          </span>
+          <span style={{ color: '#484f58' }}>›</span>
+          <span style={{ color: '#e6edf3' }}>{word.european}</span>
+        </nav>
+
         {/* 1. HERO */}
         <section style={{ textAlign: 'center', marginBottom: 55, animation: 'fadeIn 0.6s ease' }}>
           <div style={{
@@ -157,10 +190,8 @@ export default function WordPage() {
         {insight && (
           <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.05s both' }}>
             <SectionHeader
-              title="Simplified Explanation"
-              subtitle={insightSource === 'file'
-                ? 'A plain-language reading of this word'
-                : 'A generated overview from the root principles'}
+              title={t('simplifiedExplanation')}
+              subtitle={insightSource === 'file' ? t('simplifiedSubtitleFile') : t('simplifiedSubtitleFallback')}
               align="left"
             />
             <div style={{
@@ -175,7 +206,7 @@ export default function WordPage() {
                   padding: '3px 9px', borderRadius: 4, textTransform: 'uppercase',
                   border: `1px solid ${insightSource === 'file' ? 'rgba(34,197,94,0.2)' : 'rgba(243,156,18,0.2)'}`,
                 }}>
-                  {insightSource === 'file' ? 'From Sources' : 'Auto-Generated'}
+                  {insightSource === 'file' ? t('fromSources') : t('autoGenerated')}
                 </span>
                 {insight.meta.confidence && (
                   <span style={{ fontSize: 11, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace" }}>
@@ -191,7 +222,7 @@ export default function WordPage() {
         {/* 2. TRANSFORMATION */}
         {word.rule && (
           <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.1s both' }}>
-            <SectionHeader title="Phonetic Transformation" subtitle="How the Arabic root became this European word" align="left" />
+            <SectionHeader title={t('phoneticTransformation')} subtitle={t('phoneticSubtitle')} align="left" />
             <div style={{
               background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
               borderRadius: 21, padding: '34px', textAlign: 'center',
@@ -221,7 +252,7 @@ export default function WordPage() {
 
         {/* 3. ACROSS LANGUAGES */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.2s both' }}>
-          <SectionHeader title="Across Languages" subtitle="The root through history" align="left" />
+          <SectionHeader title={t('acrossLanguages')} subtitle={t('acrossLanguagesSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
             borderRadius: 21, padding: '21px 34px',
@@ -254,7 +285,7 @@ export default function WordPage() {
 
         {/* 4. THE PHYSICS */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.3s both' }}>
-          <SectionHeader title="The Physics" subtitle="What this root reveals about reality" align="left" />
+          <SectionHeader title={t('thePhysics')} subtitle={t('physicsSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
             borderRadius: 21, padding: '34px',
@@ -310,13 +341,13 @@ export default function WordPage() {
 
         {/* 5. IN YOUR DAILY LIFE */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.4s both' }}>
-          <SectionHeader title="In Your Daily Life" subtitle="You encounter this root every day" align="left" />
+          <SectionHeader title={t('dailyLife')} subtitle={t('dailyLifeSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
             borderRadius: 21, padding: '34px',
           }}>
             <p style={{ fontSize: 15, color: '#8b949e', lineHeight: 1.8, marginBottom: 21 }}>
-              The {word.rootId} root pattern appears in dozens of everyday words. Once you recognize it, you will see it everywhere.
+              {t('dailyLifeBody', { root: word.rootId })}
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 13 }}>
               {(rootInfo?.daily || []).map((example, i) => (
@@ -336,36 +367,38 @@ export default function WordPage() {
 
         {/* 6. SOURCES */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.5s both' }}>
-          <SectionHeader title="Sources" subtitle="Primary research backing this etymology" align="left" />
+          <SectionHeader title={t('sourcesTitle')} subtitle={t('sourcesSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
             borderRadius: 21, padding: '34px',
           }}>
             <div style={{ display: 'flex', gap: 13, marginBottom: 21, flexWrap: 'wrap' }}>
               <span style={{ fontSize: 13, color: '#e6edf3', background: 'rgba(48,54,61,0.5)', padding: '4px 12px', borderRadius: 8, fontFamily: "'JetBrains Mono', monospace" }}>
-                Confidence: <ConfidenceBadge level={word.confidence} />
+                {t('confidenceLabel')}: <ConfidenceBadge level={word.confidence} />
               </span>
               <span style={{ fontSize: 13, color: '#e6edf3', background: 'rgba(48,54,61,0.5)', padding: '4px 12px', borderRadius: 8, fontFamily: "'JetBrains Mono', monospace" }}>
-                Root: {word.rootId}
+                {t('rootLabel')}: {word.rootId}
               </span>
               {word.language && (
                 <span style={{ fontSize: 13, color: '#e6edf3', background: 'rgba(48,54,61,0.5)', padding: '4px 12px', borderRadius: 8, fontFamily: "'JetBrains Mono', monospace" }}>
-                  Language: {LANGUAGE_DISPLAY[word.language] || word.language}
+                  {t('languageLabel')}: {LANGUAGE_DISPLAY[word.language] || word.language}
                 </span>
               )}
             </div>
             <div style={{ fontSize: 14, color: '#8b949e', lineHeight: 1.7, marginBottom: 13 }}>
-              The transformation rule <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>{word.rule || 'N/A'}</code> follows the phonetic shift patterns documented across multiple linguistic studies.
+              {t.rich?.('transformationRuleBody', {
+                rule: (chunks) => <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>{word.rule || 'N/A'}</code>
+              }) || t('transformationRuleBody', { rule: word.rule || 'N/A' })}
             </div>
             <div style={{ fontSize: 12, color: '#484f58' }}>
-              Primary sources: Kaggle etymology database, Sacred Word Flow research, Abjad letter DNA analysis
+              {t('primarySources')}
             </div>
           </div>
         </section>
 
         {/* 7. RELATED WORDS */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.6s both' }}>
-          <SectionHeader title="Related Words" subtitle={`Other ${word.rootId}-root words`} align="left" />
+          <SectionHeader title={t('relatedWords')} subtitle={t('relatedWordsSubtitle', { root: word.rootId })} align="left" />
           {related.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 13 }}>
               {related.map(rw => (
@@ -398,7 +431,7 @@ export default function WordPage() {
             </div>
           ) : (
             <div style={{ padding: '34px', textAlign: 'center', color: '#484f58', fontSize: 14 }}>
-              No other {word.rootId}-root words found in this batch
+              {t('noRelated', { root: word.rootId })}
             </div>
           )}
         </section>
@@ -406,7 +439,7 @@ export default function WordPage() {
         <div style={{ textAlign: 'center', padding: '21px 0' }}>
           <button onClick={() => router.push(`/${locale}/explorer`)}
             style={{ padding: '10px 34px', borderRadius: 21, border: '1px solid #8b949e', background: 'transparent', color: '#8b949e', cursor: 'pointer', fontSize: 14 }}>
-            ← Back to Explorer
+            {t('backToExplorer')}
           </button>
         </div>
       </div>

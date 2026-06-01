@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useRouter, useParams } from 'next/navigation';
 import ExplorerPage from '@/components/ExplorerPage';
 
 interface SearchResultItem {
@@ -28,6 +29,10 @@ export default function Page() {
   const [search, setSearch] = useState('');
   const [activeRoot, setActiveRoot] = useState('ALL');
   const [activeLang, setActiveLang] = useState('ALL');
+  const [randomLoading, setRandomLoading] = useState(false);
+  const router = useRouter();
+  const params = useParams();
+  const locale = (params?.locale as string) || 'en';
 
   const searchRef = useRef(search);
   const rootRef = useRef(activeRoot);
@@ -81,6 +86,25 @@ export default function Page() {
     doFetch(page + 1, true);
   }, [hasMore, loadingMore, loading, page, doFetch]);
 
+  const handleRandom = useCallback(async () => {
+    if (randomLoading) return;
+    setRandomLoading(true);
+    try {
+      const params = new URLSearchParams();
+      if (activeRoot !== 'ALL') params.set('root', activeRoot);
+      if (activeLang !== 'ALL') params.set('lang', activeLang);
+      const res = await fetch(`/api/etymology/random?${params}`);
+      const data = await res.json();
+      if (data?.word) {
+        router.push(`/${locale}/etymology/${encodeURIComponent(data.word.toLowerCase())}`);
+      }
+    } catch {
+      router.push(`/${locale}/etymology/paradise`);
+    } finally {
+      setRandomLoading(false);
+    }
+  }, [randomLoading, activeRoot, activeLang, router, locale]);
+
   return (
     <ExplorerPage
       results={results}
@@ -96,6 +120,8 @@ export default function Page() {
       onRootFilter={setActiveRoot}
       onLangFilter={setActiveLang}
       onLoadMore={loadMore}
+      onRandom={handleRandom}
+      randomLoading={randomLoading}
     />
   );
 }
