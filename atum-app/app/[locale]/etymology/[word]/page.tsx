@@ -45,13 +45,13 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const top = getTopEtymologyWords(100);
+  const top = await getTopEtymologyWords(100);
   return top.map(w => ({ word: w.european.toLowerCase() }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, word } = await params;
-  const found = getEtymologyByWord(word);
+  const found = await getEtymologyByWord(word);
   if (!found) {
     return { title: 'Word not found | ATUM' };
   }
@@ -84,13 +84,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function WordPage({ params }: PageProps) {
   const { locale, word: wordSlug } = await params;
 
-  const word = getEtymologyByWord(wordSlug);
+  const word = await getEtymologyByWord(wordSlug);
   if (!word) notFound();
 
   const t = await getTranslations('WordPage');
-  const insightResult = getWordInsightData(word.european, locale, word.rootId);
-  const related: WordData[] = getRelatedWords(word.rootId, wordSlug, 8);
-  const concepts: ScoredConcept[] = getRelatedConcepts(word.rootId, word.european);
+  const insightResult = await getWordInsightData(word.european, locale, word.rootId);
+  const related: WordData[] = await getRelatedWords(word.rootId, wordSlug, 8);
+  const concepts: ScoredConcept[] = await getRelatedConcepts(word.rootId, word.european);
 
   const rootInfo = ROOT_PRINCIPLES[word.rootId];
   const langSteps = ['AR', 'GR', 'LA', 'EN', 'FR'];

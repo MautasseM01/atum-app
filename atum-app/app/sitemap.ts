@@ -4,7 +4,7 @@ import { getAllEtymologyWords } from '@/lib/wordPage';
 const SITE_URL = 'https://atum-app-dna.vercel.app';
 const LOCALES = ['en', 'ar', 'fr'] as const;
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const staticRoutes: MetadataRoute.Sitemap = [];
   const baseRoutes = ['', '/explorer', '/patterns', '/letters', '/research'];
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  const allWords = getAllEtymologyWords();
+  const allWords = await getAllEtymologyWords();
   const wordRoutes: MetadataRoute.Sitemap = [];
   for (const w of allWords) {
     if (!w.european) continue;

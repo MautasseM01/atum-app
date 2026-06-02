@@ -1,4 +1,4 @@
-import fs from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import { getWordInsight, type WordInsight } from '@/lib/getWordInsight';
 
@@ -97,36 +97,40 @@ let indexCache: IndexFile | null = null;
 let rootCache: Record<string, RootInfo> | null = null;
 let conceptsCache: ConceptRaw[] | null = null;
 
-function loadDb(): EtymologyDB {
+async function loadDb(): Promise<EtymologyDB> {
   if (!dbCache) {
     const fp = path.join(process.cwd(), 'data', 'etymologies.json');
-    dbCache = JSON.parse(fs.readFileSync(fp, 'utf8'));
+    const raw = await fs.readFile(fp, 'utf8');
+    dbCache = JSON.parse(raw);
   }
   return dbCache!;
 }
 
-function loadIndex(): IndexFile {
+async function loadIndex(): Promise<IndexFile> {
   if (!indexCache) {
     const fp = path.join(process.cwd(), 'data', 'sources', 'INDEX.json');
-    indexCache = JSON.parse(fs.readFileSync(fp, 'utf8'));
+    const raw = await fs.readFile(fp, 'utf8');
+    indexCache = JSON.parse(raw);
   }
   return indexCache!;
 }
 
-function loadRoots(): Record<string, RootInfo> {
+async function loadRoots(): Promise<Record<string, RootInfo>> {
   if (!rootCache) {
     const fp = path.join(process.cwd(), 'data', 'rootPatterns.json');
-    const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
-    rootCache = raw.roots || {};
+    const raw = await fs.readFile(fp, 'utf8');
+    const parsed = JSON.parse(raw);
+    rootCache = parsed.roots || {};
   }
   return rootCache!;
 }
 
-function loadConcepts(): ConceptRaw[] {
+async function loadConcepts(): Promise<ConceptRaw[]> {
   if (!conceptsCache) {
     const fp = path.join(process.cwd(), 'data', 'sources', 'concepts.json');
-    const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
-    conceptsCache = raw.concepts || [];
+    const raw = await fs.readFile(fp, 'utf8');
+    const parsed = JSON.parse(raw);
+    conceptsCache = parsed.concepts || [];
   }
   return conceptsCache!;
 }
@@ -188,9 +192,9 @@ function dbToWord(d: DatabaseEntry): WordData {
   };
 }
 
-export function getEtymologyByWord(slug: string): WordData | null {
+export async function getEtymologyByWord(slug: string): Promise<WordData | null> {
   if (!slug) return null;
-  const db = loadDb();
+  const db = await loadDb();
   const lower = slug.toLowerCase();
 
   for (const b of db.bridge) {
@@ -202,8 +206,8 @@ export function getEtymologyByWord(slug: string): WordData | null {
   return null;
 }
 
-export function getRelatedWords(rootId: string, excludeSlug: string, limit = 8): WordData[] {
-  const db = loadDb();
+export async function getRelatedWords(rootId: string, excludeSlug: string, limit = 8): Promise<WordData[]> {
+  const db = await loadDb();
   const lower = excludeSlug.toLowerCase();
   const results: WordData[] = [];
 
@@ -223,15 +227,15 @@ export function getRelatedWords(rootId: string, excludeSlug: string, limit = 8):
   return results.slice(0, limit);
 }
 
-function pickConceptExcerpt(conceptId: string, locale: string): string | null {
-  const idx = loadIndex();
+async function pickConceptExcerpt(conceptId: string, locale: string): Promise<string | null> {
+  const idx = await loadIndex();
   const concept = idx.concepts.find(c => c.id === conceptId);
   if (!concept) return null;
   const rel = concept.files[locale as 'ar' | 'en' | 'fr'] || concept.files.en;
   if (!rel) return null;
   const fp = path.join(process.cwd(), 'data', 'sources', rel);
   try {
-    const raw = fs.readFileSync(fp, 'utf8');
+    const raw = await fs.readFile(fp, 'utf8');
     const stripped = raw
       .replace(/^---[\s\S]*?---\s*/, '')
       .replace(/^#+\s+.*$/gm, '')
@@ -248,15 +252,15 @@ function pickConceptExcerpt(conceptId: string, locale: string): string | null {
   }
 }
 
-function buildFallback(word: string, rootId: string, locale: string): WordInsight {
-  const roots = loadRoots();
+async function buildFallback(word: string, rootId: string, locale: string): Promise<WordInsight> {
+  const roots = await loadRoots();
   const root = roots[rootId] || { root: rootId, principle: '—' };
   const principle =
     locale === 'ar' ? (root.principleAr || root.principle) :
     locale === 'fr' ? (root.principleFr || root.principle) :
     root.principle;
 
-  const idx = loadIndex();
+  const idx = await loadIndex();
   const candidates = idx.concepts
     .filter(c => c.relatedRoot === 'ALL' || c.relatedRoot === rootId)
     .sort((a, b) => {
@@ -266,7 +270,7 @@ function buildFallback(word: string, rootId: string, locale: string): WordInsigh
     });
   const chosen = candidates[0];
   const conceptTitle = chosen?.title?.[locale as 'ar' | 'en' | 'fr'] || chosen?.title?.en || '';
-  const conceptExcerpt = chosen ? pickConceptExcerpt(chosen.id, locale) : null;
+  const conceptExcerpt = chosen ? await pickConceptExcerpt(chosen.id, locale) : null;
 
   const intro =
     locale === 'ar'
@@ -287,14 +291,14 @@ function buildFallback(word: string, rootId: string, locale: string): WordInsigh
   };
 }
 
-export function getWordInsightData(word: string, locale: string, rootId?: string): InsightResult {
+export async function getWordInsightData(word: string, locale: string, rootId?: string): Promise<InsightResult> {
   if (!word) return { insight: null, source: 'none' };
 
   const fileInsight = getWordInsight(word, locale);
   if (fileInsight) return { insight: fileInsight, source: 'file' };
 
   if (rootId && ['ATUM', 'BULL', 'TOR'].includes(rootId)) {
-    return { insight: buildFallback(word, rootId, locale), source: 'fallback' };
+    return { insight: await buildFallback(word, rootId, locale), source: 'fallback' };
   }
   return { insight: null, source: 'none' };
 }
@@ -305,9 +309,9 @@ const ROOT_TOPIC_MAP: Record<string, string[]> = {
   TOR: ['sacred-geometry', 'physics'],
 };
 
-export function getRelatedConcepts(rootId: string, word: string): ScoredConcept[] {
+export async function getRelatedConcepts(rootId: string, word: string): Promise<ScoredConcept[]> {
   if (!['ATUM', 'BULL', 'TOR'].includes(rootId)) return [];
-  const allConcepts = loadConcepts();
+  const allConcepts = await loadConcepts();
   const wordTerms = word.toLowerCase().split(/[\s_-]+/).filter(Boolean);
   const preferredTopics = ROOT_TOPIC_MAP[rootId] || [];
 
@@ -343,8 +347,8 @@ export function getRelatedConcepts(rootId: string, word: string): ScoredConcept[
 
 const CONFIDENCE_RANK: Record<string, number> = { proven: 0, strong: 1, moderate: 2, emerging: 3 };
 
-export function getAllEtymologyWords(): WordData[] {
-  const db = loadDb();
+export async function getAllEtymologyWords(): Promise<WordData[]> {
+  const db = await loadDb();
   const all: WordData[] = [];
   for (const b of db.bridge) {
     if (b.modernWord) all.push(bridgeToWord(b));
@@ -355,8 +359,8 @@ export function getAllEtymologyWords(): WordData[] {
   return all;
 }
 
-export function getTopEtymologyWords(limit = 100): WordData[] {
-  const all = getAllEtymologyWords();
+export async function getTopEtymologyWords(limit = 100): Promise<WordData[]> {
+  const all = await getAllEtymologyWords();
   return all
     .filter(w => w.european)
     .sort((a, b) => {
