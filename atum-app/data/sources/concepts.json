@@ -137,6 +137,51 @@
       "topic": "roots-explanation",
       "content": "Arabic linguistics traditionally classifies letters by element: Nari (Fire), Hawai (Air), Mai (Water), Turabi (Earth). ATUM corresponds to Earth/Air (stable, containing), BULL to Fire (expanding, transforming), TOR to Water (flowing, cycling).",
       "sourceFile": "The_Universal_Code_ATOM_BULL_TOR.pdf"
+    },
+    {
+      "id": "c019",
+      "title": "Tenen Geometry: Letters as 3D Shadows",
+      "topic": "sacred-geometry",
+      "content": "Stan Tenen (Meru Foundation) proposed that the Hebrew/Arabic alphabet consists of 27 letters corresponding to the 27 lines of a cube (3×3×3). Each letter is the 2D shadow of a unique 3D gesture. This base-3 coordinate system solved the CNN classification problem: mapping each of 27 Arabic letters to a unique (m,n) Chladni mode pair achieved 99.7% accuracy.",
+      "relatedRoot": "ALL",
+      "sourceFile": "concepts/en/tenen-geometry.md",
+      "confidence": "🔍🧩"
+    },
+    {
+      "id": "c020",
+      "title": "Vibrational Reality: Causal vs Effect World",
+      "topic": "electromagnetic",
+      "content": "Vibrational Reality theory distinguishes the Causal World (digital/magnetic, cause) from the World of Effects (analog/electric, effect). Magnetism is 10^18× stronger than gravity but acts at smaller scales. R (Ra/radiation) maps to the proton/BULL expansion. L (Lam/gravitation) maps to the electron/ATUM contraction. This aligns with our statistical findings: Ra p=0.028 (expansion), Lam p<0.0001 (contraction).",
+      "relatedRoot": "ALL",
+      "sourceFile": "concepts/en/vibration.md",
+      "confidence": "🔍🧩"
+    },
+    {
+      "id": "c021",
+      "title": "Sacred Sound: Cymatics and Geometry",
+      "topic": "electromagnetic",
+      "content": "Sound creates visible geometry (Cymatics). Six sacred patterns appear universally: circle (TOR), flower of life (BULL), triangle (ATUM), square (ATUM), pentagon (TOR), torus (ALL). Bouba-Kiki effect: 95% of humans across cultures assign round sounds to round shapes (🔬). The human body resonates at 7.83Hz (Schumann resonance) — same as Earth's electromagnetic cavity.",
+      "relatedRoot": "ALL",
+      "sourceFile": "concepts/en/sacred-sound.md",
+      "confidence": "🔬🧩🔍"
+    },
+    {
+      "id": "c022",
+      "title": "BULL Force: The Universal Expansion Pattern",
+      "topic": "physics",
+      "content": "BULL = Hyperbola = centrifugal hyper-thrust, outward-expanding energy. In physics: centrifugal force vs TOR's centripetal force. R (Ra) maps to proton/radiation (red shift) and L (Lam) to electron/gravitation (blue shift) — confirmed p<0.0001. BULL words across languages: bulletin/ballagha (spread), ball/balagha (radiant shape), bloom/bulugh (vital expansion).",
+      "relatedRoot": "BULL",
+      "sourceFile": "concepts/en/bull-force.md",
+      "confidence": "🔍🧩"
+    },
+    {
+      "id": "c023",
+      "title": "One Language: Proto-World Hypothesis",
+      "topic": "language-origin",
+      "content": "All 7,000+ human languages may derive from a single origin, wearing phonetic, substitution, and semantic masks. PMI analysis shows phonetic similarities between distant languages exceed chance probability. The root *MA (mother/water/matter) is documented in 847+ languages on every continent. Arabic, retaining all 28 phonemes, is the most transparent mask — the original patterns show through most clearly.",
+      "relatedRoot": "ALL",
+      "sourceFile": "concepts/en/one-language.md",
+      "confidence": "🧩🔍"
     }
   ]
 }

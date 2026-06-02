@@ -1,9 +1,9 @@
 {
   "meta": {
-    "version": "1.0",
-    "generated": "2026-06-01",
-    "totalConcepts": 8,
-    "totalWordInsights": 20,
+    "version": "1.1",
+    "generated": "2026-06-02",
+    "totalConcepts": 13,
+    "totalWordInsights": 37,
     "languages": ["ar", "en", "fr"]
   },
   "concepts": [
@@ -104,6 +104,71 @@
       },
       "confidence": "🔬🧩🔍",
       "relatedWords": ["atom", "vision", "human"]
+    },
+    {
+      "id": "tenen-geometry",
+      "title": { "ar": "هندسة تينن: الحروف كظلال ثلاثية الأبعاد", "en": "Tenen Geometry: Letters as 3D Shadows", "fr": "Géométrie de Tenen : Les Lettres comme Ombres 3D" },
+      "topic": "sacred-geometry",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/tenen-geometry.md",
+        "en": "concepts/en/tenen-geometry.md",
+        "fr": "concepts/fr/tenen-geometry.md"
+      },
+      "confidence": "🔍🧩",
+      "relatedWords": ["alpha", "atom", "tour"]
+    },
+    {
+      "id": "vibration",
+      "title": { "ar": "الواقع الاهتزازي: العالم المغناطيسي والكهربائي", "en": "Vibrational Reality: Magnetic and Electric Worlds", "fr": "Réalité Vibratoire : Mondes Magnétique et Électrique" },
+      "topic": "electromagnetic",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/vibration.md",
+        "en": "concepts/en/vibration.md",
+        "fr": "concepts/fr/vibration.md"
+      },
+      "confidence": "🔍🧩",
+      "relatedWords": ["vision", "medicine", "bull", "atom"]
+    },
+    {
+      "id": "sacred-sound",
+      "title": { "ar": "الصوت المقدس: الكيماتيك والهندسة", "en": "Sacred Sound: Cymatics and Geometry", "fr": "Son Sacré : Cymatics et Géométrie" },
+      "topic": "electromagnetic",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/sacred-sound.md",
+        "en": "concepts/en/sacred-sound.md",
+        "fr": "concepts/fr/sacred-sound.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["atom", "alpha", "medicine", "vision"]
+    },
+    {
+      "id": "bull-force",
+      "title": { "ar": "قوة BULL: نمط التمدد الكوني", "en": "BULL Force: The Universal Expansion Pattern", "fr": "Force BULL : Le Motif d'Expansion Universel" },
+      "topic": "physics",
+      "relatedRoot": "BULL",
+      "files": {
+        "ar": "concepts/ar/bull-force.md",
+        "en": "concepts/en/bull-force.md",
+        "fr": "concepts/fr/bull-force.md"
+      },
+      "confidence": "🔍🧩",
+      "relatedWords": ["bull", "baal", "europe", "italy", "vision"]
+    },
+    {
+      "id": "one-language",
+      "title": { "ar": "هل تتحدث البشرية لغة واحدة بأقنعة مختلفة؟", "en": "Does Humanity Speak One Language in Different Masks?", "fr": "L'Humanité Parle-t-elle une Seule Langue sous Différents Masques ?" },
+      "topic": "language-origin",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/one-language.md",
+        "en": "concepts/en/one-language.md",
+        "fr": "concepts/fr/one-language.md"
+      },
+      "confidence": "🧩🔍",
+      "relatedWords": ["caesar", "isis", "alpha", "athena", "human"]
     }
   ],
   "wordInsights": [
@@ -123,6 +188,26 @@
     { "word": "medicine", "root": "TOR", "confidence": "🧩", "files": { "ar": "word-insights/ar/medicine.md", "en": "word-insights/en/medicine.md", "fr": "word-insights/fr/medicine.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
     { "word": "vision", "root": "BULL", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/vision.md", "en": "word-insights/en/vision.md", "fr": "word-insights/fr/vision.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
     { "word": "jordan", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/jordan.md", "en": "word-insights/en/jordan.md", "fr": "word-insights/fr/jordan.md" }, "relatedConcepts": ["roots-explained", "phonetic-conservation"] },
-    { "word": "italy", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/italy.md", "en": "word-insights/en/italy.md", "fr": "word-insights/fr/italy.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] }
+    { "word": "italy", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/italy.md", "en": "word-insights/en/italy.md", "fr": "word-insights/fr/italy.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] },
+    { "word": "machine", "root": "ATUM", "confidence": "🧩", "files": { "ar": "word-insights/ar/machine.md", "en": "word-insights/en/machine.md", "fr": "word-insights/fr/machine.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
+    { "word": "electron", "root": "ATUM", "confidence": "🔍", "files": { "ar": "word-insights/ar/electron.md", "en": "word-insights/en/electron.md", "fr": "word-insights/fr/electron.md" }, "relatedConcepts": ["vibration", "language-physics", "bull-force"] },
+    { "word": "telephone", "root": "BULL", "confidence": "🔬", "files": { "ar": "word-insights/ar/telephone.md", "en": "word-insights/en/telephone.md", "fr": "word-insights/fr/telephone.md" }, "relatedConcepts": ["bull-force", "sacred-sound"] },
+    { "word": "radio", "root": "BULL", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/radio.md", "en": "word-insights/en/radio.md", "fr": "word-insights/fr/radio.md" }, "relatedConcepts": ["bull-force", "vibration"] },
+    { "word": "hero", "root": "BULL", "confidence": "🔍", "files": { "ar": "word-insights/ar/hero.md", "en": "word-insights/en/hero.md", "fr": "word-insights/fr/hero.md" }, "relatedConcepts": ["bull-force", "roots-explained"] },
+    { "word": "wine", "root": "BULL", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/wine.md", "en": "word-insights/en/wine.md", "fr": "word-insights/fr/wine.md" }, "relatedConcepts": ["one-language", "phonetic-conservation"] },
+    { "word": "story", "root": "TOR", "confidence": "🧩", "files": { "ar": "word-insights/ar/story.md", "en": "word-insights/en/story.md", "fr": "word-insights/fr/story.md" }, "relatedConcepts": ["roots-explained", "seven-patterns"] },
+    { "word": "money", "root": "ATUM", "confidence": "🧩", "files": { "ar": "word-insights/ar/money.md", "en": "word-insights/en/money.md", "fr": "word-insights/fr/money.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
+    { "word": "moon", "root": "TOR", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/moon.md", "en": "word-insights/en/moon.md", "fr": "word-insights/fr/moon.md" }, "relatedConcepts": ["roots-explained", "one-language"] },
+    { "word": "river", "root": "TOR", "confidence": "🔬", "files": { "ar": "word-insights/ar/river.md", "en": "word-insights/en/river.md", "fr": "word-insights/fr/river.md" }, "relatedConcepts": ["one-language", "phonetic-conservation"] },
+    { "word": "mother", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/mother.md", "en": "word-insights/en/mother.md", "fr": "word-insights/fr/mother.md" }, "relatedConcepts": ["one-language", "roots-explained", "phonetic-conservation"] },
+    { "word": "give", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/give.md", "en": "word-insights/en/give.md", "fr": "word-insights/fr/give.md" }, "relatedConcepts": ["bull-force", "roots-explained"] },
+    { "word": "guitar", "root": "TOR", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/guitar.md", "en": "word-insights/en/guitar.md", "fr": "word-insights/fr/guitar.md" }, "relatedConcepts": ["sacred-sound", "phonetic-conservation"] },
+    { "word": "republic", "root": "TOR", "confidence": "🧩", "files": { "ar": "word-insights/ar/republic.md", "en": "word-insights/en/republic.md", "fr": "word-insights/fr/republic.md" }, "relatedConcepts": ["roots-explained", "seven-patterns"] },
+    { "word": "biology", "root": "TOR", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/biology.md", "en": "word-insights/en/biology.md", "fr": "word-insights/fr/biology.md" }, "relatedConcepts": ["roots-explained", "language-physics"] },
+    { "word": "john", "root": "BULL", "confidence": "🧩", "files": { "ar": "word-insights/ar/john.md", "en": "word-insights/en/john.md", "fr": "word-insights/fr/john.md" }, "relatedConcepts": ["one-language", "phonetic-conservation"] },
+    { "word": "abyss", "root": "ATUM", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/abyss.md", "en": "word-insights/en/abyss.md", "fr": "word-insights/fr/abyss.md" }, "relatedConcepts": ["roots-explained", "syncretism-core"] },
+    { "word": "benben", "root": "ATUM", "confidence": "🔍🧩", "files": { "ar": "word-insights/ar/benben.md", "en": "word-insights/en/benben.md", "fr": "word-insights/fr/benben.md" }, "relatedConcepts": ["roots-explained", "ontology-core"] },
+    { "word": "osiris", "root": "TOR", "confidence": "🔍🧩", "files": { "ar": "word-insights/ar/osiris.md", "en": "word-insights/en/osiris.md", "fr": "word-insights/fr/osiris.md" }, "relatedConcepts": ["roots-explained", "seven-patterns"] },
+    { "word": "ra", "root": "BULL", "confidence": "🔬🧩", "files": { "ar": "word-insights/ar/ra.md", "en": "word-insights/en/ra.md", "fr": "word-insights/fr/ra.md" }, "relatedConcepts": ["bull-force", "vibration", "roots-explained"] }
   ]
 }
