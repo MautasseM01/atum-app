@@ -1,32 +1,22 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import { useParams, useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import type { Metadata } from 'next';
 import SectionHeader from '@/components/SectionHeader';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
 import Pronunciation from '@/components/Pronunciation';
 import InsightContent from '@/components/InsightContent';
 import Footer from '@/components/Footer';
-
-interface WordData {
-  id: string; european: string; arabicRoot: string; rootId: string;
-  rule: string; meaning: string; confidence: string; language: string;
-}
-
-interface Concept {
-  id: string; title: string; topic: string; content: string; sourceFile: string;
-}
-
-interface ScoredConcept extends Concept {
-  relevance: number; matchType: string;
-}
-
-interface Insight {
-  word: string; locale: string; content: string; excerpt: string;
-  meta: { arabicRoot: string; root: string; confidence: string };
-}
+import {
+  getEtymologyByWord,
+  getRelatedWords,
+  getWordInsightData,
+  getRelatedConcepts,
+  getTopEtymologyWords,
+  type WordData,
+  type ScoredConcept,
+} from '@/lib/wordPage';
 
 const ROOT_PRINCIPLES: Record<string, { principle: string; physics: string; daily: string[] }> = {
   ATUM: {
@@ -50,79 +40,71 @@ const LANGUAGE_DISPLAY: Record<string, string> = {
   GR: 'Greek', LA: 'Latin', EN: 'English', FR: 'French', AR: 'Arabic',
 };
 
-export default function WordPage() {
-  const params = useParams();
-  const router = useRouter();
-  const t = useTranslations('WordPage');
-  const wordSlug = params?.word as string;
-  const locale = params?.locale as string || 'en';
+interface PageProps {
+  params: Promise<{ locale: string; word: string }>;
+}
 
-  const [word, setWord] = useState<WordData | null>(null);
-  const [concepts, setConcepts] = useState<ScoredConcept[]>([]);
-  const [related, setRelated] = useState<WordData[]>([]);
-  const [insight, setInsight] = useState<Insight | null>(null);
-  const [insightSource, setInsightSource] = useState<'file' | 'fallback' | 'none'>('none');
-  const [loading, setLoading] = useState(true);
+export async function generateStaticParams() {
+  const top = getTopEtymologyWords(100);
+  return top.map(w => ({ word: w.european.toLowerCase() }));
+}
 
-  useEffect(() => {
-    if (!wordSlug) return;
-    setLoading(true);
-    fetch(`/api/etymology/search?q=${encodeURIComponent(wordSlug)}&limit=50`).then(r => r.json()).then(wordRes => {
-      const results = wordRes.results || [];
-      const found = results.find((r: WordData) => r.european.toLowerCase() === wordSlug.toLowerCase()) || results[0];
-      setWord(found || null);
-      if (found) {
-        fetch(`/api/etymology/search?root=${found.rootId}&limit=8`).then(r => r.json()).then(relatedRes => {
-          const relatedWords = (relatedRes.results || []).filter((r: WordData) => r.european.toLowerCase() !== wordSlug.toLowerCase());
-          setRelated(relatedWords.slice(0, 8));
-        });
-        fetch(`/api/concepts/related?root=${found.rootId}&word=${encodeURIComponent(found.european)}`).then(r => r.json()).then(cr => {
-          setConcepts(cr.concepts || []);
-        });
-        fetch(`/api/word-insight?word=${encodeURIComponent(found.european.toLowerCase())}&locale=${locale}&root=${found.rootId}`).then(r => r.json()).then(ir => {
-          if (ir.found) {
-            setInsight(ir.insight);
-            setInsightSource(ir.source);
-          }
-        });
-      }
-    }).finally(() => setLoading(false));
-  }, [wordSlug, locale]);
-
-  if (loading) {
-    return (
-      <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-        <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⟳</div>
-        <div style={{ color: '#484f58', fontSize: 16 }}>{t('loadingEtymology')}</div>
-      </div>
-    );
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale, word } = await params;
+  const found = getEtymologyByWord(word);
+  if (!found) {
+    return { title: 'Word not found | ATUM' };
   }
+  const cleanMeaning = (found.meaning || '').replace(/\s+/g, ' ').trim();
+  const arabicPart = found.arabicRoot ? ` ← ${found.arabicRoot}` : '';
+  const title = `${found.european}${arabicPart} | ATUM Etymology`;
+  const description = cleanMeaning
+    ? `${found.european}${arabicPart} (${cleanMeaning}). ${found.confidence} confidence. Root: ${found.rootId}.`
+    : `${found.european}${arabicPart}. ${found.confidence} confidence. Root: ${found.rootId}.`;
 
-  if (!word) {
-    return (
-      <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-        <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⌕</div>
-        <div style={{ fontSize: 24, color: '#e6edf3', marginBottom: 8, fontFamily: "'Cinzel Decorative', serif" }}>
-          {t('wordNotFound')}
-        </div>
-        <div style={{ color: '#8b949e', marginBottom: 34 }}>
-          {t('wordNotFoundBody', { word: wordSlug })}
-        </div>
-        <button onClick={() => router.push(`/${locale}/explorer`)}
-          style={{ padding: '10px 34px', borderRadius: 21, border: '1px solid #f39c12', background: 'transparent', color: '#f39c12', cursor: 'pointer', fontSize: 14 }}>
-          {t('backToExplorer')}
-        </button>
-      </div>
-    );
-  }
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${found.european}${arabicPart}`,
+      description: cleanMeaning || `${found.european} — ${found.rootId} root word`,
+      type: 'article',
+      locale,
+    },
+    alternates: {
+      languages: {
+        en: `/en/etymology/${found.european.toLowerCase()}`,
+        ar: `/ar/etymology/${found.european.toLowerCase()}`,
+        fr: `/fr/etymology/${found.european.toLowerCase()}`,
+      },
+    },
+  };
+}
+
+export default async function WordPage({ params }: PageProps) {
+  const { locale, word: wordSlug } = await params;
+
+  const word = getEtymologyByWord(wordSlug);
+  if (!word) notFound();
+
+  const t = await getTranslations('WordPage');
+  const insightResult = getWordInsightData(word.european, locale, word.rootId);
+  const related: WordData[] = getRelatedWords(word.rootId, wordSlug, 8);
+  const concepts: ScoredConcept[] = getRelatedConcepts(word.rootId, word.european);
 
   const rootInfo = ROOT_PRINCIPLES[word.rootId];
   const langSteps = ['AR', 'GR', 'LA', 'EN', 'FR'];
   const langsBefore = langSteps.slice(0, langSteps.indexOf(word.language) + 1);
+  const explorerHref = `/${locale}/explorer`;
+  const rootExplorerHref = `/${locale}/explorer?root=${word.rootId}`;
 
   return (
     <>
-      <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
+      <style>{`
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        a.related-word-card { transition: all 233ms ease; }
+        a.related-word-card:hover { border-color: ${word.rootId === 'ATUM' ? '#22C55E44' : word.rootId === 'BULL' ? '#EF444444' : '#3B82F644'} !important; }
+      `}</style>
       <div style={{ padding: '120px 34px 89px', maxWidth: 900, margin: '0 auto' }}>
         {/* BREADCRUMB */}
         <nav aria-label="breadcrumb" style={{
@@ -130,41 +112,37 @@ export default function WordPage() {
           fontSize: 13, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
           flexWrap: 'wrap',
         }}>
-          <span
-            onClick={() => router.push(`/${locale}/explorer`)}
-            style={{ cursor: 'pointer', color: '#8b949e', transition: 'color 233ms ease' }}
-            onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.color = '#f39c12'}
-            onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.color = '#8b949e'}
+          <Link
+            href={explorerHref}
+            style={{ color: '#8b949e', textDecoration: 'none', transition: 'color 233ms ease' }}
           >
             {t('breadcrumbExplorer')}
-          </span>
+          </Link>
           <span style={{ color: '#484f58' }}>›</span>
-          <span
-            onClick={() => router.push(`/${locale}/explorer?root=${word.rootId}`)}
+          <Link
+            href={rootExplorerHref}
             style={{
-              cursor: 'pointer',
+              textDecoration: 'none',
               color: word.rootId === 'ATUM' ? '#22C55E' : word.rootId === 'BULL' ? '#EF4444' : '#3B82F6',
-              transition: 'opacity 233ms ease', fontWeight: 600,
+              fontWeight: 600,
             }}
-            onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.opacity = '0.7'}
-            onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.opacity = '1'}
           >
             {word.rootId}
-          </span>
+          </Link>
           <span style={{ color: '#484f58' }}>›</span>
           <span style={{ color: '#e6edf3' }}>{word.european}</span>
         </nav>
 
         {/* 1. HERO */}
         <section style={{ textAlign: 'center', marginBottom: 55, animation: 'fadeIn 0.6s ease' }}>
-          <div style={{
+          <h1 style={{
             fontFamily: "'Cinzel Decorative', serif",
             fontSize: 'clamp(42px, 8vw, 72px)',
             color: '#e6edf3', lineHeight: 1.1, letterSpacing: '3px',
-            marginBottom: 13,
+            marginBottom: 13, marginTop: 0, fontWeight: 400,
           }}>
             {word.european}
-          </div>
+          </h1>
           {word.arabicRoot && (
             <div style={{
               fontFamily: "'Amiri', serif", fontSize: 48, color: '#f39c12',
@@ -187,11 +165,11 @@ export default function WordPage() {
         </section>
 
         {/* 1.5 SIMPLIFIED EXPLANATION */}
-        {insight && (
+        {insightResult.insight && (
           <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.05s both' }}>
             <SectionHeader
               title={t('simplifiedExplanation')}
-              subtitle={insightSource === 'file' ? t('simplifiedSubtitleFile') : t('simplifiedSubtitleFallback')}
+              subtitle={insightResult.source === 'file' ? t('simplifiedSubtitleFile') : t('simplifiedSubtitleFallback')}
               align="left"
             />
             <div style={{
@@ -200,21 +178,21 @@ export default function WordPage() {
             }}>
               <div style={{ display: 'flex', gap: 8, marginBottom: 18, alignItems: 'center', flexWrap: 'wrap' }}>
                 <span style={{
-                  fontSize: 10, color: insightSource === 'file' ? '#22C55E' : '#f39c12',
+                  fontSize: 10, color: insightResult.source === 'file' ? '#22C55E' : '#f39c12',
                   fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px',
-                  background: insightSource === 'file' ? 'rgba(34,197,94,0.08)' : 'rgba(243,156,18,0.08)',
+                  background: insightResult.source === 'file' ? 'rgba(34,197,94,0.08)' : 'rgba(243,156,18,0.08)',
                   padding: '3px 9px', borderRadius: 4, textTransform: 'uppercase',
-                  border: `1px solid ${insightSource === 'file' ? 'rgba(34,197,94,0.2)' : 'rgba(243,156,18,0.2)'}`,
+                  border: `1px solid ${insightResult.source === 'file' ? 'rgba(34,197,94,0.2)' : 'rgba(243,156,18,0.2)'}`,
                 }}>
-                  {insightSource === 'file' ? t('fromSources') : t('autoGenerated')}
+                  {insightResult.source === 'file' ? t('fromSources') : t('autoGenerated')}
                 </span>
-                {insight.meta.confidence && (
+                {insightResult.insight.meta.confidence && (
                   <span style={{ fontSize: 11, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace" }}>
-                    {insight.meta.confidence}
+                    {insightResult.insight.meta.confidence}
                   </span>
                 )}
               </div>
-              <InsightContent content={insight.content} />
+              <InsightContent content={insightResult.insight.content} />
             </div>
           </section>
         )}
@@ -386,9 +364,17 @@ export default function WordPage() {
               )}
             </div>
             <div style={{ fontSize: 14, color: '#8b949e', lineHeight: 1.7, marginBottom: 13 }}>
-              {t.rich?.('transformationRuleBody', {
-                rule: (chunks) => <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>{word.rule || 'N/A'}</code>
-              }) || t('transformationRuleBody', { rule: word.rule || 'N/A' })}
+              {word.rule ? (
+                <>
+                  The transformation rule{' '}
+                  <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>
+                    {word.rule}
+                  </code>{' '}
+                  follows the phonetic shift patterns documented across multiple linguistic studies.
+                </>
+              ) : (
+                <>{t('transformationRuleBody', { rule: 'N/A' })}</>
+              )}
             </div>
             <div style={{ fontSize: 12, color: '#484f58' }}>
               {t('primarySources')}
@@ -401,33 +387,36 @@ export default function WordPage() {
           <SectionHeader title={t('relatedWords')} subtitle={t('relatedWordsSubtitle', { root: word.rootId })} align="left" />
           {related.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 13 }}>
-              {related.map(rw => (
-                <div key={rw.id}
-                  onClick={() => router.push(`/${locale}/etymology/${encodeURIComponent(rw.european.toLowerCase())}`)}
-                  style={{
-                    padding: '16px 21px', borderRadius: 13,
-                    background: 'rgba(22,27,34,0.6)',
-                    border: '1px solid rgba(48,54,61,0.4)',
-                    cursor: 'pointer',
-                    transition: 'all 233ms ease',
-                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.borderColor = word.rootId === 'ATUM' ? '#22C55E44' : word.rootId === 'BULL' ? '#EF444444' : '#3B82F644'}
-                  onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.borderColor = 'rgba(48,54,61,0.4)'}
-                >
-                  <div>
-                    <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3' }}>
-                      {rw.european}
-                    </div>
-                    {rw.arabicRoot && (
-                      <div style={{ fontFamily: "'Amiri', serif", fontSize: 16, color: '#f39c12', direction: 'rtl', marginTop: 4 }}>
-                        {rw.arabicRoot}
+              {related.map(rw => {
+                return (
+                  <Link
+                    key={rw.id}
+                    href={`/${locale}/etymology/${encodeURIComponent(rw.european.toLowerCase())}`}
+                    style={{
+                      padding: '16px 21px', borderRadius: 13,
+                      background: 'rgba(22,27,34,0.6)',
+                      border: '1px solid rgba(48,54,61,0.4)',
+                      cursor: 'pointer',
+                      transition: 'all 233ms ease',
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                      textDecoration: 'none',
+                    }}
+                    className="related-word-card"
+                  >
+                    <div>
+                      <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 16, color: '#e6edf3' }}>
+                        {rw.european}
                       </div>
-                    )}
-                  </div>
-                  <ConfidenceBadge level={rw.confidence} showLabel={false} />
-                </div>
-              ))}
+                      {rw.arabicRoot && (
+                        <div style={{ fontFamily: "'Amiri', serif", fontSize: 16, color: '#f39c12', direction: 'rtl', marginTop: 4 }}>
+                          {rw.arabicRoot}
+                        </div>
+                      )}
+                    </div>
+                    <ConfidenceBadge level={rw.confidence} showLabel={false} />
+                  </Link>
+                );
+              })}
             </div>
           ) : (
             <div style={{ padding: '34px', textAlign: 'center', color: '#484f58', fontSize: 14 }}>
@@ -437,10 +426,18 @@ export default function WordPage() {
         </section>
 
         <div style={{ textAlign: 'center', padding: '21px 0' }}>
-          <button onClick={() => router.push(`/${locale}/explorer`)}
-            style={{ padding: '10px 34px', borderRadius: 21, border: '1px solid #8b949e', background: 'transparent', color: '#8b949e', cursor: 'pointer', fontSize: 14 }}>
+          <Link
+            href={explorerHref}
+            style={{
+              display: 'inline-block',
+              padding: '10px 34px', borderRadius: 21,
+              border: '1px solid #8b949e', background: 'transparent',
+              color: '#8b949e', cursor: 'pointer', fontSize: 14,
+              textDecoration: 'none',
+            }}
+          >
             {t('backToExplorer')}
-          </button>
+          </Link>
         </div>
       </div>
       <Footer />
