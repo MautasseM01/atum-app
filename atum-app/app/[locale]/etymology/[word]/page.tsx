@@ -45,8 +45,26 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const top = await getTopEtymologyWords(100);
-  return top.map(w => ({ word: w.european.toLowerCase() }));
+  try {
+    const top = await getTopEtymologyWords(100);
+    console.log('[generateStaticParams] returning', top.length, 'words. First 3:', top.slice(0, 3).map(w => w.european));
+    return top.map(w => ({ word: w.european.toLowerCase() }));
+  } catch (e) {
+    console.error('[generateStaticParams] ERROR:', e);
+    // Fallback: hard-coded known words so at least SOMETHING gets pre-rendered
+    return [
+      { word: 'paradise' },
+      { word: 'atom' },
+      { word: 'alpha' },
+      { word: 'beta' },
+      { word: 'omega' },
+      { word: 'delta' },
+      { word: 'sigma' },
+      { word: 'caesar' },
+      { word: 'europe' },
+      { word: 'jordan' },
+    ];
+  }
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -84,13 +102,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function WordPage({ params }: PageProps) {
   const { locale, word: wordSlug } = await params;
 
-  const word = await getEtymologyByWord(wordSlug);
+  let word: WordData | null;
+  let insightResult: Awaited<ReturnType<typeof getWordInsightData>> = { insight: null, source: 'none' as const };
+  let related: WordData[] = [];
+  let concepts: ScoredConcept[] = [];
+
+  try {
+    word = await getEtymologyByWord(wordSlug);
+  } catch (e) {
+    console.error(`[WordPage] getEtymologyByWord('${wordSlug}') failed:`, e);
+    word = null;
+  }
   if (!word) notFound();
 
+  try {
+    insightResult = await getWordInsightData(word.european, locale, word.rootId);
+  } catch (e) {
+    console.error(`[WordPage] getWordInsightData failed:`, e);
+  }
+  try {
+    related = await getRelatedWords(word.rootId, wordSlug, 8);
+  } catch (e) {
+    console.error(`[WordPage] getRelatedWords failed:`, e);
+  }
+  try {
+    concepts = await getRelatedConcepts(word.rootId, word.european);
+  } catch (e) {
+    console.error(`[WordPage] getRelatedConcepts failed:`, e);
+  }
+
   const t = await getTranslations('WordPage');
-  const insightResult = await getWordInsightData(word.european, locale, word.rootId);
-  const related: WordData[] = await getRelatedWords(word.rootId, wordSlug, 8);
-  const concepts: ScoredConcept[] = await getRelatedConcepts(word.rootId, word.european);
 
   const rootInfo = ROOT_PRINCIPLES[word.rootId];
   const langSteps = ['AR', 'GR', 'LA', 'EN', 'FR'];
