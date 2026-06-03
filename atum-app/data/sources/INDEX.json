@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.1",
-    "generated": "2026-06-02",
-    "totalConcepts": 13,
+    "version": "1.2",
+    "generated": "2026-06-03",
+    "totalConcepts": 20,
     "totalWordInsights": 37,
     "languages": ["ar", "en", "fr"]
   },
@@ -156,6 +156,97 @@
       },
       "confidence": "🔍🧩",
       "relatedWords": ["bull", "baal", "europe", "italy", "vision"]
+    },
+    {
+      "id": "atum-etymology-map",
+      "title": { "ar": "خريطة إتيمولوجيا أتوم عبر اللغات", "en": "ATUM Etymology Map Across Languages", "fr": "Carte Étymologique d'ATUM à Travers les Langues" },
+      "topic": "roots-explanation",
+      "relatedRoot": "ATUM",
+      "files": {
+        "ar": "concepts/ar/atum-etymology-map.md",
+        "en": "concepts/en/atum-etymology-map.md",
+        "fr": "concepts/fr/atum-etymology-map.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["atom", "atlas", "human", "alpha", "abyss", "benben"]
+    },
+    {
+      "id": "electromagnetic-source",
+      "title": { "ar": "أتمولوجيا: المصدر الكهرومغناطيسي للغة", "en": "Atmology: The Electromagnetic Source of Language", "fr": "Atmologie : La Source Électromagnétique du Langage" },
+      "topic": "electromagnetic",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/electromagnetic-source.md",
+        "en": "concepts/en/electromagnetic-source.md",
+        "fr": "concepts/fr/electromagnetic-source.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["atom", "radio", "electron", "vision", "ra"]
+    },
+    {
+      "id": "cosmic-symbols",
+      "title": { "ar": "التوافق الكهرومغناطيسي والرموز الكونية", "en": "Electromagnetic Resonance and Cosmic Symbols", "fr": "Résonance Électromagnétique et Symboles Cosmiques" },
+      "topic": "sacred-geometry",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/cosmic-symbols.md",
+        "en": "concepts/en/cosmic-symbols.md",
+        "fr": "concepts/fr/cosmic-symbols.md"
+      },
+      "confidence": "🔍🧩",
+      "relatedWords": ["tour", "tower", "bull", "baal", "ra"]
+    },
+    {
+      "id": "seven-patterns-deep",
+      "title": { "ar": "الأنماط السبعة واللغة المقدسة — التعمق", "en": "The Seven Patterns and Sacred Language — Deep Dive", "fr": "Les Sept Motifs et la Langue Sacrée — Approfondissement" },
+      "topic": "sacred-geometry",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/seven-patterns-deep.md",
+        "en": "concepts/en/seven-patterns-deep.md",
+        "fr": "concepts/fr/seven-patterns-deep.md"
+      },
+      "confidence": "🧩🔍",
+      "relatedWords": ["atom", "paradise", "alpha", "tour", "tower", "medicine"]
+    },
+    {
+      "id": "dawood-method",
+      "title": { "ar": "منهج داوود ونظرية الآباء الثلاثة", "en": "Dawood's Method and the Three Fathers Theory", "fr": "La Méthode de Dawood et la Théorie des Trois Pères" },
+      "topic": "language-origin",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/dawood-method.md",
+        "en": "concepts/en/dawood-method.md",
+        "fr": "concepts/fr/dawood-method.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["caesar", "europe", "isis", "jordan", "john", "human"]
+    },
+    {
+      "id": "qubaysi-ibdal",
+      "title": { "ar": "قواعد الإبدال عند القبيسي — 75 قاعدة", "en": "Al-Qubaysi's 75 Ibdal Rules", "fr": "Les 75 Règles d'Ibdal d'Al-Qubaysi" },
+      "topic": "language-origin",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/qubaysi-ibdal.md",
+        "en": "concepts/en/qubaysi-ibdal.md",
+        "fr": "concepts/fr/qubaysi-ibdal.md"
+      },
+      "confidence": "🔬🧩",
+      "relatedWords": ["isis", "caesar", "alpha", "athena", "john", "wine"]
+    },
+    {
+      "id": "kuhn-consciousness",
+      "title": { "ar": "كون والوعي — الحروف كجسور للوعي", "en": "Kuhn: Consciousness and Letter Pictographs", "fr": "Kuhn : Conscience et Pictogrammes des Lettres" },
+      "topic": "sacred-geometry",
+      "relatedRoot": "ATUM",
+      "files": {
+        "ar": "concepts/ar/kuhn-consciousness.md",
+        "en": "concepts/en/kuhn-consciousness.md",
+        "fr": "concepts/fr/kuhn-consciousness.md"
+      },
+      "confidence": "🔬🧩🔍",
+      "relatedWords": ["alpha", "atom", "abyss", "benben"]
     },
     {
       "id": "one-language",
