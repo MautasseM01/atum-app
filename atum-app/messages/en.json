@@ -124,5 +124,35 @@
     "languageLabel": "Language",
     "transformationRuleBody": "The transformation rule {rule} follows the phonetic shift patterns documented across multiple linguistic studies.",
     "primarySources": "Primary sources: Kaggle etymology database, Sacred Word Flow research, Abjad letter DNA analysis"
+  },
+  "Concepts": {
+    "title": "Concepts",
+    "subtitle": "Browse the deep ideas behind the three roots. Each concept is a window into the theory.",
+    "linkedWords": "linked words",
+    "open": "Open",
+    "empty": "No concepts available yet.",
+    "breadcrumb": "Concepts",
+    "fallbackBadge": "Auto-translated",
+    "loading": "Loading concept…",
+    "emptyContent": "No content for this concept yet.",
+    "relatedWords": "Related Words",
+    "relatedWordsSubtitle": "Words this concept illuminates",
+    "relatedConcepts": "Related Concepts",
+    "relatedConceptsSubtitle": "Dive deeper into similar ideas",
+    "backToConcepts": "← Back to Concepts"
+  },
+  "Learn": {
+    "badge": "Start here",
+    "title": "Learn the Three Roots",
+    "steps": "steps",
+    "scrollHint": "scroll to begin",
+    "stepOf": "Step {current} of {total}",
+    "nextStep": "Next step",
+    "openFull": "Read full →",
+    "exploreNow": "Explore words now",
+    "readyTitle": "Ready to explore?",
+    "readyBody": "You've seen the foundation. Now search any word to see which root it belongs to, and trace its journey from Arabic origins.",
+    "explorerCTA": "Open Explorer",
+    "patternsCTA": "Practice Patterns"
   }
 }

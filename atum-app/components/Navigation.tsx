@@ -10,6 +10,8 @@ interface NavigationProps {
 const pages = [
   { id: 'home', label: 'Home' },
   { id: 'explorer', label: 'Explorer' },
+  { id: 'learn', label: 'Learn' },
+  { id: 'concepts', label: 'Concepts' },
   { id: 'patterns', label: 'Patterns' },
   { id: 'letters', label: 'Letters' },
   { id: 'research', label: 'Research' },

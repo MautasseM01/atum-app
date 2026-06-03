@@ -124,5 +124,35 @@
     "languageLabel": "Langue",
     "transformationRuleBody": "La règle de transformation {rule} suit les modèles de décalage phonétique documentés dans plusieurs études linguistiques.",
     "primarySources": "Sources primaires : base de données étymologique Kaggle, recherche Sacred Word Flow, analyse ADN des lettres Abjad"
+  },
+  "Concepts": {
+    "title": "Concepts",
+    "subtitle": "Explorez les idées profondes derrière les trois racines. Chaque concept est une fenêtre sur la théorie.",
+    "linkedWords": "mots liés",
+    "open": "Ouvrir",
+    "empty": "Aucun concept disponible pour le moment.",
+    "breadcrumb": "Concepts",
+    "fallbackBadge": "Auto-traduit",
+    "loading": "Chargement du concept…",
+    "emptyContent": "Aucun contenu pour ce concept pour le moment.",
+    "relatedWords": "Mots Liés",
+    "relatedWordsSubtitle": "Mots que ce concept éclaire",
+    "relatedConcepts": "Concepts Liés",
+    "relatedConceptsSubtitle": "Plongez plus profond dans des idées similaires",
+    "backToConcepts": "← Retour aux Concepts"
+  },
+  "Learn": {
+    "badge": "Commencez ici",
+    "title": "Apprenez les Trois Racines",
+    "steps": "étapes",
+    "scrollHint": "défilez pour commencer",
+    "stepOf": "Étape {current} de {total}",
+    "nextStep": "Étape suivante",
+    "openFull": "Lire en entier →",
+    "exploreNow": "Explorer les mots",
+    "readyTitle": "Prêt à explorer ?",
+    "readyBody": "Vous avez vu les fondations. Maintenant, cherchez n'importe quel mot pour voir à quelle racine il appartient, et tracez son parcours depuis les origines arabes.",
+    "explorerCTA": "Ouvrir l'Explorateur",
+    "patternsCTA": "Pratiquer les Motifs"
   }
 }
