@@ -40,9 +40,10 @@ export default function Page() {
   const loadingRef = useRef(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  searchRef.current = search;
-  rootRef.current = activeRoot;
-  langRef.current = activeLang;
+  // Sync refs after render so callbacks always read latest values
+  useEffect(() => { searchRef.current = search; }, [search]);
+  useEffect(() => { rootRef.current = activeRoot; }, [activeRoot]);
+  useEffect(() => { langRef.current = activeLang; }, [activeLang]);
 
   const doFetch = useCallback(async (pageNum: number, append: boolean) => {
     if (loadingRef.current) return;
@@ -71,15 +72,24 @@ export default function Page() {
     }
   }, []);
 
-  useEffect(() => { doFetch(1, false); }, [doFetch]);
+  // Initial load
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    void doFetch(1, false);
+  }, [doFetch]);
 
+  // Debounce search input changes
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => doFetch(1, false), 300);
+    debounceRef.current = setTimeout(() => { void doFetch(1, false); }, 300);
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   }, [search, doFetch]);
 
-  useEffect(() => { doFetch(1, false); }, [activeRoot, activeLang, doFetch]);
+  // Re-fetch when root or language filter changes
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    void doFetch(1, false);
+  }, [activeRoot, activeLang, doFetch]);
 
   const loadMore = useCallback(() => {
     if (!hasMore || loadingMore || loading) return;

@@ -87,7 +87,7 @@ export const CONCEPT_GROUPS: ConceptGroup[] = [
   },
 ];
 
-export function pickLocale(value: any, locale: Locale): string {
+export function pickLocale(value: string | { ar?: string; en?: string; fr?: string } | null | undefined, locale: Locale): string {
   if (!value) return '';
   if (typeof value === 'string') return value;
   return value[locale] || value.en || value.ar || value.fr || '';

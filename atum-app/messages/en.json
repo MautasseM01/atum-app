@@ -139,7 +139,9 @@
     "relatedWordsSubtitle": "Words this concept illuminates",
     "relatedConcepts": "Related Concepts",
     "relatedConceptsSubtitle": "Dive deeper into similar ideas",
-    "backToConcepts": "← Back to Concepts"
+    "backToConcepts": "← Back to Concepts",
+    "notFoundTitle": "Concept not found",
+    "notFoundBody": "No concept with id \"{id}\""
   },
   "Learn": {
     "badge": "Start here",

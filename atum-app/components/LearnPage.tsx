@@ -7,8 +7,9 @@ import Footer from '@/components/Footer';
 import {
   type IndexConcept,
   type Locale,
-  ROOT_COLOR,
   topicLabel,
+  pickLocale,
+  getRootAccent,
 } from '@/lib/concepts';
 
 interface LearnPageProps {
@@ -18,15 +19,6 @@ interface LearnPageProps {
   }>;
 }
 
-function pickLocale(value: any, locale: Locale): string {
-  if (!value) return '';
-  if (typeof value === 'string') return value;
-  return value[locale] || value.en || value.ar || value.fr || '';
-}
-
-function getRootAccent(relatedRoot: string): string {
-  return ROOT_COLOR[relatedRoot] || ROOT_COLOR.ALL;
-}
 
 const STEP_INTRO: Record<Locale, string> = {
   en: 'A guided tour through the foundation ideas. Each section is a complete concept. Take your time.',

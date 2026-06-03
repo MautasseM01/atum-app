@@ -137,7 +137,7 @@ export async function GET(req: NextRequest) {
 
     const counts = precomputeCounts(db.bridge, db.database);
 
-    let results: SearchResultItem[] = [];
+    const results: SearchResultItem[] = [];
 
     for (const b of db.bridge) {
       const item: SearchResultItem = {

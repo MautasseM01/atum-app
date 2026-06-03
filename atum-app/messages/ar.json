@@ -139,7 +139,9 @@
     "relatedWordsSubtitle": "الكلمات التي يوضحها هذا المفهوم",
     "relatedConcepts": "مفاهيم ذات صلة",
     "relatedConceptsSubtitle": "تعمق في أفكار مشابهة",
-    "backToConcepts": "← العودة إلى المفاهيم"
+    "backToConcepts": "← العودة إلى المفاهيم",
+    "notFoundTitle": "المفهوم غير موجود",
+    "notFoundBody": "لا يوجد مفهوم بالمعرف \"{id}\""
   },
   "Learn": {
     "badge": "ابدأ هنا",

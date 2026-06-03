@@ -66,6 +66,7 @@ export default function WordPage() {
 
   useEffect(() => {
     if (!wordSlug) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true);
     fetch(`/api/etymology/search?q=${encodeURIComponent(wordSlug)}&limit=50`).then(r => r.json()).then(wordRes => {
       const results = wordRes.results || [];
@@ -387,7 +388,7 @@ export default function WordPage() {
             </div>
             <div style={{ fontSize: 14, color: '#8b949e', lineHeight: 1.7, marginBottom: 13 }}>
               {t.rich?.('transformationRuleBody', {
-                rule: (chunks) => <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>{word.rule || 'N/A'}</code>
+                rule: () => <code style={{ color: '#22C55E', fontFamily: "'JetBrains Mono', monospace", background: 'rgba(34,197,94,0.08)', padding: '2px 6px', borderRadius: 4 }}>{word.rule || 'N/A'}</code>
               }) || t('transformationRuleBody', { rule: word.rule || 'N/A' })}
             </div>
             <div style={{ fontSize: 12, color: '#484f58' }}>

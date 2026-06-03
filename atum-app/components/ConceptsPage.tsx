@@ -1,35 +1,24 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+
 import { useParams, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import SectionHeader from '@/components/SectionHeader';
-import RootBadge from '@/components/RootBadge';
-import ConfidenceBadge from '@/components/ConfidenceBadge';
+
 import Footer from '@/components/Footer';
 import {
   type IndexConcept,
   type ConceptGroup,
   type Locale,
-  ROOT_COLOR,
   topicLabel,
+  pickLocale,
+  getRootAccent,
 } from '@/lib/concepts';
 
 interface PageProps {
   groups: Array<ConceptGroup & { concepts: IndexConcept[] }>;
 }
 
-const ALL_LOCALES: Locale[] = ['ar', 'en', 'fr'];
-
-function pickLocale(value: any, locale: Locale): string {
-  if (!value) return '';
-  if (typeof value === 'string') return value;
-  return value[locale] || value.en || value.ar || value.fr || '';
-}
-
-function getRootAccent(relatedRoot: string): string {
-  return ROOT_COLOR[relatedRoot] || ROOT_COLOR.ALL;
-}
 
 export default function ConceptsPage({ groups }: PageProps) {
   const router = useRouter();

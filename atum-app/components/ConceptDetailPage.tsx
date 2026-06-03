@@ -1,61 +1,99 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter, notFound } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import SectionHeader from '@/components/SectionHeader';
-import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
 import InsightContent from '@/components/InsightContent';
 import Footer from '@/components/Footer';
 import {
   type IndexConcept,
   type Locale,
-  ROOT_COLOR,
   topicLabel,
+  pickLocale,
+  getRootAccent,
 } from '@/lib/concepts';
 
-interface DetailProps {
-  concept: IndexConcept;
-}
-
-function pickLocale(value: any, locale: Locale): string {
-  if (!value) return '';
-  if (typeof value === 'string') return value;
-  return value[locale] || value.en || value.ar || value.fr || '';
-}
-
-function getRootAccent(relatedRoot: string): string {
-  return ROOT_COLOR[relatedRoot] || ROOT_COLOR.ALL;
-}
-
-export default function ConceptDetailPage({ concept }: DetailProps) {
+export default function ConceptDetailPage() {
   const router = useRouter();
   const params = useParams();
+  const id = (params?.id as string) || '';
   const locale = ((params?.locale as string) || 'en') as Locale;
   const t = useTranslations('Concepts');
 
+  const [concept, setConcept] = useState<IndexConcept | null>(null);
   const [body, setBody] = useState<string>('');
   const [fallbackUsed, setFallbackUsed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [allConcepts, setAllConcepts] = useState<IndexConcept[]>([]);
+  const [notFoundTriggered, setNotFoundTriggered] = useState(false);
 
   useEffect(() => {
-    fetch(`/api/concept-content?id=${encodeURIComponent(concept.id)}&locale=${locale}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data?.content) setBody(data.content.body || '');
-        if (typeof data?.content?.fallbackUsed === 'boolean') setFallbackUsed(data.content.fallbackUsed);
-      })
-      .finally(() => setLoading(false));
-  }, [concept.id, locale]);
+    if (!id) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLoading(true);
+    setConcept(null);
+    setBody('');
+    setFallbackUsed(false);
 
-  useEffect(() => {
     fetch('/api/concept-index')
       .then(r => r.json())
-      .then(data => setAllConcepts(data?.concepts || []))
-      .catch(() => {});
-  }, []);
+      .then(data => {
+        const concepts = data?.concepts || [];
+        setAllConcepts(concepts);
+        const found = concepts.find((c: IndexConcept) => c.id === id);
+        if (!found) {
+          setNotFoundTriggered(true);
+          notFound();
+          return;
+        }
+        setConcept(found);
+        return fetch(`/api/concept-content?id=${encodeURIComponent(id)}&locale=${locale}`)
+          .then(r => r.json())
+          .then(contentData => {
+            if (contentData?.content) {
+              setBody(contentData.content.body || '');
+              if (typeof contentData.content.fallbackUsed === 'boolean') {
+                setFallbackUsed(contentData.content.fallbackUsed);
+              }
+            }
+          });
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, [id, locale]);
+
+  if (notFoundTriggered) {
+    return null;
+  }
+
+  if (loading) {
+    return (
+      <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⟳</div>
+        <div style={{ color: '#484f58', fontSize: 16 }}>{t('loading')}</div>
+      </div>
+    );
+  }
+
+  if (!concept) {
+    return (
+      <div style={{ padding: '120px 34px', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ fontSize: 55, marginBottom: 21, opacity: 0.4 }}>⌕</div>
+        <div style={{ fontSize: 24, color: '#e6edf3', marginBottom: 8, fontFamily: "'Cinzel Decorative', serif" }}>
+          {t('notFoundTitle')}
+        </div>
+        <div style={{ color: '#8b949e', marginBottom: 34 }}>
+          {t('notFoundBody', { id })}
+        </div>
+        <button onClick={() => router.push(`/${locale}/concepts`)}
+          style={{ padding: '10px 34px', borderRadius: 21, border: '1px solid #f39c12', background: 'transparent', color: '#f39c12', cursor: 'pointer', fontSize: 14 }}>
+          {t('backToConcepts')}
+        </button>
+      </div>
+    );
+  }
 
   const accent = getRootAccent(concept.relatedRoot);
   const title = pickLocale(concept.title, locale);
@@ -68,7 +106,6 @@ export default function ConceptDetailPage({ concept }: DetailProps) {
     <>
       <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <div style={{ padding: '120px 34px 89px', maxWidth: 900, margin: '0 auto' }}>
-        {/* BREADCRUMB */}
         <nav aria-label="breadcrumb" style={{
           display: 'flex', alignItems: 'center', gap: 8, marginBottom: 28,
           fontSize: 13, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
@@ -82,11 +119,10 @@ export default function ConceptDetailPage({ concept }: DetailProps) {
           >
             {t('breadcrumb')}
           </span>
-          <span style={{ color: '#484f58' }}>›</span>
+          <span style={{ color: '#484f58' }}>{locale === 'ar' ? '‹' : '›'}</span>
           <span style={{ color: '#e6edf3' }}>{title}</span>
         </nav>
 
-        {/* HEADER */}
         <section style={{
           marginBottom: 42, animation: 'fadeIn 0.6s ease',
           position: 'relative',
@@ -136,14 +172,8 @@ export default function ConceptDetailPage({ concept }: DetailProps) {
           </div>
         </section>
 
-        {/* CONTENT */}
         <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.1s both' }}>
-          {loading ? (
-            <div style={{ padding: '34px', textAlign: 'center', color: '#484f58' }}>
-              <div style={{ fontSize: 38, marginBottom: 13, opacity: 0.5 }}>◌</div>
-              {t('loading')}
-            </div>
-          ) : body ? (
+          {body ? (
             <div style={{
               padding: '34px', borderRadius: 21,
               background: 'rgba(22, 27, 34, 0.5)',
@@ -158,7 +188,6 @@ export default function ConceptDetailPage({ concept }: DetailProps) {
           )}
         </section>
 
-        {/* RELATED WORDS */}
         {concept.relatedWords && concept.relatedWords.length > 0 && (
           <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.2s both' }}>
             <SectionHeader title={t('relatedWords')} subtitle={t('relatedWordsSubtitle')} align="left" />
@@ -188,7 +217,6 @@ export default function ConceptDetailPage({ concept }: DetailProps) {
           </section>
         )}
 
-        {/* RELATED CONCEPTS */}
         {relatedConcepts.length > 0 && (
           <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.3s both' }}>
             <SectionHeader title={t('relatedConcepts')} subtitle={t('relatedConceptsSubtitle')} align="left" />
