@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import SearchBar from '@/components/SearchBar';
@@ -26,6 +26,75 @@ interface WordItem {
 interface HomePageProps {
   locale: string;
   words: WordItem[];
+}
+
+function HoverParticles({ active, color }: { active: boolean; color: string }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let particles: {x: number, y: number, vx: number, vy: number, life: number, maxLife: number, size: number}[] = [];
+    let animationId: number;
+
+    const render = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (active && Math.random() < 0.4) {
+        const angle = Math.random() * Math.PI * 2;
+        const radius = 100;
+        particles.push({
+          x: canvas.width / 2 + Math.cos(angle) * radius,
+          y: canvas.height / 2 + Math.sin(angle) * radius,
+          vx: Math.cos(angle) * (Math.random() * 1.5 + 0.5),
+          vy: Math.sin(angle) * (Math.random() * 1.5 + 0.5),
+          life: 0,
+          maxLife: 50 + Math.random() * 30,
+          size: Math.random() * 3 + 1
+        });
+      }
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.life++;
+        
+        if (p.life >= p.maxLife) {
+          particles.splice(i, 1);
+          continue;
+        }
+        
+        ctx.globalAlpha = Math.max(0, 1 - (p.life / p.maxLife));
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+
+      if (active || particles.length > 0) {
+        animationId = requestAnimationFrame(render);
+      }
+    };
+
+    if (active || particles.length > 0) {
+      animationId = requestAnimationFrame(render);
+    }
+
+    return () => cancelAnimationFrame(animationId);
+  }, [active, color]);
+
+  return (
+    <canvas 
+      ref={canvasRef} 
+      width={300} 
+      height={300} 
+      style={{ position: 'absolute', top: -50, left: -50, pointerEvents: 'none', zIndex: 0 }} 
+    />
+  );
 }
 
 function RootCircle({ rootId, onNavigate, words }: { rootId: string; onNavigate: (page: string, filter?: string) => void; words: WordItem[] }) {
@@ -64,10 +133,11 @@ function RootCircle({ rootId, onNavigate, words }: { rootId: string; onNavigate:
         transition: 'all 610ms cubic-bezier(0.23, 1, 0.32, 1)',
         position: 'relative',
       }}>
-        <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 34, fontWeight: 900, color: root.color, letterSpacing: '4px', lineHeight: 1 }}>
+        <HoverParticles active={hover} color={root.color} />
+        <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 34, fontWeight: 900, color: root.color, letterSpacing: '4px', lineHeight: 1, zIndex: 1 }}>
           {root.id}
         </div>
-        <div style={{ fontFamily: "'Amiri', serif", fontSize: 28, color: '#f39c12', marginTop: 4, direction: 'rtl' }}>
+        <div style={{ fontFamily: "'Amiri', serif", fontSize: 28, color: '#f39c12', marginTop: 4, direction: 'rtl', zIndex: 1 }}>
           {root.arabic}
         </div>
       </div>

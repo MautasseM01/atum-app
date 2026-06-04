@@ -6,6 +6,7 @@ import SearchBar from '@/components/SearchBar';
 import SectionHeader from '@/components/SectionHeader';
 import EtymologyCard from '@/components/EtymologyCard';
 import Footer from '@/components/Footer';
+import { useTranslations } from 'next-intl';
 
 interface SearchResultItem {
   id: string; european: string; arabicRoot: string; rootId: string;
@@ -30,52 +31,6 @@ interface ExplorerPageProps {
   randomLoading: boolean;
 }
 
-const rootFilterOpts = [
-  { id: 'ALL', label: 'All Roots', color: '#f39c12' },
-  { id: 'ATUM', label: 'ATUM', color: '#22C55E' },
-  { id: 'BULL', label: 'BULL', color: '#EF4444' },
-  { id: 'TOR', label: 'TOR', color: '#3B82F6' },
-];
-
-const langFilterOpts = [
-  { id: 'ALL', label: 'All Lang', color: '#8b949e' },
-  { id: 'EN', label: 'EN', color: '#3B82F6' },
-  { id: 'GR', label: 'GR', color: '#8B5CF6' },
-  { id: 'LA', label: 'LA', color: '#EF4444' },
-  { id: 'FR', label: 'FR', color: '#10B981' },
-  { id: 'AR', label: 'AR', color: '#f39c12' },
-];
-
-function SkeletonCard() {
-  return (
-    <div style={{
-      background: 'rgba(22, 27, 34, 0.8)', borderRadius: 13, padding: 21,
-      border: '1px solid rgba(48, 54, 61, 0.5)', overflow: 'hidden',
-    }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16 }}>
-        <div style={{
-          width: '55%', height: 24, borderRadius: 4,
-          background: 'rgba(48, 54, 61, 0.6)',
-          animation: 'pulse 2s infinite',
-        }} />
-        <div style={{ display: 'flex', gap: 8 }}>
-          <div style={{ width: 34, height: 20, borderRadius: 10, background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite' }} />
-          <div style={{ width: 24, height: 24, borderRadius: '50%', background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite' }} />
-        </div>
-      </div>
-      <div style={{ width: '35%', height: 20, borderRadius: 4, background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite', marginBottom: 8 }} />
-      <div style={{ width: '25%', height: 18, borderRadius: 4, background: 'rgba(48, 54, 61, 0.4)', animation: 'pulse 2s infinite 0.2s' }} />
-    </div>
-  );
-}
-
-const PULSE_STYLE = `
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-`;
-
 export default function ExplorerPage({
   results, total, loading, loadingMore, hasMore,
   rootCounts, search, activeRoot, activeLang,
@@ -85,6 +40,30 @@ export default function ExplorerPage({
   const router = useRouter();
   const params = useParams();
   const locale = params?.locale as string || 'en';
+  const t = useTranslations('Explorer');
+
+  const rootFilterOpts = [
+    { id: 'ALL', label: t('all'), color: '#f39c12' },
+    { id: 'ATUM', label: 'ATUM', color: '#22C55E' },
+    { id: 'BULL', label: 'BULL', color: '#EF4444' },
+    { id: 'TOR', label: 'TOR', color: '#3B82F6' },
+  ];
+
+  const langFilterOpts = [
+    { id: 'ALL', label: t('allLang'), color: '#8b949e' },
+    { id: 'EN', label: 'EN', color: '#3B82F6' },
+    { id: 'GR', label: 'GR', color: '#8B5CF6' },
+    { id: 'LA', label: 'LA', color: '#EF4444' },
+    { id: 'FR', label: 'FR', color: '#10B981' },
+    { id: 'AR', label: 'AR', color: '#f39c12' },
+  ];
+
+  const sortLabels: Record<string, string> = {
+    relevance: t('sortRelevance'),
+    confidence: t('sortConfidence'),
+    alpha: t('sortAlpha'),
+  };
+
   const [sortBy, setSortBy] = useState('relevance');
   const sentinelRef = useRef<HTMLDivElement>(null);
 
@@ -112,14 +91,12 @@ export default function ExplorerPage({
 
   return (
     <>
-      <style>{PULSE_STYLE}</style>
-      <div style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
-        <SectionHeader title="Etymology Explorer" subtitle="Search any word to discover its electromagnetic root and trace its journey from Arabic origins." />
-
+      <style>{`@keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }`}</style>
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'} style={{ padding: '55px 34px 89px', maxWidth: 1100, margin: '0 auto' }}>
+        <SectionHeader title={t('title')} subtitle={t('subtitle')} />
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 34 }}>
-          <SearchBar value={search} onChange={onSearch} autoFocus placeholder="Search by word, root, or meaning..." />
+          <SearchBar value={search} onChange={onSearch} autoFocus placeholder={t('searchPlaceholder')} />
         </div>
-
         <div style={{ display: 'flex', justifyContent: 'center', gap: 8, marginBottom: 8, flexWrap: 'wrap' }}>
           {rootFilterOpts.map(opt => (
             <button
@@ -147,7 +124,6 @@ export default function ExplorerPage({
             </button>
           ))}
         </div>
-
         <div style={{ display: 'flex', justifyContent: 'center', gap: 6, marginBottom: 13, flexWrap: 'wrap' }}>
           {langFilterOpts.map(opt => (
             <button
@@ -167,10 +143,9 @@ export default function ExplorerPage({
             </button>
           ))}
         </div>
-
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 21, padding: '0 4px', flexWrap: 'wrap', gap: 13 }}>
           <span style={{ fontSize: 14, color: '#484f58' }}>
-            {loading ? 'Searching...' : `${total} result${total !== 1 ? 's' : ''}`}
+            {loading ? t('searching') : t('resultsCount', { count: total })}
           </span>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
             <button
@@ -186,13 +161,13 @@ export default function ExplorerPage({
                 transition: 'all 233ms ease',
                 display: 'flex', alignItems: 'center', gap: 6,
               }}
-              onMouseEnter={(e) => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.2)'; }}
-              onMouseLeave={(e) => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.12)'; }}
+              onMouseEnter={e => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.2)'; }}
+              onMouseLeave={e => { if (!randomLoading) (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.12)'; }}
             >
               <span style={{ fontSize: 14, lineHeight: 1 }}>{randomLoading ? '◌' : '◈'}</span>
-              {randomLoading ? 'Loading…' : 'Random Word'}
+              {randomLoading ? t('randomLoading') : t('random')}
             </button>
-            <span style={{ fontSize: 12, color: '#484f58', marginRight: 4 }}>Sort:</span>
+            <span style={{ fontSize: 12, color: '#484f58', marginRight: 4 }}>{t('sortLabel')}</span>
             {['relevance', 'confidence', 'alpha'].map(s => (
               <button
                 key={s}
@@ -206,12 +181,11 @@ export default function ExplorerPage({
                   textTransform: 'capitalize',
                 }}
               >
-                {s}
+                {sortLabels[s]}
               </button>
             ))}
           </div>
         </div>
-
         {loading && !loadingMore ? (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 21 }}>
             {Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)}
@@ -222,11 +196,7 @@ export default function ExplorerPage({
               {sorted.map(word => (
                 <EtymologyCard
                   key={word.id}
-                  word={{
-                    id: word.id, european: word.european, arabicRoot: word.arabicRoot,
-                    rootId: word.rootId, rule: word.rule, meaning: word.meaning,
-                    confidence: word.confidence, language: word.language,
-                  }}
+                  word={word}
                   onClick={() => router.push(`/${locale}/etymology/${encodeURIComponent(word.european.toLowerCase())}`)}
                 />
               ))}
@@ -239,18 +209,18 @@ export default function ExplorerPage({
             <div ref={sentinelRef} style={{ height: 1 }} />
             {!hasMore && total > 50 && (
               <div style={{ textAlign: 'center', padding: '34px', color: '#484f58', fontSize: 14 }}>
-                — All {total} results loaded —
+                {t('allLoaded', { total })}
               </div>
             )}
           </>
         ) : (
           <div style={{ textAlign: 'center', padding: '89px 34px', color: '#484f58' }}>
             <div style={{ fontSize: 55, marginBottom: 21 }}>⌕</div>
-            <div style={{ fontSize: 18, marginBottom: 8, color: '#e6edf3' }}>
-              {search ? `No results for "${search}"` : 'Try searching any word'}
+            <div style={{ fontSize: 18, marginBottom: 8, color: '#e6edf3', fontFamily: "'Cinzel Decorative', serif" }}>
+              {search ? t('noResultsFor', { search }) : t('trySearching')}
             </div>
             <div style={{ fontSize: 14, marginBottom: 21, color: '#8b949e' }}>
-              {search ? 'Try a different search term' : 'Click an example to see its root'}
+              {search ? t('tryDifferent') : t('clickToSee')}
             </div>
             <div style={{ display: 'flex', gap: 13, justifyContent: 'center', flexWrap: 'wrap' }}>
               {['paradise', 'atlas', 'alcohol'].map(ex => (
@@ -273,7 +243,7 @@ export default function ExplorerPage({
             </div>
             {!search && (
               <div style={{ marginTop: 34, fontSize: 14, color: '#484f58' }}>
-                Or browse by root →
+                {t('browseByRoot')}
               </div>
             )}
           </div>
@@ -281,5 +251,28 @@ export default function ExplorerPage({
       </div>
       <Footer />
     </>
+  );
+}
+
+function SkeletonCard() {
+  return (
+    <div style={{
+      background: 'rgba(22, 27, 34, 0.8)', borderRadius: 13, padding: 21,
+      border: '1px solid rgba(48, 54, 61, 0.5)', overflow: 'hidden',
+    }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16 }}>
+        <div style={{
+          width: '55%', height: 24, borderRadius: 4,
+          background: 'rgba(48, 54, 61, 0.6)',
+          animation: 'pulse 2s infinite',
+        }} />
+        <div style={{ display: 'flex', gap: 8 }}>
+          <div style={{ width: 34, height: 20, borderRadius: 10, background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite' }} />
+          <div style={{ width: 24, height: 24, borderRadius: '50%', background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite' }} />
+        </div>
+      </div>
+      <div style={{ width: '35%', height: 20, borderRadius: 4, background: 'rgba(48, 54, 61, 0.6)', animation: 'pulse 2s infinite', marginBottom: 8 }} />
+      <div style={{ width: '25%', height: 18, borderRadius: 4, background: 'rgba(48, 54, 61, 0.4)', animation: 'pulse 2s infinite 0.2s' }} />
+    </div>
   );
 }

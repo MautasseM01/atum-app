@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import type { RawLetter as LetterItem } from '@/lib/data';
 import RootBadge from '@/components/RootBadge';
 import ConfidenceBadge from '@/components/ConfidenceBadge';
@@ -21,8 +22,9 @@ const ROOTS_DATA: Record<string, { id: string; color: string }> = {
 };
 
 function RadarChart({ data, color, size = 240 }: { data: number[]; color: string; size?: number }) {
+  const t = useTranslations('Letters');
   const cx = size / 2, cy = size / 2, r = size * 0.38;
-  const dims = ['Frequency', 'Phonetic Shift', 'Root Affinity', 'Historical Depth', 'Cross-Language'];
+  const dims = [t('dimFrequency'), t('dimPhonetic'), t('dimRootAffinity'), t('dimHistorical'), t('dimCrossLang')];
   const n = dims.length;
   const angleStep = (Math.PI * 2) / n;
 
@@ -59,6 +61,7 @@ function RadarChart({ data, color, size = 240 }: { data: number[]; color: string
 }
 
 function EvolutionTimeline({ letter }: { letter: LetterItem }) {
+  const t = useTranslations('Letters');
   const stages = [
     { era: '~1800 BCE', label: 'Proto-Sinaitic', glyph: letter.protoSinaitic || '𓃾', color: '#f39c12' },
     { era: '~1050 BCE', label: 'Phoenician', glyph: letter.phoenician || '𐤀', color: '#EF4444' },
@@ -70,7 +73,7 @@ function EvolutionTimeline({ letter }: { letter: LetterItem }) {
   return (
     <div>
       <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
-        Script Evolution
+        {t('scriptEvolution')}
       </div>
       <div style={{ position: 'relative', paddingLeft: 24 }}>
         <div style={{ position: 'absolute', left: 6, top: 8, bottom: 8, width: 2, background: 'rgba(48,54,61,0.5)', borderRadius: 1 }} />
@@ -92,6 +95,7 @@ function EvolutionTimeline({ letter }: { letter: LetterItem }) {
 }
 
 export default function LettersPage({ locale, letters, words }: LettersPageProps) {
+  const t = useTranslations('Letters');
   const router = useRouter();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const letter = letters[selectedIdx] || letters[0];
@@ -160,8 +164,33 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
             }}>
               {letter?.arabic}
             </div>
-            <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px', marginBottom: 4 }}>
-              {letter?.name}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 13, marginBottom: 4 }}>
+              <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 21, color: '#e6edf3', letterSpacing: '2px' }}>
+                {t(`names.${letter?.arabic}`)}
+              </div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, color: '#f39c12', opacity: 0.8 }}>
+                {t(`ipas.${letter?.arabic}`)}
+              </div>
+              <button
+                onClick={() => {
+                  const u = new SpeechSynthesisUtterance(letter?.arabic);
+                  u.lang = 'ar-SA';
+                  window.speechSynthesis.speak(u);
+                }}
+                title="Listen to pronunciation"
+                style={{
+                  background: 'rgba(243,156,18,0.1)', border: '1px solid rgba(243,156,18,0.3)',
+                  borderRadius: '50%', width: 28, height: 28, display: 'flex', alignItems: 'center',
+                  justifyContent: 'center', cursor: 'pointer', color: '#f39c12',
+                  transition: 'all 233ms ease'
+                }}
+                onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.2)'}
+                onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'rgba(243,156,18,0.1)'}
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </button>
             </div>
             {letter?.dna?.fundamentalFreqHz && (
               <div style={{ fontSize: 14, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace", marginBottom: 8 }}>
@@ -174,13 +203,13 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
               <RadarChart data={radarData} color={letterRoot.color} size={280} />
             </div>
             <div style={{ marginTop: 13, fontSize: 13, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>
-              DNA Profile — Linguistic Dimensions
+              {t('dnaProfile')}
             </div>
           </div>
 
           <div style={{ background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)', borderRadius: 21, padding: 21 }}>
             <div style={{ fontSize: 13, color: '#484f58', letterSpacing: '2px', fontFamily: "'JetBrains Mono', monospace", textTransform: 'uppercase', marginBottom: 21 }}>
-              Etymologies
+              {t('etymologies')}
             </div>
             {relatedWords.map(w => (
               <div key={w.id} style={{ padding: '10px 0', borderBottom: '1px solid rgba(48,54,61,0.3)', cursor: 'pointer' }}
@@ -199,7 +228,7 @@ export default function LettersPage({ locale, letters, words }: LettersPageProps
             ))}
             {relatedWords.length === 0 && (
               <div style={{ fontSize: 14, color: '#484f58', textAlign: 'center', padding: '21px 0' }}>
-                No words linked to this letter
+                {t('noEtymologies')}
               </div>
             )}
           </div>

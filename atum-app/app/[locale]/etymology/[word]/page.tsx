@@ -28,27 +28,7 @@ interface Insight {
   meta: { arabicRoot: string; root: string; confidence: string };
 }
 
-const ROOT_PRINCIPLES: Record<string, { principle: string; physics: string; daily: string[] }> = {
-  ATUM: {
-    principle: 'Unity · Inertia · Containment',
-    physics: 'ATUM represents inertia — the tendency of matter to remain at rest or in uniform motion. Just as the atom is the indivisible unit of matter, أتم means "to complete, make whole." ATUM-root words describe things that are fundamental, unified, and self-contained.',
-    daily: ['Your home (the container)', 'A completed task', 'The foundation of a building', 'An atom (indivisible unit)', 'Adam (from the earth)'],
-  },
-  BULL: {
-    principle: 'Radiation · Expansion · Outward',
-    physics: 'BULL represents radiation — energy expanding outward from a center. This is the principle of fire, light, and all wave propagation. بول means "to radiate, emit." BULL-root words describe things that expand, radiate, or burst forth.',
-    daily: ['A ball (expanding sphere)', 'A boiling pot (heat expanding)', 'A blooming flower', 'Light radiating from a bulb', 'A bold action (energy outward)'],
-  },
-  TOR: {
-    principle: 'Structure · Rotation · Cycles',
-    physics: 'TOR represents toroidal/spiral dynamics — the most common energy pattern in the universe. From galaxies to hurricanes to DNA, energy follows toroidal paths. طور means "to turn, cycle." TOR-root words describe things that turn, cycle, or form structures.',
-    daily: ['A tower (structured, rising)', 'A tour (circular journey)', 'A tornado (spiral wind)', 'A torque (rotational force)', 'A torus (donut shape)'],
-  },
-};
 
-const LANGUAGE_DISPLAY: Record<string, string> = {
-  GR: 'Greek', LA: 'Latin', EN: 'English', FR: 'French', AR: 'Arabic',
-};
 
 export default function WordPage() {
   const params = useParams();
@@ -66,7 +46,6 @@ export default function WordPage() {
 
   useEffect(() => {
     if (!wordSlug) return;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true);
     fetch(`/api/etymology/search?q=${encodeURIComponent(wordSlug)}&limit=50`).then(r => r.json()).then(wordRes => {
       const results = wordRes.results || [];
@@ -117,16 +96,21 @@ export default function WordPage() {
     );
   }
 
-  const rootInfo = ROOT_PRINCIPLES[word.rootId];
+    const rootInfo = {
+    principle: t(`roots.${word.rootId}.principle`),
+    physics: t(`roots.${word.rootId}.physics`),
+    daily: (t.raw(`roots.${word.rootId}.daily`) as string[]) || [],
+  };
   const langSteps = ['AR', 'GR', 'LA', 'EN', 'FR'];
   const langsBefore = langSteps.slice(0, langSteps.indexOf(word.language) + 1);
+  const langDisplay = (code: string) => t(`languages.${code}`) || code;
 
   return (
     <>
       <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <div style={{ padding: '120px 34px 89px', maxWidth: 900, margin: '0 auto' }}>
         {/* BREADCRUMB */}
-        <nav aria-label="breadcrumb" style={{
+        <nav dir={locale === 'ar' ? 'rtl' : 'ltr'} aria-label="breadcrumb" style={{
           display: 'flex', alignItems: 'center', gap: 8, marginBottom: 28,
           fontSize: 13, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace",
           flexWrap: 'wrap',
@@ -139,7 +123,7 @@ export default function WordPage() {
           >
             {t('breadcrumbExplorer')}
           </span>
-          <span style={{ color: '#484f58' }}>›</span>
+          <span style={{ color: '#484f58' }}>{locale === 'ar' ? '‹' : '›'}</span>
           <span
             onClick={() => router.push(`/${locale}/explorer?root=${word.rootId}`)}
             style={{
@@ -152,12 +136,12 @@ export default function WordPage() {
           >
             {word.rootId}
           </span>
-          <span style={{ color: '#484f58' }}>›</span>
+          <span style={{ color: '#484f58' }}>{locale === 'ar' ? '‹' : '›'}</span>
           <span style={{ color: '#e6edf3' }}>{word.european}</span>
         </nav>
 
         {/* 1. HERO */}
-        <section style={{ textAlign: 'center', marginBottom: 55, animation: 'fadeIn 0.6s ease' }}>
+        <section style={{ textAlign: 'center', marginBottom: 55, animation: 'fadeIn 0.6s ease 0ms both' }}>
           <div style={{
             fontFamily: "'Cinzel Decorative', serif",
             fontSize: 'clamp(42px, 8vw, 72px)',
@@ -189,7 +173,7 @@ export default function WordPage() {
 
         {/* 1.5 SIMPLIFIED EXPLANATION */}
         {insight && (
-          <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.05s both' }}>
+          <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.144s both' }}>
             <SectionHeader
               title={t('simplifiedExplanation')}
               subtitle={insightSource === 'file' ? t('simplifiedSubtitleFile') : t('simplifiedSubtitleFallback')}
@@ -222,7 +206,7 @@ export default function WordPage() {
 
         {/* 2. TRANSFORMATION */}
         {word.rule && (
-          <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.1s both' }}>
+          <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.233s both' }}>
             <SectionHeader title={t('phoneticTransformation')} subtitle={t('phoneticSubtitle')} align="left" />
             <div style={{
               background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
@@ -236,7 +220,7 @@ export default function WordPage() {
                 <div style={{ fontSize: 34, color: '#484f58' }}>→</div>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontFamily: "'Cinzel Decorative', serif", fontSize: 42, color: '#e6edf3', marginBottom: 8 }}>{word.european}</div>
-                  <div style={{ fontSize: 12, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>{word.language ? LANGUAGE_DISPLAY[word.language] || word.language : 'European'}</div>
+                  <div style={{ fontSize: 12, color: '#484f58', fontFamily: "'JetBrains Mono', monospace" }}>{word.language ? langDisplay(word.language) : 'European'}</div>
                 </div>
               </div>
               <div style={{
@@ -252,40 +236,69 @@ export default function WordPage() {
         )}
 
         {/* 3. ACROSS LANGUAGES */}
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.2s both' }}>
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.377s both' }}>
           <SectionHeader title={t('acrossLanguages')} subtitle={t('acrossLanguagesSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
-            borderRadius: 21, padding: '21px 34px',
+            borderRadius: 21, padding: '28px 34px',
+            overflowX: 'auto',
           }}>
-            {langsBefore.map((code, i) => (
-              <div key={code} style={{
-                display: 'flex', alignItems: 'center', gap: 21, padding: '16px 0',
-                borderBottom: i < langsBefore.length - 1 ? '1px solid rgba(48,54,61,0.3)' : 'none',
-              }}>
-                <div style={{
-                  width: 80, fontSize: 12, color: '#484f58',
-                  fontFamily: "'JetBrains Mono', monospace", letterSpacing: '1px', textTransform: 'uppercase',
-                }}>
-                  {LANGUAGE_DISPLAY[code] || code}
-                </div>
-                <div style={{
-                  fontSize: code === 'AR' ? 24 : 21,
-                  fontFamily: code === 'AR' ? "'Amiri', serif" : "'Cinzel Decorative', serif",
-                  color: '#e6edf3',
-                  direction: code === 'AR' ? 'rtl' : 'ltr',
-                }}>
-                  {code === 'AR' ? word.arabicRoot || word.european :
-                   code === word.language ? word.european :
-                   `—`}
-                </div>
-              </div>
-            ))}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 0,
+              flexDirection: locale === 'ar' ? 'row-reverse' : 'row',
+              minWidth: 'max-content',
+            }}>
+              {langsBefore.map((code, i) => {
+                const isActive = code === word.language;
+                const colors: Record<string, string> = { AR: '#f39c12', GR: '#8B5CF6', LA: '#EF4444', EN: '#3B82F6', FR: '#10B981' };
+                const color = colors[code] || '#8b949e';
+                const wordText = code === 'AR' ? (word.arabicRoot || word.european) : code === word.language ? word.european : '—';
+                return (
+                  <div key={code} style={{ display: 'flex', alignItems: 'center' }}>
+                    <div style={{
+                      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
+                      animation: `fadeIn 0.4s ease ${i * 0.1}s both`,
+                    }}>
+                      <div style={{
+                        padding: '10px 20px', borderRadius: 21,
+                        background: isActive ? `${color}22` : 'rgba(48,54,61,0.3)',
+                        border: `2px solid ${isActive ? color : 'rgba(48,54,61,0.4)'}`,
+                        color: isActive ? color : '#8b949e',
+                        fontFamily: code === 'AR' ? "'Amiri', serif" : "'Cinzel Decorative', serif",
+                        fontSize: code === 'AR' ? 20 : 16,
+                        direction: code === 'AR' ? 'rtl' : 'ltr',
+                        whiteSpace: 'nowrap',
+                        boxShadow: isActive ? `0 0 20px ${color}33` : 'none',
+                        transition: 'all 233ms ease',
+                        minWidth: 80, textAlign: 'center',
+                      }}>
+                        {wordText}
+                      </div>
+                      <div style={{
+                        fontSize: 10, color: color, fontFamily: "'JetBrains Mono', monospace",
+                        letterSpacing: '1px', textTransform: 'uppercase',
+                        background: `${color}11`, padding: '2px 8px', borderRadius: 4,
+                      }}>
+                        {langDisplay(code)}
+                      </div>
+                    </div>
+                    {i < langsBefore.length - 1 && (
+                      <div style={{
+                        fontSize: 20, color: '#484f58', padding: '0 8px',
+                        alignSelf: 'flex-start', marginTop: 14,
+                      }}>
+                        {locale === 'ar' ? '←' : '→'}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
 
         {/* 4. THE PHYSICS */}
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.3s both' }}>
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.610s both' }}>
           <SectionHeader title={t('thePhysics')} subtitle={t('physicsSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
@@ -341,7 +354,7 @@ export default function WordPage() {
         </section>
 
         {/* 5. IN YOUR DAILY LIFE */}
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.4s both' }}>
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.987s both' }}>
           <SectionHeader title={t('dailyLife')} subtitle={t('dailyLifeSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
@@ -367,7 +380,7 @@ export default function WordPage() {
         </section>
 
         {/* 6. SOURCES */}
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.5s both' }}>
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 1.597s both' }}>
           <SectionHeader title={t('sourcesTitle')} subtitle={t('sourcesSubtitle')} align="left" />
           <div style={{
             background: 'rgba(22,27,34,0.6)', border: '1px solid rgba(48,54,61,0.4)',
@@ -382,7 +395,7 @@ export default function WordPage() {
               </span>
               {word.language && (
                 <span style={{ fontSize: 13, color: '#e6edf3', background: 'rgba(48,54,61,0.5)', padding: '4px 12px', borderRadius: 8, fontFamily: "'JetBrains Mono', monospace" }}>
-                  {t('languageLabel')}: {LANGUAGE_DISPLAY[word.language] || word.language}
+                  {t('languageLabel')}: {langDisplay(word.language)}
                 </span>
               )}
             </div>
@@ -398,7 +411,7 @@ export default function WordPage() {
         </section>
 
         {/* 7. RELATED WORDS */}
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.6s both' }}>
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 2.584s both' }}>
           <SectionHeader title={t('relatedWords')} subtitle={t('relatedWordsSubtitle', { root: word.rootId })} align="left" />
           {related.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 13 }}>

@@ -38,7 +38,22 @@
     "all": "All Roots",
     "noResults": "No etymologies match your search. Try a different term.",
     "loadMore": "Load More",
-    "resultsCount": "{count} results found"
+    "resultsCount": "{count} results found",
+    "allLang": "All Lang",
+    "searching": "Searching...",
+    "random": "Random Word",
+    "randomLoading": "Loading…",
+    "allLoaded": "All {total} results loaded",
+    "noResultsFor": "No results for \"{search}\"",
+    "trySearching": "Try searching any word",
+    "tryDifferent": "Try a different search term",
+    "clickToSee": "Click an example to see its root",
+    "browseByRoot": "Or browse by root →",
+    "sortLabel": "Sort:",
+    "sortRelevance": "relevance",
+    "sortConfidence": "confidence",
+    "sortAlpha": "alpha",
+    "filterByLanguage": "Filter by Language"
   },
   "Patterns": {
     "title": "Pattern Learning",
@@ -74,7 +89,24 @@
     "foundInRoot": "Found in root",
     "noEtymologies": "No words linked to this letter",
     "scriptEvolution": "Script Evolution",
-    "dnaProfile": "DNA Profile — Linguistic Dimensions"
+    "dnaProfile": "DNA Profile — Linguistic Dimensions",
+    "dimFrequency": "Frequency",
+    "dimPhonetic": "Phonetic Shift",
+    "dimRootAffinity": "Root Affinity",
+    "dimHistorical": "Historical Depth",
+    "dimCrossLang": "Cross-Language",
+    "names": {
+      "أ": "Alif", "ب": "Ba", "ت": "Ta", "ث": "Tha", "ج": "Jim", "ح": "Ha", "خ": "Kha",
+      "د": "Dal", "ذ": "Dhal", "ر": "Ra", "ز": "Zay", "س": "Sin", "ش": "Shin", "ص": "Sad",
+      "ض": "Dad", "ط": "Ta", "ظ": "Za", "ع": "Ayn", "غ": "Ghayn", "ف": "Fa", "ق": "Qaf",
+      "ك": "Kaf", "ل": "Lam", "م": "Mim", "ن": "Nun", "ه": "Ha", "و": "Waw", "ي": "Ya"
+    },
+    "ipas": {
+      "أ": "/a.lif/", "ب": "/baːʔ/", "ت": "/taːʔ/", "ث": "/θaːʔ/", "ج": "/d͡ʒiːm/", "ح": "/ħaːʔ/", "خ": "/xaːʔ/",
+      "د": "/daːl/", "ذ": "/ðaːl/", "ر": "/raːʔ/", "ز": "/zaj/", "س": "/siːn/", "ش": "/ʃiːn/", "ص": "/sˤaːd/",
+      "ض": "/dˤaːd/", "ط": "/tˤaːʔ/", "ظ": "/ðˤaːʔ/", "ع": "/ʕajn/", "غ": "/ɣajn/", "ف": "/faːʔ/", "ق": "/qaːf/",
+      "ك": "/kaːf/", "ل": "/laːm/", "م": "/miːm/", "ن": "/nuːn/", "ه": "/haːʔ/", "و": "/waːw/", "ي": "/jaːʔ/"
+    }
   },
   "Research": {
     "title": "Research Dashboard",
@@ -123,7 +155,33 @@
     "rootLabel": "Root",
     "languageLabel": "Language",
     "transformationRuleBody": "The transformation rule {rule} follows the phonetic shift patterns documented across multiple linguistic studies.",
-    "primarySources": "Primary sources: Kaggle etymology database, Sacred Word Flow research, Abjad letter DNA analysis"
+    "primarySources": "Primary sources: Kaggle etymology database, Sacred Word Flow research, Abjad letter DNA analysis",
+    "shareWord": "Share this etymology",
+    "copyLink": "Copy link",
+    "languages": {
+      "GR": "Greek",
+      "LA": "Latin",
+      "EN": "English",
+      "FR": "French",
+      "AR": "Arabic"
+    },
+    "roots": {
+      "ATUM": {
+        "principle": "Unity · Inertia · Containment",
+        "physics": "ATUM represents inertia — the tendency of matter to remain at rest or in uniform motion. Just as the atom is the indivisible unit of matter, أتم means \"to complete, make whole.\" ATUM-root words describe things that are fundamental, unified, and self-contained.",
+        "daily": ["Your home (the container)", "A completed task", "The foundation of a building", "An atom (indivisible unit)", "Adam (from the earth)"]
+      },
+      "BULL": {
+        "principle": "Radiation · Expansion · Outward",
+        "physics": "BULL represents radiation — energy expanding outward from a center. This is the principle of fire, light, and all wave propagation. بول means \"to radiate, emit.\" BULL-root words describe things that expand, radiate, or burst forth.",
+        "daily": ["A ball (expanding sphere)", "A boiling pot (heat expanding)", "A blooming flower", "Light radiating from a bulb", "A bold action (energy outward)"]
+      },
+      "TOR": {
+        "principle": "Structure · Rotation · Cycles",
+        "physics": "TOR represents toroidal/spiral dynamics — the most common energy pattern in the universe. From galaxies to hurricanes to DNA, energy follows toroidal paths. طور means \"to turn, cycle.\" TOR-root words describe things that turn, cycle, or form structures.",
+        "daily": ["A tower (structured, rising)", "A tour (circular journey)", "A tornado (spiral wind)", "A torque (rotational force)", "A torus (donut shape)"]
+      }
+    }
   },
   "Concepts": {
     "title": "Concepts",

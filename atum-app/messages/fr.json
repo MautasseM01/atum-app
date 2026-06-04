@@ -74,7 +74,24 @@
     "foundInRoot": "Trouvé dans la racine",
     "noEtymologies": "Aucun mot lié à cette lettre",
     "scriptEvolution": "Évolution de l'Écriture",
-    "dnaProfile": "Profil ADN — Dimensions Linguistiques"
+    "dnaProfile": "Profil ADN — Dimensions Linguistiques",
+    "dimFrequency": "Fréquence",
+    "dimPhonetic": "Décalage Phonétique",
+    "dimRootAffinity": "Affinité Racine",
+    "dimHistorical": "Profondeur Historique",
+    "dimCrossLang": "Inter-Langues",
+    "names": {
+      "أ": "Alif", "ب": "Ba", "ت": "Ta", "ث": "Tha", "ج": "Jim", "ح": "Ha", "خ": "Kha",
+      "د": "Dal", "ذ": "Dhal", "ر": "Ra", "ز": "Zay", "س": "Sin", "ش": "Shin", "ص": "Sad",
+      "ض": "Dad", "ط": "Ta", "ظ": "Za", "ع": "Ayn", "غ": "Ghayn", "ف": "Fa", "ق": "Qaf",
+      "ك": "Kaf", "ل": "Lam", "م": "Mim", "ن": "Nun", "ه": "Ha", "و": "Waw", "ي": "Ya"
+    },
+    "ipas": {
+      "أ": "/a.lif/", "ب": "/baːʔ/", "ت": "/taːʔ/", "ث": "/θaːʔ/", "ج": "/d͡ʒiːm/", "ح": "/ħaːʔ/", "خ": "/xaːʔ/",
+      "د": "/daːl/", "ذ": "/ðaːl/", "ر": "/raːʔ/", "ز": "/zaj/", "س": "/siːn/", "ش": "/ʃiːn/", "ص": "/sˤaːd/",
+      "ض": "/dˤaːd/", "ط": "/tˤaːʔ/", "ظ": "/ðˤaːʔ/", "ع": "/ʕajn/", "غ": "/ɣajn/", "ف": "/faːʔ/", "ق": "/qaːf/",
+      "ك": "/kaːf/", "ل": "/laːm/", "م": "/miːm/", "ن": "/nuːn/", "ه": "/haːʔ/", "و": "/waːw/", "ي": "/jaːʔ/"
+    }
   },
   "Research": {
     "title": "Tableau de Bord Recherche",
@@ -123,7 +140,31 @@
     "rootLabel": "Racine",
     "languageLabel": "Langue",
     "transformationRuleBody": "La règle de transformation {rule} suit les modèles de décalage phonétique documentés dans plusieurs études linguistiques.",
-    "primarySources": "Sources primaires : base de données étymologique Kaggle, recherche Sacred Word Flow, analyse ADN des lettres Abjad"
+    "primarySources": "Sources primaires : base de données étymologique Kaggle, recherche Sacred Word Flow, analyse ADN des lettres Abjad",
+    "languages": {
+      "GR": "Grec",
+      "LA": "Latin",
+      "EN": "Anglais",
+      "FR": "Français",
+      "AR": "Arabe"
+    },
+    "roots": {
+      "ATUM": {
+        "principle": "Unité · Inertie · Contenant",
+        "physics": "ATUM représente l'inertie — la tendance de la matière à rester au repos ou en mouvement uniforme. Tout comme l'atome est l'unité indivisible de la matière, أتم signifie «compléter, rendre entier». Les mots de la racine ATUM décrivent des choses fondamentales, unifiées et autonomes.",
+        "daily": ["Votre maison (le contenant)", "Une tâche accomplie", "Les fondations d'un bâtiment", "Un atome (unité indivisible)", "Adam (de la terre)"]
+      },
+      "BULL": {
+        "principle": "Radiation · Expansion · Extérieur",
+        "physics": "BULL représente le rayonnement — l'énergie se propageant vers l'extérieur depuis un centre. C'est le principe du feu, de la lumière et de toute propagation d'ondes. بول signifie «rayonner, émettre». Les mots de la racine BULL décrivent des choses qui s'expandent, rayonnent ou jaillissent.",
+        "daily": ["Une balle (sphère en expansion)", "Une casserole bouillante (chaleur en expansion)", "Une fleur qui s'épanouit", "La lumière d'une ampoule", "Une action audacieuse (énergie vers l'extérieur)"]
+      },
+      "TOR": {
+        "principle": "Structure · Rotation · Cycles",
+        "physics": "TOR représente les dynamiques toroïdales/spirales — le schéma d'énergie le plus courant dans l'univers. Des galaxies aux ouragans en passant par l'ADN, l'énergie suit des chemins toroïdaux. طور signifie «tourner, cycler». Les mots de la racine TOR décrivent des choses qui tournent, évoluent ou forment des structures.",
+        "daily": ["Une tour (structurée, ascendante)", "Un tour (voyage circulaire)", "Une tornade (vent en spirale)", "Un couple (force rotative)", "Un tore (forme de donut)"]
+      }
+    }
   },
   "Concepts": {
     "title": "Concepts",
