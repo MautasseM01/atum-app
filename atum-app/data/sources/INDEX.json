@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.2",
-    "generated": "2026-06-03",
-    "totalConcepts": 20,
+    "version": "1.3",
+    "generated": "2026-06-05",
+    "totalConcepts": 22,
     "totalWordInsights": 37,
     "languages": ["ar", "en", "fr"]
   },
@@ -260,6 +260,32 @@
       },
       "confidence": "🧩🔍",
       "relatedWords": ["caesar", "isis", "alpha", "athena", "human"]
+    },
+    {
+      "id": "atomology-universal",
+      "title": { "ar": "أتمولوجيا: اللغة الكونية الأصلية — النسختان", "en": "Atomology: The Original Universal Language — Both Versions", "fr": "Atomologie : La Langue Universelle Originale — Les Deux Versions" },
+      "topic": "bonacci-theory",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/atomology-universal.md",
+        "en": "concepts/en/atomology-universal.md",
+        "fr": "concepts/fr/atomology-universal.md"
+      },
+      "confidence": "🔍🧩",
+      "relatedWords": ["atom", "bull", "tour", "tower", "mother", "abyss"]
+    },
+    {
+      "id": "hermetic-mind",
+      "title": { "ar": "العقل الهرمسي: القوانين الكونية والرحلة الكونية", "en": "The Hermetic Mind: Universal Laws and the Cosmic Journey", "fr": "L'Esprit Hermétique : Lois Universelles et Voyage Cosmique" },
+      "topic": "philosophy",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/hermetic-mind.md",
+        "en": "concepts/en/hermetic-mind.md",
+        "fr": "concepts/fr/hermetic-mind.md"
+      },
+      "confidence": "🔍❓",
+      "relatedWords": ["alpha", "atom", "bull", "jordan", "vision"]
     }
   ],
   "wordInsights": [

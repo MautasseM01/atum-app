@@ -1,18 +1,20 @@
 # SOURCE-INDEX — NotebookLM Account Access Guide
 
-**Last updated:** 2026-06-05
+**Last updated:** 2026-06-05 (v1.3)
 
 ---
 
 ## Auth Problem (Diagnosed)
 
 The NotebookLM CLI stores one Google session at a time in:
-```
+
+```text
 C:\Users\utilisateur\.notebooklm\storage_state.json
 ```
 
 Account 1 was the default. Account 2 had its own session file at:
-```
+
+```text
 C:\Users\utilisateur\.notebooklm\account2.json
 ```
 
@@ -26,6 +28,7 @@ session — making Account 2 notebooks return "RPC GET_NOTEBOOK failed".
 The CLI accepts `--storage PATH` as a **global option** before any command.
 
 ### Account 1 (default — no flag needed)
+
 ```powershell
 $env:PYTHONUTF8="1"
 notebooklm list
@@ -33,6 +36,7 @@ notebooklm ask "..." --notebook <id>
 ```
 
 ### Account 2
+
 ```powershell
 $env:PYTHONUTF8="1"
 notebooklm --storage "C:\Users\utilisateur\.notebooklm\account2.json" list
@@ -44,7 +48,7 @@ notebooklm --storage "C:\Users\utilisateur\.notebooklm\account2.json" ask "..." 
 ## Account 1 Notebooks (storage_state.json)
 
 | ID prefix | Title |
-|-----------|-------|
+| --------- | ----- |
 | 722cb689 | أتمولوجيا: المصدر الكهرومغناطيسي للغة والكون |
 | 44ddb21a | Kuhn |
 | bf582fe1 | Al-Qubaysi |
@@ -60,18 +64,18 @@ notebooklm --storage "C:\Users\utilisateur\.notebooklm\account2.json" ask "..." 
 
 ## Account 2 Notebooks (account2.json)
 
-| ID prefix | Title | Project Relevance |
-|-----------|-------|------------------|
-| ba51ed75 | Tawfiq_Al-Mutaqadat (Syncretism) | ✅ Bonacci syncretism |
-| 6626e2de | Vibrational Reality: The Science and Spirit of Sacred Sound | ✅ Cymatics/sound |
-| 9f57daca | Tenen | ✅ Geometric letter theory |
-| b9f26e71 | The Hermetic Mind: Universal Laws and the Cosmic Journey | 🔍 Explore |
-| 91b99449 | Atomology: The Original Universal Language1 | ✅ Bonacci v2 |
-| 1edf4366 | Atomology: The Original Universal Language | ✅ Bonacci v1 |
-| bc5fb1b5 | Vibrations of Being: Sound, Symbolism, and Sacred Geometry | ✅ Sound theory |
-| c1606170 | BULL Series Complete: The Universal Force Pattern Framework | ✅ BULL force |
-| 8139bad1 | الحلقة الأولى: "هل تتحدث البشرية لغة واحدة بأقنعة مختلفة؟" | ✅ Core thesis |
-| f9cf5937 | The Celestial Seal: Astrology and the Human Essence | ❓ Astrological |
+| ID prefix | Title | Extraction Status |
+| --------- | ----- | ----------------- |
+| ba51ed75 | Tawfiq\_Al-Mutaqadat (Syncretism) | ✅ done — syncretism-core.md |
+| 6626e2de | Vibrational Reality | ✅ done — vibration.md |
+| 9f57daca | Tenen | ✅ done — tenen-geometry.md |
+| b9f26e71 | The Hermetic Mind | ✅ done — hermetic-mind.md |
+| 91b99449 | Atomology v1 (Original Universal Language1) | ✅ done — atomology-universal.md |
+| 1edf4366 | Atomology v2 (Original Universal Language) | ✅ done — merged into atomology-universal.md |
+| bc5fb1b5 | Vibrations of Being | ✅ done — sacred-sound.md |
+| c1606170 | BULL Series Complete | ✅ done — bull-force.md |
+| 8139bad1 | الحلقة الأولى | ✅ done — one-language.md |
+| f9cf5937 | The Celestial Seal: Astrology | ❓ Astrological — pending review |
 
 ---
 
@@ -84,7 +88,7 @@ $env:PYTHONUTF8="1"; notebooklm list
 # Account 2
 $env:PYTHONUTF8="1"; notebooklm --storage "$env:USERPROFILE\.notebooklm\account2.json" list
 
-# Query Account 2 notebook (example: Tenen)
+# Query Account 2 notebook (example: Hermetic Mind)
 $env:PYTHONUTF8="1"
-notebooklm --storage "$env:USERPROFILE\.notebooklm\account2.json" ask "..." --notebook 9f57daca
+notebooklm --storage "$env:USERPROFILE\.notebooklm\account2.json" ask "..." --notebook b9f26e71
 ```
