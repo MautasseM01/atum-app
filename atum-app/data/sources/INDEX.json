@@ -1,9 +1,10 @@
 {
   "meta": {
-    "version": "1.3",
-    "generated": "2026-06-05",
-    "totalConcepts": 22,
+    "version": "1.4",
+    "generated": "2026-06-07",
+    "totalConcepts": 23,
     "totalWordInsights": 37,
+    "chatInsightTopics": 8,
     "languages": ["ar", "en", "fr"]
   },
   "concepts": [
@@ -78,10 +79,14 @@
       "topic": "bonacci-theory",
       "relatedRoot": "ALL",
       "files": {
-        "ar": "concepts/ar/syncretism-core.md"
+        "ar": "concepts/ar/syncretism-core.md",
+        "en": "concepts/en/syncretism-core.md",
+        "fr": "concepts/fr/syncretism-core.md"
       },
       "confidence": "🔍",
-      "relatedWords": ["atom", "bull", "tour", "tower"]
+      "relatedWords": ["atom", "bull", "tour", "tower"],
+      "lastUpdated": "2026-06-07",
+      "notes": "Updated with §7 from Cancún 2021 + Elements series. EN/FR versions created."
     },
     {
       "id": "ontology-core",
@@ -286,7 +291,32 @@
       },
       "confidence": "🔍❓",
       "relatedWords": ["alpha", "atom", "bull", "jordan", "vision"]
+    },
+    {
+      "id": "other-sources",
+      "title": { "ar": "مصادر أخرى — تقاطعات الحمض النووي اللغوي", "en": "Other Sources — Linguistic DNA Convergences", "fr": "Autres Sources — Convergences du Code Linguistique" },
+      "topic": "language-origin",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/other-sources.md",
+        "en": "concepts/en/other-sources.md",
+        "fr": "concepts/fr/other-sources.md"
+      },
+      "confidence": "🔬🧩🔍❓",
+      "relatedWords": ["alpha", "atom", "mother", "vision"],
+      "lastUpdated": "2026-06-07",
+      "notes": "Sources: Gregg Braden DNA-language, Arabic-Hebrew comparison, Cymatics Decoded, Neuroscience+Arabic, Hebrew DNA of Creation, Ha Mim Pattern, Bruno polyglot method."
     }
+  ],
+  "chatInsights": [
+    { "topic": "atum-bull-tor-framework", "files": { "ar": "chat-insights/ar/atum-bull-tor-framework.md", "en": "chat-insights/en/atum-bull-tor-framework.md", "fr": "chat-insights/fr/atum-bull-tor-framework.md" } },
+    { "topic": "letter-pictographs", "files": { "ar": "chat-insights/ar/letter-pictographs.md", "en": "chat-insights/en/letter-pictographs.md", "fr": "chat-insights/fr/letter-pictographs.md" } },
+    { "topic": "electromagnetic-language", "files": { "ar": "chat-insights/ar/electromagnetic-language.md", "en": "chat-insights/en/electromagnetic-language.md", "fr": "chat-insights/fr/electromagnetic-language.md" } },
+    { "topic": "content-strategy-insights", "files": { "ar": "chat-insights/ar/content-strategy-insights.md", "en": "chat-insights/en/content-strategy-insights.md", "fr": "chat-insights/fr/content-strategy-insights.md" } },
+    { "topic": "monad-diad-trinity", "files": { "ar": "chat-insights/ar/monad-diad-trinity.md", "en": "chat-insights/en/monad-diad-trinity.md", "fr": "chat-insights/fr/monad-diad-trinity.md" } },
+    { "topic": "letter-zodiac-calendar", "files": { "ar": "chat-insights/ar/letter-zodiac-calendar.md", "en": "chat-insights/en/letter-zodiac-calendar.md", "fr": "chat-insights/fr/letter-zodiac-calendar.md" } },
+    { "topic": "hermetic-principles-language", "files": { "ar": "chat-insights/ar/hermetic-principles-language.md", "en": "chat-insights/en/hermetic-principles-language.md", "fr": "chat-insights/fr/hermetic-principles-language.md" } },
+    { "topic": "root-geographic-mapping", "files": { "ar": "chat-insights/ar/root-geographic-mapping.md", "en": "chat-insights/en/root-geographic-mapping.md", "fr": "chat-insights/fr/root-geographic-mapping.md" }, "lastUpdated": "2026-06-07" }
   ],
   "wordInsights": [
     { "word": "atom", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/atom.md", "en": "word-insights/en/atom.md", "fr": "word-insights/fr/atom.md" }, "relatedConcepts": ["roots-explained", "language-physics", "ontology-core"] },
