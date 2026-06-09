@@ -199,7 +199,13 @@
     "relatedConceptsSubtitle": "Dive deeper into similar ideas",
     "backToConcepts": "← Back to Concepts",
     "notFoundTitle": "Concept not found",
-    "notFoundBody": "No concept with id \"{id}\""
+    "notFoundBody": "No concept with id \"{id}\"",
+    "deepDivesTitle": "Deep Dives",
+    "deepDivesSubtitle": "Extended Q&A sessions from NotebookLM — open to explore",
+    "openChat": "Click to explore →",
+    "hideContent": "Click to close",
+    "disclaimerTitle": "Academic Note:",
+    "disclaimerBody": "This concept contains speculative or metaphorical claims (🔍 / ❓). It is presented for comparative value, not as established scientific fact."
   },
   "Learn": {
     "badge": "Start here",

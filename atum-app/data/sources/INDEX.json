@@ -2,7 +2,7 @@
   "meta": {
     "version": "1.4",
     "generated": "2026-06-07",
-    "totalConcepts": 23,
+    "totalConcepts": 24,
     "totalWordInsights": 37,
     "chatInsightTopics": 8,
     "languages": ["ar", "en", "fr"]
@@ -306,17 +306,30 @@
       "relatedWords": ["alpha", "atom", "mother", "vision"],
       "lastUpdated": "2026-06-07",
       "notes": "Sources: Gregg Braden DNA-language, Arabic-Hebrew comparison, Cymatics Decoded, Neuroscience+Arabic, Hebrew DNA of Creation, Ha Mim Pattern, Bruno polyglot method."
+    },
+    {
+      "id": "atomology-original",
+      "title": { "ar": "أتمولوجيا: اللغة الأصلية الكونية (سانتوس بوناتشي)", "en": "Atomology: The Original Universal Language (Santos Bonacci)", "fr": "Atomologie : La Langue Universelle Originale (Santos Bonacci)" },
+      "topic": "bonacci-theory",
+      "relatedRoot": "ALL",
+      "files": {
+        "ar": "concepts/ar/atomology-original.md",
+        "en": "concepts/en/atomology-original.md",
+        "fr": "concepts/fr/atomology-original.md"
+      },
+      "confidence": "❌🔍",
+      "relatedWords": ["atom", "bull", "tour", "tower", "mother", "alpha"]
     }
   ],
   "chatInsights": [
-    { "topic": "atum-bull-tor-framework", "files": { "ar": "chat-insights/ar/atum-bull-tor-framework.md", "en": "chat-insights/en/atum-bull-tor-framework.md", "fr": "chat-insights/fr/atum-bull-tor-framework.md" } },
-    { "topic": "letter-pictographs", "files": { "ar": "chat-insights/ar/letter-pictographs.md", "en": "chat-insights/en/letter-pictographs.md", "fr": "chat-insights/fr/letter-pictographs.md" } },
-    { "topic": "electromagnetic-language", "files": { "ar": "chat-insights/ar/electromagnetic-language.md", "en": "chat-insights/en/electromagnetic-language.md", "fr": "chat-insights/fr/electromagnetic-language.md" } },
-    { "topic": "content-strategy-insights", "files": { "ar": "chat-insights/ar/content-strategy-insights.md", "en": "chat-insights/en/content-strategy-insights.md", "fr": "chat-insights/fr/content-strategy-insights.md" } },
-    { "topic": "monad-diad-trinity", "files": { "ar": "chat-insights/ar/monad-diad-trinity.md", "en": "chat-insights/en/monad-diad-trinity.md", "fr": "chat-insights/fr/monad-diad-trinity.md" } },
-    { "topic": "letter-zodiac-calendar", "files": { "ar": "chat-insights/ar/letter-zodiac-calendar.md", "en": "chat-insights/en/letter-zodiac-calendar.md", "fr": "chat-insights/fr/letter-zodiac-calendar.md" } },
-    { "topic": "hermetic-principles-language", "files": { "ar": "chat-insights/ar/hermetic-principles-language.md", "en": "chat-insights/en/hermetic-principles-language.md", "fr": "chat-insights/fr/hermetic-principles-language.md" } },
-    { "topic": "root-geographic-mapping", "files": { "ar": "chat-insights/ar/root-geographic-mapping.md", "en": "chat-insights/en/root-geographic-mapping.md", "fr": "chat-insights/fr/root-geographic-mapping.md" }, "lastUpdated": "2026-06-07" }
+    { "topic": "atum-bull-tor-framework", "title": { "ar": "إطار أتوم-بول-تور: الكلمات السببية والكلمات النفعية", "en": "ATUM-BULL-TOR Framework: Causal vs. Instrumental Words", "fr": "Cadre ATUM-BULL-TOR : Mots Causaux vs. Mots Instrumentaux" }, "files": { "ar": "chat-insights/ar/atum-bull-tor-framework.md", "en": "chat-insights/en/atum-bull-tor-framework.md", "fr": "chat-insights/fr/atum-bull-tor-framework.md" } },
+    { "topic": "letter-pictographs", "title": { "ar": "الحروف كصور قديمة: الألف والباء والوعي", "en": "Letters as Ancient Pictures: Aleph, Bet, and Consciousness", "fr": "Les Lettres comme Images Anciennes : Aleph, Bet et la Conscience" }, "files": { "ar": "chat-insights/ar/letter-pictographs.md", "en": "chat-insights/en/letter-pictographs.md", "fr": "chat-insights/fr/letter-pictographs.md" } },
+    { "topic": "electromagnetic-language", "title": { "ar": "نظرية الرنين الكهرومغناطيسي للغة", "en": "The Electromagnetic Resonance Theory of Language", "fr": "La Théorie de la Résonance Électromagnétique du Langage" }, "files": { "ar": "chat-insights/ar/electromagnetic-language.md", "en": "chat-insights/en/electromagnetic-language.md", "fr": "chat-insights/fr/electromagnetic-language.md" } },
+    { "topic": "content-strategy-insights", "title": { "ar": "رؤى استراتيجية المحتوى من جلسات NotebookLM", "en": "Content Strategy Insights from NotebookLM Sessions", "fr": "Insights Stratégie de Contenu des Sessions NotebookLM" }, "files": { "ar": "chat-insights/ar/content-strategy-insights.md", "en": "chat-insights/en/content-strategy-insights.md", "fr": "chat-insights/fr/content-strategy-insights.md" } },
+    { "topic": "monad-diad-trinity", "title": { "ar": "الموناد والدياد والثلاثي: المستويات الثلاثة للوجود", "en": "The Monad, Diad, and Trinity: Three Levels of Existence", "fr": "La Monade, la Diade et la Trinité : Trois Niveaux d'Existence" }, "files": { "ar": "chat-insights/ar/monad-diad-trinity.md", "en": "chat-insights/en/monad-diad-trinity.md", "fr": "chat-insights/fr/monad-diad-trinity.md" } },
+    { "topic": "letter-zodiac-calendar", "title": { "ar": "الأحرف والأبراج والتقويم: نظام التطابق الكوني", "en": "Letters, Zodiac, and Calendar: The Cosmic Correspondence System", "fr": "Lettres, Zodiaque et Calendrier : Le Système de Correspondance Cosmique" }, "files": { "ar": "chat-insights/ar/letter-zodiac-calendar.md", "en": "chat-insights/en/letter-zodiac-calendar.md", "fr": "chat-insights/fr/letter-zodiac-calendar.md" } },
+    { "topic": "hermetic-principles-language", "title": { "ar": "المبادئ الهرمسية وانعكاساتها في اللغة", "en": "Hermetic Principles and Their Reflections in Language", "fr": "Principes Hermétiques et leurs Reflets dans le Langage" }, "files": { "ar": "chat-insights/ar/hermetic-principles-language.md", "en": "chat-insights/en/hermetic-principles-language.md", "fr": "chat-insights/fr/hermetic-principles-language.md" } },
+    { "topic": "root-geographic-mapping", "title": { "ar": "رسم الخريطة الجذرية-الجغرافية: الجذور اللغوية تتتبع الحضارات", "en": "Root-Geographic Mapping: How Language Roots Trace Civilizations", "fr": "Cartographie Racine-Géographique : Les Racines Linguistiques Tracent les Civilisations" }, "files": { "ar": "chat-insights/ar/root-geographic-mapping.md", "en": "chat-insights/en/root-geographic-mapping.md", "fr": "chat-insights/fr/root-geographic-mapping.md" }, "lastUpdated": "2026-06-07" }
   ],
   "wordInsights": [
     { "word": "atom", "root": "ATUM", "confidence": "🔬", "files": { "ar": "word-insights/ar/atom.md", "en": "word-insights/en/atom.md", "fr": "word-insights/fr/atom.md" }, "relatedConcepts": ["roots-explained", "language-physics", "ontology-core"] },

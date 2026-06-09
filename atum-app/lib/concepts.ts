@@ -11,9 +11,27 @@ export interface IndexConcept {
 }
 
 export interface ConceptIndex {
-  meta: { totalConcepts: number; totalWordInsights: number; languages: string[] };
+  meta: { totalConcepts: number; totalWordInsights: number; chatInsightTopics: number; languages: string[] };
   concepts: IndexConcept[];
+  chatInsights?: ChatInsightTopic[];
+  wordInsights?: Array<{ word: string; root: string; confidence: string; files: Record<string, string>; relatedConcepts?: string[] }>;
 }
+
+export interface ChatInsightTopic {
+  topic: string;
+  title?: { ar?: string; en?: string; fr?: string };
+  files: { ar?: string; en?: string; fr?: string };
+  lastUpdated?: string;
+}
+
+export function hasFlag(confidence: string, flag: string): boolean {
+  return confidence.includes(flag);
+}
+
+export const NEEDS_DISCLAIMER = new Set<string>([
+  'wormhole-letter', 'bull-force', 'syncretism-core', 'vibrational-reality',
+  'vibration', 'cosmic-symbols', 'hermetic-mind', 'atomology-original',
+]);
 
 export const ROOT_COLOR: Record<string, string> = {
   ATUM: '#22C55E',
@@ -31,6 +49,7 @@ export const TOPIC_LABEL: Record<string, { ar: string; en: string; fr: string }>
   'ontology': { ar: 'أنطولوجيا', en: 'Ontology', fr: 'Ontologie' },
   'data-science': { ar: 'علم البيانات', en: 'Data Science', fr: 'Science des Données' },
   'physics': { ar: 'فيزياء', en: 'Physics', fr: 'Physique' },
+  'philosophy': { ar: 'فلسفة', en: 'Philosophy', fr: 'Philosophie' },
 };
 
 export function topicLabel(topic: string, locale: Locale): string {
@@ -46,44 +65,64 @@ export interface ConceptGroup {
 
 export const CONCEPT_GROUPS: ConceptGroup[] = [
   {
-    id: 'foundations',
-    title: { ar: 'الأسس', en: 'Foundations', fr: 'Fondations' },
+    id: 'start-here',
+    title: { ar: 'ابدأ هنا', en: 'Start Here', fr: 'Commencez Ici' },
     description: {
-      ar: 'ابدأ هنا. هذه المفاهيم تشرح الجذور الثلاثة ولماذا تعمل.',
-      en: 'Start here. These explain what the three roots are and why they work.',
-      fr: 'Commencez ici. Ces concepts expliquent les trois racines et pourquoi elles fonctionnent.',
+      ar: 'المفاهيم الأساسية: ما هي الجذور الثلاثة، وكيف ترتبط اللغة بالفيزياء.',
+      en: 'The essential concepts: what the three roots are, and how language connects to physics.',
+      fr: 'Les concepts essentiels : ce que sont les trois racines, et comment la langue se connecte à la physique.',
     },
-    conceptIds: ['roots-explained', 'language-physics'],
+    conceptIds: ['roots-explained', 'language-physics', 'electromagnetic-source'],
   },
   {
-    id: 'theory',
-    title: { ar: 'النظرية', en: 'The Theory', fr: 'La Théorie' },
+    id: 'three-roots',
+    title: { ar: 'الجذور الثلاثة', en: 'The Three Roots', fr: 'Les Trois Racines' },
     description: {
-      ar: 'الأفكار العميقة: الحرف كثقب دودي، البنية الأنطولوجية.',
-      en: 'Deeper ideas: the letter as wormhole, ontological structure.',
-      fr: 'Idées profondes : la lettre comme trou de ver, structure ontologique.',
+      ar: 'تعمق في كل جذر: خريطة أتوم، قوة بول، ولغة البشرية الواحدة.',
+      en: 'Deep dive into each root: ATUM-map, BULL-force, and humanity\'s one language.',
+      fr: 'Plongée dans chaque racine : carte d\'ATUM, force BULL, et la langue unique de l\'humanité.',
     },
-    conceptIds: ['wormhole-letter', 'ontology-core', 'syncretism-core', 'bull-force'],
+    conceptIds: ['atum-etymology-map', 'bull-force', 'one-language'],
+  },
+  {
+    id: 'method',
+    title: { ar: 'المنهج', en: 'The Method', fr: 'La Méthode' },
+    description: {
+      ar: 'مناهج البحث: إبدال القبيسي، نظرية داوود للآباء الثلاثة.',
+      en: 'Research methodologies: Al-Qubaysi\'s ibdal, Dawood\'s three-fathers theory.',
+      fr: 'Méthodologies de recherche : l\'ibdal d\'Al-Qubaysi, la théorie des trois pères de Dawood.',
+    },
+    conceptIds: ['dawood-method', 'qubaysi-ibdal'],
+  },
+  {
+    id: 'deep-theory',
+    title: { ar: 'نظرية عميقة', en: 'Deep Theory', fr: 'Théorie Approfondie' },
+    description: {
+      ar: 'أفكار متقدمة: الحرف كثقب دودي، العقل الهرمسي، هندسة تينن، الأتمولوجيا.',
+      en: 'Advanced ideas: letter as wormhole, hermetic mind, Tenen geometry, atomology.',
+      fr: 'Idées avancées : la lettre comme trou de ver, esprit hermétique, géométrie de Tenen, atomologie.',
+    },
+    conceptIds: ['wormhole-letter', 'hermetic-mind', 'tenen-geometry', 'atomology-universal', 'ontology-core', 'kuhn-consciousness'],
   },
   {
     id: 'evidence',
     title: { ar: 'الأدلة', en: 'The Evidence', fr: 'Les Preuves' },
     description: {
-      ar: 'لماذا حافظت العربية على الأصوات، والأنماط السبعة، وعلم البيانات.',
-      en: 'Why Arabic preserved the sounds, the seven patterns, the data.',
-      fr: 'Pourquoi l\'arabe a préservé les sons, les sept motifs, les données.',
+      ar: 'نتائج البحث الراسخة: حفظ العربية للأصوات، الأنماط السبعة، ونتائج علم البيانات.',
+      en: 'Established research findings: phonetic conservation, the seven patterns, and data science results.',
+      fr: 'Résultats de recherche établis : conservation phonétique, les sept motifs, et résultats de science des données.',
     },
-    conceptIds: ['phonetic-conservation', 'seven-patterns', 'research-findings', 'one-language'],
+    conceptIds: ['research-findings', 'phonetic-conservation'],
   },
   {
-    id: 'deep-sources',
-    title: { ar: 'مصادر عميقة', en: 'Deep Sources', fr: 'Sources Profondes' },
+    id: 'exploratory',
+    title: { ar: 'استكشافي ❓', en: 'Exploratory ❓', fr: 'Exploratoire ❓' },
     description: {
-      ar: 'من نوتبوكات NotebookLM: تينن، الاهتزاز، الصوت المقدس.',
-      en: 'From NotebookLM notebooks: Tenen, vibration, sacred sound.',
-      fr: 'Des carnets NotebookLM : Tenen, vibration, son sacré.',
+      ar: 'مفاهيم استكشافية ذات ثقة أقل — أفكار مثيرة للاهتمام تتطلب بحثاً إضافياً.',
+      en: 'Speculative concepts with lower confidence — intriguing ideas needing further research.',
+      fr: 'Concepts spéculatifs à confiance réduite — idées intrigantes nécessitant davantage de recherches.',
     },
-    conceptIds: ['tenen-geometry', 'vibration', 'sacred-sound'],
+    conceptIds: ['vibration', 'sacred-sound', 'syncretism-core', 'cosmic-symbols', 'seven-patterns', 'seven-patterns-deep', 'other-sources', 'atomology-original'],
   },
 ];
 

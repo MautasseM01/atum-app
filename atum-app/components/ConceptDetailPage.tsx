@@ -97,6 +97,8 @@ export default function ConceptDetailPage() {
 
   const accent = getRootAccent(concept.relatedRoot);
   const title = pickLocale(concept.title, locale);
+  const confidence = concept.confidence || '';
+  const needsQaDisclaimer = confidence.includes('🔍') || confidence.includes('❓') || confidence.includes('❌');
 
   const relatedConcepts = allConcepts
     .filter(c => c.id !== concept.id && (c.topic === concept.topic || (c.relatedRoot === concept.relatedRoot && concept.relatedRoot !== 'ALL')))
@@ -172,7 +174,20 @@ export default function ConceptDetailPage() {
           </div>
         </section>
 
-        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.1s both' }}>
+        {needsQaDisclaimer && (
+          <div style={{
+            marginBottom: 34, padding: '14px 21px', borderRadius: 12,
+            background: 'rgba(243,156,18,0.06)',
+            border: '1px solid rgba(243,156,18,0.2)',
+            fontSize: 13, color: '#d4a84b', lineHeight: 1.6,
+            animation: 'fadeIn 0.6s ease 0.1s both',
+          }}>
+            <span style={{ fontWeight: 600 }}>⚠️ {t('disclaimerTitle')}</span>{' '}
+            {t('disclaimerBody')}
+          </div>
+        )}
+
+        <section style={{ marginBottom: 55, animation: 'fadeIn 0.6s ease 0.15s both' }}>
           {body ? (
             <div style={{
               padding: '34px', borderRadius: 21,

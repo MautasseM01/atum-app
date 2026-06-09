@@ -182,7 +182,13 @@
     "relatedConceptsSubtitle": "Plongez plus profond dans des idées similaires",
     "backToConcepts": "← Retour aux Concepts",
     "notFoundTitle": "Concept introuvable",
-    "notFoundBody": "Aucun concept avec l'id \"{id}\""
+    "notFoundBody": "Aucun concept avec l'id \"{id}\"",
+    "deepDivesTitle": "Plongées Profondes",
+    "deepDivesSubtitle": "Sessions Q&A étendues de NotebookLM — ouvrir pour explorer",
+    "openChat": "Cliquez pour explorer →",
+    "hideContent": "Cliquez pour fermer",
+    "disclaimerTitle": "Note académique :",
+    "disclaimerBody": "Ce concept contient des affirmations spéculatives ou métaphoriques (🔍 / ❓). Il est présenté à titre comparatif, non comme un fait scientifique établi."
   },
   "Learn": {
     "badge": "Commencez ici",

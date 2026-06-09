@@ -3,39 +3,31 @@ interface ConfidenceBadgeProps {
   showLabel?: boolean;
 }
 
-const colors: Record<string, string> = {
-  proven: '#22C55E', strong: '#3B82F6', moderate: '#f39c12', emerging: '#8b949e',
+const emojiMap: Record<string, { color: string; label: string; desc: string }> = {
+  '🔬': { color: '#22C55E', label: 'Scientific', desc: 'Confirmed through multiple evidence chains' },
+  '🧩': { color: '#3B82F6', label: 'Strong', desc: 'Strong correlation with supporting data' },
+  '🔍': { color: '#f39c12', label: 'Exploratory', desc: 'Plausible connection, further research needed' },
+  '❓': { color: '#8b949e', label: 'Speculative', desc: 'Hypothetical, initial observation only' },
+  '❌': { color: '#EF4444', label: 'Excluded', desc: 'Excluded — disclaimer required' },
 };
 
-const labels: Record<string, string> = {
-  proven: '🔬', strong: '🧩', moderate: '🔍', emerging: '❓',
-};
-
-const descriptions: Record<string, string> = {
-  proven: 'Confirmed through multiple evidence chains',
-  strong: 'Strong correlation with supporting data',
-  moderate: 'Plausible connection, further research needed',
-  emerging: 'Hypothetical, initial observation only',
-};
+const order = ['🔬', '🧩', '🔍', '❓', '❌'];
 
 export default function ConfidenceBadge({ level, showLabel = true }: ConfidenceBadgeProps) {
-  const normalized = level.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-  let matched = 'emerging';
-  if (normalized.includes('proven') || normalized.includes('high') || normalized.includes('عال') || normalized.includes('مؤكد')) matched = 'proven';
-  else if (normalized.includes('strong') || normalized.includes('probable') || normalized.includes('محتم')) matched = 'strong';
-  else if (normalized.includes('moderate') || normalized.includes('exploratory') || normalized.includes('استكش') || normalized.includes('تخم')) matched = 'moderate';
+  const matched = order.find(e => level.includes(e)) || '🔍';
+  const meta = emojiMap[matched] || emojiMap['🔍'];
 
   return (
     <span
-      title={descriptions[matched]}
+      title={meta.desc}
       style={{
         display: 'inline-flex', alignItems: 'center', gap: 6,
-        fontSize: 13, color: colors[matched] || '#8b949e',
+        fontSize: 13, color: meta.color,
         fontFamily: "'JetBrains Mono', monospace",
       }}
     >
-      <span style={{ fontSize: 16 }}>{labels[matched]}</span>
-      {showLabel && <span>{matched.charAt(0).toUpperCase() + matched.slice(1)}</span>}
+      <span style={{ fontSize: 16 }}>{matched}</span>
+      {showLabel && <span>{meta.label}</span>}
     </span>
   );
 }

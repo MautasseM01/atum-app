@@ -197,7 +197,13 @@
     "relatedConceptsSubtitle": "تعمق في أفكار مشابهة",
     "backToConcepts": "← العودة إلى المفاهيم",
     "notFoundTitle": "المفهوم غير موجود",
-    "notFoundBody": "لا يوجد مفهوم بالمعرف \"{id}\""
+    "notFoundBody": "لا يوجد مفهوم بالمعرف \"{id}\"",
+    "deepDivesTitle": "غوص عميق",
+    "deepDivesSubtitle": "جلسات أسئلة وأجوبة موسعة من NotebookLM — افتح للاستكشاف",
+    "openChat": "انقر للاستكشاف ←",
+    "hideContent": "انقر للإغلاق",
+    "disclaimerTitle": "ملاحظة أكاديمية:",
+    "disclaimerBody": "يحتوي هذا المفهوم على ادعاءات تخمينية أو استعارية (🔍 / ❓). يُقدم بقيمته المقارنة، وليس كحقيقة علمية راسخة."
   },
   "Learn": {
     "badge": "ابدأ هنا",

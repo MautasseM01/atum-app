@@ -1,6 +1,7 @@
 'use client';
 
 
+import { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import SectionHeader from '@/components/SectionHeader';
@@ -9,22 +10,30 @@ import Footer from '@/components/Footer';
 import {
   type IndexConcept,
   type ConceptGroup,
+  type ChatInsightTopic,
   type Locale,
   topicLabel,
   pickLocale,
   getRootAccent,
+  hasFlag,
+  NEEDS_DISCLAIMER,
 } from '@/lib/concepts';
+import InsightContent from '@/components/InsightContent';
 
 interface PageProps {
   groups: Array<ConceptGroup & { concepts: IndexConcept[] }>;
+  chatInsights: ChatInsightTopic[];
 }
 
 
-export default function ConceptsPage({ groups }: PageProps) {
+export default function ConceptsPage({ groups, chatInsights }: PageProps) {
   const router = useRouter();
   const params = useParams();
   const locale = ((params?.locale as string) || 'en') as Locale;
   const t = useTranslations('Concepts');
+  const [expandedChat, setExpandedChat] = useState<string | null>(null);
+  const [chatContent, setChatContent] = useState<Record<string, string>>({});
+  const [chatLoading, setChatLoading] = useState<string | null>(null);
 
   return (
     <>
@@ -98,6 +107,12 @@ export default function ConceptsPage({ groups }: PageProps) {
                         }}>
                           {c.relatedRoot === 'ALL' ? 'ATUM · BULL · TOR' : c.relatedRoot}
                         </span>
+                        {hasFlag(c.confidence, '❓') && (
+                          <span style={{ fontSize: 13, marginLeft: 'auto' }} title="Speculative — needs further research">❓</span>
+                        )}
+                        {hasFlag(c.confidence, '❌') && (
+                          <span style={{ fontSize: 13, marginLeft: 'auto' }} title="Excluded — disclaimer applies">⚠️</span>
+                        )}
                       </div>
                       <h4 style={{
                         fontFamily: "'Cinzel Decorative', serif",
@@ -123,6 +138,73 @@ export default function ConceptsPage({ groups }: PageProps) {
             </section>
           );
         })}
+
+        {chatInsights.length > 0 && (
+          <section style={{ marginBottom: 55, animation: 'fadeUp 0.6s ease 0.5s both' }}>
+            <SectionHeader
+              title={t('deepDivesTitle')}
+              subtitle={t('deepDivesSubtitle')}
+            />
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 21 }}>
+              {chatInsights.map((ci) => {
+                const ciTitle = pickLocale(ci.title, locale) || ci.topic;
+                const isOpen = expandedChat === ci.topic;
+                return (
+                  <article
+                    key={ci.topic}
+                    style={{
+                      padding: '24px 24px 21px',
+                      borderRadius: 16,
+                      background: 'rgba(22, 27, 34, 0.7)',
+                      border: `1px solid ${isOpen ? 'rgba(243,156,18,0.4)' : 'rgba(48, 54, 61, 0.5)'}`,
+                      cursor: 'pointer',
+                      transition: 'all 280ms ease',
+                    }}
+                    onClick={() => {
+                      if (isOpen) {
+                        setExpandedChat(null);
+                        return;
+                      }
+                      setExpandedChat(ci.topic);
+                      if (!chatContent[ci.topic]) {
+                        setChatLoading(ci.topic);
+                        fetch(`/api/chat-insight-content?topic=${encodeURIComponent(ci.topic)}&locale=${locale}`)
+                          .then(r => r.json())
+                          .then(data => {
+                            if (data?.content) {
+                              setChatContent(prev => ({ ...prev, [ci.topic]: data.content }));
+                            }
+                          })
+                          .catch(() => {})
+                          .finally(() => setChatLoading(null));
+                      }
+                    }}
+                  >
+                    <h4 style={{
+                      fontFamily: "'Cinzel Decorative', serif",
+                      fontSize: 17, color: '#e6edf3',
+                      lineHeight: 1.35, marginBottom: 8, letterSpacing: '0.3px',
+                    }}>
+                      {ciTitle}
+                    </h4>
+                    <div style={{ fontSize: 12, color: '#8b949e', fontFamily: "'JetBrains Mono', monospace" }}>
+                      {isOpen ? (chatLoading === ci.topic ? t('loading') : t('hideContent')) : t('openChat')}
+                    </div>
+                    {isOpen && chatContent[ci.topic] && (
+                      <div style={{
+                        marginTop: 16, paddingTop: 16,
+                        borderTop: '1px solid rgba(48,54,61,0.4)',
+                        maxHeight: 400, overflowY: 'auto',
+                      }}>
+                        <InsightContent content={chatContent[ci.topic]} />
+                      </div>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         {groups.every(g => g.concepts.length === 0) && (
           <div style={{ textAlign: 'center', padding: '89px 34px', color: '#484f58' }}>

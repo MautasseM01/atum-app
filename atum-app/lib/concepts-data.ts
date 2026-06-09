@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { type Locale, type IndexConcept, type ConceptIndex } from '@/lib/concepts';
+import { type Locale, type IndexConcept, type ConceptIndex, type ChatInsightTopic } from '@/lib/concepts';
 
-export type { Locale, IndexConcept, ConceptIndex } from '@/lib/concepts';
+export type { Locale, IndexConcept, ConceptIndex, ChatInsightTopic } from '@/lib/concepts';
 
 export interface ConceptContent {
   id: string;
@@ -98,4 +98,35 @@ export function getConceptContent(id: string, locale: Locale): ConceptContent | 
       titleFr: c.title?.fr,
     },
   };
+}
+
+export function loadChatInsightList(): ChatInsightTopic[] {
+  const idx = loadConceptIndex();
+  return idx.chatInsights || [];
+}
+
+export function getChatInsightContent(topic: string, locale: Locale): string | null {
+  const idx = loadConceptIndex();
+  const insight = idx.chatInsights?.find(i => i.topic === topic);
+  if (!insight) return null;
+
+  const requestedPath = insight.files?.[locale];
+  let fp: string | undefined;
+
+  if (requestedPath) {
+    fp = path.join(process.cwd(), 'data', 'sources', requestedPath);
+    try {
+      return fs.readFileSync(fp, 'utf8');
+    } catch {}
+  }
+
+  const fallbackPath = insight.files?.en || insight.files?.ar || insight.files?.fr;
+  if (fallbackPath) {
+    fp = path.join(process.cwd(), 'data', 'sources', fallbackPath);
+    try {
+      return fs.readFileSync(fp, 'utf8');
+    } catch {}
+  }
+
+  return null;
 }

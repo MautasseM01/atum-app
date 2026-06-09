@@ -1,4 +1,4 @@
-import { loadConceptIndex } from '@/lib/concepts-data';
+import { loadConceptIndex, loadChatInsightList } from '@/lib/concepts-data';
 import { CONCEPT_GROUPS, type IndexConcept } from '@/lib/concepts';
 import ConceptsPage from '@/components/ConceptsPage';
 
@@ -13,7 +13,9 @@ export default function Page() {
       .filter((c): c is IndexConcept => Boolean(c)),
   }));
 
-  return <ConceptsPage groups={groups} />;
+  const chatInsights = loadChatInsightList();
+
+  return <ConceptsPage groups={groups} chatInsights={chatInsights} />;
 }
 
 export const metadata = {
