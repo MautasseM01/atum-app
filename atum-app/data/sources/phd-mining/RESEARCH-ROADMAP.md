@@ -2,7 +2,8 @@
 
 **الدور:** عالم بيانات + مدير مشروع + قائد أوركسترا
 **المصادر:** measurable-ideas.md + INSPIRATION-SYNTHESIS.md + data paper
-**التاريخ:** 2026-06-09
+**المصادر الجديدة:** 6 مجلدات NotebookLM (القبيسي، داود، كون، مصادر أخرى، توفيق المثقفات، تينين)
+**التاريخ:** 2026-06-10 (التحديث الثاني)
 
 ---
 
@@ -20,36 +21,61 @@
 | قاعدة الانعكاس (Live=Evil) | الأقسام 3, 4, 5, 7 | ❌ استبعاد — تخميني |
 | الأرض المسطحة | الأقسام 1, 3, 4, 5, 7 | ❌ استبعاد — غير علمي |
 | الشمس كـ"ثقب" | الأقسام 2, 3, 6, 7 | ❌ استبعاد — غير قابل للاختبار |
+| **جديد:** لام = انكماش (Lām=Contraction) | القبيسي ✓, داود ✓, كون ✗, أخر ✓, مثقفات ✓, تينين ✓ | دمج مع تنبيه: كون يعارض (يرى اللام = عصا الراعي = توسع) |
+| **جديد:** نسب التشابه المعجمي (Lexical Similarity %) | القبيسي (94% كنعانية, 86.2% آرامية, 60% أكادية, 65% سبئية) | دمج — كميات قابلة للاختبار حاسوبياً |
+| **جديد:** قاعدة التوزيع الثلاثي للأسماء الجغرافية (80-10-10) | القبيسي, داود (GIS clustering) | دمج — مشروع GIS مستقل |
+| **جديد:** التماثل العددي/الجيماتريا (Gematria Isomorphism) | داود (Ben-Ben=104), أخر (Adam=45), مثقفات (22=DNA) | دمج — فكرة موحدة: هل الجيماتريا آلية تشفير منهجية؟ |
 
-### 💎 الكنوز البحثية الفريدة (بعد إزالة التكرار)
+### 💎 الكنوز البحثية الفريدة (بعد إزالة التكرار — محدث بعد 6 مصادر جديدة)
 
 رتبت حسب: الجِدّة العلمية × قابلية التنفيذ × قوة الدعم من المصادر
 
 | الرتبة | الفكرة | المصدر | الجِدّة | قابلية التنفيذ | دعم المصادر |
 |--------|--------|--------|--------|----------------|-------------|
 | 🥇 | **CCM Algorithm** — مطابقة فئات الحروف الساكنة عبر 9 فئات صوتية | Atomology v1 (91b) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ (ورقة منهجية) | 3 مصادر |
-| 🥇 | **Self-Correcting Text** — بنية تصحيح أخطاء ذاتية في النص (Tenen) | Tenen (9f5) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ (مشروع برمجي) | 1 مصدر |
+| 🥇 | **Self-Correcting Text / Base-3 Cartesian Mapping** — بنية تصحيح أخطاء ذاتية + مكعب 3×3×3 | Tenen (جميع الأقسام) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ (مشروع برمجي) | 2 مصدر (تينين + كون) |
+| 🥇 | **333 BC Naming Boundary** — الأسماء الأنانية ظهرت فقط بعد الإسكندر | القبيسي (جديد) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ (قاعدة بيانات GIS) | 1 مصدر |
+| 🥇 | **Neurological-Gestural Origin of Language** — الحروف كظلال للقشرة الحركية | Tenen (جديد) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ (تصوير دماغ MRI) | 1 مصدر |
 | 🥇 | **Semantic Suffix Clustering** — تكتل دلالي للواحق ATOM/BULL/TOR | جميع المصادر | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ (Word Embeddings) | 15 مصدراً |
+| 🥈 | **Hey-Infix Rule** — إدراج الهاء يحول الجذر من ثابت إلى متحرك | Kuhn (جديد) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ (تحليل معجمي آلي) | 1 مصدر |
 | 🥈 | **18-Inch Biological Yardstick** — العمود الفقري كأصل وحدات القياس | Syncretism, BULL, Halqa | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ (بيانات تشريحية) | 3 مصادر |
+| 🥈 | **Ha-Mim Code 19 Monte Carlo** — مجموع ح/م يقبل القسمة على 19 | Other Sources (جديد) | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ (محاكاة 10M تجربة) | 1 مصدر |
+| 🥈 | **White Matter Thickness in Arabic Learners** — تضخم الوصلات العصبية | Other Sources (جديد) | ⭐⭐⭐⭐⭐ | ⭐⭐ (يحتاج MRI + عينة) | 1 مصدر |
+| 🥈 | **Cellular-Audio Profile Interaction** — الخلايا تستجيب لترددات اللسان | Other Sources (جديد) | ⭐⭐⭐⭐⭐ | ⭐ (مختبر بيولوجي) | 1 مصدر |
+| 🥈 | **Toponymic 80-10-10 Rule** — التوزيع الثلاثي للأسماء الجغرافية | القبيسي, داود (جديد) | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ (GIS + قواعد بيانات) | 2 مصدر |
 | 🥈 | **Planetary Octaves Map** — العناصر 85-94 كأصداء للمدارات الكوكبية | Bonacci (8) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ (بيانات كيمياء) | 2 مصدر |
 | 🥈 | **Ecliptic Alphabetical Encryption** — الأبجدية كنظام إحداثيات ضوئي | Bonacci (3) | ⭐⭐⭐⭐ | ⭐⭐⭐ (نمذجة رياضية) | 2 مصدر |
-| 🥈 | **DNA-Dan-Adam Anagram** — الحمض النووي مشفر لغوياً | Atomology (1,6,7) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل معجمي) | 3 مصادر |
+| 🥉 | **Bio-Gematria (Ben-Ben=104=Cytochrome C)** — حمض نووي مشفر عددياً | Dawood (جديد) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل بيوكيميائي) | 1 مصدر |
+| 🥉 | **Prayer Code in Adam (Mitpalel Anagram)** — صلاة مشفرة في اسم آدم | Other Sources (جديد) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل معجمي) | 1 مصدر |
+| 🥉 | **Bruno's Rotational Memory as Proto-Computing** — عجلات برونو كجد للحوسبة | Other Sources (جديد) | ⭐⭐⭐⭐ | ⭐⭐ (نمذجة تاريخية) | 1 مصدر |
+| 🥉 | **Democracy as Civil Registration** — الديمقراطية = نظام تسجيل مدني | Dawood (جديد) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل تاريخي-لساني) | 1 مصدر |
+| 🥉 | **DNA-Dan-Adam Anagram** — الحمض النووي مشفر لغوياً | Atomology (1,6,7) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل معجمي) | 3 مصادر |
 | 🥉 | **7-Vowel Biological Source Code** — الحروف المتحركة كترددات تشغيل | Atomology v2 (1ed) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل فونيمات) | 2 مصدر |
-| 🥉 | **40-Degree Temptation Metric** — أيام الفتنة كمسافة فلكية | Syncretism (ba5) | ⭐⭐⭐⭐ | ⭐⭐ (تحليل تاريخي-فلكي) | 1 مصدر |
 | 🥉 | **Atomic Summation 22** — H+C+N+O=22=أحماض أمينية | Bonacci (8) | ⭐⭐⭐ | ⭐⭐⭐⭐ (تحليل عناصر) | 1 مصدر |
+| 🥉 | **Acoustic Onomatopoeia** — المحاكاة الصوتية (إيش=صوت الاحتراق) | Kuhn (جديد) | ⭐⭐⭐ | ⭐⭐⭐ (تحليل طيفي) | 1 مصدر |
+| 🥉 | **Physiognomic Accuracy** — 90% دقة تحديد البرج من ملامح الوجه | Other Sources, مثقفات (جديد) | ⭐⭐⭐ | ⭐⭐⭐ (Computer Vision) | 2 مصدر |
 
-### 🗑️ الادعاءات المستبعدة نهائياً (لا تظهر في الأطروحة)
+### 🗑️ الادعاءات المستبعدة نهائياً (لا تظهر في الأطروحة — محدث)
 
-| الادعاء | سبب الاستبعاد |
-|---------|---------------|
-| Flat Earth / Geocentrism | يتعارض مع الفيزياء الرصينة — يضر بالمصداقية |
-| Rule of Reversal (Live=Evil) | غير قابل للاختبار — تأويل رمضي |
-| English = language of angels | أيديولوجي لا علمي |
-| Julius Caesar = Jesus Christ | تأويل تاريخي غير قابل للإثبات |
-| Humpty Dumpty = Jesus | تخميني رمزي بالكامل |
-| Wi-Fi brain programming | نظريات مؤامرة |
-| No particles theory | يناقض الفيزياء التجريبية |
-| Soul portals (Crater) | ميتافيزيقي غير قابل للقياس |
+| الادعاء | سبب الاستبعاد | المصدر الأصلي |
+|---------|---------------|---------------|
+| Flat Earth / Geocentrism | يتعارض مع الفيزياء الرصينة — يضر بالمصداقية | الأقسام السابقة |
+| Rule of Reversal (Live=Evil) | غير قابل للاختبار — تأويل رمضي | الأقسام السابقة |
+| English = language of angels | أيديولوجي لا علمي | الأقسام السابقة |
+| Julius Caesar = Jesus Christ | تأويل تاريخي غير قابل للإثبات | الأقسام السابقة |
+| Wi-Fi brain programming | نظريات مؤامرة | الأقسام السابقة |
+| Soul portals (Crater) | ميتافيزيقي غير قابل للقياس | الأقسام السابقة |
+| **جديد:** لغة آدم (Language of Adam) | ادعاء ديني غير قابل للاختبار اللغوي | القبيسي |
+| **جديد:** سيكولوجية الجرس الصوتي (Phonetic Physics) | زعم أن طاء=عرض ودال=طول — غير قابل للقياس | القبيسي |
+| **جديد:** مؤامرة استشراقية (Zionist Conspiracy) | تفسير تخميني لدوافع المستشرقين | القبيسي |
+| **جديد:** تأثيل عابر / إنجليزي من عبري (Folk Etymology) | يتصادم مع التأثيل الأكاديمي المثبت | كون |
+| **جديد:** حصون ذهنية (Mental Strongholds) | ادعاء سيكولوجي-لاهوتي غير قابل للقياس | كون |
+| **جديد:** ختان وتطور عصبي (Circumcision→Brain) | فرضية غير قابلة للاختبار تجريبياً | تينين |
+| **جديد:** فضاء هيلبرت كمي للحروف (Quantum Hilbert) | زعم ميتافيزيقي غير قابل للنمذجة | تينين |
+| **جديد:** توقيع إلهي زمني 1974 (Divine Signature) | تاريخ محدد = دليل قطعي — غير علمي | Other Sources |
+| **جديد:** روحانية الياء المسبقة (Pre-existent Ya) | ادعاء ديني غير قابل للاختبار | Other Sources |
+| **جديد:** فهم الطبيعة للسان العربي | زعم بأن الأشجار تفهم العربية | Other Sources |
+| **جديد:** خلق الكون عبر النطق (Creation via Speech) | لاهوتي لا يمكن رصده مخبرياً | Other Sources |
 
 ---
 
@@ -109,25 +135,28 @@
   Phase 4:    كتابة الورقة
 ```
 
-### 2.2 [P2] Self-Correcting Text Structure (Tenen)
+### 2.2 [P2] Self-Correcting Text + Base-3 Cartesian Mapping (Tenen)
 ```
 الوصف:        هل يمكن لخوارزمية استعادة حرف مفقود في النص بناءً على
-              التناظر الهندسي لمكعب تينين Base-3؟
-البيانات:     Hebrew Torah (first verse), Arabic Bismillah
-المنهج:       Python + 3x3x3 cube coordinates + error injection
+               التناظر الهندسي لمكعب 3×3×3 (Base-3)؟
+البيانات:     Hebrew Torah (first verse), Arabic Bismillah,
+               مقارنة مع نصوص عشوائية (baseline)
+المنهج:       Python + 3x3x3 cube coordinates + error injection +
+               تحقق من التناظر المرآتي للحروف المزدوجة
 النشر:        Digital Scholarship in the Humanities
-المدة:        4 أسابيع
+المدة:        5 أسابيع
 خطوات:
   Phase 1:    بناء مكعب Base-3 (27 حرفاً = 27 موقعاً)
-  Phase 2:    برمجة خوارزمية التناظر
-  Phase 3:    اختبار استعادة أحرف عشوائية
-  Phase 4:    مقارنة مع random baseline
+  Phase 2:    برمجة خوارزمية التناظر المرآتي
+  Phase 3:    اختبار استعادة أحرف مفقودة عشوائياً
+  Phase 4:    مقارنة مع random baseline + إحصائيات ELS (قفز 49/50)
+  Phase 5:    كتابة الورقة
 ```
 
 ### 2.3 [P3] Semantic Suffix Clustering — أقوى نمط متكرر
 ```
 الوصف:        هل تشكل الكلمات المنتهية بـ -tion/-ble/-tor
-              عناقيد دلالية في فضاء تضمين الكلمات؟
+               عناقيد دلالية في فضاء تضمين الكلمات؟
 البيانات:     5 لغات (EN, ES, IT, FR, PT) من fastText/mBERT
 المنهج:       Word Embeddings + t-SNE + silhouette score
 النشر:        COLING أو ACL workshop
@@ -139,6 +168,40 @@
   Phase 4:    تكرار عبر 5 لغات — هل النمط ثابت؟
   Phase 5:    تحليل silhouette score لكل عنقود
   Phase 6:    كتابة الورقة
+```
+
+### 2.4 [P4] Toponymic 80-10-10 GIS Rule (القبيسي + داود)
+```
+الوصف:        اختبار التوزيع الثلاثي للأسماء الجغرافية القديمة:
+               80% أسباب طبيعية، 10% عسكرية، 10% دينية
+               وهل اختفت الأسماء الأنانية قبل 333 ق.م؟
+البيانات:     قواعد بيانات أسماء المواقع القديمة (Pleiades, DARMC,
+               OpenStreetMap historical)
+المنهج:       Python + GIS (GeoPandas) + تصنيف آلي للفئات
+النشر:        Journal of Historical Geography أو PLOS ONE
+المدة:        4 أسابيع
+خطوات:
+  Phase 1:    استخراج عينة من 500+ اسم موقع قديم مع تواريخها
+  Phase 2:    تصنيف آلي إلى (طبيعي/عسكري/ديني/أناني)
+  Phase 3:    اختبار الفروق قبل وبعد 333 ق.م (χ² test)
+  Phase 4:    اختبار 80-10-10 distribution
+  Phase 5:    كتابة الورقة
+```
+
+### 2.5 [P5] Ha-Mim Code 19 Monte Carlo Validation
+```
+الوصف:        هل مجموع تكرارات ح/م في السور السبع يقبل القسمة
+               على 19 بشكل غير عشوائي؟
+البيانات:     Quran text (رسم عثماني) + 10M محاكاة مونت كارلو
+المنهج:       Python + Monte Carlo + Fisher's exact test
+النشر:        Journal of Qur'anic Studies أو PLOS ONE
+المدة:        3 أسابيع
+خطوات:
+  Phase 1:    استخراج ترددات ح/م من السور السبع
+  Phase 2:    محاكاة 10M توزيع عشوائي لنفس الطول
+  Phase 3:    حساب p-value ومقارنة مع Bonferroni
+  Phase 4:    تكرار على نصوص عشوائية أخرى كـ control
+  Phase 5:    كتابة note قصيرة (2-3 صفحات)
 ```
 
 ---
@@ -169,15 +232,38 @@
 ### 3.3 [R3] Atomic Summation 22
 ```
 الوصف:        مجموع الأعداد الذرية لـ H(1)+C(6)+N(7)+O(8)=22
-              يطابق 22 حمضاً أمينياً و 22 حرفاً أبجدياً
+               يطابق 22 حمضاً أمينياً و 22 حرفاً أبجدياً
 البيانات:     بيانات كيميائية حيوية قياسية
 المنهج:       تحليل احتمالية الصدفة (كم مجموعة عشوائية من 4 عناصر
-              تعطي مجموع 22؟)
+               تعطي مجموع 22؟)
 النشر:        Biology Letters أو PLOS ONE
 المدة:        2 أسابيع
 ```
 
----
+### 3.4 [R4] 333 BC Naming Boundary — Toponymic Ego-Shift (جديد)
+```
+الوصف:        هل كانت الأسماء الجغرافية قبل الإسكندر خالية تماماً
+               من الأسماء الشخصية (Ego-centric)؟
+البيانات:     قائمة 200+ اسم مدينة قديمة مع تواريخ التأسيس
+               (Pleiades, ORBIS, Wikipedia historical)
+المنهج:       تحليل زمني + تصنيف (وظيفي vs أناني) + اختبار χ²
+النشر:        Journal of Historical Geography
+المدة:        6 أسابيع
+التحذير:      لا تربطه بنظرية المؤامرة الاستشراقية — فقط التحليل الإحصائي
+```
+
+### 3.5 [R5] Acoustic Onomatopoeia — Cross-Linguistic Phoneme Test (جديد)
+```
+الوصف:        هل كلمات معينة (مثل "نار/إيش") تحاكي فيزيائياً
+               الأصوات الطبيعية عبر اللغات؟
+البيانات:     عينة من 50 كلمة صوتية (fire, water, wind, thunder)
+               من 10 لغات (AR, HE, EN, DE, FR, RU, ZH, JA, SW, HI)
+المنهج:       تحليل طيفي (Spectrogram) + مقارنة cross-linguistic
+               similarity matrices
+النشر:        Journal of Phonetics أو Frontiers in Psychology
+المدة:        5 أسابيع
+التحذير:      تجنب "اللغة السماوية" — ركز على الفيزياء الصوتية فقط
+```
 
 ## الخطوة 4: التصورات البصرية (Q2 — بالتوازي)
 
@@ -219,9 +305,13 @@
 | **CCM Algorithm** | *Journal of Quantitative Linguistics* | Q2 2026 | البيانات جاهزة، البرمجة تحتاج 6 أسابيع |
 | **Semantic Suffix Clustering** | *COLING 2026* أو *ACL workshop* | Q3 2026 | يحتاج تضمين كلمات (8 أسابيع) |
 | **Ibdal as Encoding Dictionary** | *Language Resources and Evaluation* | Q3 2026 | البيانات جاهزة — تحتاج إطاراً نظرياً |
+| **Toponymic 80-10-10 Rule (P4)** | *Journal of Historical Geography* | Q3 2026 | مشروع GIS جديد (4 أسابيع) |
+| **Ha-Mim Code 19 (P5)** | *Journal of Qur'anic Studies* | Q3 2026 | مشروع Monte Carlo جديد (3 أسابيع) |
 | **Lām = Contraction (statistical)** | *Journal of Phonetics* | Q4 2026 | يحتاج تدقيق العينة + ترددات CODA |
 | **Abjad × Frequency correlation** | *Written Language & Literacy* | Q4 2026 | يحتاج ترددات CODA |
-| **Self-Correcting Text** | *Digital Scholarship in the Humanities* | Q4 2026 | مشروع برمجي مستقل |
+| **Self-Correcting Text / Base-3** | *Digital Scholarship in the Humanities* | Q4 2026 | مشروع برمجي مستقل |
+| **333 BC Naming Boundary (R4)** | *Journal of Historical Geography* | Q1 2027 | تحليل تاريخي-إحصائي (6 أسابيع) |
+| **Acoustic Onomatopoeia (R5)** | *Frontiers in Psychology* | Q1 2027 | تحليل طيفي cross-linguistic |
 
 ### ترتيب الأولويات (ما يُنجز أولاً)
 
@@ -237,17 +327,21 @@ Q2 2026 (يونيو-أغسطس):
 Q3 2026 (سبتمبر-نوفمبر):
   ┌─────────────────────────────────────────┐
   │ 1. Semantic Suffix Clustering paper      │
-  │ 2. Abjad × Frequency (بعد CODA)          │
-  │ 3. Self-Correcting Text (برمجة)          │
-  │ 4. 18-Inch Yardstick (تحليل بيانات)      │
+  │ 2. Toponymic 80-10-10 Rule (P4)         │
+  │ 3. Ha-Mim Code 19 (P5)                  │
+  │ 4. Abjad × Frequency (بعد CODA)          │
+  │ 5. Self-Correcting Text / Base-3 (برمجة) │
+  │ 6. 18-Inch Yardstick (تحليل بيانات)      │
   └─────────────────────────────────────────┘
 
 Q4 2026 (ديسمبر-فبراير 2027):
   ┌─────────────────────────────────────────┐
   │ 1. تقديم طلبات الدكتوراه                  │
   │ 2. Lām = Contraction paper              │
-  │ 3. Planetary Octaves (R2)               │
-  │ 4. Atomic Summation 22 (R3)             │
+  │ 3. 333 BC Naming Boundary (R4)          │
+  │ 4. Acoustic Onomatopoeia (R5)           │
+  │ 5. Planetary Octaves (R2)               │
+  │ 6. Atomic Summation 22 (R3)             │
   └─────────────────────────────────────────┘
 ```
 
@@ -262,6 +356,9 @@ Q4 2026 (ديسمبر-فبراير 2027):
  | **Louvain clustering لا يعزل 3 عناقيد** | مرتفع | متوسط — التصنيف الثلاثي تعسفي | قدمه كـ "exploratory taxonomy" بكل شفافية |
  | **رفض مجلة JQL للورقة** | متوسط | منخفض — جرب المجلة التالية | استهدف 3 مجلات لكل ورقة (JQL → JLL → PLOS ONE) |
  | **الخلط بين الطبقة الأكاديمية والباطنية** | مرتفع | خطير — فقدان المصداقية | الفصل الصارم: 🔬🧩 في الأطروحة، 🔍❓ في التطبيق فقط |
+ | **جديد: كون يعارض اللام = انكماش** | منخفض | متوسط — فقدان الإجماع | اشرح الخلاف في الورقة: "Kuhn يرى اللام كعصا راعي = توسع" |
+ | **جديد: 333 BC Boundary لا يصمد إحصائياً** | متوسط | منخفض — فكرة واحدة فقط | قدّمها كـ "ملاحظة أولية" وليست نتيجة نهائية |
+ | **جديد: Ha-Mim Code 19 = صدفة إحصائية** | مرتفع | منخفض — ورقة قصيرة | Bonferroni correction + multiple testing warning |
 
 ---
 
@@ -320,5 +417,5 @@ Q4 2026 (ديسمبر-فبراير 2027):
 
 ---
 
-*تم الإعداد: 2026-06-09*
-*بعد قراءة وتحليل measurable-ideas.md (7 أقسام) و INSPIRATION-SYNTHESIS.md (15 مصدراً)*
+*تم الإعداد: 2026-06-09 | التحديث الثاني: 2026-06-10*
+*بعد قراءة وتحليل measurable-ideas.md (7 أقسام) + INSPIRATION-SYNTHESIS.md (15 مصدراً) + 6 مجلدات NotebookLM جديدة (القبيسي، داود، كون، مصادر أخرى، توفيق المثقفات، تينين)*
