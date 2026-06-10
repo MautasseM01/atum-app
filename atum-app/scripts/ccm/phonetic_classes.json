@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "description": "9 articulatory consonant classes derived from 75 ibdal rules (Al-Qubaysi)",
+    "source": "ibdalRules.json — 68% adjacency structure",
+    "intraClassIbdalRatio": "28%",
+    "interClassIbdalRatio": "71%",
+    "method": "Split Arabic 5-makhraj system at natural articulatory boundaries; largest group (Dental/Alveolar, 14 letters) subdivided into 5 subgroups based on manner of articulation (plosive, fricative, sibilant, liquid) validated by ibdal adjacency patterns",
+    "confidence": "🔍 exploratory — not yet baseline-compared"
+  },
+  "classes": {
+    "G1": {
+      "name": "Laryngeal",
+      "nameAr": "حلقي عميق",
+      "letters": [
+        "hamza",
+        "alef",
+        "haa",
+        "ayn"
+      ],
+      "makhrajOrigin": "حلقي",
+      "description": "Deep laryngeal/pharyngeal — ʔ, h, ħ, ʕ"
+    },
+    "G2": {
+      "name": "Pharyngeal Fricative",
+      "nameAr": "حلقي احتكاكي",
+      "letters": [
+        "khaa",
+        "ghayn",
+        "haa2"
+      ],
+      "makhrajOrigin": "حلقي",
+      "description": "Pharyngeal/uvular fricatives — x, ɣ, h (tenuis)"
+    },
+    "G3": {
+      "name": "Palatal",
+      "nameAr": "حنكي",
+      "letters": [
+        "jeem",
+        "yaa",
+        "sheen",
+        "kaf"
+      ],
+      "makhrajOrigin": "حنكي",
+      "description": "Palatal — dʒ, j, ʃ, k"
+    },
+    "G4": {
+      "name": "Uvular",
+      "nameAr": "لهوي",
+      "letters": [
+        "qaf"
+      ],
+      "makhrajOrigin": "لهوي",
+      "description": "Uvular plosive — q"
+    },
+    "G5": {
+      "name": "Dental Plosive",
+      "nameAr": "أسناني انفجاري",
+      "letters": [
+        "taa",
+        "dal",
+        "taa2"
+      ],
+      "makhrajOrigin": "أسناني",
+      "description": "Dental/alveolar plosives — t, d, tˤ"
+    },
+    "G6": {
+      "name": "Dental Fricative",
+      "nameAr": "أسناني احتكاكي",
+      "letters": [
+        "thaa",
+        "dhal",
+        "dhaa",
+        "dhad"
+      ],
+      "makhrajOrigin": "أسناني",
+      "description": "Dental/interdental fricatives — θ, ð, ðˤ, dˤ"
+    },
+    "G7": {
+      "name": "Sibilant",
+      "nameAr": "أسناني صفيري",
+      "letters": [
+        "seen",
+        "zay",
+        "sad"
+      ],
+      "makhrajOrigin": "أسناني",
+      "description": "Sibilants — s, z, sˤ, ʃ"
+    },
+    "G8": {
+      "name": "Liquid",
+      "nameAr": "أسناني سائل",
+      "letters": [
+        "raa",
+        "lam",
+        "noon"
+      ],
+      "makhrajOrigin": "أسناني",
+      "description": "Liquids and nasals — r, l, n"
+    },
+    "G9": {
+      "name": "Labial",
+      "nameAr": "شفوي",
+      "letters": [
+        "baa",
+        "faa",
+        "meem",
+        "waw"
+      ],
+      "makhrajOrigin": "شفوي",
+      "description": "Labials — b, f, m, w"
+    }
+  },
+  "letterMapping": {
+    "hamza": "G1",
+    "alef": "G1",
+    "haa": "G1",
+    "ayn": "G1",
+    "khaa": "G2",
+    "ghayn": "G2",
+    "haa2": "G2",
+    "jeem": "G3",
+    "yaa": "G3",
+    "sheen": "G3",
+    "kaf": "G3",
+    "qaf": "G4",
+    "taa": "G5",
+    "dal": "G5",
+    "taa2": "G5",
+    "thaa": "G6",
+    "dhal": "G6",
+    "dhaa": "G6",
+    "dhad": "G6",
+    "seen": "G7",
+    "zay": "G7",
+    "sad": "G7",
+    "raa": "G8",
+    "lam": "G8",
+    "noon": "G8",
+    "baa": "G9",
+    "faa": "G9",
+    "meem": "G9",
+    "waw": "G9"
+  }
+}
