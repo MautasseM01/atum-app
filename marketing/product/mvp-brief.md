@@ -72,6 +72,8 @@ The USP rests on three unshakeable pillars:
 | PhD synthesis (3-model) | Complete | marketing/product/SYNTHESIS_phd.md |
 | Root Code Playbook | **Complete** | marketing/product/root-code-playbook.md |
 | Masterclass outline | **Complete** | marketing/product/masterclass-outline.md |
+| **Masterclass full script (60 min)** | **✅ Complete 2026-06-10** | marketing/product/masterclass-script.md |
+| **Landing page copy + structure** | **✅ Complete 2026-06-10** | marketing/product/masterclass-landing-page.md |
 | This MVP brief | **Complete** | marketing/product/mvp-brief.md |
 
 ---
