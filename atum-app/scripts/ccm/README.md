@@ -2,38 +2,51 @@
 
 ## Phases 1–3 Results
 
-9 classes from 75 ibdal rules (Al-Qubaysi). CCM match rule: first 2 consonants in same classes, in order.
+9 classes from 75 ibdal rules (Al-Qubaysi). CCM rule: first 2 consonants in same classes, in order.
 
-## Phase 3 Close-out: Levenshtein Baseline + Cognate Split
+## Phase 3 Enrichment: Etymological Wordnet Ingest
 
-### Task 1: CCM vs Normalized Levenshtein on Raw Words
+**Source:** Etymological Wordnet (etymwn, de Melo 2013, CC-BY-SA), 6M edges, 5,977 Arabic-bridged lines.
 
-| Pair | CCM% | Lev% | Δ | CCM beats Lev? | N |
-|------|------|------|---|---------------|---|
-| Arabic-Hebrew | 52.6% | 45.0% | +7.6pp | YES | 19 |
-| Arabic-Latin | 52.9% | 28.0% | +24.9pp | YES | 51 |
-| Arabic-Greek | 48.6% | 28.7% | +19.9pp | YES | 35 |
-| Arabic-English | 47.7% | 27.0% | +20.7pp | YES | 44 |
-| Arabic-Persian | 82.4% | 63.2% | +19.1pp | YES | 17 |
+### Data Growth
 
-**CCM beats naive Levenshtein on all 5 pairs** (by 7.6–24.9pp). This is the first non-trivial result — CCM's phonetic class encoding captures structure that raw string edit distance misses.
+| Pair | Before (bridge only) | After (bridge + etymwn) |
+|------|---------------------|------------------------|
+| Arabic-Hebrew | 19 | 68 (49 from etymwn) |
+| Arabic-Latin | 52 | 101 (50 from etymwn) |
+| Arabic-Greek | 36 | 102 (67 from etymwn) |
+| Arabic-English | 45 | 690 (646 from etymwn) |
+| Arabic-Persian | 17 | 17 (0 from etymwn) |
 
-### Task 2: Cognate-Only Headline Numbers
+### CCM vs Levenshtein (same-representation romanization)
 
-Entries tagged `cognate` | `loanword` | `unknown` via `relation_map.json`.
+| Pair | N(all) | N(cog) | CCM all | CCM cog | Lev(same) | Δ | CCM wins? |
+|------|--------|--------|---------|---------|-----------|---|-----------|
+| ar-he | 68 | 19 | 36.8% | 10/19 | 55.7% | −18.9pp | NO |
+| ar-la | 101 | 7 | 51.5% | 5/7 | 32.4% | +19.1pp | YES |
+| ar-gr | 102 | 0 | 24.5% | — | 25.3% | −0.8pp | NO |
+| ar-en | 690 | 6 | 44.1% | 4/6 | 48.3% | −4.3pp | NO |
+| ar-fa | 17 | 0 | 82.4% | — | 63.2% | +19.1pp | YES |
 
-| Pair | All entries CCM% | Cognate-only CCM% | N(cog) |
-|------|-----------------|-------------------|--------|
-| Arabic-Hebrew | 52.6% | 52.6% | 19 |
-| Arabic-Latin | 52.9% | 71.4% | 7 |
-| Arabic-Greek | 48.6% | — | 0 |
-| Arabic-English | 47.7% | 66.7% | 6 |
-| Arabic-Persian | 82.4% | — | 0 |
+### Key Findings
 
-**Latin > English > Greek ordering survives on cognate-only:** 71.4% ≥ 66.7% ≥ — (Greek has 0 cognate entries).
+1. **Arabic↔Greek/Latin cognate N ≥ 30?** NO. Latin=7, Greek=0. Neither deep-roots pair has sufficient cognate data.
+2. **CCM beats Levenshtein on 2/5 pairs** (Latin +19.1pp, Persian +19.1pp). **Loses on 3/5** (Hebrew −18.9pp, English −4.3pp, Greek −0.8pp).
+3. **Largest sample (English N=690): CCM loses to Levenshtein** (−4.3pp). This is the most statistically robust result.
+4. **Persian** has the highest absolute CCM rate (82.4%) but all entries are modern loanwords — this tests borrowing detection, not deep relationships.
+
+### Seed Validation
+- Etymological Wordnet auto-tagged all 812 entries as "borrowed" — it doesn't distinguish cognate from loanword in its relation types.
+- No etymwn entries matched hand-tagged Hebrew/Persian seeds (different transliterations).
+- Hebrew seeds: 7/15 CCM match (47%); Persian seeds: 14/17 CCM match (82%).
+
+### Files Added
+- `etymwn_pairs.json` — 812 parsed Arabic-bridged etymological pairs
+- `_process_etymwn.py` — extraction script (requires etymwn.tsv from archive.org)
+- `ccm_etymwn_run.py` — CCM+Levenshtein run on merged data
+- `relation_map.json` — per-entry relation tags (cognate|loanword|unknown)
 
 ### Guard
-
-Results are **🔍 exploratory**. CCM beats Levenshtein on all pairs, but this is on a small (85-entry) bridge dataset. Cognate-only N values are tiny (6–19). Full-scale validation on ASJP/Lexibank is needed.
+Results remain **🔍 exploratory**. CCM's Latin signal (+19.1pp over Lev) is promising but the English failure on 690 entries is a strong caution. Publishable claims require the cognate N problem to be resolved (Latin=7, Greek=0).
 
 Created: 2026-06-10
