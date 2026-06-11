@@ -6,11 +6,11 @@
 
 ## Progress Snapshot
 
-✅ **Completed:** 5 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL)
+✅ **Completed:** 6 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL, POS-isolation SURVIVES)
 🟢 **Live in app:** 1 visualization (ibdal network graph at /visualizations/ibdal)
 💀 **Dead:** 2 (CCM similarity, Abjad x Frequency paper)
 🔄 **In testing:** 0 currently
-⏭️ **Next:** Expand suffix to -ble/-tor + 2nd language; human audit
+⏭️ **Next:** Expand suffix to -ble/-tor + French; human audit
 
 **Publications: 0 live, 3 dead/retired, 5 viable (+1 new pilot: suffix clustering SIGNAL).**
 *Viable: Ibḍāl encoding, Semantic Suffix (pilot signal confirmed), Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
@@ -56,6 +56,7 @@
 *Target: COLING 2026 / ACL workshop*
 - [x] **P3.0** CHEAP PILOT — English -tion, 200 words, GloVe 50d, 1000-iteration permutation test → **SIGNAL (p < 0.001, 2.07× null mean)**
 - [x] **P3.0b** POS-confound check: -ness (0.359) > -able (0.239) > -tion (0.159) > -ment (0.140) > -tor (0.134). POS is a confound but not the full explanation — different noun suffixes have different cohesion levels.
+- [x] **P3.0c** POS-isolation test (noun-controlled null via WordNet, 24,547 nouns in GloVe top 100K) → **SURVIVES (p_noun < 0.001, 2.57× noun-null mean).** Ranking stable: -tion (0.330) > -ment (0.166) > -tor (0.102). Suffix signal beyond POS confirmed.
 - [ ] **P3.1** Expand to -ble/-tor and 1 additional language (French -tion/-cion cognate)
 - [ ] **P3.2** Generate word embeddings (fastText / mBERT) — mean vector per suffix group
 - [ ] **P3.3** Full cluster analysis with POS controls
@@ -258,6 +259,7 @@
 - [x] **Done:** V1 Ibdal Network Graph — **LIVE at /visualizations/ibdal**
 - [x] **Done:** LLM-proxy audit (0.1.8b) — **FUZZY (κ=0.526), EXPLORATORY (28.6%)**
 - [x] **Done:** Suffix pilot (P3.0) — **SIGNAL (p<0.001, -tion 2.07× null)**
+- [x] **Done:** POS-isolation (P3.0c) — **SURVIVES (p_noun<0.001, 2.57× noun-null). Ranking: -tion > -ment > -tor stable**
 - [ ] **Next:** Expand suffix to -ble/-tor + French (P3.1)
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)

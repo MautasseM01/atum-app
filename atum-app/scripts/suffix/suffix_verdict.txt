@@ -1,45 +1,23 @@
 ========================================================================
-  SEMANTIC SUFFIX CLUSTERING — CHEAP PILOT VERDICT
+  SUFFIX CLUSTERING — POS-CONTROLLED ISOLATION TEST
 ========================================================================
 
-  Embedding model: glove-wiki-gigaword-50 (50d, GloVe)
-  -tion words: 200 (from top 400 most frequent in 400K vocab)
-  Null: 1000 same-size random word groups (frequency-banded)
+  Embedding model: glove-wiki-gigaword-50 (GloVe 50d, Wiki+Gigaword)
+  POS resource: WordNet (117,798 noun lemmas)
+  Noun vocab in GloVe top 100K: 24,547
+  -tion words: 200 (noun-filtered)
+  Null iterations: 1000
 
-  -tion cohesion:    0.244963
-  Null mean:         0.118376
-  Null 95th pct:    0.133416
-  Null max:         0.156408
-  Null std:         0.009085
-  Cohesion delta:   +0.126587 (2.07x null mean, 57% above null max)
-  p-value:          < 0.001 (0 of 1000 null groups exceeded -tion cohesion)
+  -tion cohesion:         0.330433
+  Noun-null mean:         0.128518
+  Noun-null 95th pct:     0.143418
+  Noun-null 99th pct:     0.148873
+  Noun-null max:          0.155343
+  Noun-null std:          0.008824
+  p_noun:                 0.0000
+  Significant:            YES (p_noun < 0.05)
 
-  SUFFIX COMPARISON (POS-confound check):
-    -ness (adjectives): 0.359130  <- POS-dominant: all adjectives of quality
-    -able (adjectives): 0.238761  <- POS-dominant: adjectives of capability
-    -tion (nouns):      0.158-0.245  <- moderate, varies by commonness
-    -ment (nouns):      0.140050  <- moderate
-    -tor (nouns):       0.134226  <- moderate
-    -ing (mixed POS):   0.128363  <- lowest (mixed POS dilutes cohesion)
-    Random words:       0.118376  <- baseline
+  Suffix ranking (within-noun pipeline): -tion=0.3304 > -ment=0.1664 > -tor=0.1022
 
-  PATTERN: All suffix groups exceed random-word cohesion. -ness and -able
-  (adjectives) are highest, consistent with POS-driven cohesion. -tion,
-  -ment, -tor (nouns) form a second tier above random but below adjectives.
-  -ing (mixed gerund/participle/noun) is closest to random.
-
-  POS-confound: All -tion words are nouns. Part of the cohesion is 'noun-ness'.
-  But the fact that different noun suffixes (-tion: 0.158, -ment: 0.140, -tor: 0.134)
-  have different cohesion levels suggests a SUFFIX-SPECIFIC effect beyond POS.
-
-  BRANCH: SIGNAL (p < 0.001, -tion cohesion > 95th pct and > max of null)
-
-  SENTENCE: The suffix "-tion" is NOT just a POS artifact — words sharing it
-  are more semantically cohesive than both random words and other noun suffixes.
-  Effect is real but magnitude varies by suffix; -ness and -able show even
-  stronger effects, suggesting POS is a confound but not the full explanation.
-
-  RECOMMENDATION: Expand to -ble/-tor and to a 2nd language (French/Spanish
-  -cion/-ción cognate), controlling for POS by comparing within noun class.
-
+  BRANCH: SURVIVES
   Date: 2026-06-12
