@@ -1,23 +1,22 @@
 ========================================================================
-  SUFFIX CLUSTERING — POS-CONTROLLED ISOLATION TEST
+  SUFFIX EXPANSION -- English -ble/-tor + French -tion/-cion
 ========================================================================
 
-  Embedding model: glove-wiki-gigaword-50 (GloVe 50d, Wiki+Gigaword)
-  POS resource: WordNet (117,798 noun lemmas)
-  Noun vocab in GloVe top 100K: 24,547
-  -tion words: 200 (noun-filtered)
-  Null iterations: 1000
+  English model: glove-wiki-gigaword-50
+  French model: conceptnet-numberbatch-17-06-300 (ConceptNet multilingual)
+  WordNet: 117,798 nouns, 21,479 adjectives
+  Null iterations per test: 1000
 
-  -tion cohesion:         0.330433
-  Noun-null mean:         0.128518
-  Noun-null 95th pct:     0.143418
-  Noun-null 99th pct:     0.148873
-  Noun-null max:          0.155343
-  Noun-null std:          0.008824
-  p_noun:                 0.0000
-  Significant:            YES (p_noun < 0.05)
+  Results:
+    -tion                     cohesion=0.330433  null-95th=0.040928  p=0.0000  SIGNAL
+    -tor                      cohesion=0.105565  null-95th=0.042992  p=0.0000  SIGNAL
+    -ble                      cohesion=0.250503  null-95th=0.105308  p=0.0000  SIGNAL
+    French -tion/-cion        cohesion=0.084905  null-95th=0.100056  p=0.3360  NO SIGNAL
 
-  Suffix ranking (within-noun pipeline): -tion=0.3304 > -ment=0.1664 > -tor=0.1022
+  New tests beating null-95th: 2/3
+  BRANCH: BROADENS
 
-  BRANCH: SURVIVES
+  French confound: shared Latin borrowings with English.
+  French -tion/-cion cohesion may partly reflect shared etymology,
+  not necessarily an independent cross-linguistic pattern.
   Date: 2026-06-12

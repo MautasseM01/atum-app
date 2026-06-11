@@ -1,7 +1,7 @@
 # ملخص الجلسة — تقرير نهائي
 
-**التاريخ:** 2026-06-10 (محدث)
-**الهدف:** استقصاء 15 NotebookLM notebook + 6 مجلدات مصادر جديدة، استخراج الأنماط القابلة للاختبار، إنشاء خطة تنفيذ شاملة
+**التاريخ:** 2026-06-10 (التحديث الثالث)
+**الهدف:** استقصاء 15 NotebookLM notebook + 7 مجلدات مصادر جديدة، استخراج الأنماط القابلة للاختبار، إنشاء خطة تنفيذ شاملة
 
 ---
 
@@ -14,7 +14,7 @@
 | Account 2 (account2.json) | 9 notebooks | ✅ تم |
 | **المجموع** | **15** | **✅** |
 
-### 1.2 مصادر NotebookLM الجديدة (6 مجلدات)
+### 1.2 مصادر NotebookLM الجديدة (7 مجلدات)
 | المصدر | المحتوى الرئيسي | الحالة |
 |--------|-----------------|--------|
 | **القبيسي (Al-Qubaysi)** | نسب تشابه معجمي (94% كنعانية)، قاعدة توزيع 80-10-10، حد 333 ق.م | ✅ تم |
@@ -23,14 +23,15 @@
 | **مصادر أخرى (Other Sources)** | Ha-Mim Code 19, White Matter, Cellular-Audio | ✅ تم |
 | **توفيق المثقفات (Syncretism)** | R/L Polarity, Gematria-Atomic, Phi Ratios | ✅ تم |
 | **تينين (Tenen)** | Base-3 Cartesian, Self-Correction, Neurological-Gestural | ✅ تم |
-| **المجموع** | **6 مجلدات × 4 أسئلة لكل مصدر** | **✅** |
+| **بروفوست (Pruvost)** | Lexical Borrowing (عربية→فرنسية), Risk/Rizq, Article Fossilization | ✅ تم |
+| **المجموع** | **7 مجلدات × 4 أسئلة لكل مصدر** | **✅** |
 
 ### 1.3 التنظيف والتوليف (محدث)
 - **المشكلة:** جميع ملفات الـ 15 notebook كانت تالفة (رموز غير مفهومة) بسبب مشكلة ترميز UTF-8 في PowerShell عند الحفظ
 - **الحل:** تم مسح جميع الملفات التالفة
 - **الإبقاء على:** INSPIRATION-SYNTHESIS.md (ملف التوليف الذي تم إنشاؤه يدوياً)
-- **قراءة:** mesurable-ideas.md (7 أقسام) + 6 مجلدات جديدة
-- **إزالة التكرار:** 4+5 أفكار مكررة تم دمجها، 8+11 ادعاءً تخمينياً تم استبعادها
+- **قراءة:** mesurable-ideas.md (7 أقسام) + 7 مجلدات جديدة
+- **إزالة التكرار:** 4+5 أفكار مكررة تم دمجها، 8+14 ادعاءً تخمينياً تم استبعادها
 - **إنشاء/تحديث:** RESEARCH-ROADMAP.md و summery-of-the-response.md
 
 ---
@@ -68,6 +69,9 @@
 | **جديد:** فضاء هيلبرت كمي | ميتافيزيقي غير قابل للنمذجة | تينين |
 | **جديد:** توقيع إلهي 1974 | تاريخ محدد = دليل — غير علمي | Other Sources |
 | **جديد:** خلق الكون بالنطق | لاهوتي لا يمكن رصده | Other Sources |
+| **جديد:** أسطورة قهوة كالدي | أسطورة شعبية لا دليل تاريخياً | بروفوست |
+| **جديد:** نقاء العربية المطلق | ادعاء أيديولوجي | بروفوست |
+| **جديد:** العجم → كهرباء | تأثيل غير موثق أكاديمياً | بروفوست |
 
 ---
 
@@ -93,6 +97,9 @@
 | 🥉 | DNA-Dan-Adam Anagram | Atomology | ⭐⭐⭐⭐ | ⭐⭐ |
 | 🥉 | 7-Vowel Biological Source Code | Atomology v2 | ⭐⭐⭐⭐ | ⭐⭐ |
 | 🥉 | Atomic Summation 22 | Bonacci | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 🥉 | **جديد: Lexical Borrowing Statistics** | بروفوست | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 🥉 | **جديد: Arabic Etymology of Risk** | بروفوست | ⭐⭐⭐ | ⭐⭐⭐ |
+| 🥉 | **جديد: "al-" Article Fossilization** | بروفوست | ⭐⭐⭐ | ⭐⭐⭐ |
 
 ---
 
@@ -126,14 +133,14 @@ phd-mining/
 ├── RESEARCH-ROADMAP.md              ← خطة التنفيذ الشاملة (محدثة)
 └── Synthesis/
     ├── INSPIRATION-SYNTHESIS.md      ← توليف 15 notebook (محفوظ)
-    └── mesurable-ideas.md            ← المصدر الخام المقروء
+    └── mesurable-ideas.md            ← المصدر الخام المقروء (محدث بمصدر بروفوست)
 
 مصادر Obsidian جديدة (تم دمجها في الخطة):
   Obsidian Vault/Language/Sources/
   ├── Al-Qubaysi/mesurable-ideas.md
   ├── Dawood/mesurable-ideas.md
   ├── Kuhn/mesurable-ideas.md
-  ├── Other Sources/mesurable-ideas.md
+  ├── Other Sources/mesurable-ideas.md   ← مضاف إليه: بروفوست (Nos Ancêtres les Arabes)
   ├── Tawfiq_Al-Mutaqadat(Syncretism)/mesurable-ideas.md
   └── Tenen/mesurable-ideas.md
 ```
