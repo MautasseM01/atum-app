@@ -1,0 +1,71 @@
+========================================================================
+  CCM FINAL VERDICT - Expert Arabic-Hebrew Cognates
+  Data: lexibank/kitchensemitic (Kitchen et al. 2009)
+========================================================================
+
+  Gold cognate pairs processed: 63
+  Errors/skipped: 2
+  Cognatesets represented: 36
+  Unique concepts: 36
+
+  PRE-REGISTERED REPRESENTATION & METHODS
+  Representation: first 2 IPA consonants per form
+  CCM: map each to G1-G9 class, check exact pair match
+  Lev: normalized edit distance on same 2-char strings
+
+  -- RESULTS --
+  (a) CCM 9-class match rate:     39.7%  (25/63)
+  (b) Lev (same-rep strings):   59.8%  (mean norm similarity)
+      Lev exact match (sim=1.0): 30.2%  (19/63)
+
+  Delta (CCM - Lev): -20.1pp
+
+  -- PRE-REGISTERED DECISION RULE --
+  CCM (39.7%) < Lev (59.8%) -> CCM RETIRED AS SIMILARITY METHOD
+
+  -- ABSOLUTE CCM RATE --
+  39.7% on known cognates: POOR (not reliable)
+
+  -- PER-COGSET BREAKDOWN --
+  Cogset                  N    CCM    Lev%
+  ----------------------------------------
+  10_bone-A               2   0/2     66.7%
+  16_die-A                2   0/2     50.0%
+  17_dog-A                2   2/2    100.0%
+  19_dryadj-A             2   2/2     50.0%
+  1_all-A                 2   2/2    100.0%
+  21_eat-B                2   0/2     25.0%
+  22_egg-B                2   0/2     66.7%
+  23_eye-A                2   1/2     75.0%
+  28_foot-C               1   0/1     50.0%
+  33_hairhead-C           2   1/2     50.0%
+  34_hand-B               2   0/2     25.0%
+  35_head-A               2   0/2     41.7%
+  36_hear-A               2   0/2     50.0%
+  38_horn-A               2   2/2    100.0%
+  39_i-A                  1   1/1    100.0%
+  44_liver-A              2   2/2     50.0%
+  4_belly-G               1   1/1    100.0%
+  53_name-A               2   0/2     25.0%
+  56_night-A              2   2/2    100.0%
+  57_nose-A               2   0/2     25.0%
+  58_one-A                2   0/2     50.0%
+  59_rainn-I              1   1/1    100.0%
+  66_seed-A               1   1/1    100.0%
+  74_star-A               1   0/1     50.0%
+  76_sun-E                2   2/2    100.0%
+  78_tail-A               2   0/2     25.0%
+  80_this-E               2   0/2     50.0%
+  82_thou-A               2   0/2     25.0%
+  83_tongue-A             2   0/2     50.0%
+  84_tooth-A              2   0/2     50.0%
+  86_two-B                1   0/1     50.0%
+  87_warm-E               1   1/1    100.0%
+  88_water-A              1   1/1    100.0%
+  89_we-A                 2   1/2     25.0%
+  9_blood-A               2   2/2    100.0%
+  claw-A                  2   0/2     33.3%
+
+  -- ERRORS (2) --
+  CCM fail: [ana] -> ['n'] ~ [ʔani:] -> ['ʔ', 'n']
+  CCM fail: [ma] -> ['m'] ~ [majim] -> ['m', 'j', 'm']

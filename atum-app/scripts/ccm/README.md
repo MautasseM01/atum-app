@@ -49,4 +49,29 @@
 ### Guard
 Results remain **🔍 exploratory**. CCM's Latin signal (+19.1pp over Lev) is promising but the English failure on 690 entries is a strong caution. Publishable claims require the cognate N problem to be resolved (Latin=7, Greek=0).
 
-Created: 2026-06-10
+---
+
+## 🔴 FINAL VERDICT: CCM retired as similarity method (2026-06-11)
+
+**Test:** lexibank/kitchensemitic (Kitchen et al. 2009), expert Arabic-Hebrew cognates.
+**Pre-registered rule:** CCM ≥ Lev on expert gold cognates → method survives; CCM < Lev → retired.
+
+| Dataset | N(gold) | CCM% | Lev(same-rep)% | Δ | CCM ≥ Lev? |
+|---------|---------|------|----------------|---|------------|
+| Kitchen Semitic Ar-He | 63 | 39.7% | 59.8% | −20.1pp | NO |
+
+**Rule applied:** CCM (39.7%) < Lev (59.8%) → **CCM RETIRED AS SIMILARITY METHOD**.
+
+**Absolute rate:** 39.7% on known cognates is POOR — not reliable for cognate detection.
+
+**What this means:**
+- CCM's 9-class phonetic abstraction discards too much signal even between closely related Semitic languages
+- First-2-consonant matching on phonetic classes loses →60% of expert-verified cognates
+- A literal Levenshtein on the same 2-character strings outperforms CCM by 20.1pp
+- CCM can still be used as a **weak filter** or **exploratory tool** within a wider pipeline, but cannot stand alone as a cognate similarity method
+
+**Files:**
+- `ccm-verdict-kitchen.txt` in `data/sources/phd-mining/` — full per-cogset breakdown
+- `ccm_kitchen_verdict.py` (temp) — reproduction script with complete IPA→CCM mapping
+
+Updated: 2026-06-11
