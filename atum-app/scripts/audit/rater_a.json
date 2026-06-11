@@ -1,0 +1,2501 @@
+[
+  {
+    "id": 1,
+    "word": "CIRCUMNAVIGATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 2,
+    "word": "BIODIVERSITY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 3,
+    "word": "MATERIALIST",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 4,
+    "word": "SENATORIAL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 5,
+    "word": "ANTIBELLIGERENT",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 6,
+    "word": "QUINTESSENCE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 7,
+    "word": "DIODE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 8,
+    "word": "THEW",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 9,
+    "word": "REEL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 10,
+    "word": "UPANISHAD",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 11,
+    "word": "RADON",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 12,
+    "word": "PROFESSIONALISM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 13,
+    "word": "TROPOS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 14,
+    "word": "TERMINAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 15,
+    "word": "ELECTRODE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 16,
+    "word": "ANTIBULLYING",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 17,
+    "word": "BELLIGERENTLY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 18,
+    "word": "TEMPERATURE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 19,
+    "word": "PERIMETROS",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 20,
+    "word": "ADVISABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 21,
+    "word": "MAGISTRATE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 22,
+    "word": "REDOUBTABLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 23,
+    "word": "INTERACTION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 24,
+    "word": "ANDROID",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 25,
+    "word": "PREREBELLION",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 26,
+    "word": "COFFEE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 27,
+    "word": "UNCHANGEABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 28,
+    "word": "GENETICIST",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 29,
+    "word": "CURATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 30,
+    "word": "NONGLOBAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 31,
+    "word": "STABULUM",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 32,
+    "word": "TORRENTE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 33,
+    "word": "CAM",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 34,
+    "word": "SUBORDINATE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 35,
+    "word": "COUNTERCYCLICAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 36,
+    "word": "ORGANIZATION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 37,
+    "word": "AUTOFOCUS",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 38,
+    "word": "ATOMIZER",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 39,
+    "word": "IONOSPHERE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 40,
+    "word": "BALLAST",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 41,
+    "word": "OPERATOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 42,
+    "word": "NOMINATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 43,
+    "word": "MARATHI",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 44,
+    "word": "PULSAR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 45,
+    "word": "NAVIGATIONAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 46,
+    "word": "IMMA",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 47,
+    "word": "PROTOMATTER",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 48,
+    "word": "METTLESOME",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 49,
+    "word": "FACTORIUM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 50,
+    "word": "MAYBE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 51,
+    "word": "PERMUTE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 52,
+    "word": "GITA",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 53,
+    "word": "JEZEBEL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 54,
+    "word": "HYGROMETER",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 55,
+    "word": "PARAMATMA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 56,
+    "word": "TRANSISTOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 57,
+    "word": "DECIDABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 58,
+    "word": "INEDIBLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 59,
+    "word": "CACHE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 60,
+    "word": "NATURLICH",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 61,
+    "word": "FAULT",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 62,
+    "word": "CRIATURA",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 63,
+    "word": "CAPACITOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 64,
+    "word": "BULKY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 65,
+    "word": "NATAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 66,
+    "word": "CUSTODIAN",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 67,
+    "word": "GATEKEEPER",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 68,
+    "word": "CHATURTHA",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 69,
+    "word": "HEFT",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 70,
+    "word": "BEAUTE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 71,
+    "word": "POPULARITY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 72,
+    "word": "ORGANIZATIONAL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 73,
+    "word": "DIRECTORY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 74,
+    "word": "UNRECYCLED",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 75,
+    "word": "MOMENTUM",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 76,
+    "word": "ENDOCRINOLOGIST",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 77,
+    "word": "FAVORABLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 78,
+    "word": "VISCOMETER",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 79,
+    "word": "ADAMANT",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 80,
+    "word": "THERMAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 81,
+    "word": "DEFECT",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 82,
+    "word": "FAUNAL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 83,
+    "word": "CONDENSATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 84,
+    "word": "IMPOTENCE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 85,
+    "word": "BABYLON",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 86,
+    "word": "BALLETT",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 87,
+    "word": "GLOBALIS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 88,
+    "word": "SONUS",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 89,
+    "word": "BELLHOP",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 90,
+    "word": "DESIGNARE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 91,
+    "word": "DECODER",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 92,
+    "word": "FORESEEABLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 93,
+    "word": "ACTUARE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 94,
+    "word": "AUTOPILOT",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 95,
+    "word": "DICTATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 96,
+    "word": "CUSTOMIZE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 97,
+    "word": "ENDURE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 98,
+    "word": "TOUR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 99,
+    "word": "百 BAI",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 100,
+    "word": "NITRATE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 101,
+    "word": "SAFFRON",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 102,
+    "word": "GAMETE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 103,
+    "word": "CRATER",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 104,
+    "word": "FRICTION",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 105,
+    "word": "SEDIMENT",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 106,
+    "word": "INVISIBILITY",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 107,
+    "word": "NEBULIZER",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 108,
+    "word": "GENOS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 109,
+    "word": "MARKETABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 110,
+    "word": "AUTOMATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 111,
+    "word": "INCOMPRESSIBLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 112,
+    "word": "PROGENY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 113,
+    "word": "ASHIR",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 114,
+    "word": "NUCLEON",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 115,
+    "word": "DERIVE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 116,
+    "word": "COMPRESSIBLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 117,
+    "word": "GYROSCOPIC",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 118,
+    "word": "NATIO",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 119,
+    "word": "IMPERSONATE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 120,
+    "word": "MATAT",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 121,
+    "word": "LADINO",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 122,
+    "word": "ACTUALIZATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 123,
+    "word": "POLLUERE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 124,
+    "word": "NARRATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 125,
+    "word": "EDUCATION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 126,
+    "word": "ASSIGNATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 127,
+    "word": "DENATURIEREN",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 128,
+    "word": "ORIGINAL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 129,
+    "word": "PHOTON",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 130,
+    "word": "CALCULATE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 131,
+    "word": "DISCREDIT",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 132,
+    "word": "PUBLICITY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 133,
+    "word": "ITERATION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 134,
+    "word": "FIRMAMENT",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 135,
+    "word": "EXHIBITION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 136,
+    "word": "FLUID",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 137,
+    "word": "转变 ZHUANBIAN",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 138,
+    "word": "ASPHYXIATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 139,
+    "word": "METABOLIC",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 140,
+    "word": "FUNGUS",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 141,
+    "word": "BICYCLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 142,
+    "word": "DISABILITY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 143,
+    "word": "REVIEWABLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 144,
+    "word": "VARTMAN",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 145,
+    "word": "SAFARI",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 146,
+    "word": "ACIDIFY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 147,
+    "word": "FORCIBLENESS",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 148,
+    "word": "FUNGIBLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 149,
+    "word": "PURSUIT",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 150,
+    "word": "INVENTOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 151,
+    "word": "PENDULUM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 152,
+    "word": "EASTERN",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 153,
+    "word": "BULLFIGHTING",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 154,
+    "word": "LIQUID",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 155,
+    "word": "MOKSHA",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 156,
+    "word": "ROBUSTNESS",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 157,
+    "word": "FILTRATION",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 158,
+    "word": "CONSTERNATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 159,
+    "word": "POLYCYCLIC",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 160,
+    "word": "CELESTIAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 161,
+    "word": "COMPULSIVE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 162,
+    "word": "TOXIN",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 163,
+    "word": "ALLOCATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 164,
+    "word": "PITBALL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 165,
+    "word": "PALANA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 166,
+    "word": "FORCIBLY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 167,
+    "word": "REPULSE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 168,
+    "word": "GASEOUS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 169,
+    "word": "PREDATION",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 170,
+    "word": "SCAVENGER",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 171,
+    "word": "DESERTION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 172,
+    "word": "ARISE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 173,
+    "word": "NARRATE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 174,
+    "word": "TOLERABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 175,
+    "word": "PHYSIQUE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 176,
+    "word": "ALKALINE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 177,
+    "word": "DENATURALIZE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 178,
+    "word": "GENERAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 179,
+    "word": "DETONARE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 180,
+    "word": "PLASTICITY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 181,
+    "word": "ENTOMON",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 182,
+    "word": "HISTORICAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 183,
+    "word": "PUBLICATIO",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 184,
+    "word": "REFORM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 185,
+    "word": "CIVILIZATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 186,
+    "word": "BENGALI",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 187,
+    "word": "班 BAN",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 188,
+    "word": "INDIVISIBLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 189,
+    "word": "ALTERNATE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 190,
+    "word": "SUCCESSIVE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 191,
+    "word": "ILLUSTRATION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 192,
+    "word": "NITROGEN",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 193,
+    "word": "THERMOCHEMISTRY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 194,
+    "word": "EXTRATERRITORIAL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 195,
+    "word": "PROCESS",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 196,
+    "word": "SERVER",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 197,
+    "word": "EXHIBITOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 198,
+    "word": "STATISTICIAN",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 199,
+    "word": "HINDI",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 200,
+    "word": "SYMBOLISMOS",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 201,
+    "word": "HANDLEABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 202,
+    "word": "TEMPORARY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 203,
+    "word": "NEUTRINO",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 204,
+    "word": "INJECTOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 205,
+    "word": "ESTABLO",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 206,
+    "word": "AGRICULTOR",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 207,
+    "word": "LAUDABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 208,
+    "word": "FRATER",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 209,
+    "word": "GLOBALIST",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 210,
+    "word": "ENDOSPERM",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 211,
+    "word": "NONCAPABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 212,
+    "word": "OPPRESSOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 213,
+    "word": "VARIATE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 214,
+    "word": "COLLABORATOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 215,
+    "word": "CANONIZATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 216,
+    "word": "AUTOREGULATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 217,
+    "word": "ANESTHESIOLOGIST",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 218,
+    "word": "NATURAE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 219,
+    "word": "FEASIBLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 220,
+    "word": "BALCON",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 221,
+    "word": "PHYSIKE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 222,
+    "word": "DEMONSTRABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 223,
+    "word": "MATERNITY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 224,
+    "word": "FORMIDABLY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 225,
+    "word": "ILLUSTRATOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 226,
+    "word": "SAMPALA",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 227,
+    "word": "AFFIRMATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 228,
+    "word": "DEFLECTOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 229,
+    "word": "CLOSABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 230,
+    "word": "PROPELLING",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 231,
+    "word": "SNOWBALL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 232,
+    "word": "SATYA",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 233,
+    "word": "DEFICIENT",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 234,
+    "word": "PROCREATION",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 235,
+    "word": "ESTIMABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 236,
+    "word": "HISTORY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 237,
+    "word": "HYPOTHETICAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 238,
+    "word": "INELIGIBLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 239,
+    "word": "FACTOR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 240,
+    "word": "ANALYSIS",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 241,
+    "word": "LIBEL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 242,
+    "word": "DISTILLATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 243,
+    "word": "DETER",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 244,
+    "word": "DYNAMISM",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 245,
+    "word": "BALAYI",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 246,
+    "word": "CONCEIVABILITY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 247,
+    "word": "TURNIER",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 248,
+    "word": "EXCAVATOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 249,
+    "word": "PERSONA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 250,
+    "word": "添 TIAN",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 251,
+    "word": "BASEBALL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 252,
+    "word": "CONFISCATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 253,
+    "word": "MASTERY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 254,
+    "word": "BREED",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 255,
+    "word": "DEFORESTATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 256,
+    "word": "KOSMETICOS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 257,
+    "word": "FOUNDER",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 258,
+    "word": "INDEFINABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 259,
+    "word": "ABSTENTION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 260,
+    "word": "GLOBALISM",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 261,
+    "word": "LEGATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 262,
+    "word": "COMPARABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 263,
+    "word": "TURBA",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 264,
+    "word": "CHOREOGRAPHOS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 265,
+    "word": "DESIGNATE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 266,
+    "word": "PROCURATOR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 267,
+    "word": "TITRATOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 268,
+    "word": "POWERFULLY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 269,
+    "word": "AGON",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 270,
+    "word": "METAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 271,
+    "word": "ATMOSPHERE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 272,
+    "word": "BOTTOM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 273,
+    "word": "ACCEPTATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 274,
+    "word": "PROSECUTOR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 275,
+    "word": "PROFITERI",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 276,
+    "word": "SEMI-AUTONOMOUS",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 277,
+    "word": "GOVERNOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 278,
+    "word": "AGGREGATOR",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 279,
+    "word": "VOLATILITY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 280,
+    "word": "PURE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 281,
+    "word": "DENOMINATE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 282,
+    "word": "FLOWRATE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 283,
+    "word": "DIABOLIC",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 284,
+    "word": "PLATFORM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 285,
+    "word": "STRONGEST",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 286,
+    "word": "ADAMIC",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 287,
+    "word": "TESTABILITY",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 288,
+    "word": "EMBRYONIC",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 289,
+    "word": "INSURMOUNTABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 290,
+    "word": "MORPHOLOGICAL",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 291,
+    "word": "EXPANDABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 292,
+    "word": "ACCENTUATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 293,
+    "word": "SELECTOR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 294,
+    "word": "BREATHABLE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 295,
+    "word": "LOTION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 296,
+    "word": "AFFORDABILITY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 297,
+    "word": "INITIALIZATION",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 298,
+    "word": "INFLAME",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 299,
+    "word": "CAMPHOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 300,
+    "word": "LEBAN",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 301,
+    "word": "APPROACHABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 302,
+    "word": "TRANSPORTATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 303,
+    "word": "CONSECRATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 304,
+    "word": "ZINC",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 305,
+    "word": "ADMIRABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 306,
+    "word": "BALIN",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 307,
+    "word": "DETERMINATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 308,
+    "word": "TALC",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 309,
+    "word": "AFFECTATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 310,
+    "word": "DURABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 311,
+    "word": "EBEL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 312,
+    "word": "CONSULATE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 313,
+    "word": "PROSPECT",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 314,
+    "word": "ACCOUNTABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 315,
+    "word": "ACTEUR",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 316,
+    "word": "BULLDOZE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 317,
+    "word": "TRANSFORMABLE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 318,
+    "word": "CANCELLATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 319,
+    "word": "BHRAMANAM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 320,
+    "word": "PATERNALISM",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 321,
+    "word": "DYNAMO",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 322,
+    "word": "PASTOR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 323,
+    "word": "ATTRIBUTABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 324,
+    "word": "UNRELIABLE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 325,
+    "word": "PURUSHA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 326,
+    "word": "BIOLOGICAL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 327,
+    "word": "DENATURATION",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 328,
+    "word": "TERRITORIAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 329,
+    "word": "AGNATUS",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 330,
+    "word": "ONOMAZO",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 331,
+    "word": "PRIMARY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 332,
+    "word": "NATURALIZATION",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 333,
+    "word": "VALIDATOR",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 334,
+    "word": "NATHAN",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 335,
+    "word": "BULLA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 336,
+    "word": "ATTAINABLE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 337,
+    "word": "暴 BAO",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 338,
+    "word": "HERBIVORE",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 339,
+    "word": "TERRORIZE",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 340,
+    "word": "JANITORIAL",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 341,
+    "word": "RECREATE",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 342,
+    "word": "PUBLICIZING",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 343,
+    "word": "DIABOLUS",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 344,
+    "word": "DISABLEMENT",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 345,
+    "word": "RNA",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 346,
+    "word": "SOLSTICE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 347,
+    "word": "LUBNAN",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 348,
+    "word": "DOMINATOR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 349,
+    "word": "SILICON",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 350,
+    "word": "VECTORIAL",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 351,
+    "word": "HORRIBLY",
+    "best_fit_root": "ATUM",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 352,
+    "word": "BOLSTER",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 353,
+    "word": "CENTRIFUGAL",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 354,
+    "word": "BETRAY",
+    "best_fit_root": "BULL",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 355,
+    "word": "SOLAR",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  },
+  {
+    "id": 356,
+    "word": "TZOHAR",
+    "best_fit_root": "TOR",
+    "strength": 3,
+    "basis": "sound"
+  },
+  {
+    "id": 357,
+    "word": "SUBSTANTIATE",
+    "best_fit_root": "NONE",
+    "strength": 0,
+    "basis": "none"
+  }
+]

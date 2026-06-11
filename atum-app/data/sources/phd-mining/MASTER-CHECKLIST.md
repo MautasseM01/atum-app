@@ -4,25 +4,36 @@
 **Source:** RESEARCH-ROADMAP.md (التحديث الثالث)
 **Scope:** All publishable projects, visualizations, and data validation
 
+## Progress Snapshot
+
+✅ **Completed:** 3 hypotheses tested (CCM retired, Abjad collapsed, Ibdal graph live)
+🟢 **Live in app:** 1 visualization (ibdal network graph at /visualizations/ibdal)
+💀 **Dead:** 2 (CCM similarity, Abjad x Frequency paper)
+🔄 **In testing:** LLM-proxy audit — Fleiss Kappa = 0.526 (FUZZY), accuracy = 28.6% (EXPLORATORY)
+⏭️ **Next:** Human audit (357 words, 3 independent linguists)
+
+**Publications: 0 live, 3 dead/retired, 5 viable.** *Viable: Ibḍāl encoding, Semantic Suffix, Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
+
 ---
 
 ## Phase 0: Foundation (Q2 2026)
 
 ### 0.1 Data Validation
-- [ ] **0.1.1** Design stratified random sample of 357 words from 5,083 (by root)
-- [ ] **0.1.2** Create audit form: `word | root_claimed | root_1 | root_2 | root_3 | consensus | confidence`
-- [ ] **0.1.3** Recruit 3 independent auditors (Arabic native speakers + linguistics background)
-- [ ] **0.1.4** Run audit — calculate Cohen's Kappa ≥ 0.80
-- [ ] **0.1.5** Compute classifier accuracy vs human gold standard
+- [x] **0.1.1** Design stratified random sample of 357 words from 5,083 (by root × confidence tier) → **DONE** (audit scripts/)
+- [x] **0.1.2** Create audit form: blind format with ATUM/BULL/TOR/NONE/UNSURE, strength [0-3], basis → **DONE** (audit_blind.json)
+- [ ] **0.1.3** Recruit 3 independent auditors (Arabic native speakers + linguistics background) → **NOT YET** (LLM-proxy done first: κ=0.53 FUZZY)
+- [ ] **0.1.4** Run human audit — calculate Fleiss' Kappa ≥ 0.80 → **PENDING** after LLM proxy result
+- [ ] **0.1.5** Compute classifier accuracy vs human gold standard → **PENDING**
 - [x] **0.1.6** Extract actual letter frequencies from Leipzig ara_wikipedia_2021_100K (7.58M letters)
 - [x] **0.1.7** Recompute r = −0.693 (Abjad × Frequency) on real frequencies → **COLLAPSES** (see Results below)
 - [x] **0.1.8** Apply Bonferroni correction to all statistical tests
+- [x] **0.1.8b** LLM-proxy audit (CHEAP SIGNAL, pre-human) — 357 words, 3 deterministic sound-pattern raters against rootPatterns.json criteria → **FUZZY (κ=0.5264), EXPLORATORY (28.6% accuracy)**
 - [ ] **0.1.9** Write AI methodology section (models, sample size, accuracy, limitations)
 
 ### 0.2 Infrastructure
 - [ ] **0.2.1** Set up project repo structure (`/ccm/`, `/suffix/`, `/toponymic/`, `/hamim/`, `/visuals/`)
 - [ ] **0.2.2** Initialize Python venv + dependencies (numpy, scipy, pandas, sklearn, networkx)
-- [ ] **0.2.3** Set up D3.js / Observable for visualizations
+- [x] **0.2.3** Set up D3.js for visualizations → **DONE** (V1 ibdal graph deployed)
 - [ ] **0.2.4** Configure GIS environment (GeoPandas, QGIS or equivalent)
 
 ---
@@ -128,20 +139,15 @@
 ## Phase 3: Visualizations (Q2, in parallel)
 
 ### 3.1 [V1] Ibdal Network Graph
-- [ ] **V1.1** Parse `ibdalRules.json` (75 rules)
-- [ ] **V1.2** Build 28-node / 75-edge graph
-- [ ] **V1.3** Color by articulation point (makhraj)
-- [ ] **V1.4** Add interactivity (hover → rule details)
-- [ ] **V1.5** Add narrative: "68% of substitutions between adjacent articulation points"
-- [ ] **V1.6** Deploy on app
+- [x] **V1.1** Parse `ibdalRules.json` (75 rules) → **VERIFIED: 65.3%** (not 68%)
+- [x] **V1.2** Build 28-node / 75-edge graph with D3 force-directed layout
+- [x] **V1.3** Color by articulation point (makhraj) — 6 color-coded groups
+- [x] **V1.4** Add interactivity (hover → rule details, drag, zoom/pan)
+- [x] **V1.5** Add honest narrative: "~65.3% of substitutions between neighboring articulation points — descriptive pattern, not p-tested"
+- [x] **V1.6** Deploy on app → **LIVE** at https://atum-app-dna.vercel.app/en/visualizations/ibdal
 
-### 3.2 [V2] Abjad × Frequency Scatter Plot
-- [ ] **V2.1** Load `letters.json` (28 letters with abjad values)
-- [ ] **V2.2** Merge with real frequency data (from 0.1.6)
-- [ ] **V2.3** Scatter plot + regression line
-- [ ] **V2.4** Color by articulation point
-- [ ] **V2.5** Add narrative: "The holier the letter, the rarer — r = −0.693"
-- [ ] **V2.6** Deploy on app
+### ~~3.2 [V2] Abjad × Frequency Scatter Plot~~ ~~SKIPPED~~
+- ~~V2.1–V2.6~~ **Abjad × Frequency COLLAPSED** (ρ=−0.5145, fails Bonferroni, not publishable)
 
 ### 3.3 [V3] 96-Etymology Bridge Map
 - [ ] **V3.1** Load `etymology_bridge.csv` (96 etymologies)
@@ -214,6 +220,21 @@
 - **Verdict:** COLLAPSES — removed from academic publication track
 - **Files:** `scripts/abjad/abjad_freq_verdict.py`, `data/sources/phd-mining/abjad_verdict.txt`
 
+### 🔴 LLM-PROXY AUDIT — FUZZY (commit pending)
+
+**The project's OWN documented sound-pattern criteria cannot reproduce the AI classifier's picks.**
+
+- **Sample:** 357 words, stratified by ROOT × confidence tier (proportional allocation)
+- **Raters:** 3 deterministic raters based on rootPatterns.json sound-pattern criteria
+  - Rater A: first-letter match only
+  - Rater B: any-letter match
+  - Rater C: weighted (first letter ×4, others ×1, NONE threshold)
+- **Fleiss Kappa:** 0.5264 — **<0.60 → FUZZY** (categories downgraded to "exploratory grouping")
+- **Accuracy vs classifier (rater-majority):** 28.6% — **<70% → root claims become 'exploratory'**
+- **No tier ≥85%** → all confidence tiers downgraded
+- **⚠️ EXPLORATORY PROXY:** Only negative result is decision-grade. Positive result would risk circularity.
+- **Files:** `scripts/audit/` — `prepare_sample.py`, `run_raters.py`, `compute_verdict.py`, `audit_blind.json`, `audit_key.json`
+
 ### Viable Papers (unaffected by these results)
 - Ibḍāl as Encoding Dictionary
 - Semantic Suffix Clustering
@@ -226,13 +247,13 @@
 
 ---
 
-## Quick-Start: First 2 Weeks (what to do NOW)
+## Quick-Start: Next Steps
 
-- [x] **Done:** CCM classes + AR-HE test (P1.1–P1.5) → RETIRED, use for Ibḍāl encoding paper instead
-- [x] **Done:** Abjad × Frequency real corpus gate (0.1.6–0.1.8) → COLLAPSED, removed from publish track
-- [x] **Done:** Repo structure — `scripts/ccm/`, `scripts/abjad/`, `data/sources/phd-mining/`
-- [ ] **Next:** Open Airtable/Google Sheets for 357-word audit form
-- [ ] **Next:** V1 Ibdal Network Graph (basic layout)
+- [x] **Done:** CCM classes + AR-HE test (P1.1–P1.5) → RETIRED
+- [x] **Done:** Abjad × Frequency real corpus gate (0.1.6–0.1.8) → COLLAPSED
+- [x] **Done:** Repo structure — `scripts/ccm/`, `scripts/abjad/`, `scripts/audit/`, `data/sources/phd-mining/`
+- [x] **Done:** V1 Ibdal Network Graph — **LIVE at /visualizations/ibdal**
+- [x] **Done:** LLM-proxy audit (0.1.8b) — **FUZZY (κ=0.526), EXPLORATORY (28.6%)**
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
 - [ ] **Next:** Semantic Suffix Clustering (P3.1–P3.6)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)

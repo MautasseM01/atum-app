@@ -1,0 +1,2501 @@
+[
+  {
+    "id": 1,
+    "word": "CIRCUMNAVIGATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 2,
+    "word": "BIODIVERSITY",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 3,
+    "word": "MATERIALIST",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 4,
+    "word": "SENATORIAL",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 5,
+    "word": "ANTIBELLIGERENT",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 6,
+    "word": "QUINTESSENCE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 7,
+    "word": "DIODE",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 8,
+    "word": "THEW",
+    "classifier_root": "ATOM",
+    "confidence": 0.6,
+    "tier": "moderate"
+  },
+  {
+    "id": 9,
+    "word": "REEL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 10,
+    "word": "UPANISHAD",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 11,
+    "word": "RADON",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 12,
+    "word": "PROFESSIONALISM",
+    "classifier_root": "TOR",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 13,
+    "word": "TROPOS",
+    "classifier_root": "TOR",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 14,
+    "word": "TERMINAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 15,
+    "word": "ELECTRODE",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 16,
+    "word": "ANTIBULLYING",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 17,
+    "word": "BELLIGERENTLY",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 18,
+    "word": "TEMPERATURE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 19,
+    "word": "PERIMETROS",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 20,
+    "word": "ADVISABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 21,
+    "word": "MAGISTRATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 22,
+    "word": "REDOUBTABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 23,
+    "word": "INTERACTION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 24,
+    "word": "ANDROID",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 25,
+    "word": "PREREBELLION",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 26,
+    "word": "COFFEE",
+    "classifier_root": "ATOM",
+    "confidence": 0.88,
+    "tier": "strong"
+  },
+  {
+    "id": 27,
+    "word": "UNCHANGEABLE",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 28,
+    "word": "GENETICIST",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 29,
+    "word": "CURATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 30,
+    "word": "NONGLOBAL",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 31,
+    "word": "STABULUM",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 32,
+    "word": "TORRENTE",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 33,
+    "word": "CAM",
+    "classifier_root": "TOR",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 34,
+    "word": "SUBORDINATE",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 35,
+    "word": "COUNTERCYCLICAL",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 36,
+    "word": "ORGANIZATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 37,
+    "word": "AUTOFOCUS",
+    "classifier_root": "ATOM",
+    "confidence": 0.88,
+    "tier": "strong"
+  },
+  {
+    "id": 38,
+    "word": "ATOMIZER",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 39,
+    "word": "IONOSPHERE",
+    "classifier_root": "BULL",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 40,
+    "word": "BALLAST",
+    "classifier_root": "BULL",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 41,
+    "word": "OPERATOR",
+    "classifier_root": "TOR",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 42,
+    "word": "NOMINATION",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 43,
+    "word": "MARATHI",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 44,
+    "word": "PULSAR",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 45,
+    "word": "NAVIGATIONAL",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 46,
+    "word": "IMMA",
+    "classifier_root": "ATOM",
+    "confidence": 0.82,
+    "tier": "strong"
+  },
+  {
+    "id": 47,
+    "word": "PROTOMATTER",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 48,
+    "word": "METTLESOME",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 49,
+    "word": "FACTORIUM",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 50,
+    "word": "MAYBE",
+    "classifier_root": "BULL",
+    "confidence": 0.6,
+    "tier": "moderate"
+  },
+  {
+    "id": 51,
+    "word": "PERMUTE",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 52,
+    "word": "GITA",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 53,
+    "word": "JEZEBEL",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 54,
+    "word": "HYGROMETER",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 55,
+    "word": "PARAMATMA",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 56,
+    "word": "TRANSISTOR",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 57,
+    "word": "DECIDABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 58,
+    "word": "INEDIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 59,
+    "word": "CACHE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 60,
+    "word": "NATURLICH",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 61,
+    "word": "FAULT",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 62,
+    "word": "CRIATURA",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 63,
+    "word": "CAPACITOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 64,
+    "word": "BULKY",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 65,
+    "word": "NATAL",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 66,
+    "word": "CUSTODIAN",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 67,
+    "word": "GATEKEEPER",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 68,
+    "word": "CHATURTHA",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 69,
+    "word": "HEFT",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 70,
+    "word": "BEAUTE",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 71,
+    "word": "POPULARITY",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 72,
+    "word": "ORGANIZATIONAL",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 73,
+    "word": "DIRECTORY",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 74,
+    "word": "UNRECYCLED",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 75,
+    "word": "MOMENTUM",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 76,
+    "word": "ENDOCRINOLOGIST",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 77,
+    "word": "FAVORABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 78,
+    "word": "VISCOMETER",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 79,
+    "word": "ADAMANT",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 80,
+    "word": "THERMAL",
+    "classifier_root": "TOR",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 81,
+    "word": "DEFECT",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 82,
+    "word": "FAUNAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 83,
+    "word": "CONDENSATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 84,
+    "word": "IMPOTENCE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 85,
+    "word": "BABYLON",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 86,
+    "word": "BALLETT",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 87,
+    "word": "GLOBALIS",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 88,
+    "word": "SONUS",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 89,
+    "word": "BELLHOP",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 90,
+    "word": "DESIGNARE",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 91,
+    "word": "DECODER",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 92,
+    "word": "FORESEEABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 93,
+    "word": "ACTUARE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 94,
+    "word": "AUTOPILOT",
+    "classifier_root": "TOR",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 95,
+    "word": "DICTATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 96,
+    "word": "CUSTOMIZE",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 97,
+    "word": "ENDURE",
+    "classifier_root": "TOR",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 98,
+    "word": "TOUR",
+    "classifier_root": "TOR",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 99,
+    "word": "百 BAI",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 100,
+    "word": "NITRATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 101,
+    "word": "SAFFRON",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 102,
+    "word": "GAMETE",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 103,
+    "word": "CRATER",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 104,
+    "word": "FRICTION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 105,
+    "word": "SEDIMENT",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 106,
+    "word": "INVISIBILITY",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 107,
+    "word": "NEBULIZER",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 108,
+    "word": "GENOS",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 109,
+    "word": "MARKETABLE",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 110,
+    "word": "AUTOMATION",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 111,
+    "word": "INCOMPRESSIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 112,
+    "word": "PROGENY",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 113,
+    "word": "ASHIR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 114,
+    "word": "NUCLEON",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 115,
+    "word": "DERIVE",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 116,
+    "word": "COMPRESSIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 117,
+    "word": "GYROSCOPIC",
+    "classifier_root": "TOR",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 118,
+    "word": "NATIO",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 119,
+    "word": "IMPERSONATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 120,
+    "word": "MATAT",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 121,
+    "word": "LADINO",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 122,
+    "word": "ACTUALIZATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 123,
+    "word": "POLLUERE",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 124,
+    "word": "NARRATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 125,
+    "word": "EDUCATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 126,
+    "word": "ASSIGNATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 127,
+    "word": "DENATURIEREN",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 128,
+    "word": "ORIGINAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 129,
+    "word": "PHOTON",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 130,
+    "word": "CALCULATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 131,
+    "word": "DISCREDIT",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 132,
+    "word": "PUBLICITY",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 133,
+    "word": "ITERATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 134,
+    "word": "FIRMAMENT",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 135,
+    "word": "EXHIBITION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 136,
+    "word": "FLUID",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 137,
+    "word": "转变 ZHUANBIAN",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 138,
+    "word": "ASPHYXIATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 139,
+    "word": "METABOLIC",
+    "classifier_root": "BULL",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 140,
+    "word": "FUNGUS",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 141,
+    "word": "BICYCLE",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 142,
+    "word": "DISABILITY",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 143,
+    "word": "REVIEWABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 144,
+    "word": "VARTMAN",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 145,
+    "word": "SAFARI",
+    "classifier_root": "ATOM",
+    "confidence": 0.82,
+    "tier": "strong"
+  },
+  {
+    "id": 146,
+    "word": "ACIDIFY",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 147,
+    "word": "FORCIBLENESS",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 148,
+    "word": "FUNGIBLE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 149,
+    "word": "PURSUIT",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 150,
+    "word": "INVENTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 151,
+    "word": "PENDULUM",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 152,
+    "word": "EASTERN",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 153,
+    "word": "BULLFIGHTING",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 154,
+    "word": "LIQUID",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 155,
+    "word": "MOKSHA",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 156,
+    "word": "ROBUSTNESS",
+    "classifier_root": "BULL",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 157,
+    "word": "FILTRATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 158,
+    "word": "CONSTERNATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 159,
+    "word": "POLYCYCLIC",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 160,
+    "word": "CELESTIAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 161,
+    "word": "COMPULSIVE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 162,
+    "word": "TOXIN",
+    "classifier_root": "TOR",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 163,
+    "word": "ALLOCATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 164,
+    "word": "PITBALL",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 165,
+    "word": "PALANA",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 166,
+    "word": "FORCIBLY",
+    "classifier_root": "TOR",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 167,
+    "word": "REPULSE",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 168,
+    "word": "GASEOUS",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 169,
+    "word": "PREDATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 170,
+    "word": "SCAVENGER",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 171,
+    "word": "DESERTION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 172,
+    "word": "ARISE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 173,
+    "word": "NARRATE",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 174,
+    "word": "TOLERABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 175,
+    "word": "PHYSIQUE",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 176,
+    "word": "ALKALINE",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 177,
+    "word": "DENATURALIZE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 178,
+    "word": "GENERAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 179,
+    "word": "DETONARE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 180,
+    "word": "PLASTICITY",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 181,
+    "word": "ENTOMON",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 182,
+    "word": "HISTORICAL",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 183,
+    "word": "PUBLICATIO",
+    "classifier_root": "BULL",
+    "confidence": 0.86,
+    "tier": "strong"
+  },
+  {
+    "id": 184,
+    "word": "REFORM",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 185,
+    "word": "CIVILIZATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 186,
+    "word": "BENGALI",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 187,
+    "word": "班 BAN",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 188,
+    "word": "INDIVISIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 189,
+    "word": "ALTERNATE",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 190,
+    "word": "SUCCESSIVE",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 191,
+    "word": "ILLUSTRATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 192,
+    "word": "NITROGEN",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 193,
+    "word": "THERMOCHEMISTRY",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 194,
+    "word": "EXTRATERRITORIAL",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 195,
+    "word": "PROCESS",
+    "classifier_root": "TOR",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 196,
+    "word": "SERVER",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 197,
+    "word": "EXHIBITOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 198,
+    "word": "STATISTICIAN",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 199,
+    "word": "HINDI",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 200,
+    "word": "SYMBOLISMOS",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 201,
+    "word": "HANDLEABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 202,
+    "word": "TEMPORARY",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 203,
+    "word": "NEUTRINO",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 204,
+    "word": "INJECTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 205,
+    "word": "ESTABLO",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 206,
+    "word": "AGRICULTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 207,
+    "word": "LAUDABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 208,
+    "word": "FRATER",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 209,
+    "word": "GLOBALIST",
+    "classifier_root": "BULL",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 210,
+    "word": "ENDOSPERM",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 211,
+    "word": "NONCAPABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 212,
+    "word": "OPPRESSOR",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 213,
+    "word": "VARIATE",
+    "classifier_root": "BULL",
+    "confidence": 0.87,
+    "tier": "strong"
+  },
+  {
+    "id": 214,
+    "word": "COLLABORATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 215,
+    "word": "CANONIZATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 216,
+    "word": "AUTOREGULATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 217,
+    "word": "ANESTHESIOLOGIST",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 218,
+    "word": "NATURAE",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 219,
+    "word": "FEASIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 220,
+    "word": "BALCON",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 221,
+    "word": "PHYSIKE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 222,
+    "word": "DEMONSTRABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 223,
+    "word": "MATERNITY",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 224,
+    "word": "FORMIDABLY",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 225,
+    "word": "ILLUSTRATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 226,
+    "word": "SAMPALA",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 227,
+    "word": "AFFIRMATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 228,
+    "word": "DEFLECTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 229,
+    "word": "CLOSABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 230,
+    "word": "PROPELLING",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 231,
+    "word": "SNOWBALL",
+    "classifier_root": "BULL",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 232,
+    "word": "SATYA",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 233,
+    "word": "DEFICIENT",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 234,
+    "word": "PROCREATION",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 235,
+    "word": "ESTIMABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 236,
+    "word": "HISTORY",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 237,
+    "word": "HYPOTHETICAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 238,
+    "word": "INELIGIBLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 239,
+    "word": "FACTOR",
+    "classifier_root": "TOR",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 240,
+    "word": "ANALYSIS",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 241,
+    "word": "LIBEL",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 242,
+    "word": "DISTILLATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 243,
+    "word": "DETER",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 244,
+    "word": "DYNAMISM",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 245,
+    "word": "BALAYI",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 246,
+    "word": "CONCEIVABILITY",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 247,
+    "word": "TURNIER",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 248,
+    "word": "EXCAVATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 249,
+    "word": "PERSONA",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 250,
+    "word": "添 TIAN",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 251,
+    "word": "BASEBALL",
+    "classifier_root": "BULL",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 252,
+    "word": "CONFISCATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 253,
+    "word": "MASTERY",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 254,
+    "word": "BREED",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 255,
+    "word": "DEFORESTATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 256,
+    "word": "KOSMETICOS",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 257,
+    "word": "FOUNDER",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 258,
+    "word": "INDEFINABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 259,
+    "word": "ABSTENTION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 260,
+    "word": "GLOBALISM",
+    "classifier_root": "BULL",
+    "confidence": 0.92,
+    "tier": "proven"
+  },
+  {
+    "id": 261,
+    "word": "LEGATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 262,
+    "word": "COMPARABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 263,
+    "word": "TURBA",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 264,
+    "word": "CHOREOGRAPHOS",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 265,
+    "word": "DESIGNATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 266,
+    "word": "PROCURATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 267,
+    "word": "TITRATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 268,
+    "word": "POWERFULLY",
+    "classifier_root": "ATOM",
+    "confidence": 0.86,
+    "tier": "strong"
+  },
+  {
+    "id": 269,
+    "word": "AGON",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 270,
+    "word": "METAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 271,
+    "word": "ATMOSPHERE",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 272,
+    "word": "BOTTOM",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 273,
+    "word": "ACCEPTATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 274,
+    "word": "PROSECUTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 275,
+    "word": "PROFITERI",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 276,
+    "word": "SEMI-AUTONOMOUS",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 277,
+    "word": "GOVERNOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 278,
+    "word": "AGGREGATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 279,
+    "word": "VOLATILITY",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 280,
+    "word": "PURE",
+    "classifier_root": "ATOM",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 281,
+    "word": "DENOMINATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 282,
+    "word": "FLOWRATE",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 283,
+    "word": "DIABOLIC",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 284,
+    "word": "PLATFORM",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 285,
+    "word": "STRONGEST",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 286,
+    "word": "ADAMIC",
+    "classifier_root": "ATOM",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 287,
+    "word": "TESTABILITY",
+    "classifier_root": "ATOM",
+    "confidence": 0.86,
+    "tier": "strong"
+  },
+  {
+    "id": 288,
+    "word": "EMBRYONIC",
+    "classifier_root": "ATOM",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 289,
+    "word": "INSURMOUNTABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 290,
+    "word": "MORPHOLOGICAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 291,
+    "word": "EXPANDABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 292,
+    "word": "ACCENTUATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 293,
+    "word": "SELECTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 294,
+    "word": "BREATHABLE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 295,
+    "word": "LOTION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 296,
+    "word": "AFFORDABILITY",
+    "classifier_root": "ATOM",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 297,
+    "word": "INITIALIZATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 298,
+    "word": "INFLAME",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 299,
+    "word": "CAMPHOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 300,
+    "word": "LEBAN",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 301,
+    "word": "APPROACHABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 302,
+    "word": "TRANSPORTATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 303,
+    "word": "CONSECRATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 304,
+    "word": "ZINC",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 305,
+    "word": "ADMIRABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 306,
+    "word": "BALIN",
+    "classifier_root": "BULL",
+    "confidence": 0.93,
+    "tier": "proven"
+  },
+  {
+    "id": 307,
+    "word": "DETERMINATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 308,
+    "word": "TALC",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 309,
+    "word": "AFFECTATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 310,
+    "word": "DURABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 311,
+    "word": "EBEL",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 312,
+    "word": "CONSULATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 313,
+    "word": "PROSPECT",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 314,
+    "word": "ACCOUNTABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 315,
+    "word": "ACTEUR",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 316,
+    "word": "BULLDOZE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 317,
+    "word": "TRANSFORMABLE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 318,
+    "word": "CANCELLATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 319,
+    "word": "BHRAMANAM",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 320,
+    "word": "PATERNALISM",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 321,
+    "word": "DYNAMO",
+    "classifier_root": "TOR",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 322,
+    "word": "PASTOR",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 323,
+    "word": "ATTRIBUTABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 324,
+    "word": "UNRELIABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 325,
+    "word": "PURUSHA",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 326,
+    "word": "BIOLOGICAL",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 327,
+    "word": "DENATURATION",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 328,
+    "word": "TERRITORIAL",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 329,
+    "word": "AGNATUS",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 330,
+    "word": "ONOMAZO",
+    "classifier_root": "ATOM",
+    "confidence": 0.76,
+    "tier": "strong"
+  },
+  {
+    "id": 331,
+    "word": "PRIMARY",
+    "classifier_root": "ATOM",
+    "confidence": 0.65,
+    "tier": "moderate"
+  },
+  {
+    "id": 332,
+    "word": "NATURALIZATION",
+    "classifier_root": "ATOM",
+    "confidence": 0.98,
+    "tier": "proven"
+  },
+  {
+    "id": 333,
+    "word": "VALIDATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 334,
+    "word": "NATHAN",
+    "classifier_root": "ATOM",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 335,
+    "word": "BULLA",
+    "classifier_root": "BULL",
+    "confidence": 1,
+    "tier": "proven"
+  },
+  {
+    "id": 336,
+    "word": "ATTAINABLE",
+    "classifier_root": "BULL",
+    "confidence": 0.7,
+    "tier": "strong"
+  },
+  {
+    "id": 337,
+    "word": "暴 BAO",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 338,
+    "word": "HERBIVORE",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 339,
+    "word": "TERRORIZE",
+    "classifier_root": "BULL",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 340,
+    "word": "JANITORIAL",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 341,
+    "word": "RECREATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 342,
+    "word": "PUBLICIZING",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 343,
+    "word": "DIABOLUS",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 344,
+    "word": "DISABLEMENT",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 345,
+    "word": "RNA",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 346,
+    "word": "SOLSTICE",
+    "classifier_root": "TOR",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 347,
+    "word": "LUBNAN",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 348,
+    "word": "DOMINATOR",
+    "classifier_root": "TOR",
+    "confidence": 0.75,
+    "tier": "strong"
+  },
+  {
+    "id": 349,
+    "word": "SILICON",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 350,
+    "word": "VECTORIAL",
+    "classifier_root": "TOR",
+    "confidence": 0.98,
+    "tier": "proven"
+  },
+  {
+    "id": 351,
+    "word": "HORRIBLY",
+    "classifier_root": "BULL",
+    "confidence": 0.8,
+    "tier": "strong"
+  },
+  {
+    "id": 352,
+    "word": "BOLSTER",
+    "classifier_root": "BULL",
+    "confidence": 0.9,
+    "tier": "proven"
+  },
+  {
+    "id": 353,
+    "word": "CENTRIFUGAL",
+    "classifier_root": "BULL",
+    "confidence": 0.95,
+    "tier": "proven"
+  },
+  {
+    "id": 354,
+    "word": "BETRAY",
+    "classifier_root": "BULL",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 355,
+    "word": "SOLAR",
+    "classifier_root": "TOR",
+    "confidence": 0.85,
+    "tier": "strong"
+  },
+  {
+    "id": 356,
+    "word": "TZOHAR",
+    "classifier_root": "TOR",
+    "confidence": 0.88,
+    "tier": "strong"
+  },
+  {
+    "id": 357,
+    "word": "SUBSTANTIATE",
+    "classifier_root": "ATOM",
+    "confidence": 0.75,
+    "tier": "strong"
+  }
+]

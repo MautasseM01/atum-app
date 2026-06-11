@@ -1,0 +1,21 @@
+=== CONFUSION MATRIX (Classifier vs Rater-Majority) ===
+
+                ATOM    BULL     TOR NONE/OTHR
+ATOM               0      28      31       0          
+BULL               0      45      26       0          
+TOR                0      30      57       0          
+OTHER              0       0       0       0          
+
+=== ACCURACY BY CLASSIFIER ROOT ===
+ATOM: 0/114 = 0.0%
+BULL: 45/114 = 39.5%
+TOR: 57/129 = 44.2%
+
+=== VERDICT ===
+Fleiss Kappa = 0.5264 (< 0.60) -> FUZZY
+Overall accuracy = 28.6% (< 70%) -> root claims become 'exploratory'
+No tier reaches 85% -> all tiers downgraded
+
+BRANCH FIRED: FUZZY + EXPLORATORY
+ACTION: Downgrade ATUM/BULL/TOR categories to 'exploratory grouping'
+until human audit validates or refutes.
