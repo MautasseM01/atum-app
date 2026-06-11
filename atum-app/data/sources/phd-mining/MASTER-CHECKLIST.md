@@ -1,18 +1,19 @@
 # MASTER CHECKLIST — ATUM Research Execution Plan
 
-**Last updated:** 2026-06-11
+**Last updated:** 2026-06-12
 **Source:** RESEARCH-ROADMAP.md (التحديث الثالث)
 **Scope:** All publishable projects, visualizations, and data validation
 
 ## Progress Snapshot
 
-✅ **Completed:** 3 hypotheses tested (CCM retired, Abjad collapsed, Ibdal graph live)
+✅ **Completed:** 5 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL)
 🟢 **Live in app:** 1 visualization (ibdal network graph at /visualizations/ibdal)
 💀 **Dead:** 2 (CCM similarity, Abjad x Frequency paper)
-🔄 **In testing:** LLM-proxy audit — Fleiss Kappa = 0.526 (FUZZY), accuracy = 28.6% (EXPLORATORY)
-⏭️ **Next:** Human audit (357 words, 3 independent linguists)
+🔄 **In testing:** 0 currently
+⏭️ **Next:** Expand suffix to -ble/-tor + 2nd language; human audit
 
-**Publications: 0 live, 3 dead/retired, 5 viable.** *Viable: Ibḍāl encoding, Semantic Suffix, Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
+**Publications: 0 live, 3 dead/retired, 5 viable (+1 new pilot: suffix clustering SIGNAL).**
+*Viable: Ibḍāl encoding, Semantic Suffix (pilot signal confirmed), Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
 
 ---
 
@@ -53,12 +54,14 @@
 
 ### 1.2 [P3] Semantic Suffix Clustering
 *Target: COLING 2026 / ACL workshop*
-- [ ] **P3.1** Extract all words ending in -tion/-ble/-tor from 5 language dictionaries (EN, ES, IT, FR, PT)
-- [ ] **P3.2** Generate Word Embeddings (fastText / mBERT) — mean vector per suffix group
-- [ ] **P3.3** Cluster analysis: are suffix groups closer than random suffix groups?
-- [ ] **P3.4** Repeat across 5 languages — is the pattern stable?
+- [x] **P3.0** CHEAP PILOT — English -tion, 200 words, GloVe 50d, 1000-iteration permutation test → **SIGNAL (p < 0.001, 2.07× null mean)**
+- [x] **P3.0b** POS-confound check: -ness (0.359) > -able (0.239) > -tion (0.159) > -ment (0.140) > -tor (0.134). POS is a confound but not the full explanation — different noun suffixes have different cohesion levels.
+- [ ] **P3.1** Expand to -ble/-tor and 1 additional language (French -tion/-cion cognate)
+- [ ] **P3.2** Generate word embeddings (fastText / mBERT) — mean vector per suffix group
+- [ ] **P3.3** Full cluster analysis with POS controls
+- [ ] **P3.4** Repeat across remaining languages — is the pattern stable?
 - [ ] **P3.5** Silhouette score analysis
-- [ ] **P3.6** Statistical significance testing (permutation test)
+- [ ] **P3.6** Full statistical significance testing (permutation test with POS matching)
 - [ ] **P3.7** Write paper + submit
 
 ### 1.3 [P5] Ha-Mim Code 19 — Monte Carlo Validation
@@ -254,8 +257,9 @@
 - [x] **Done:** Repo structure — `scripts/ccm/`, `scripts/abjad/`, `scripts/audit/`, `data/sources/phd-mining/`
 - [x] **Done:** V1 Ibdal Network Graph — **LIVE at /visualizations/ibdal**
 - [x] **Done:** LLM-proxy audit (0.1.8b) — **FUZZY (κ=0.526), EXPLORATORY (28.6%)**
+- [x] **Done:** Suffix pilot (P3.0) — **SIGNAL (p<0.001, -tion 2.07× null)**
+- [ ] **Next:** Expand suffix to -ble/-tor + French (P3.1)
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
-- [ ] **Next:** Semantic Suffix Clustering (P3.1–P3.6)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)
 
 ---
