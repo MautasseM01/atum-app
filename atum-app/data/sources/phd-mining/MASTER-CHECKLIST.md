@@ -12,7 +12,7 @@
 🔄 **In testing:** 0 currently
 ⏭️ **Next:** Ha-Mim Monte Carlo (P5.1–P5.4); Toponymic 80-10-10 (P4.1–P4.4); human audit (0.1.3–0.1.5)
 
-**Publications: 0 live, 3 dead/retired, 6 viable (+2 new: suffix cluster SIGNAL → BROADENS).**
+**Publications: 1 draft, 3 dead/retired, 6 viable (+2 new: suffix cluster SIGNAL → BROADENS).**
 *Viable: Ibḍāl encoding, Semantic Suffix (BROADENS — -tion, -tor, -ble all SIGNAL beyond POS), Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
 
 ---
@@ -63,7 +63,8 @@
 - [ ] **P3.4** Repeat across remaining languages — is the pattern stable?
 - [ ] **P3.5** Silhouette score analysis
 - [ ] **P3.6** Full statistical significance testing (permutation test with POS matching)
-- [ ] **P3.7** Write paper + submit
+- [x] **P3.7** Draft paper → `scripts/suffix/paper-suffix-semantics.md` (**DRAFT**, target: COLING/ACL workshop)
+- [ ] **P3.8** Submit paper
 
 ### 1.3 [P5] Ha-Mim Code 19 — Monte Carlo Validation
 *Target: Journal of Qur'anic Studies (short note)*
@@ -261,6 +262,8 @@
 - [x] **Done:** Suffix pilot (P3.0) — **SIGNAL (p<0.001, -tion 2.07× null)**
 - [x] **Done:** POS-isolation (P3.0c) — **SURVIVES (p_noun<0.001, 2.57× noun-null). Ranking: -tion > -ment > -tor stable**
 - [x] **Done:** Suffix expansion (P3.1) — **BROADENS** (-tor p<0.001, -ble p<0.001, French p=0.336 NO SIGNAL)
+- [x] **Done:** Draft suffix-semantics paper (P3.7) — **DRAFT** at `scripts/suffix/paper-suffix-semantics.md`
+- [ ] **Next:** Review and polish paper draft → submit to COLING/ACL workshop
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)
 

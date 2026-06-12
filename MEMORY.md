@@ -164,20 +164,20 @@ Pearson raw + log10; robustness = leave-one-out + exclude high-value letters; Bo
 ## Abjad × Frequency — COLLAPSED (2026-06-11, commit 5efc3f0)
 
 - Real corpus (Leipzig ara_wikipedia, 7.58M letters): Spearman ρ=−0.5145, p=0.0051,
-  FAILS Bonferroni (α=0.00333) → COLLAPSE per pre-registered rule.
+FAILS Bonferroni (α=0.00333) → COLLAPSE per pre-registered rule.
 - Within 18 common letters (abjad<100): ρ=−0.09 (zero). Entire effect = 10 rare
-  high-abjad letters (ث ذ ظ ض غ خ…) that are intrinsically rare consonants. Artifact of
-  abjad assignment, not a Shannon law. Original −0.693 (expert estimates) NOT reproduced.
+high-abjad letters (ث ذ ظ ض غ خ…) that are intrinsically rare consonants. Artifact of
+abjad assignment, not a Shannon law. Original −0.693 (expert estimates) NOT reproduced.
 - Removed from publication track.
 
 ## Strategic note — 3 kills share a shape
 
 - CCM(sim), CCM(cognate), Abjad×Freq all = "found a number, tested vs chance" → fragile
-  (artifact / outliers / post-hoc selection). SURVIVORS have a MECHANISM (ibdal=articulation,
-  suffix=derivational semantics, Pruvost=documented contact). PRIORITIZE mechanism claims.
+(artifact / outliers / post-hoc selection). SURVIVORS have a MECHANISM (ibdal=articulation,
+suffix=derivational semantics, Pruvost=documented contact). PRIORITIZE mechanism claims.
 - Defensible pillars now: 68% ibdal adjacency (solid). Lām=contraction (provisional,
-  single-source, Kuhn dissent — needs own gate). Untested: suffix clustering (best positive
-  bet), Pruvost borrowings (safe, not novel).
+single-source, Kuhn dissent — needs own gate). Untested: suffix clustering (best positive
+bet), Pruvost borrowings (safe, not novel).
 - Ha-Mim Code 19 → BOOK/exploratory tier ONLY (highest post-hoc-selection risk). Not pub track.
 
 ## Next
@@ -192,147 +192,94 @@ Pearson raw + log10; robustness = leave-one-out + exclude high-value letters; Bo
 ## Phase-0 audit DESIGN — question reframed (2026-06-11)
 
 - Audit tests INTERNAL validity (do humans apply the project's OWN root rule consistently?)
-
   = Fleiss' Kappa. NOT etymological-descent (that question would nuke the data for a claim
-
   the project no longer makes). External contradictions logged as flags only.
-
 - High Kappa = "categories well-defined & consistently applied," NOT "roots etymologically true."
-
 - Auditor judgment per word (BLIND to classifier pick, other auditors, confidence tier):
-
   best_fit_root [ATUM/BULL/TOR/NONE/UNSURE] + strength 0-3 + basis [sound/meaning/both] +
-
   optional known_contradiction. NONE & UNSURE options are mandatory.
-
 - Sample 357 stratified by ROOT × CONFIDENCE TIER (not blended) → accuracy PER TIER.
-
 - Stat fix: 3 raters → Fleiss' Kappa (not Cohen's).
-
 - PRE-REGISTERED RULE:
-
   · Fleiss κ ≥0.80 proceed; 0.60-0.80 proceed w/ caveat; <0.60 → categories fuzzy →
-
     whole dataset = "exploratory grouping," not "validated roots."
-
   · Classifier accuracy vs human consensus, per tier. Overall <70% → claims "exploratory";
-
     BUT any tier ≥85% stays "validated."
-
 - Auditors: real (publication-grade) vs 3-LLM proxy (exploratory only). Recommend proxy
-
   first as cheap signal, then humans for the real gate.
-
 - TODO: paste actual ATUM/BULL/TOR definitions into the auditor brief (from methodology).
 
 ## STANDING RULE (all agents, every step) — 2026-06-11
 
 - Every agent task MUST end by updating [MASTER-CHECKLIST.md](http://MASTER-CHECKLIST.md): tick [x] done, record verdict,
-
   refresh a top "Progress Snapshot" (✅done/🟢live/💀dead/⏭️next + counts). No exceptions.
-
 - Claude bakes this instruction into every future agent prompt.
 
 ## Phase-0 audit — proxy-first decision (2026-06-11)
 
 - Lowest-effort path chosen: 3-LLM proxy audit BEFORE human recruitment. ~1 day, autonomous.
-
 - Tests INTERNAL validity (category consistency), not etymological descent.
-
 - EPISTEMIC CAVEAT: proxy gives a decision-grade NEGATIVE signal (LLMs disagree → categories
-
   fuzzy → stop). A POSITIVE signal is WEAK / possibly circular (auditor LLMs may share bias
-
   with the GPT classifier) → does NOT validate; only licenses investing in real human auditors.
-
 - Pre-registered rule: Fleiss κ ≥0.80 → humans next; 0.60-0.80 caveat; <0.60 → dataset =
-
   "exploratory grouping." Overall acc <70% → claims exploratory; any tier ≥85% stays validated.
-
 - Agent pulls real ATUM/BULL/TOR definitions itself; no manual step for user.
 
 ## Phase-0 proxy audit — RED/RED (2026-06-11, commit cd0ef53)
 
 - Fleiss κ=0.53 (<0.60 FUZZY) AND overall accuracy 28.6% (<70% EXPLORATORY). Both branches fired.
-
 - ROOT CAUSE: the 5,083-word DB was assigned by an external AI of UNKNOWN criteria; the
-
   documented rootPatterns.json cannot reproduce its picks. The root classification is a
-
   BLACK BOX, currently unjustifiable. 🔬-tier accuracy only 37.9% → confidence tiers don't
-
   track accuracy either.
-
 - Proxy was 1 model family → positive would've been circular, but result is NEGATIVE =
-
   decision-grade. Human audit (0.1.3-0.1.5) now ESSENTIAL before ANY claim using the 5,083 DB.
-
 - FROZEN until human audit: anything consuming the root classification (app root pages,
-
   book root chapters as "validated", etymology-bridge claims tied to roots).
 
 ## Status after 4 kills
 
 - 💀 CCM(sim), CCM(cognate), Abjad×Freq, Root-classification validity (frozen pending humans).
-
 - 🟢 Ibdal network 65.3% (independent of the black box).
-
 - ⏭️ Untested & black-box-independent: Semantic Suffix Clustering (mechanism-based, best
-
   positive bet), Pruvost borrowings (documented, safe).
-
 - Next: Suffix clustering CHEAP PILOT (1 lang, 1 suffix, pre-registered). Human root audit
-
   in parallel (user-driven).
 
 ## Suffix pilot — FIRST POSITIVE SIGNAL (2026-06-11, commit b4fea3b)
 
 - -tion cohesion 0.245 vs null mean 0.118, 0/1000 null exceeded it, p<0.001, 2.07× null.
-
 - Mechanism-class finding (suffix = derivational semantics) → trustworthy family, unlike
-
   the dead "number vs chance" findings. Independent of the frozen 5,083 black box.
-
 - CAVEAT (agent-flagged): POS is a confound — noun suffixes vary (-tion>-ment>-tor), so not
-
   PURE POS, but the suffix effect is NOT yet isolated from "they're all nouns."
-
 - Model: glove-wiki-gigaword-50.
 
 ## Next — isolate before expand
 
 - Pre-registered: re-test -tion vs a NOUN-ONLY null. SURVIVES (p_noun<0.05) → real suffix
-
   signal → expand to -ble/-tor + French. COLLAPSES → POS artifact, shelve honestly.
-
 - Do NOT expand to other suffixes/languages until the POS confound test passes.
 
 ## Balance shift
 
 - 🟢 Ibdal 65.3% (descriptive) + Suffix signal (positive, pending POS isolation).
-
 - 💀 CCM×2, Abjad×Freq, Root validity (frozen).
-
 - First publishable-POSITIVE candidate in the project. Mechanism-class. Guard it with the
-
   same rigor that killed the others.
 
 ## Suffix signal — SURVIVES POS isolation (2026-06-11, commit 17f71dd)
 
 - -tion vs NOUN-ONLY null: cohesion 0.330 vs 0.129, p_noun<0.001, 2.57×. Ranking
-
   -tion>-ment>-tor stable → suffix-specific semantics beyond POS. CONFIRMED positive.
-
 - Limit: 1 language, 1 suffix, GloVe-50d. Not yet cross-linguistic.
 
 ## Next — expand with confound guards
 
 - 2nd English suffix (-ble/-tor, POS-matched null) + French (-tion/-cion, French model).
-
 - FLAG for French: shared-Latin-borrowing is an alt explanation to independent pattern.
-
 - Verdict: ≥2 new tests pass → lead positive paper candidate. Only -tion → narrow claim.
-
   New suffixes fail → -tion was special, report limit.
 
 ## Suffix expansion — BROADENS (2026-06-12)
@@ -349,10 +296,40 @@ Pearson raw + log10; robustness = leave-one-out + exclude high-value letters; Bo
 ## Surviving core (all independent of frozen root DB)
 
 - 🟢 Suffix clustering (BROADENS, English 3 suffixes confirmed) · Ibdal 65.3% (descriptive, live) ·
-
   Pruvost borrowings (documented, unbuilt).
-
 - 💀 CCM×2, Abjad×Freq · ✋ Root validity frozen pending human audit.
 
+## Suffix expansion — BROADENS (English), French NEGATIVE (2026-06-11, commit 5a1acc1)
 
+- -tor: 0.106 vs noun-null95 0.043, p<0.001 ✓ · -ble: 0.251 vs adj-null95 0.105, p<0.001 ✓
+
+- French -tion/-cion: 0.085 vs Fr-null95 0.100, p=0.336 ✗ NO SIGNAL.
+
+- READING: signal is a robust ENGLISH phenomenon across 3 suffixes; NOT cross-linguistic.
+
+  French silence likely = borrowed/non-productive morphology. The cross-linguistic bridge
+
+  is NOT built on borrowed suffixes — note for the big-thesis reframing later.
+
+- Decision: STOP expanding (further languages = post-hoc fishing). Harvest the clean English
+
+  claim now.
+
+## Next
+
+- Step 1 (agent): draft [paper-suffix-semantics.md](http://paper-suffix-semantics.md) — English-only claim, French reported as
+
+  honest negative, bounded limitations. First POSITIVE publishable result in the project.
+
+- Step 2 (user): human root audit (357) — still the frozen gate for everything root-based.
+
+## Standing agreement (user, 2026-06-11)
+
+- "Finish all tasks, THEN ask the questions with a data-scientist's eyes." Bonacci's
+
+  cross-language word sets (Heb→Japanese/Latin/Greek) enter the LATER reframing session as
+
+  HYPOTHESES to be tested (deep-cognate vs documented-borrowing), NOT as evidence. Eye-seen
+
+  patterns are the family we've killed 4×; they get pre-registered tests, not a free pass.
 
