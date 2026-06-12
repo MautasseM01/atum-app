@@ -6,9 +6,10 @@
 
 ## Progress Snapshot
 
-✅ **Completed:** 7 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL, POS-isolation SURVIVES, Suffix-expansion BROADENS)
+✅ **Completed:** 9 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL, POS-isolation SURVIVES, Suffix-expansion BROADENS, Suffix-paper draft, Pruvost dataset)
 🟢 **Live in app:** 1 visualization (ibdal network graph at /visualizations/ibdal)
 💀 **Dead:** 2 (CCM similarity, Abjad x Frequency paper)
+📄 **Drafts:** 1 (suffix-semantics paper) + 1 (Pruvost compilation)
 🔄 **In testing:** 0 currently
 ⏭️ **Next:** Ha-Mim Monte Carlo (P5.1–P5.4); Toponymic 80-10-10 (P4.1–P4.4); human audit (0.1.3–0.1.5)
 
@@ -263,6 +264,7 @@
 - [x] **Done:** POS-isolation (P3.0c) — **SURVIVES (p_noun<0.001, 2.57× noun-null). Ranking: -tion > -ment > -tor stable**
 - [x] **Done:** Suffix expansion (P3.1) — **BROADENS** (-tor p<0.001, -ble p<0.001, French p=0.336 NO SIGNAL)
 - [x] **Done:** Draft suffix-semantics paper (P3.7) — **DRAFT** at `scripts/suffix/paper-suffix-semantics.md`
+- [x] **Done:** Pruvost lexical-borrowing dataset — **COMPILED** 78 entries (67 documented, 3 probable, 2 disputed, 0 unsourced) at `data/sources/phd-mining/pruvost-borrowings.csv` + `pruvost-summary.md`
 - [ ] **Next:** Review and polish paper draft → submit to COLING/ACL workshop
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)

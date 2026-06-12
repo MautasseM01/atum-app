@@ -1,0 +1,82 @@
+french_word,arabic_origin,meaning,route,first_attested,source_ref,confidence
+amiral,amīr al-bahr (أمير البحر),"commander of the sea, admiral",direct,1080,"Pruvost p.29, Chanson de Roland",documented
+alcool,al-kuḥl (الكحل),"antimony powder, later distilled alcohol",via_latin,,"Pruvost p.73",documented
+algèbre,al-jabr (الجبر),"reduction, constraint (mathematics)",via_spanish,,"Pruvost p.21-22, Al-Khwarizmi",documented
+alchimie,al-kīmiyā (الكيمياء),chemistry/alchemy,via_latin,,"Pruvost p.140",documented
+alambic,al-anbīq (الأنبيق),still for distillation,via_latin,late 17th c.,"Pruvost p.141",documented
+almanach,al-manākh (المناخ),calendar/astronomical table,via_latin,,"Pruvost p.55",documented
+alcade,al-qāḍī (القاضي),judge/magistrate,via_spanish,,"Pruvost p.168",documented
+alcali,al-qālī (القالي),soda/alkali (plant ash),via_latin,,"Pruvost p.143",documented
+algarade,al-ghāra (الغارة),cavalry raid → sudden outburst,via_spanish,1549,"Pruvost p.176",documented
+alfange,al-handjar (الخنجر),curved sword/cutlass,via_spanish,early 17th c.,"Pruvost p.179",documented
+almicantarat,al-muqanṭarāt (المقنطرات),almucantar (astrolabe),via_latin,,"Pruvost p.146",documented
+alkermès,al-qirmiz (القرمز),kermes dye (crimson),via_latin,,"Pruvost p.90",documented
+alquifoux,al-kuhl (الكحل),"galena (lead ore)",via_spanish,17th c.,"Pruvost p.144",documented
+abricot,al-barqūq (البرقوق),apricot,via_spanish,,"Pruvost p.31",documented
+aubergine,al-bādhijān (الباذنجان),eggplant,via_spanish/catalan,1750,"Pruvost p.74, 78",documented
+artichaut,al-kharshūf (الخرشوف),artichoke,via_italian,early 16th c.,"Pruvost p.77-78",documented
+coton,qutn (قطن),cotton,direct,,"Pruvost p.17, 182",documented
+sucre,sukkar (سكر),sugar,direct,,"Pruvost p.19",documented
+café,qahwa (قهوة),coffee,direct,,"Pruvost p.19, 88",documented
+orange,nāranj (نارنج),"orange (fruit)",via_italian,,"Pruvost p.41",documented
+risque,rizq (رزق),"fortune, risk (Toledo docs, 13th c.)",via_italian,1577,"Pruvost p.68, Bencheikh CNRS",disputed
+chiffre,sifr (صفر),"zero, empty → digit",via_latin,,"Pruvost p.53, 139",documented
+zéro,sifr (صفر),zero,via_latin,1680,"Pruvost p.53-54, 139",documented
+hasard,az-zahr (الزهر),"dice → chance",direct,,"Pruvost p.36, 55",documented
+magasin,makhāzin (مخازن),"storehouses → shop",direct,,"Pruvost p.39",documented
+matelas,maṭraḥ (مطرح),place to throw → mattress,direct,,"Pruvost p.39",documented
+douane,dīwān (ديوان),customs office,direct,,"Pruvost p.55",documented
+tarif,ta'rīf (تعريف),"notification → price list, tariff",direct,,"Pruvost p.55",documented
+jupe,jubbah (جبة),"long woolen garment → skirt",via_italian/sicily,,"Pruvost p.37",documented
+gaze,Ghazza (غزة),"Gaza (city) → gauze",direct,,"Pruvost p.17",documented
+mousseline,Mawṣil (الموصل),"Mosul (city) → muslin",direct,,"Pruvost p.17",documented
+satin,Zaitun (زيتون),"Zaytun (Chinese port) → satin",direct,,"Pruvost p.17",documented
+moire,mukhayyar (مخير),"choice → mohair/moire pattern",direct,1570,"Pruvost p.17",documented
+mohair,mukhayyar (مخير),"choice → mohair wool",via_english,1860,"Pruvost p.17",documented
+truchement,tardjumān (ترجمان),interpreter/medium,direct,,"Pruvost p.8, 174",documented
+estragon,ṭarkhūn (طرخون),tarragon,direct,,"Pruvost p.30",documented
+cramoisi,qirmizī (قرمزي),crimson (dye),direct,,"Pruvost p.38",documented
+khôl,kuḥl (كحل),kohl/eyeliner,direct,,"Pruvost p.38, 94",documented
+azur,lāzaward (لازورد),"lapis lazuli → azure",via_latin,,"Pruvost p.55",documented
+zénith,samt (سمت),"path/way → zenith (astronomy)",via_latin,,"Pruvost p.55",documented
+nadir,nazīr (نظير),"opposite → nadir (astronomy)",via_latin,,"Pruvost p.55",documented
+camphre,kāfūr (كافور),camphor,direct,,"Pruvost p.55",documented
+sumac,summāq (سمّاق),sumac (spice/plant),via_spanish,13th c.,"Pruvost p.121",documented
+divan,dīwān (ديوان),couch/collection of poems,direct,,"Pruvost p.71, 76",documented
+gilet,jilāl (جلال) / yelek (تركي),"waistcoat (route via Turkish)",via_turkish,,"Pruvost p.182",documented
+gabardine,perhaps from related to qaba (قباء),outer garment → gabardine,via_spanish,1925,"Pruvost p.182",probable
+cadi,qāḍī (قاضي),judge (Islamic),direct,1351,"Pruvost p.169",documented
+échecs (jeu),shāh (شاه),king (chess checkmate),via_spanish/persian,,"Pruvost p.32",documented
+élixir,al-iksīr (الإكسير),elixir/philosophers' stone,via_latin,,"Pruvost p.94",documented
+santal,ṣandal (صندل),sandalwood,direct,,"Pruvost p.96",documented
+hammam,ḥammām (حمام),public bathhouse,direct,,"Pruvost p.94",documented
+henné,ḥinnā (حناء),henna dye,direct,,"Pruvost p.94",documented
+musc,musk (مسك),musk perfume,via_latin,,"Pruvost p.111",documented
+nénuphar,nīnūfar (نينوفر),"water lily, nymphaea",via_latin,13th c.,"Pruvost p.127",documented
+varan,waral (ورل),monitor lizard,via_latin,,"Pruvost p.49",documented
+tasse,ṭāsa (طاسة),cup/bowl,direct,,"Pruvost p.19",documented
+couscous,kuskus (كسكس),couscous,direct,,"Pruvost p.81",documented
+kebab,kabāb (كباب),kebab (grilled meat),direct,,"Pruvost p.83",documented
+cuscute,kusut (كسوت),"dodder (parasitic plant)",via_latin,mid-13th c.,"Pruvost p.124",documented
+carthame,qurṭum (قرطم),safflower,via_latin,,"Pruvost p.120",documented
+alizarine,al-uṣāra (العصار),juice/extract → alizarin dye,via_latin,,"Pruvost p.120",probable
+safari,safar (سفر),"journey → safari",via_english,,"Pruvost (indirect, = English loan)",probable
+bézoard,bāzahr (بازهر),bezoar (medical stone),via_latin,,"Pruvost p.94",documented
+julep,julāb (جولاب),rosewater → julep drink,via_latin,,"Pruvost p.94",documented
+sirop,sharāb (شراب),drink/syrup,direct,,"Pruvost p.86",documented
+sorbet,sharba (شربة),drink → sorbet,via_italian,,"Pruvost p.86",documented
+caraque,harrāqa (حرّاقة),large ship/carrack,via_italian,13th c.,"Pruvost p.164",documented
+calfat,qalfata (قلفط),caulk (ship),"direct,",,"Pruvost p.161",documented
+noria,nā'ūra (ناعورة),water wheel,via_spanish,,"Pruvost p.161",documented
+séguia,sāqiya (ساقية),irrigation canal,direct,,"Pruvost p.161",documented
+échevin,*skabin (Frankish) vs sahib (صاحب) debated,alderman — debated,via_latin,,"Pruvost p.32 notes",disputed
+alcôve,al-qubba (القبّة),dome → alcove,via_spanish,,"Pruvost p.157",documented
+razzia,ghazwa (غزوة),military raid,via_french_colonial,,"Pruvost p.177",documented
+bled,bilād (بلاد),country → rural village,direct,,"Pruvost p.55",documented
+clebs,kelb (كلب),dog (colloquial French),direct,,"Pruvost p.55",documented
+seum,sa'm (سمّ),venom/rancour (colloquial French),direct,,"Pruvost p.55",documented
+wech,wash (واش),interrogative 'what' (colloquial),direct,2009,"Pruvost p.51",documented
+toubib,ṭabīb (طبيب),doctor (colloquial French),direct,,"Pruvost p.94",documented
+kif,kayf (كيف),well-being → kif/drug,direct,,"Pruvost p.52",documented
+baraka,baraka (بركة),blessing/luck,direct,,"Pruvost p.56",documented
+talisman,ṭilasm (طلسم),talisman/magic charm,via_latin,,"Pruvost p.56",documented
