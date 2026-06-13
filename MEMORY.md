@@ -1,6 +1,6 @@
 ---
 
-## last_updated: 2026-06-12
+## last_updated: 2026-06-13
 
 owner: MautasseM
 scope: memory
@@ -10,14 +10,14 @@ scope: memory
 > Historical decisions + where the last session ended. Update at end of each session.
 > This replaces scattered STATUS / MASTER_PLAN / TASK_BOARD files — single source of truth.
 
-## Where we are (2026-06-11)
+## Where we are (2026-06-13)
 
 - App live with 7 pages + deep word pages + 24 concepts shown with trust badges.
 - Source extraction COMPLETE for research-relevant notebooks (15 of them).
 - Deep mining done → `data/sources/phd-mining/RESEARCH-ROADMAP.md` (22 testable ideas ranked).
 - 3 external PhD evaluations synthesized → `marketing/product/SYNTHESIS_phd.md`.
 - Context-engineering system live (AGENTS.md + this file + CONTEXT.md + skills/).
-- **Parallel run #1 returned (2026-06-11): CCM Phase 1–3 + MVP package both delivered and reviewed.** Details below.
+- **Three-agent pipeline DONE (2026-06-13):** Phonetic/semantic/etymological independent agents on 177 disputed words under strict Section 2.2 constraints. 66.7% overall accuracy. BULL strongest (80.3%), ATUM weakest (56.5%). See commit 9d4edf4.
 
 ## Key decisions (chronological, don't relitigate)
 
@@ -202,9 +202,9 @@ optional known_contradiction. NONE & UNSURE options are mandatory.
 - Stat fix: 3 raters → Fleiss' Kappa (not Cohen's).
 - PRE-REGISTERED RULE:
 · Fleiss κ ≥0.80 proceed; 0.60-0.80 proceed w/ caveat; <0.60 → categories fuzzy →
-  whole dataset = "exploratory grouping," not "validated roots."
+whole dataset = "exploratory grouping," not "validated roots."
 · Classifier accuracy vs human consensus, per tier. Overall <70% → claims "exploratory";
-  BUT any tier ≥85% stays "validated."
+BUT any tier ≥85% stays "validated."
 - Auditors: real (publication-grade) vs 3-LLM proxy (exploratory only). Recommend proxy
 first as cheap signal, then humans for the real gate.
 - TODO: paste actual ATUM/BULL/TOR definitions into the auditor brief (from methodology).
@@ -304,51 +304,172 @@ Pruvost borrowings (documented, unbuilt).
 - -tor: 0.106 vs noun-null95 0.043, p<0.001 ✓ · -ble: 0.251 vs adj-null95 0.105, p<0.001 ✓
 - French -tion/-cion: 0.085 vs Fr-null95 0.100, p=0.336 ✗ NO SIGNAL.
 - READING: signal is a robust ENGLISH phenomenon across 3 suffixes; NOT cross-linguistic.
-  French silence likely = borrowed/non-productive morphology. The cross-linguistic bridge
-  is NOT built on borrowed suffixes — note for the big-thesis reframing later.
+French silence likely = borrowed/non-productive morphology. The cross-linguistic bridge
+is NOT built on borrowed suffixes — note for the big-thesis reframing later.
 - Decision: STOP expanding (further languages = post-hoc fishing). Harvest the clean English
-  claim now.
+claim now.
 
 ## Next
 
 - Step 1 (agent): draft [paper-suffix-semantics.md](http://paper-suffix-semantics.md) — English-only claim, French reported as
-  honest negative, bounded limitations. First POSITIVE publishable result in the project.
+honest negative, bounded limitations. First POSITIVE publishable result in the project.
 - Step 2 (user): human root audit (357) — still the frozen gate for everything root-based.
 
 ## Standing agreement (user, 2026-06-11)
 
 - "Finish all tasks, THEN ask the questions with a data-scientist's eyes." Bonacci's
-  cross-language word sets (Heb→Japanese/Latin/Greek) enter the LATER reframing session as
-  HYPOTHESES to be tested (deep-cognate vs documented-borrowing), NOT as evidence. Eye-seen
-  patterns are the family we've killed 4×; they get pre-registered tests, not a free pass.
+cross-language word sets (Heb→Japanese/Latin/Greek) enter the LATER reframing session as
+HYPOTHESES to be tested (deep-cognate vs documented-borrowing), NOT as evidence. Eye-seen
+patterns are the family we've killed 4×; they get pre-registered tests, not a free pass.
 
 ## Suffix paper draft — DONE (2026-06-11, commit 40cb4d5)
 
 - [paper-suffix-semantics.md](http://paper-suffix-semantics.md): English-only claim, French negative reported honestly, 7
-
-  limitations, -tor 0.106/0.134 discrepancy disclosed not hidden. Agent resisted 4 overclaim
-
-  temptations unprompted = discipline now built into the process.
-
+limitations, -tor 0.106/0.134 discrepancy disclosed not hidden. Agent resisted 4 overclaim
+temptations unprompted = discipline now built into the process.
 - HUMAN-VERIFY TODO before any submission: open & read every citation (Aronoff, Lieber,
-
-  Pennington) — LLMs fabricate plausible refs. Citations NOT yet confirmed real.
+Pennington) — LLMs fabricate plausible refs. Citations NOT yet confirmed real.
 
 ## Next — Pruvost (compile, don't infer)
 
 - Risk is INVERTED here: not false-positive, but over-interpreting documented facts. Task =
-
-  compile citable Arabic→French/Romance borrowings (CSV + 1-2pg summary). Established
-
-  language-contact, NOT deep cognation. Safest support for the broad thesis; needs neither
-
-  CCM nor the three-roots.
-
+compile citable Arabic→French/Romance borrowings (CSV + 1-2pg summary). Established
+language-contact, NOT deep cognation. Safest support for the broad thesis; needs neither
+CCM nor the three-roots.
 - Every citation flagged for human verification.
 
 ## Surviving core (independent of frozen root DB)
 
 - 🟢 Ibdal 65.3% (live) · 📄 Suffix paper (draft, citations unverified) · ⏭️ Pruvost (building).
-
 - ✋ Frozen pending human audit: everything using the 5,083 root classification.
+
+## Multi-LLM audit decision (2026-06-11)
+
+- User proposed 4-model-family audit (DeepSeek/Gemini/GPT/Claude) + RAG/context-engineering.
+- ACCEPTED as a stronger PROXY (breaks single-family circularity of the cd0ef53 run), NOT as
+the human gate. Hard logic: LLM outputs cannot be ground truth for an LLM-built classifier.
+A reviewer would reject "4 LLMs audited it." 
+- Two-layer plan: (1) 4-family proxy = cheap filter; NEGATIVE (κ<0.60) is decision-grade
+(downgrade dataset), POSITIVE only licenses humans + outputs a disagreement-word list to
+focus them. (2) 3 human experts = the real publication gate (Fleiss κ, per-tier accuracy).
+- Pre-registered rule unchanged from the human-audit design (κ thresholds, ≥85% tier survives).
+
+## Multi-LLM audit EXECUTED (2026-06-12, commit 008198a)
+
+- **4 raters**: GPT-4o + Llama-3.1-405B + deterministic (weighted + strict).
+LIMITATION: only 2 true LLM families (OpenAI, Meta). Deterministic raters are same-family
+sound-pattern algorithms.
+- **Fleiss' κ = 0.3926** → FUZZY (below 0.60 threshold). Supplementary 2-LLM κ = 0.4845.
+- **Pairwise LLM agreement**: 65.3% (GPT-4o vs Llama). Moderate convergence — they pick the
+same root 2/3 of the time but both deviate from the gold standard in similar ways.
+- **Best accuracy vs gold**: GPT-4o 41.2%, Llama 38.9%. Neither exceeds 52% even on "proven"
+tier. Deterministic raters < 29%.
+- **114/357 words (31.9%)** have unanimous 4-rater agreement.
+- **Action**: No human audit needed (negative result is decision-grade). Dataset flagged as
+"exploratory grouping" — do not use for published academic claims without major revision.
+- **Files**: `scripts/audit/multi_llm_audit.py` (pipeline), `multi_llm_openai_gpt4o.json`
+  - `multi_llm_meta_llama405b.json` + `multi_llm_det_weighted.json`
+  - `multi_llm_det_strict.json` (results), `multi_llm_verdict.txt` (final report),
+  `multi_llm_disagreement.json` (243 disagreement words).
+
+## Multi-LLM TRUE-FAMILY audit via model-switching (2026-06-12)
+
+- BETTER METHOD than API workaround: switch OpenCode's own model through the families;
+each running agent BECOMES one rater. No API keys needed; real cross-family signal.
+- **Claude Opus 4.8 session classified all 357 words blind** (word-only, no key, no
+contaminated `meaning` field, no peeking at other models) → `multi_llm_anthropic_claude.json`
+(TOR=170, BULL=108, ATUM=79).
+- **3-family κ = 0.4663 (MODERATE)** — branch PARTIAL. Dropping the noisy deterministic
+raters RAISED κ from 0.39→0.47. Claude best rater (46.5% vs GPT-4o 41.2%, Llama 38.9%).
+Pairwise 63-66%. Unanimous 184/357 (51.5%); 56% of those match gold.
+- **NEXT**: switch model → Google Gemini, then DeepSeek. Each follows
+`scripts/audit/MULTI_LLM_PROTOCOL.md`: run `dump_words.py`, classify 357 blind, save
+`multi_llm_google_gemini.json` / `multi_llm_deepseek.json`, re-run `combine_llm_raters.py`.
+- Combiner auto-detects new family files → recomputes N-family κ. Target: 5-family audit.
+- Files: `combine_llm_raters.py`, `MULTI_LLM_PROTOCOL.md`, `dump_words.py`,
+`multi_llm_combined_verdict.txt`, `multi_llm_combined_disagreement.json`.
+
+## 97.5% Claude-Gemini anomaly (2026-06-12)
+
+- **Suspicious finding**: Claude vs Gemini pairwise agreement = 97.5% (348/357 words).
+All other cross-family pairs: 62-66%. This inflates the 4-family Fleiss' κ to 0.540
+when the true independent-rater κ (GPT-4o + Llama only) is 0.488.
+- **Root cause (preliminary)**: NOT a code/merge bug. The pipeline (`combine_llm_raters.py`
+lines 23-41) loads each family from a distinct file by unique dict keys. No overwrite
+possible. The cause is methodological: Claude and Gemini ratings were both generated
+by the same conversational agent applying the same rules — "agent-consistency coupling."
+GPT-4o and Llama are the only truly independent raters (distinct API calls to different
+model endpoints).
+- **Corrected κ**: 2 independent raters (GPT-4o + Llama): Cohen's κ = 0.4876.
+3 independent raters (GPT-4o + Llama + one agent rater): κ = 0.460–0.466.
+Both still MODERATE/PARTIAL (0.40-0.60) — NOT deep FUZZY, but the 0.540 is inflated.
+- **Action**: Two diagnostic commands written for external tools (Anti-Gravity and
+Cursor/Claude) to independently confirm this finding. If confirmed, the audit verdict
+should note: "4-family κ = 0.540 (includes agent-coupled pair); true independent κ = 0.488."
+Future rounds should use ONLY API-generated raters for independence, or ensure agent
+raters discard memory of prior classifications.
+
+## 97.5% anomaly — RESOLVED (2026-06-12)
+
+- 3 tools (Open Code logic / Cursor review / Anti-Gravity forensics) independently agree:
+  NOT a code bug. Cause = "agent-consistency coupling" — Claude & Gemini ratings were BOTH
+  produced by the same conversational agent classifying 357 words twice in one session;
+  it remembered its own prior picks. Proof: files distinct (MD5 differ) but only 9/357
+  ratings differ (vs ~125 for the true-independent GPT–Llama pair).
+- CORRECTED κ: true independent 2-rater (GPT+Llama) ≈ 0.485; 3-rater ≈ 0.46–0.47. Reported
+  4-rater 0.540 is INFLATED (+0.05) and must NOT be the headline.
+- VERDICT UNCHANGED & STRENGTHENED: roots categories FUZZY (κ well below 0.60). Human gate
+  still mandatory for any "validated" claim.
+- STANDING RULE: "multi-model" audits must use genuinely separate API calls. A single
+  conversational agent playing two model roles = ONE rater, not two. Never count it twice.
+- Automated verification on root classification is now EXHAUSTED. Remaining paths are human
+  (3-expert audit on the 177 disputed words) or strategic (reframing session).
+
+## Reframe accepted (2026-06-13) — roots as data-mining target, not classifier
+
+- User clarified: NOT "prove the 3 roots." We have ~5,000 black-box-labeled words; the task
+
+  is to find the best ALGORITHM that recovers the latent structure. 137 disputed words = test
+
+  bed. Three roots are an interpretive frame; our job is the extraction algorithm + where it breaks.
+
+- Source reading ([new-q.cleaned.md](http://new-q.cleaned.md)): Bonacci is bimodal. PERMISSIVE layer (§1.5 exhaustive/no
+
+  NONE, §3 unlimited chains + reversals/anagrams) = unfalsifiable, REJECTED. CONSTRAINT layer
+
+  (§2.2: same-articulation only, no percussive↔continuous, meaning preserved, monosyllabic ≤3,
+
+  matches our 65.3% ibdal) = USE THIS. Build agents on his prohibitions, not his permissions.
+
+- Bonacci vs Kubaisi/Dawud CONTRADICT on foundations (flat earth, prophet historicity, English
+
+  supremacy) — cannot cite as converging authorities.
+
+- French Tor/Dor tables (§8, 200 entries) = Bonacci's free-association, NOT etymology; but a real
+
+  Latin torquere/*terkw- cluster is buried inside — usable only after filtering vs CNRTL/Wiktionary.
+
+## DONE — 3-agent intersection analysis (2026-06-13, commit 9d4edf4)
+
+- 3 independent agents (phonetic/semantic/etymological) on the 177 disputed words under strict
+
+  Bonacci Section 2.2 constraints. No permissive rules. ONE interchange degree max.
+
+- **Intersection (≥2 agents): 66.7% accuracy vs gold**
+
+  - BULL: 49/61 = 80.3% — strongest signal
+  - TOR: 34/54 = 63.0% — moderate
+  - ATUM: 35/62 = 56.5% — weakest (abstract field + buried T-M pattern)
+  - NONE: 53/177 (29.9%) — pipeline conservatively rejects ambiguous
+  - MULTI-root: 0 (no word had ≥2 agents for >1 root)
+
+- Per-agent: Phonetic=83/177 (very conservative under 2.2), Semantic=112/177, Etymological=159/177
+
+- Key finding: Etymological over-assigns TOR (68 vs 54 gold) via abundant Latin -tion/-tor suffixes;
+
+  ATUM is under-detected (36 vs 62 gold) — phonetic finds only 7 ATUM consonant-skeleton matches
+
+- Files: `scripts/agents/` (agent_phonetic.py, agent_semantic.py, agent_etymological.py,
+
+  run_intersection.py, intersection_report.txt, intersection_results.json)
 
