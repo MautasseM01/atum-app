@@ -6,12 +6,12 @@
 
 ## Progress Snapshot
 
-✅ **Completed:** 9 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL, POS-isolation SURVIVES, Suffix-expansion BROADENS, Suffix-paper draft, Pruvost dataset)
+✅ **Completed:** 10 findings (CCM retired, Abjad collapsed, Ibdal graph live, Audit FUZZY, Suffix SIGNAL, POS-isolation SURVIVES, Suffix-expansion BROADENS, Suffix-paper draft, Pruvost dataset, 4-family LLM audit PARTIAL κ=0.54)
 🟢 **Live in app:** 1 visualization (ibdal network graph at /visualizations/ibdal)
 💀 **Dead:** 2 (CCM similarity, Abjad x Frequency paper)
 📄 **Drafts:** 1 (suffix-semantics paper) + 1 (Pruvost compilation)
-🔄 **In testing:** 0 currently
-⏭️ **Next:** Ha-Mim Monte Carlo (P5.1–P5.4); Toponymic 80-10-10 (P4.1–P4.4); human audit (0.1.3–0.1.5)
+🔍 **Investigation open:** 97.5% Claude-Gemini pairwise agreement in 4-family LLM audit — flagged as potential agent-consistency coupling inflating κ; true independent-rater κ = 0.488. See `MULTI_LLM_PROTOCOL.md` and diagnostic commands in session.
+⏭️ **Next:** Run diagnostic commands A+B to confirm 97.5% anomaly cause; then Ha-Mim Monte Carlo (P5.1–P5.4); Toponymic 80-10-10 (P4.1–P4.4)
 
 **Publications: 1 draft, 3 dead/retired, 6 viable (+2 new: suffix cluster SIGNAL → BROADENS).**
 *Viable: Ibḍāl encoding, Semantic Suffix (BROADENS — -tion, -tor, -ble all SIGNAL beyond POS), Toponymic 80-10-10, Ha-Mim Code 19, Lām = Contraction, Base-3 Cartesian, 333 BC Boundary, Acoustic Onomatopoeia.*
@@ -266,9 +266,52 @@
 - [x] **Done:** Draft suffix-semantics paper (P3.7) — **DRAFT** at `scripts/suffix/paper-suffix-semantics.md`
 - [x] **Done:** Pruvost lexical-borrowing dataset — **COMPILED** 78 entries (67 documented, 3 probable, 2 disputed, 0 unsourced) at `data/sources/phd-mining/pruvost-borrowings.csv` + `pruvost-summary.md`
 - [ ] **Next:** Review and polish paper draft → submit to COLING/ACL workshop
+- [x] **Done:** Three-agent pipeline on 177 disputed words — **66.7% accuracy vs gold** (BULL 80.3%, TOR 63.0%, ATUM 56.5%) — 53/177 NONE assignments, 0 multi-root
+- [ ] **Next:** Review three-agent results — analyze failure modes (ATUM under-assigned, TOR over-assigned by etymological)
 - [ ] **Next:** Ha-Mim Monte Carlo (P5.1–P5.4)
 - [ ] **Next:** Toponymic 80-10-10 Rule (P4.1–P4.4)
 
 ---
 
-*Checklist generated 2026-06-11 from RESEARCH-ROADMAP.md (التحديث الثالث)*
+## Three-Agent Pipeline Results (2026-06-13)
+
+**Goal:** Run 3 independent agents (phonetic, semantic, etymological) on the 177 disputed words under strict Bonacci Section 2.2 constraints. Assign root only when ≥2 agents agree.
+
+### Architecture
+- **Phonetic Agent** — consonant-skeleton analysis: strips vowels, checks ATUM(T↔D+M)/BULL(B↔P+L)/TOR(T↔D+R) patterns, one interchange degree max, Section 2.2 place+manner constraints
+- **Semantic Agent** — keyword/gloss analysis: maps `audit_blind.json` meanings to ATUM/BULL/TOR semantic fields via signal keywords
+- **Etymological Agent** — suffix/etymon analysis: Latin/French/Greek suffixes (-tor→TOR, -ble→BULL, -tion→TOR, -tom→ATUM) and known etymons
+- **Intersection** — ≥2 agents agree → assign; phonetic alone never assigns; NONE valid; multi-root allowed
+
+### Per-Agent Distribution
+| Agent | ATUM | BULL | TOR | NONE |
+|-------|------|------|-----|------|
+| Phonetic | 7 | 43 | 33 | 94 |
+| Semantic | 41 | 42 | 29 | 65 |
+| Etymological | 37 | 54 | 68 | 18 |
+
+### Intersection Results
+- **Overall accuracy: 118/177 = 66.7%**
+- BULL: 49/61 = 80.3% — strongest signal
+- TOR: 34/54 = 63.0% — moderate
+- ATUM: 35/62 = 56.5% — weakest (near chance for 3-way)
+- NONE assigned: 53 words (29.9%) — conservative pipeline rejects ambiguous cases
+- MULTI-root: 0 (no word had ≥2 agents for >1 root)
+- Agreement depth: 0 agents=6, 1=38, 2=83, 3=50
+
+### Files
+- `scripts/agents/agent_phonetic.py`, `agent_semantic.py`, `agent_etymological.py`, `run_intersection.py`
+- `scripts/agents/intersection_report.txt` — per-word table
+- `scripts/agents/intersection_results.json` — machine-readable
+- Individual agent outputs: `agent_phonetic_output.json`, `agent_semantic_output.json`, `agent_etymological_output.json`
+
+### Key Findings
+1. **BULL is the most recognizable root** under strict constraints (80.3%) — the B-L pattern and semantic signals (force, sphere, war, stable) are robust
+2. **ATUM is under-detected** (56.5%) — the T-M pattern is often buried, and ATUM's abstract semantic field (unity, essence, silence) has weak signal in concrete word glosses
+3. **Etymological agent over-assigns TOR** (68 vs 54 gold) — Latin -tion/-tor suffixes are abundant and dominate the rule-based scoring
+4. **Phonetic agent is very conservative** (94/177=NONE) — the strict Section 2.2 constraints allow few interchanges, so most words' consonant skeletons don't match
+5. **53 words got NONE** — the ≥2-agreement threshold prevents false assignments; these are genuinely ambiguous under the framework
+
+---
+
+*Checklist generated 2026-06-13 from RESEARCH-ROADMAP.md (التحديث الثالث)*

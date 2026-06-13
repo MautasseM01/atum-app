@@ -1,0 +1,887 @@
+{
+  "5": {
+    "word": "ANTIBELLIGERENT",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7)"
+  },
+  "6": {
+    "word": "QUINTESSENCE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)"
+  },
+  "8": {
+    "word": "THEW",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 2, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "11": {
+    "word": "RADON",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "12": {
+    "word": "PROFESSIONALISM",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 6} dominant=TOR(6)"
+  },
+  "16": {
+    "word": "ANTIBULLYING",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "20": {
+    "word": "ADVISABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "21": {
+    "word": "MAGISTRATE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "22": {
+    "word": "REDOUBTABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "26": {
+    "word": "COFFEE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "30": {
+    "word": "NONGLOBAL",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "31": {
+    "word": "STABULUM",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4)"
+  },
+  "32": {
+    "word": "TORRENTE",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 3} dominant=TOR(3)"
+  },
+  "33": {
+    "word": "CAM",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4)"
+  },
+  "37": {
+    "word": "AUTOFOCUS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "39": {
+    "word": "IONOSPHERE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "40": {
+    "word": "BALLAST",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "47": {
+    "word": "PROTOMATTER",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 0} dominant=ATUM(1)"
+  },
+  "48": {
+    "word": "METTLESOME",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)"
+  },
+  "50": {
+    "word": "MAYBE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "52": {
+    "word": "GITA",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "58": {
+    "word": "INEDIBLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "59": {
+    "word": "CACHE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)"
+  },
+  "61": {
+    "word": "FAULT",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "62": {
+    "word": "CRIATURA",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "66": {
+    "word": "CUSTODIAN",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "68": {
+    "word": "CHATURTHA",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 3} dominant=TOR(3)"
+  },
+  "69": {
+    "word": "HEFT",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "74": {
+    "word": "UNRECYCLED",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3)"
+  },
+  "75": {
+    "word": "MOMENTUM",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (2 each)"
+  },
+  "76": {
+    "word": "ENDOCRINOLOGIST",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)"
+  },
+  "80": {
+    "word": "THERMAL",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5)"
+  },
+  "82": {
+    "word": "FAUNAL",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "83": {
+    "word": "CONDENSATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "84": {
+    "word": "IMPOTENCE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "86": {
+    "word": "BALLETT",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 2} dominant=BULL(3)"
+  },
+  "88": {
+    "word": "SONUS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 1} dominant=ATUM(5)"
+  },
+  "93": {
+    "word": "ACTUARE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 0} dominant=ATUM(6)"
+  },
+  "94": {
+    "word": "AUTOPILOT",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 2} dominant=ATUM(3)"
+  },
+  "99": {
+    "word": "百 BAI",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 0} dominant=BULL(6)"
+  },
+  "102": {
+    "word": "GAMETE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 1} dominant=ATUM(4)"
+  },
+  "104": {
+    "word": "FRICTION",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "105": {
+    "word": "SEDIMENT",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)"
+  },
+  "106": {
+    "word": "INVISIBILITY",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "107": {
+    "word": "NEBULIZER",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)"
+  },
+  "108": {
+    "word": "GENOS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 1} dominant=ATUM(6)"
+  },
+  "109": {
+    "word": "MARKETABLE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 2, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "110": {
+    "word": "AUTOMATION",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "111": {
+    "word": "INCOMPRESSIBLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "112": {
+    "word": "PROGENY",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 2} dominant=ATUM(6)"
+  },
+  "114": {
+    "word": "NUCLEON",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "115": {
+    "word": "DERIVE",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "116": {
+    "word": "COMPRESSIBLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "122": {
+    "word": "ACTUALIZATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "124": {
+    "word": "NARRATION",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)"
+  },
+  "127": {
+    "word": "DENATURIEREN",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 1} dominant=ATUM(3)"
+  },
+  "134": {
+    "word": "FIRMAMENT",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "136": {
+    "word": "FLUID",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)"
+  },
+  "137": {
+    "word": "转变 ZHUANBIAN",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 5} dominant=TOR(5)"
+  },
+  "138": {
+    "word": "ASPHYXIATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "140": {
+    "word": "FUNGUS",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)"
+  },
+  "141": {
+    "word": "BICYCLE",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 4} dominant=TOR(4)"
+  },
+  "142": {
+    "word": "DISABILITY",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "144": {
+    "word": "VARTMAN",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 5} dominant=TOR(5)"
+  },
+  "147": {
+    "word": "FORCIBLENESS",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (2 each)"
+  },
+  "150": {
+    "word": "INVENTOR",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "152": {
+    "word": "EASTERN",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 4} dominant=TOR(4)"
+  },
+  "154": {
+    "word": "LIQUID",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "158": {
+    "word": "CONSTERNATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "160": {
+    "word": "CELESTIAL",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "166": {
+    "word": "FORCIBLY",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "168": {
+    "word": "GASEOUS",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "170": {
+    "word": "SCAVENGER",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "171": {
+    "word": "DESERTION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "172": {
+    "word": "ARISE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 0} dominant=ATUM(1)"
+  },
+  "173": {
+    "word": "NARRATE",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)"
+  },
+  "174": {
+    "word": "TOLERABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "176": {
+    "word": "ALKALINE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "177": {
+    "word": "DENATURALIZE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "178": {
+    "word": "GENERAL",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "179": {
+    "word": "DETONARE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 2, 'TOR': 1} dominant=ATUM(4)"
+  },
+  "181": {
+    "word": "ENTOMON",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "183": {
+    "word": "PUBLICATIO",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 1} dominant=BULL(3)"
+  },
+  "184": {
+    "word": "REFORM",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "186": {
+    "word": "BENGALI",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)"
+  },
+  "187": {
+    "word": "班 BAN",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "191": {
+    "word": "ILLUSTRATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "193": {
+    "word": "THERMOCHEMISTRY",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)"
+  },
+  "196": {
+    "word": "SERVER",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "197": {
+    "word": "EXHIBITOR",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "201": {
+    "word": "HANDLEABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "203": {
+    "word": "NEUTRINO",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 3} dominant=TOR(3)"
+  },
+  "205": {
+    "word": "ESTABLO",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 1} dominant=BULL(7)"
+  },
+  "206": {
+    "word": "AGRICULTOR",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "207": {
+    "word": "LAUDABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "208": {
+    "word": "FRATER",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 7} dominant=TOR(7)"
+  },
+  "210": {
+    "word": "ENDOSPERM",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "211": {
+    "word": "NONCAPABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)"
+  },
+  "212": {
+    "word": "OPPRESSOR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 2} dominant=TOR(2)"
+  },
+  "213": {
+    "word": "VARIATE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "214": {
+    "word": "COLLABORATOR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5)"
+  },
+  "216": {
+    "word": "AUTOREGULATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "217": {
+    "word": "ANESTHESIOLOGIST",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "220": {
+    "word": "BALCON",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)"
+  },
+  "222": {
+    "word": "DEMONSTRABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "224": {
+    "word": "FORMIDABLY",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "225": {
+    "word": "ILLUSTRATOR",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "227": {
+    "word": "AFFIRMATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "229": {
+    "word": "CLOSABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "232": {
+    "word": "SATYA",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)"
+  },
+  "233": {
+    "word": "DEFICIENT",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "234": {
+    "word": "PROCREATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "235": {
+    "word": "ESTIMABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "237": {
+    "word": "HYPOTHETICAL",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "238": {
+    "word": "INELIGIBLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "240": {
+    "word": "ANALYSIS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "241": {
+    "word": "LIBEL",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "243": {
+    "word": "DETER",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 4} dominant=TOR(4)"
+  },
+  "245": {
+    "word": "BALAYI",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5)"
+  },
+  "246": {
+    "word": "CONCEIVABILITY",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "247": {
+    "word": "TURNIER",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 6} dominant=TOR(6)"
+  },
+  "250": {
+    "word": "添 TIAN",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 2} dominant=ATUM(4)"
+  },
+  "253": {
+    "word": "MASTERY",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)"
+  },
+  "254": {
+    "word": "BREED",
+    "semantic_root": "NONE",
+    "semantic_reason": "tie between top roots (1 each)"
+  },
+  "255": {
+    "word": "DEFORESTATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "256": {
+    "word": "KOSMETICOS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 3} dominant=ATUM(4)"
+  },
+  "257": {
+    "word": "FOUNDER",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 1} dominant=ATUM(2)"
+  },
+  "258": {
+    "word": "INDEFINABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "259": {
+    "word": "ABSTENTION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "263": {
+    "word": "TURBA",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "264": {
+    "word": "CHOREOGRAPHOS",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3)"
+  },
+  "269": {
+    "word": "AGON",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 1} dominant=ATUM(5)"
+  },
+  "270": {
+    "word": "METAL",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 1} dominant=ATUM(6)"
+  },
+  "271": {
+    "word": "ATMOSPHERE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "272": {
+    "word": "BOTTOM",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 1, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "273": {
+    "word": "ACCEPTATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "281": {
+    "word": "DENOMINATE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 0} dominant=ATUM(6)"
+  },
+  "283": {
+    "word": "DIABOLIC",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5)"
+  },
+  "287": {
+    "word": "TESTABILITY",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 1, 'TOR': 0} dominant=ATUM(3)"
+  },
+  "288": {
+    "word": "EMBRYONIC",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 1} dominant=ATUM(2)"
+  },
+  "289": {
+    "word": "INSURMOUNTABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "292": {
+    "word": "ACCENTUATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "295": {
+    "word": "LOTION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "297": {
+    "word": "INITIALIZATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "299": {
+    "word": "CAMPHOR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "304": {
+    "word": "ZINC",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "306": {
+    "word": "BALIN",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)"
+  },
+  "307": {
+    "word": "DETERMINATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "309": {
+    "word": "AFFECTATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "310": {
+    "word": "DURABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "314": {
+    "word": "ACCOUNTABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "315": {
+    "word": "ACTEUR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 6} dominant=TOR(6)"
+  },
+  "316": {
+    "word": "BULLDOZE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "317": {
+    "word": "TRANSFORMABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "320": {
+    "word": "PATERNALISM",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "322": {
+    "word": "PASTOR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 6} dominant=TOR(6)"
+  },
+  "323": {
+    "word": "ATTRIBUTABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "324": {
+    "word": "UNRELIABLE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "326": {
+    "word": "BIOLOGICAL",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "327": {
+    "word": "DENATURATION",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "329": {
+    "word": "AGNATUS",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)"
+  },
+  "330": {
+    "word": "ONOMAZO",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)"
+  },
+  "331": {
+    "word": "PRIMARY",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "332": {
+    "word": "NATURALIZATION",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 2} dominant=ATUM(4)"
+  },
+  "336": {
+    "word": "ATTAINABLE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)"
+  },
+  "337": {
+    "word": "暴 BAO",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 1} dominant=BULL(3)"
+  },
+  "338": {
+    "word": "HERBIVORE",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)"
+  },
+  "339": {
+    "word": "TERRORIZE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "341": {
+    "word": "RECREATE",
+    "semantic_root": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 1} dominant=ATUM(4)"
+  },
+  "343": {
+    "word": "DIABOLUS",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)"
+  },
+  "344": {
+    "word": "DISABLEMENT",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)"
+  },
+  "345": {
+    "word": "RNA",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  },
+  "348": {
+    "word": "DOMINATOR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)"
+  },
+  "349": {
+    "word": "SILICON",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)"
+  },
+  "353": {
+    "word": "CENTRIFUGAL",
+    "semantic_root": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 2} dominant=BULL(3)"
+  },
+  "356": {
+    "word": "TZOHAR",
+    "semantic_root": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 2} dominant=TOR(2)"
+  },
+  "357": {
+    "word": "SUBSTANTIATE",
+    "semantic_root": "NONE",
+    "semantic_reason": "no semantic signals detected"
+  }
+}

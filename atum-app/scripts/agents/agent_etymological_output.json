@@ -1,0 +1,887 @@
+{
+  "5": {
+    "word": "ANTIBELLIGERENT",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 16, 'TOR': 3} dominant=BULL(16) lang=Latin"
+  },
+  "6": {
+    "word": "QUINTESSENCE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "8": {
+    "word": "THEW",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "11": {
+    "word": "RADON",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "12": {
+    "word": "PROFESSIONALISM",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 6} dominant=TOR(6) lang=Unknown"
+  },
+  "16": {
+    "word": "ANTIBULLYING",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "20": {
+    "word": "ADVISABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "21": {
+    "word": "MAGISTRATE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "22": {
+    "word": "REDOUBTABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin"
+  },
+  "26": {
+    "word": "COFFEE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "30": {
+    "word": "NONGLOBAL",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5) lang=Unknown"
+  },
+  "31": {
+    "word": "STABULUM",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 0} dominant=BULL(11) lang=Unknown"
+  },
+  "32": {
+    "word": "TORRENTE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 11} dominant=TOR(11) lang=Latin"
+  },
+  "33": {
+    "word": "CAM",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "37": {
+    "word": "AUTOFOCUS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "39": {
+    "word": "IONOSPHERE",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "40": {
+    "word": "BALLAST",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 12, 'TOR': 0} dominant=BULL(12) lang=Unknown"
+  },
+  "47": {
+    "word": "PROTOMATTER",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=Unknown"
+  },
+  "48": {
+    "word": "METTLESOME",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 0} dominant=ATUM(7) lang=Unknown"
+  },
+  "50": {
+    "word": "MAYBE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 2} dominant=BULL(11) lang=Unknown"
+  },
+  "52": {
+    "word": "GITA",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (2 each)"
+  },
+  "58": {
+    "word": "INEDIBLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 2} dominant=BULL(11) lang=Unknown"
+  },
+  "59": {
+    "word": "CACHE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "61": {
+    "word": "FAULT",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 1} dominant=BULL(2) lang=Latin"
+  },
+  "62": {
+    "word": "CRIATURA",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "66": {
+    "word": "CUSTODIAN",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "68": {
+    "word": "CHATURTHA",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 10} dominant=TOR(10) lang=Unknown"
+  },
+  "69": {
+    "word": "HEFT",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "74": {
+    "word": "UNRECYCLED",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "75": {
+    "word": "MOMENTUM",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "76": {
+    "word": "ENDOCRINOLOGIST",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 7} dominant=TOR(7) lang=Greek"
+  },
+  "80": {
+    "word": "THERMAL",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "82": {
+    "word": "FAUNAL",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "83": {
+    "word": "CONDENSATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "84": {
+    "word": "IMPOTENCE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "86": {
+    "word": "BALLETT",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 2} dominant=BULL(5) lang=Unknown"
+  },
+  "88": {
+    "word": "SONUS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 3} dominant=ATUM(7) lang=Latin"
+  },
+  "93": {
+    "word": "ACTUARE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "94": {
+    "word": "AUTOPILOT",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 4} dominant=ATUM(5) lang=Unknown"
+  },
+  "99": {
+    "word": "百 BAI",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 9, 'TOR': 0} dominant=BULL(9) lang=Unknown"
+  },
+  "102": {
+    "word": "GAMETE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 2} dominant=ATUM(7) lang=Unknown"
+  },
+  "104": {
+    "word": "FRICTION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "105": {
+    "word": "SEDIMENT",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown"
+  },
+  "106": {
+    "word": "INVISIBILITY",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 1} dominant=BULL(2) lang=Latin"
+  },
+  "107": {
+    "word": "NEBULIZER",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown"
+  },
+  "108": {
+    "word": "GENOS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 18, 'BULL': 0, 'TOR': 7} dominant=ATUM(18) lang=Latin"
+  },
+  "109": {
+    "word": "MARKETABLE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 4, 'TOR': 0} dominant=ATUM(7) lang=Unknown"
+  },
+  "110": {
+    "word": "AUTOMATION",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 9, 'BULL': 0, 'TOR': 0} dominant=ATUM(9) lang=Unknown"
+  },
+  "111": {
+    "word": "INCOMPRESSIBLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5) lang=French"
+  },
+  "112": {
+    "word": "PROGENY",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 16, 'BULL': 0, 'TOR': 3} dominant=ATUM(16) lang=Latin"
+  },
+  "114": {
+    "word": "NUCLEON",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "115": {
+    "word": "DERIVE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "116": {
+    "word": "COMPRESSIBLE",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (1 each)"
+  },
+  "122": {
+    "word": "ACTUALIZATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "124": {
+    "word": "NARRATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "127": {
+    "word": "DENATURIEREN",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 6} dominant=ATUM(7) lang=Unknown"
+  },
+  "134": {
+    "word": "FIRMAMENT",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "136": {
+    "word": "FLUID",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "137": {
+    "word": "转变 ZHUANBIAN",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 8} dominant=TOR(8) lang=Unknown"
+  },
+  "138": {
+    "word": "ASPHYXIATION",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "140": {
+    "word": "FUNGUS",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown"
+  },
+  "141": {
+    "word": "BICYCLE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "142": {
+    "word": "DISABILITY",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "144": {
+    "word": "VARTMAN",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 10} dominant=TOR(10) lang=Sanskrit"
+  },
+  "147": {
+    "word": "FORCIBLENESS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "150": {
+    "word": "INVENTOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "152": {
+    "word": "EASTERN",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 8} dominant=TOR(8) lang=Unknown"
+  },
+  "154": {
+    "word": "LIQUID",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "158": {
+    "word": "CONSTERNATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "160": {
+    "word": "CELESTIAL",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "166": {
+    "word": "FORCIBLY",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "168": {
+    "word": "GASEOUS",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "170": {
+    "word": "SCAVENGER",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "171": {
+    "word": "DESERTION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 3} dominant=TOR(3) lang=French"
+  },
+  "172": {
+    "word": "ARISE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=English"
+  },
+  "173": {
+    "word": "NARRATE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=English"
+  },
+  "174": {
+    "word": "TOLERABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin"
+  },
+  "176": {
+    "word": "ALKALINE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "177": {
+    "word": "DENATURALIZE",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (4 each)"
+  },
+  "178": {
+    "word": "GENERAL",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (3 each)"
+  },
+  "179": {
+    "word": "DETONARE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 2} dominant=ATUM(6) lang=Unknown"
+  },
+  "181": {
+    "word": "ENTOMON",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Greek"
+  },
+  "183": {
+    "word": "PUBLICATIO",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "184": {
+    "word": "REFORM",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "186": {
+    "word": "BENGALI",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (2 each)"
+  },
+  "187": {
+    "word": "班 BAN",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 3} dominant=BULL(7) lang=Latin"
+  },
+  "191": {
+    "word": "ILLUSTRATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "193": {
+    "word": "THERMOCHEMISTRY",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "196": {
+    "word": "SERVER",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown"
+  },
+  "197": {
+    "word": "EXHIBITOR",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "201": {
+    "word": "HANDLEABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "203": {
+    "word": "NEUTRINO",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "205": {
+    "word": "ESTABLO",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 8, 'TOR': 1} dominant=BULL(8) lang=Latin"
+  },
+  "206": {
+    "word": "AGRICULTOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "207": {
+    "word": "LAUDABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin"
+  },
+  "208": {
+    "word": "FRATER",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 13} dominant=TOR(13) lang=Latin"
+  },
+  "210": {
+    "word": "ENDOSPERM",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (1 each)"
+  },
+  "211": {
+    "word": "NONCAPABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 0} dominant=BULL(6) lang=Unknown"
+  },
+  "212": {
+    "word": "OPPRESSOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "213": {
+    "word": "VARIATE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "214": {
+    "word": "COLLABORATOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 9} dominant=TOR(9) lang=Latin"
+  },
+  "216": {
+    "word": "AUTOREGULATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "217": {
+    "word": "ANESTHESIOLOGIST",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "220": {
+    "word": "BALCON",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 6} dominant=TOR(6) lang=Spanish"
+  },
+  "222": {
+    "word": "DEMONSTRABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4) lang=English"
+  },
+  "224": {
+    "word": "FORMIDABLY",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "225": {
+    "word": "ILLUSTRATOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "227": {
+    "word": "AFFIRMATION",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 4, 'TOR': 3} dominant=BULL(4) lang=Latin"
+  },
+  "229": {
+    "word": "CLOSABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "232": {
+    "word": "SATYA",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown"
+  },
+  "233": {
+    "word": "DEFICIENT",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "234": {
+    "word": "PROCREATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "235": {
+    "word": "ESTIMABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin"
+  },
+  "237": {
+    "word": "HYPOTHETICAL",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "238": {
+    "word": "INELIGIBLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5) lang=French"
+  },
+  "240": {
+    "word": "ANALYSIS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown"
+  },
+  "241": {
+    "word": "LIBEL",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 15, 'TOR': 1} dominant=BULL(15) lang=Latin"
+  },
+  "243": {
+    "word": "DETER",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "245": {
+    "word": "BALAYI",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Persian"
+  },
+  "246": {
+    "word": "CONCEIVABILITY",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2) lang=Unknown"
+  },
+  "247": {
+    "word": "TURNIER",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 7} dominant=TOR(7) lang=French"
+  },
+  "250": {
+    "word": "添 TIAN",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 6} dominant=ATUM(7) lang=Unknown"
+  },
+  "253": {
+    "word": "MASTERY",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown"
+  },
+  "254": {
+    "word": "BREED",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=English"
+  },
+  "255": {
+    "word": "DEFORESTATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "256": {
+    "word": "KOSMETICOS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 2} dominant=ATUM(7) lang=Unknown"
+  },
+  "257": {
+    "word": "FOUNDER",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown"
+  },
+  "258": {
+    "word": "INDEFINABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "259": {
+    "word": "ABSTENTION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "263": {
+    "word": "TURBA",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "264": {
+    "word": "CHOREOGRAPHOS",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Greek"
+  },
+  "269": {
+    "word": "AGON",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 4} dominant=ATUM(5) lang=Unknown"
+  },
+  "270": {
+    "word": "METAL",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 3} dominant=ATUM(6) lang=Latin"
+  },
+  "271": {
+    "word": "ATMOSPHERE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "272": {
+    "word": "BOTTOM",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown"
+  },
+  "273": {
+    "word": "ACCEPTATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "281": {
+    "word": "DENOMINATE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 12, 'BULL': 0, 'TOR': 1} dominant=ATUM(12) lang=Latin"
+  },
+  "283": {
+    "word": "DIABOLIC",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 18, 'TOR': 3} dominant=BULL(18) lang=Greek"
+  },
+  "287": {
+    "word": "TESTABILITY",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "288": {
+    "word": "EMBRYONIC",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "289": {
+    "word": "INSURMOUNTABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "292": {
+    "word": "ACCENTUATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "295": {
+    "word": "LOTION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "297": {
+    "word": "INITIALIZATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "299": {
+    "word": "CAMPHOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 7} dominant=TOR(7) lang=Arabic"
+  },
+  "304": {
+    "word": "ZINC",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "306": {
+    "word": "BALIN",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 9, 'TOR': 4} dominant=BULL(9) lang=Unknown"
+  },
+  "307": {
+    "word": "DETERMINATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "309": {
+    "word": "AFFECTATION",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin"
+  },
+  "310": {
+    "word": "DURABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 3} dominant=BULL(6) lang=Latin"
+  },
+  "314": {
+    "word": "ACCOUNTABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "315": {
+    "word": "ACTEUR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin"
+  },
+  "316": {
+    "word": "BULLDOZE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown"
+  },
+  "317": {
+    "word": "TRANSFORMABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4) lang=Unknown"
+  },
+  "320": {
+    "word": "PATERNALISM",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "322": {
+    "word": "PASTOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown"
+  },
+  "323": {
+    "word": "ATTRIBUTABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "324": {
+    "word": "UNRELIABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "326": {
+    "word": "BIOLOGICAL",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "327": {
+    "word": "DENATURATION",
+    "etymological_root": "NONE",
+    "etymological_reason": "tie in etymology (6 each)"
+  },
+  "329": {
+    "word": "AGNATUS",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 1} dominant=ATUM(7) lang=Latin"
+  },
+  "330": {
+    "word": "ONOMAZO",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 9, 'BULL': 0, 'TOR': 3} dominant=ATUM(9) lang=Latin"
+  },
+  "331": {
+    "word": "PRIMARY",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  },
+  "332": {
+    "word": "NATURALIZATION",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 11, 'BULL': 0, 'TOR': 6} dominant=ATUM(11) lang=Unknown"
+  },
+  "336": {
+    "word": "ATTAINABLE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown"
+  },
+  "337": {
+    "word": "暴 BAO",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 5} dominant=BULL(7) lang=Latin"
+  },
+  "338": {
+    "word": "HERBIVORE",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown"
+  },
+  "339": {
+    "word": "TERRORIZE",
+    "etymological_root": "NONE",
+    "etymological_reason": "no etymological signals detected"
+  },
+  "341": {
+    "word": "RECREATE",
+    "etymological_root": "ATUM",
+    "etymological_reason": "scores={'ATUM': 8, 'BULL': 0, 'TOR': 2} dominant=ATUM(8) lang=Unknown"
+  },
+  "343": {
+    "word": "DIABOLUS",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 7, 'TOR': 5} dominant=BULL(7) lang=Greek"
+  },
+  "344": {
+    "word": "DISABLEMENT",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 15, 'TOR': 0} dominant=BULL(15) lang=Unknown"
+  },
+  "345": {
+    "word": "RNA",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=English"
+  },
+  "348": {
+    "word": "DOMINATOR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown"
+  },
+  "349": {
+    "word": "SILICON",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 4} dominant=BULL(5) lang=Unknown"
+  },
+  "353": {
+    "word": "CENTRIFUGAL",
+    "etymological_root": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown"
+  },
+  "356": {
+    "word": "TZOHAR",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 6} dominant=TOR(6) lang=Unknown"
+  },
+  "357": {
+    "word": "SUBSTANTIATE",
+    "etymological_root": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin"
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "5": {
+    "word": "ANTIBELLIGERENT",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NTBLLGRNT matched BULL at positions (2, 3)"
+  },
+  "6": {
+    "word": "QUINTESSENCE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=QNTSSNC no root pattern found"
+  },
+  "8": {
+    "word": "THEW",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=THW no root pattern found"
+  },
+  "11": {
+    "word": "RADON",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=RDN no root pattern found"
+  },
+  "12": {
+    "word": "PROFESSIONALISM",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PRFSSNLSM no root pattern found"
+  },
+  "16": {
+    "word": "ANTIBULLYING",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NTBLLNG matched BULL at positions (2, 3)"
+  },
+  "20": {
+    "word": "ADVISABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=DVSBL matched BULL at positions (3, 4)"
+  },
+  "21": {
+    "word": "MAGISTRATE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=MGSTRT matched TOR at positions (3, 4)"
+  },
+  "22": {
+    "word": "REDOUBTABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=RDBTBL matched BULL at positions (4, 5)"
+  },
+  "26": {
+    "word": "COFFEE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CFF no root pattern found"
+  },
+  "30": {
+    "word": "NONGLOBAL",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NNGLBL matched BULL at positions (4, 5)"
+  },
+  "31": {
+    "word": "STABULUM",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=STBLM matched BULL at positions (2, 3)"
+  },
+  "32": {
+    "word": "TORRENTE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=TRRNT matched TOR at positions (0, 1)"
+  },
+  "33": {
+    "word": "CAM",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CM no root pattern found"
+  },
+  "37": {
+    "word": "AUTOFOCUS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=TFCS no root pattern found"
+  },
+  "39": {
+    "word": "IONOSPHERE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NSPHR no root pattern found"
+  },
+  "40": {
+    "word": "BALLAST",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLLST matched BULL at positions (0, 1)"
+  },
+  "47": {
+    "word": "PROTOMATTER",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PRTMTTR ambiguous (ATUM & TOR)"
+  },
+  "48": {
+    "word": "METTLESOME",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=MTTLSM no root pattern found"
+  },
+  "50": {
+    "word": "MAYBE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=MB no root pattern found"
+  },
+  "52": {
+    "word": "GITA",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GT no root pattern found"
+  },
+  "58": {
+    "word": "INEDIBLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NDBL matched BULL at positions (2, 3)"
+  },
+  "59": {
+    "word": "CACHE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CCH no root pattern found"
+  },
+  "61": {
+    "word": "FAULT",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FLT no root pattern found"
+  },
+  "62": {
+    "word": "CRIATURA",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CRTR matched TOR at positions (2, 3)"
+  },
+  "66": {
+    "word": "CUSTODIAN",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CSTDN no root pattern found"
+  },
+  "68": {
+    "word": "CHATURTHA",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CHTRTH matched TOR at positions (2, 3)"
+  },
+  "69": {
+    "word": "HEFT",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=HFT no root pattern found"
+  },
+  "74": {
+    "word": "UNRECYCLED",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NRCCLD no root pattern found"
+  },
+  "75": {
+    "word": "MOMENTUM",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=MMNTM matched ATUM at positions (3, 4)"
+  },
+  "76": {
+    "word": "ENDOCRINOLOGIST",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NDCRNLGST no root pattern found"
+  },
+  "80": {
+    "word": "THERMAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=THRML no root pattern found"
+  },
+  "82": {
+    "word": "FAUNAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FNL no root pattern found"
+  },
+  "83": {
+    "word": "CONDENSATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CNDNSTN no root pattern found"
+  },
+  "84": {
+    "word": "IMPOTENCE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=MPTNC no root pattern found"
+  },
+  "86": {
+    "word": "BALLETT",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLLTT matched BULL at positions (0, 1)"
+  },
+  "88": {
+    "word": "SONUS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SNS no root pattern found"
+  },
+  "93": {
+    "word": "ACTUARE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CTR matched TOR at positions (1, 2)"
+  },
+  "94": {
+    "word": "AUTOPILOT",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=TPLT matched BULL at positions (1, 2)"
+  },
+  "99": {
+    "word": "百 BAI",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=百 B no root pattern found"
+  },
+  "102": {
+    "word": "GAMETE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GMT no root pattern found"
+  },
+  "104": {
+    "word": "FRICTION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FRCTN no root pattern found"
+  },
+  "105": {
+    "word": "SEDIMENT",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=SDMNT matched ATUM at positions (1, 2)"
+  },
+  "106": {
+    "word": "INVISIBILITY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NVSBLT matched BULL at positions (3, 4)"
+  },
+  "107": {
+    "word": "NEBULIZER",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NBLZR matched BULL at positions (1, 2)"
+  },
+  "108": {
+    "word": "GENOS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GNS no root pattern found"
+  },
+  "109": {
+    "word": "MARKETABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=MRKTBL matched BULL at positions (4, 5)"
+  },
+  "110": {
+    "word": "AUTOMATION",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=TMTN matched ATUM at positions (0, 1)"
+  },
+  "111": {
+    "word": "INCOMPRESSIBLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NCMPRSSBL matched BULL at positions (7, 8)"
+  },
+  "112": {
+    "word": "PROGENY",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PRGN no root pattern found"
+  },
+  "114": {
+    "word": "NUCLEON",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NCLN no root pattern found"
+  },
+  "115": {
+    "word": "DERIVE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DRV matched TOR at positions (0, 1)"
+  },
+  "116": {
+    "word": "COMPRESSIBLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=CMPRSSBL matched BULL at positions (6, 7)"
+  },
+  "122": {
+    "word": "ACTUALIZATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CTLZTN no root pattern found"
+  },
+  "124": {
+    "word": "NARRATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NRRTN no root pattern found"
+  },
+  "127": {
+    "word": "DENATURIEREN",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DNTRRN matched TOR at positions (2, 3)"
+  },
+  "134": {
+    "word": "FIRMAMENT",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FRMMNT no root pattern found"
+  },
+  "136": {
+    "word": "FLUID",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FLD no root pattern found"
+  },
+  "137": {
+    "word": "转变 ZHUANBIAN",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=转变 ZHNBN no root pattern found"
+  },
+  "138": {
+    "word": "ASPHYXIATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SPHXTN no root pattern found"
+  },
+  "140": {
+    "word": "FUNGUS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FNGS no root pattern found"
+  },
+  "141": {
+    "word": "BICYCLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=BCCL no root pattern found"
+  },
+  "142": {
+    "word": "DISABILITY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=DSBLT matched BULL at positions (2, 3)"
+  },
+  "144": {
+    "word": "VARTMAN",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=VRTMN matched ATUM at positions (2, 3)"
+  },
+  "147": {
+    "word": "FORCIBLENESS",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=FRCBLNSS matched BULL at positions (3, 4)"
+  },
+  "150": {
+    "word": "INVENTOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=NVNTR matched TOR at positions (3, 4)"
+  },
+  "152": {
+    "word": "EASTERN",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=STRN matched TOR at positions (1, 2)"
+  },
+  "154": {
+    "word": "LIQUID",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=LQD no root pattern found"
+  },
+  "158": {
+    "word": "CONSTERNATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CNSTRNTN matched TOR at positions (3, 4)"
+  },
+  "160": {
+    "word": "CELESTIAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CLSTL no root pattern found"
+  },
+  "166": {
+    "word": "FORCIBLY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=FRCBL matched BULL at positions (3, 4)"
+  },
+  "168": {
+    "word": "GASEOUS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GSS no root pattern found"
+  },
+  "170": {
+    "word": "SCAVENGER",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SCVNGR no root pattern found"
+  },
+  "171": {
+    "word": "DESERTION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DSRTN no root pattern found"
+  },
+  "172": {
+    "word": "ARISE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=RS no root pattern found"
+  },
+  "173": {
+    "word": "NARRATE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NRRT no root pattern found"
+  },
+  "174": {
+    "word": "TOLERABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=TLRBL matched BULL at positions (3, 4)"
+  },
+  "176": {
+    "word": "ALKALINE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=LKLN no root pattern found"
+  },
+  "177": {
+    "word": "DENATURALIZE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DNTRLZ matched TOR at positions (2, 3)"
+  },
+  "178": {
+    "word": "GENERAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GNRL no root pattern found"
+  },
+  "179": {
+    "word": "DETONARE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DTNR no root pattern found"
+  },
+  "181": {
+    "word": "ENTOMON",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=NTMN matched ATUM at positions (1, 2)"
+  },
+  "183": {
+    "word": "PUBLICATIO",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=PBLCT matched BULL at positions (1, 2)"
+  },
+  "184": {
+    "word": "REFORM",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=RFRM no root pattern found"
+  },
+  "186": {
+    "word": "BENGALI",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=BNGL no root pattern found"
+  },
+  "187": {
+    "word": "班 BAN",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=班 BN no root pattern found"
+  },
+  "191": {
+    "word": "ILLUSTRATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=LLSTRTN matched TOR at positions (3, 4)"
+  },
+  "193": {
+    "word": "THERMOCHEMISTRY",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=THRMCHMSTR matched TOR at positions (8, 9)"
+  },
+  "196": {
+    "word": "SERVER",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SRVR no root pattern found"
+  },
+  "197": {
+    "word": "EXHIBITOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=XHBTR matched TOR at positions (3, 4)"
+  },
+  "201": {
+    "word": "HANDLEABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=HNDLBL matched BULL at positions (4, 5)"
+  },
+  "203": {
+    "word": "NEUTRINO",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=NTRN matched TOR at positions (1, 2)"
+  },
+  "205": {
+    "word": "ESTABLO",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=STBL matched BULL at positions (2, 3)"
+  },
+  "206": {
+    "word": "AGRICULTOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=GRCLTR matched TOR at positions (4, 5)"
+  },
+  "207": {
+    "word": "LAUDABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=LDBL matched BULL at positions (2, 3)"
+  },
+  "208": {
+    "word": "FRATER",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=FRTR matched TOR at positions (2, 3)"
+  },
+  "210": {
+    "word": "ENDOSPERM",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NDSPRM no root pattern found"
+  },
+  "211": {
+    "word": "NONCAPABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NNCPBL matched BULL at positions (4, 5)"
+  },
+  "212": {
+    "word": "OPPRESSOR",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PPRSSR no root pattern found"
+  },
+  "213": {
+    "word": "VARIATE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=VRT no root pattern found"
+  },
+  "214": {
+    "word": "COLLABORATOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CLLBRTR matched TOR at positions (5, 6)"
+  },
+  "216": {
+    "word": "AUTOREGULATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=TRGLTN matched TOR at positions (0, 1)"
+  },
+  "217": {
+    "word": "ANESTHESIOLOGIST",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NSTHSLGST no root pattern found"
+  },
+  "220": {
+    "word": "BALCON",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLCN matched BULL at positions (0, 1)"
+  },
+  "222": {
+    "word": "DEMONSTRABLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DMNSTRBL ambiguous (ATUM & BULL & TOR)"
+  },
+  "224": {
+    "word": "FORMIDABLY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=FRMDBL matched BULL at positions (4, 5)"
+  },
+  "225": {
+    "word": "ILLUSTRATOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=LLSTRTR matched TOR at positions (3, 4)"
+  },
+  "227": {
+    "word": "AFFIRMATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FFRMTN no root pattern found"
+  },
+  "229": {
+    "word": "CLOSABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=CLSBL matched BULL at positions (3, 4)"
+  },
+  "232": {
+    "word": "SATYA",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=ST no root pattern found"
+  },
+  "233": {
+    "word": "DEFICIENT",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DFCNT no root pattern found"
+  },
+  "234": {
+    "word": "PROCREATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PRCRTN no root pattern found"
+  },
+  "235": {
+    "word": "ESTIMABLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=STMBL ambiguous (ATUM & BULL)"
+  },
+  "237": {
+    "word": "HYPOTHETICAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=HPTHTCL no root pattern found"
+  },
+  "238": {
+    "word": "INELIGIBLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NLGBL matched BULL at positions (3, 4)"
+  },
+  "240": {
+    "word": "ANALYSIS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NLSS no root pattern found"
+  },
+  "241": {
+    "word": "LIBEL",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=LBL matched BULL at positions (1, 2)"
+  },
+  "243": {
+    "word": "DETER",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DTR matched TOR at positions (1, 2)"
+  },
+  "245": {
+    "word": "BALAYI",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BL matched BULL at positions (0, 1)"
+  },
+  "246": {
+    "word": "CONCEIVABILITY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=CNCVBLT matched BULL at positions (4, 5)"
+  },
+  "247": {
+    "word": "TURNIER",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=TRNR matched TOR at positions (0, 1)"
+  },
+  "250": {
+    "word": "添 TIAN",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=添 TN no root pattern found"
+  },
+  "253": {
+    "word": "MASTERY",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=MSTR matched TOR at positions (2, 3)"
+  },
+  "254": {
+    "word": "BREED",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=BRD no root pattern found"
+  },
+  "255": {
+    "word": "DEFORESTATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DFRSTTN no root pattern found"
+  },
+  "256": {
+    "word": "KOSMETICOS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=KSMTCS no root pattern found"
+  },
+  "257": {
+    "word": "FOUNDER",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=FNDR matched TOR at positions (2, 3)"
+  },
+  "258": {
+    "word": "INDEFINABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NDFNBL matched BULL at positions (4, 5)"
+  },
+  "259": {
+    "word": "ABSTENTION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=BSTNTN no root pattern found"
+  },
+  "263": {
+    "word": "TURBA",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=TRB matched TOR at positions (0, 1)"
+  },
+  "264": {
+    "word": "CHOREOGRAPHOS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CHRGRPHS no root pattern found"
+  },
+  "269": {
+    "word": "AGON",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GN no root pattern found"
+  },
+  "270": {
+    "word": "METAL",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=MTL no root pattern found"
+  },
+  "271": {
+    "word": "ATMOSPHERE",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=TMSPHR matched ATUM at positions (0, 1)"
+  },
+  "272": {
+    "word": "BOTTOM",
+    "phonetic_root": "ATUM",
+    "phonetic_reason": "skeleton=BTTM matched ATUM at positions (2, 3)"
+  },
+  "273": {
+    "word": "ACCEPTATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CCPTTN no root pattern found"
+  },
+  "281": {
+    "word": "DENOMINATE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DNMNT no root pattern found"
+  },
+  "283": {
+    "word": "DIABOLIC",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=DBLC matched BULL at positions (1, 2)"
+  },
+  "287": {
+    "word": "TESTABILITY",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=TSTBLT matched BULL at positions (3, 4)"
+  },
+  "288": {
+    "word": "EMBRYONIC",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=MBRNC no root pattern found"
+  },
+  "289": {
+    "word": "INSURMOUNTABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NSRMNTBL matched BULL at positions (6, 7)"
+  },
+  "292": {
+    "word": "ACCENTUATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CCNTTN no root pattern found"
+  },
+  "295": {
+    "word": "LOTION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=LTN no root pattern found"
+  },
+  "297": {
+    "word": "INITIALIZATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NTLZTN no root pattern found"
+  },
+  "299": {
+    "word": "CAMPHOR",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=CMPHR no root pattern found"
+  },
+  "304": {
+    "word": "ZINC",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=ZNC no root pattern found"
+  },
+  "306": {
+    "word": "BALIN",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLN matched BULL at positions (0, 1)"
+  },
+  "307": {
+    "word": "DETERMINATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DTRMNTN matched TOR at positions (1, 2)"
+  },
+  "309": {
+    "word": "AFFECTATION",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=FFCTTN no root pattern found"
+  },
+  "310": {
+    "word": "DURABLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DRBL ambiguous (BULL & TOR)"
+  },
+  "314": {
+    "word": "ACCOUNTABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=CCNTBL matched BULL at positions (4, 5)"
+  },
+  "315": {
+    "word": "ACTEUR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CTR matched TOR at positions (1, 2)"
+  },
+  "316": {
+    "word": "BULLDOZE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLLDZ matched BULL at positions (0, 1)"
+  },
+  "317": {
+    "word": "TRANSFORMABLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=TRNSFRMBL ambiguous (BULL & TOR)"
+  },
+  "320": {
+    "word": "PATERNALISM",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=PTRNLSM matched TOR at positions (1, 2)"
+  },
+  "322": {
+    "word": "PASTOR",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=PSTR matched TOR at positions (2, 3)"
+  },
+  "323": {
+    "word": "ATTRIBUTABLE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=TTRBTBL ambiguous (BULL & TOR)"
+  },
+  "324": {
+    "word": "UNRELIABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=NRLBL matched BULL at positions (3, 4)"
+  },
+  "326": {
+    "word": "BIOLOGICAL",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=BLGCL matched BULL at positions (0, 1)"
+  },
+  "327": {
+    "word": "DENATURATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=DNTRTN matched TOR at positions (2, 3)"
+  },
+  "329": {
+    "word": "AGNATUS",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=GNTS no root pattern found"
+  },
+  "330": {
+    "word": "ONOMAZO",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=NMZ no root pattern found"
+  },
+  "331": {
+    "word": "PRIMARY",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=PRMR no root pattern found"
+  },
+  "332": {
+    "word": "NATURALIZATION",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=NTRLZTN matched TOR at positions (1, 2)"
+  },
+  "336": {
+    "word": "ATTAINABLE",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=TTNBL matched BULL at positions (3, 4)"
+  },
+  "337": {
+    "word": "暴 BAO",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=暴 B no root pattern found"
+  },
+  "338": {
+    "word": "HERBIVORE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=HRBVR no root pattern found"
+  },
+  "339": {
+    "word": "TERRORIZE",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=TRRRZ matched TOR at positions (0, 1)"
+  },
+  "341": {
+    "word": "RECREATE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=RCRT no root pattern found"
+  },
+  "343": {
+    "word": "DIABOLUS",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=DBLS matched BULL at positions (1, 2)"
+  },
+  "344": {
+    "word": "DISABLEMENT",
+    "phonetic_root": "BULL",
+    "phonetic_reason": "skeleton=DSBLMNT matched BULL at positions (2, 3)"
+  },
+  "345": {
+    "word": "RNA",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=RN no root pattern found"
+  },
+  "348": {
+    "word": "DOMINATOR",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=DMNTR ambiguous (ATUM & TOR)"
+  },
+  "349": {
+    "word": "SILICON",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SLCN no root pattern found"
+  },
+  "353": {
+    "word": "CENTRIFUGAL",
+    "phonetic_root": "TOR",
+    "phonetic_reason": "skeleton=CNTRFGL matched TOR at positions (2, 3)"
+  },
+  "356": {
+    "word": "TZOHAR",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=TZHR no root pattern found"
+  },
+  "357": {
+    "word": "SUBSTANTIATE",
+    "phonetic_root": "NONE",
+    "phonetic_reason": "skeleton=SBSTNTT no root pattern found"
+  }
+}

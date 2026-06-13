@@ -1,0 +1,181 @@
+  ID WORD                           PHON   SEM    ETYM   INTERSECT    GOLD     TIER      
+------------------------------------------------------------------------------------------
+   5 ANTIBELLIGERENT                BULL   BULL   BULL   BULL         BULL     proven     *
+   6 QUINTESSENCE                   NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+   8 THEW                           NONE   ATUM   ATUM   ATUM         ATUM     moderate   *
+  11 RADON                          NONE   BULL   TOR    NONE         TOR      strong     
+  12 PROFESSIONALISM                NONE   TOR    TOR    TOR          TOR      moderate   *
+  16 ANTIBULLYING                   BULL   NONE   BULL   BULL         BULL     proven     *
+  20 ADVISABLE                      BULL   BULL   BULL   BULL         BULL     strong     *
+  21 MAGISTRATE                     TOR    NONE   TOR    TOR          ATUM     strong     
+  22 REDOUBTABLE                    BULL   NONE   BULL   BULL         BULL     strong     *
+  26 COFFEE                         NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+  30 NONGLOBAL                      BULL   BULL   BULL   BULL         BULL     proven     *
+  31 STABULUM                       BULL   BULL   BULL   BULL         BULL     proven     *
+  32 TORRENTE                       TOR    TOR    TOR    TOR          TOR      proven     *
+  33 CAM                            NONE   TOR    TOR    TOR          TOR      strong     *
+  37 AUTOFOCUS                      NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+  39 IONOSPHERE                     NONE   BULL   NONE   NONE         BULL     moderate   
+  40 BALLAST                        BULL   BULL   BULL   BULL         BULL     proven     *
+  47 PROTOMATTER                    NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+  48 METTLESOME                     NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+  50 MAYBE                          NONE   BULL   BULL   BULL         BULL     moderate   *
+  52 GITA                           NONE   ATUM   NONE   NONE         ATUM     strong     
+  58 INEDIBLE                       BULL   BULL   BULL   BULL         BULL     strong     *
+  59 CACHE                          NONE   BULL   BULL   BULL         BULL     strong     *
+  61 FAULT                          NONE   NONE   BULL   NONE         BULL     strong     
+  62 CRIATURA                       TOR    NONE   TOR    TOR          ATUM     strong     
+  66 CUSTODIAN                      NONE   TOR    TOR    TOR          TOR      proven     *
+  68 CHATURTHA                      TOR    TOR    TOR    TOR          TOR      proven     *
+  69 HEFT                           NONE   NONE   NONE   NONE         ATUM     strong     
+  74 UNRECYCLED                     NONE   TOR    TOR    TOR          TOR      proven     *
+  75 MOMENTUM                       ATUM   NONE   ATUM   ATUM         ATUM     strong     *
+  76 ENDOCRINOLOGIST                NONE   ATUM   TOR    NONE         ATUM     strong     
+  80 THERMAL                        NONE   TOR    TOR    TOR          TOR      proven     *
+  82 FAUNAL                         NONE   NONE   NONE   NONE         ATUM     strong     
+  83 CONDENSATION                   NONE   NONE   TOR    NONE         TOR      strong     
+  84 IMPOTENCE                      NONE   NONE   TOR    NONE         BULL     strong     
+  86 BALLETT                        BULL   BULL   BULL   BULL         BULL     strong     *
+  88 SONUS                          NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+  93 ACTUARE                        TOR    ATUM   ATUM   ATUM         ATUM     strong     *
+  94 AUTOPILOT                      BULL   ATUM   ATUM   ATUM         TOR      proven     
+  99 百 BAI                          NONE   BULL   BULL   BULL         BULL     strong     *
+ 102 GAMETE                         NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 104 FRICTION                       NONE   NONE   TOR    NONE         TOR      strong     
+ 105 SEDIMENT                       ATUM   BULL   BULL   BULL         BULL     strong     *
+ 106 INVISIBILITY                   BULL   NONE   BULL   BULL         BULL     strong     *
+ 107 NEBULIZER                      BULL   BULL   BULL   BULL         BULL     strong     *
+ 108 GENOS                          NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 109 MARKETABLE                     BULL   ATUM   ATUM   ATUM         ATUM     strong     *
+ 110 AUTOMATION                     ATUM   ATUM   ATUM   ATUM         ATUM     proven     *
+ 111 INCOMPRESSIBLE                 BULL   NONE   BULL   BULL         BULL     strong     *
+ 112 PROGENY                        NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 114 NUCLEON                        NONE   NONE   NONE   NONE         ATUM     moderate   
+ 115 DERIVE                         TOR    TOR    TOR    TOR          TOR      strong     *
+ 116 COMPRESSIBLE                   BULL   NONE   NONE   NONE         BULL     strong     
+ 122 ACTUALIZATION                  NONE   NONE   TOR    NONE         TOR      strong     
+ 124 NARRATION                      NONE   TOR    TOR    TOR          TOR      strong     *
+ 127 DENATURIEREN                   TOR    ATUM   ATUM   ATUM         ATUM     proven     *
+ 134 FIRMAMENT                      NONE   NONE   TOR    NONE         BULL     strong     
+ 136 FLUID                          NONE   BULL   BULL   BULL         BULL     proven     *
+ 137 转变 ZHUANBIAN                   NONE   TOR    TOR    TOR          TOR      proven     *
+ 138 ASPHYXIATION                   NONE   NONE   NONE   NONE         TOR      strong     
+ 140 FUNGUS                         NONE   BULL   BULL   BULL         BULL     strong     *
+ 141 BICYCLE                        NONE   TOR    TOR    TOR          TOR      strong     *
+ 142 DISABILITY                     BULL   NONE   BULL   BULL         BULL     strong     *
+ 144 VARTMAN                        ATUM   TOR    TOR    TOR          TOR      proven     *
+ 147 FORCIBLENESS                   BULL   NONE   ATUM   NONE         ATUM     strong     
+ 150 INVENTOR                       TOR    NONE   TOR    TOR          TOR      strong     *
+ 152 EASTERN                        TOR    TOR    TOR    TOR          TOR      strong     *
+ 154 LIQUID                         NONE   BULL   BULL   BULL         BULL     proven     *
+ 158 CONSTERNATION                  TOR    NONE   TOR    TOR          TOR      strong     *
+ 160 CELESTIAL                      NONE   NONE   TOR    NONE         ATUM     strong     
+ 166 FORCIBLY                       BULL   NONE   TOR    NONE         TOR      proven     
+ 168 GASEOUS                        NONE   NONE   BULL   NONE         BULL     proven     
+ 170 SCAVENGER                      NONE   ATUM   TOR    NONE         TOR      strong     
+ 171 DESERTION                      NONE   NONE   TOR    NONE         TOR      strong     
+ 172 ARISE                          NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 173 NARRATE                        NONE   TOR    TOR    TOR          TOR      strong     *
+ 174 TOLERABLE                      BULL   NONE   BULL   BULL         BULL     strong     *
+ 176 ALKALINE                       NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 177 DENATURALIZE                   TOR    ATUM   NONE   NONE         ATUM     strong     
+ 178 GENERAL                        NONE   TOR    NONE   NONE         ATUM     strong     
+ 179 DETONARE                       NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 181 ENTOMON                        ATUM   ATUM   TOR    ATUM         ATUM     proven     *
+ 183 PUBLICATIO                     BULL   BULL   BULL   BULL         BULL     strong     *
+ 184 REFORM                         NONE   NONE   TOR    NONE         ATUM     strong     
+ 186 BENGALI                        NONE   BULL   NONE   NONE         BULL     strong     
+ 187 班 BAN                          NONE   BULL   BULL   BULL         BULL     strong     *
+ 191 ILLUSTRATION                   TOR    NONE   TOR    TOR          TOR      strong     *
+ 193 THERMOCHEMISTRY                TOR    TOR    NONE   TOR          ATUM     moderate   
+ 196 SERVER                         NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 197 EXHIBITOR                      TOR    NONE   NONE   NONE         TOR      strong     
+ 201 HANDLEABLE                     BULL   BULL   BULL   BULL         BULL     strong     *
+ 203 NEUTRINO                       TOR    TOR    TOR    TOR          TOR      strong     *
+ 205 ESTABLO                        BULL   BULL   BULL   BULL         BULL     proven     *
+ 206 AGRICULTOR                     TOR    NONE   TOR    TOR          TOR      strong     *
+ 207 LAUDABLE                       BULL   NONE   BULL   BULL         BULL     strong     *
+ 208 FRATER                         TOR    TOR    TOR    TOR          TOR      strong     *
+ 210 ENDOSPERM                      NONE   NONE   NONE   NONE         ATUM     strong     
+ 211 NONCAPABLE                     BULL   BULL   BULL   BULL         BULL     strong     *
+ 212 OPPRESSOR                      NONE   TOR    TOR    TOR          TOR      proven     *
+ 213 VARIATE                        NONE   NONE   TOR    NONE         BULL     strong     
+ 214 COLLABORATOR                   TOR    TOR    TOR    TOR          TOR      proven     *
+ 216 AUTOREGULATION                 TOR    NONE   TOR    TOR          TOR      strong     *
+ 217 ANESTHESIOLOGIST               NONE   NONE   TOR    NONE         ATUM     strong     
+ 220 BALCON                         BULL   BULL   TOR    BULL         BULL     strong     *
+ 222 DEMONSTRABLE                   NONE   NONE   BULL   NONE         BULL     strong     
+ 224 FORMIDABLY                     BULL   NONE   BULL   BULL         ATUM     strong     
+ 225 ILLUSTRATOR                    TOR    NONE   TOR    TOR          TOR      strong     *
+ 227 AFFIRMATION                    NONE   NONE   BULL   NONE         TOR      strong     
+ 229 CLOSABLE                       BULL   BULL   BULL   BULL         BULL     strong     *
+ 232 SATYA                          NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 233 DEFICIENT                      NONE   NONE   TOR    NONE         BULL     strong     
+ 234 PROCREATION                    NONE   NONE   TOR    NONE         ATUM     strong     
+ 235 ESTIMABLE                      NONE   BULL   BULL   BULL         BULL     strong     *
+ 237 HYPOTHETICAL                   NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 238 INELIGIBLE                     BULL   NONE   BULL   BULL         BULL     strong     *
+ 240 ANALYSIS                       NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 241 LIBEL                          BULL   BULL   BULL   BULL         BULL     strong     *
+ 243 DETER                          TOR    TOR    TOR    TOR          TOR      proven     *
+ 245 BALAYI                         BULL   BULL   TOR    BULL         BULL     strong     *
+ 246 CONCEIVABILITY                 BULL   NONE   BULL   BULL         BULL     strong     *
+ 247 TURNIER                        TOR    TOR    TOR    TOR          TOR      proven     *
+ 250 添 TIAN                         NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 253 MASTERY                        TOR    ATUM   ATUM   ATUM         ATUM     strong     *
+ 254 BREED                          NONE   NONE   ATUM   NONE         ATUM     strong     
+ 255 DEFORESTATION                  NONE   NONE   TOR    NONE         TOR      strong     
+ 256 KOSMETICOS                     NONE   ATUM   ATUM   ATUM         ATUM     moderate   *
+ 257 FOUNDER                        TOR    ATUM   ATUM   ATUM         ATUM     proven     *
+ 258 INDEFINABLE                    BULL   NONE   BULL   BULL         BULL     strong     *
+ 259 ABSTENTION                     NONE   NONE   TOR    NONE         TOR      strong     
+ 263 TURBA                          TOR    TOR    TOR    TOR          TOR      proven     *
+ 264 CHOREOGRAPHOS                  NONE   TOR    TOR    TOR          TOR      proven     *
+ 269 AGON                           NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 270 METAL                          NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 271 ATMOSPHERE                     ATUM   BULL   TOR    NONE         ATUM     strong     
+ 272 BOTTOM                         ATUM   ATUM   ATUM   ATUM         ATUM     strong     *
+ 273 ACCEPTATION                    NONE   NONE   TOR    NONE         TOR      strong     
+ 281 DENOMINATE                     NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 283 DIABOLIC                       BULL   BULL   BULL   BULL         BULL     strong     *
+ 287 TESTABILITY                    BULL   ATUM   TOR    NONE         ATUM     strong     
+ 288 EMBRYONIC                      NONE   ATUM   TOR    NONE         ATUM     strong     
+ 289 INSURMOUNTABLE                 BULL   NONE   BULL   BULL         BULL     strong     *
+ 292 ACCENTUATION                   NONE   NONE   TOR    NONE         TOR      strong     
+ 295 LOTION                         NONE   NONE   TOR    NONE         TOR      strong     
+ 297 INITIALIZATION                 NONE   NONE   TOR    NONE         TOR      strong     
+ 299 CAMPHOR                        NONE   TOR    TOR    TOR          TOR      strong     *
+ 304 ZINC                           NONE   NONE   NONE   NONE         ATUM     strong     
+ 306 BALIN                          BULL   BULL   BULL   BULL         BULL     proven     *
+ 307 DETERMINATION                  TOR    NONE   TOR    TOR          TOR      strong     *
+ 309 AFFECTATION                    NONE   NONE   TOR    NONE         TOR      strong     
+ 310 DURABLE                        NONE   NONE   BULL   NONE         BULL     strong     
+ 314 ACCOUNTABLE                    BULL   BULL   BULL   BULL         BULL     strong     *
+ 315 ACTEUR                         TOR    TOR    TOR    TOR          TOR      proven     *
+ 316 BULLDOZE                       BULL   BULL   BULL   BULL         BULL     strong     *
+ 317 TRANSFORMABLE                  NONE   BULL   BULL   BULL         ATUM     strong     
+ 320 PATERNALISM                    TOR    NONE   NONE   NONE         ATUM     moderate   
+ 322 PASTOR                         TOR    TOR    TOR    TOR          TOR      proven     *
+ 323 ATTRIBUTABLE                   NONE   BULL   BULL   BULL         BULL     strong     *
+ 324 UNRELIABLE                     BULL   NONE   BULL   BULL         BULL     strong     *
+ 326 BIOLOGICAL                     BULL   NONE   NONE   NONE         ATUM     strong     
+ 327 DENATURATION                   TOR    NONE   NONE   NONE         TOR      strong     
+ 329 AGNATUS                        NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 330 ONOMAZO                        NONE   ATUM   ATUM   ATUM         ATUM     strong     *
+ 331 PRIMARY                        NONE   NONE   TOR    NONE         ATUM     moderate   
+ 332 NATURALIZATION                 TOR    ATUM   ATUM   ATUM         ATUM     proven     *
+ 336 ATTAINABLE                     BULL   BULL   BULL   BULL         BULL     strong     *
+ 337 暴 BAO                          NONE   BULL   BULL   BULL         BULL     strong     *
+ 338 HERBIVORE                      NONE   BULL   BULL   BULL         BULL     strong     *
+ 339 TERRORIZE                      TOR    NONE   NONE   NONE         BULL     strong     
+ 341 RECREATE                       NONE   ATUM   ATUM   ATUM         ATUM     proven     *
+ 343 DIABOLUS                       BULL   BULL   BULL   BULL         BULL     proven     *
+ 344 DISABLEMENT                    BULL   BULL   BULL   BULL         BULL     proven     *
+ 345 RNA                            NONE   NONE   TOR    NONE         TOR      strong     
+ 348 DOMINATOR                      NONE   TOR    TOR    TOR          TOR      strong     *
+ 349 SILICON                        NONE   BULL   BULL   BULL         BULL     strong     *
+ 353 CENTRIFUGAL                    TOR    BULL   BULL   BULL         BULL     proven     *
+ 356 TZOHAR                         NONE   TOR    TOR    TOR          TOR      strong     *
+ 357 SUBSTANTIATE                   NONE   NONE   TOR    NONE         ATUM     strong     
+------------------------------------------------------------------------------------------
+Accuracy: 118/177 = 66.7% (intersection vs gold)

@@ -1,0 +1,3082 @@
+{
+  "5": {
+    "word": "ANTIBELLIGERENT",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NTBLLGRNT matched BULL at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 16, 'TOR': 3} dominant=BULL(16) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "6": {
+    "word": "QUINTESSENCE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=QNTSSNC no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "8": {
+    "word": "THEW",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=THW no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 2, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "11": {
+    "word": "RADON",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=RDN no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "12": {
+    "word": "PROFESSIONALISM",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PRFSSNLSM no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 6} dominant=TOR(6)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 6} dominant=TOR(6) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "16": {
+    "word": "ANTIBULLYING",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NTBLLNG matched BULL at positions (2, 3)",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "20": {
+    "word": "ADVISABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=DVSBL matched BULL at positions (3, 4)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "21": {
+    "word": "MAGISTRATE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=MGSTRT matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "22": {
+    "word": "REDOUBTABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=RDBTBL matched BULL at positions (4, 5)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "26": {
+    "word": "COFFEE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CFF no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "30": {
+    "word": "NONGLOBAL",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NNGLBL matched BULL at positions (4, 5)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "31": {
+    "word": "STABULUM",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=STBLM matched BULL at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 0} dominant=BULL(11) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "32": {
+    "word": "TORRENTE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=TRRNT matched TOR at positions (0, 1)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 3} dominant=TOR(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 11} dominant=TOR(11) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "33": {
+    "word": "CAM",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CM no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "37": {
+    "word": "AUTOFOCUS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=TFCS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "39": {
+    "word": "IONOSPHERE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NSPHR no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "40": {
+    "word": "BALLAST",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLLST matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 12, 'TOR': 0} dominant=BULL(12) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "47": {
+    "word": "PROTOMATTER",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PRTMTTR ambiguous (ATUM & TOR)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 0} dominant=ATUM(1)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "48": {
+    "word": "METTLESOME",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=MTTLSM no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 0} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "50": {
+    "word": "MAYBE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=MB no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 2} dominant=BULL(11) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "52": {
+    "word": "GITA",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GT no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (2 each)",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "58": {
+    "word": "INEDIBLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NDBL matched BULL at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 11, 'TOR': 2} dominant=BULL(11) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "59": {
+    "word": "CACHE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CCH no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "61": {
+    "word": "FAULT",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FLT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 1} dominant=BULL(2) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "62": {
+    "word": "CRIATURA",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CRTR matched TOR at positions (2, 3)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "66": {
+    "word": "CUSTODIAN",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CSTDN no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "68": {
+    "word": "CHATURTHA",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CHTRTH matched TOR at positions (2, 3)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 3} dominant=TOR(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 10} dominant=TOR(10) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "69": {
+    "word": "HEFT",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=HFT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "74": {
+    "word": "UNRECYCLED",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NRCCLD no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "75": {
+    "word": "MOMENTUM",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=MMNTM matched ATUM at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (2 each)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "76": {
+    "word": "ENDOCRINOLOGIST",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NDCRNLGST no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 7} dominant=TOR(7) lang=Greek",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "80": {
+    "word": "THERMAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=THRML no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "82": {
+    "word": "FAUNAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FNL no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "83": {
+    "word": "CONDENSATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CNDNSTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "84": {
+    "word": "IMPOTENCE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=MPTNC no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "86": {
+    "word": "BALLETT",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLLTT matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 2} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 2} dominant=BULL(5) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "88": {
+    "word": "SONUS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SNS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 1} dominant=ATUM(5)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 3} dominant=ATUM(7) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "93": {
+    "word": "ACTUARE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CTR matched TOR at positions (1, 2)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 0} dominant=ATUM(6)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "94": {
+    "word": "AUTOPILOT",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=TPLT matched BULL at positions (1, 2)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 2} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 4} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "99": {
+    "word": "百 BAI",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=百 B no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 0} dominant=BULL(6)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 9, 'TOR': 0} dominant=BULL(9) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "102": {
+    "word": "GAMETE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GMT no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 1} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 2} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "104": {
+    "word": "FRICTION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FRCTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "105": {
+    "word": "SEDIMENT",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=SDMNT matched ATUM at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "106": {
+    "word": "INVISIBILITY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NVSBLT matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 1} dominant=BULL(2) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "107": {
+    "word": "NEBULIZER",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NBLZR matched BULL at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "108": {
+    "word": "GENOS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GNS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 1} dominant=ATUM(6)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 18, 'BULL': 0, 'TOR': 7} dominant=ATUM(18) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "109": {
+    "word": "MARKETABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=MRKTBL matched BULL at positions (4, 5)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 2, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 4, 'TOR': 0} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "110": {
+    "word": "AUTOMATION",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=TMTN matched ATUM at positions (0, 1)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 9, 'BULL': 0, 'TOR': 0} dominant=ATUM(9) lang=Unknown",
+    "votes": {
+      "ATUM": 3,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "111": {
+    "word": "INCOMPRESSIBLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NCMPRSSBL matched BULL at positions (7, 8)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5) lang=French",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "112": {
+    "word": "PROGENY",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PRGN no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 2} dominant=ATUM(6)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 16, 'BULL': 0, 'TOR': 3} dominant=ATUM(16) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "114": {
+    "word": "NUCLEON",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NCLN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "115": {
+    "word": "DERIVE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DRV matched TOR at positions (0, 1)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "116": {
+    "word": "COMPRESSIBLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=CMPRSSBL matched BULL at positions (6, 7)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (1 each)",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "122": {
+    "word": "ACTUALIZATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CTLZTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "124": {
+    "word": "NARRATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NRRTN no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "127": {
+    "word": "DENATURIEREN",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DNTRRN matched TOR at positions (2, 3)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 1} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 6} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "134": {
+    "word": "FIRMAMENT",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FRMMNT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "136": {
+    "word": "FLUID",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FLD no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "137": {
+    "word": "转变 ZHUANBIAN",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=转变 ZHNBN no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 5} dominant=TOR(5)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 8} dominant=TOR(8) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "138": {
+    "word": "ASPHYXIATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SPHXTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "140": {
+    "word": "FUNGUS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FNGS no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "141": {
+    "word": "BICYCLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=BCCL no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 4} dominant=TOR(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "142": {
+    "word": "DISABILITY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=DSBLT matched BULL at positions (2, 3)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "144": {
+    "word": "VARTMAN",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=VRTMN matched ATUM at positions (2, 3)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 5} dominant=TOR(5)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 10} dominant=TOR(10) lang=Sanskrit",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "147": {
+    "word": "FORCIBLENESS",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=FRCBLNSS matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (2 each)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "150": {
+    "word": "INVENTOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=NVNTR matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "152": {
+    "word": "EASTERN",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=STRN matched TOR at positions (1, 2)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 4} dominant=TOR(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 8} dominant=TOR(8) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "154": {
+    "word": "LIQUID",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=LQD no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "158": {
+    "word": "CONSTERNATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CNSTRNTN matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "160": {
+    "word": "CELESTIAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CLSTL no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "166": {
+    "word": "FORCIBLY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=FRCBL matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "168": {
+    "word": "GASEOUS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GSS no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "170": {
+    "word": "SCAVENGER",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SCVNGR no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "171": {
+    "word": "DESERTION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DSRTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 3} dominant=TOR(3) lang=French",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "172": {
+    "word": "ARISE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=RS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 0} dominant=ATUM(1)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=English",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "173": {
+    "word": "NARRATE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NRRT no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=English",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "174": {
+    "word": "TOLERABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=TLRBL matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "176": {
+    "word": "ALKALINE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=LKLN no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "177": {
+    "word": "DENATURALIZE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DNTRLZ matched TOR at positions (2, 3)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (4 each)",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "178": {
+    "word": "GENERAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GNRL no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (3 each)",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "179": {
+    "word": "DETONARE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DTNR no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 2, 'TOR': 1} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 2} dominant=ATUM(6) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "181": {
+    "word": "ENTOMON",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=NTMN matched ATUM at positions (1, 2)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Greek",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "183": {
+    "word": "PUBLICATIO",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=PBLCT matched BULL at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 1} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "184": {
+    "word": "REFORM",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=RFRM no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "186": {
+    "word": "BENGALI",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=BNGL no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (2 each)",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "187": {
+    "word": "班 BAN",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=班 BN no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 3} dominant=BULL(7) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "191": {
+    "word": "ILLUSTRATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=LLSTRTN matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "193": {
+    "word": "THERMOCHEMISTRY",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=THRMCHMSTR matched TOR at positions (8, 9)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "196": {
+    "word": "SERVER",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SRVR no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "197": {
+    "word": "EXHIBITOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=XHBTR matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "201": {
+    "word": "HANDLEABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=HNDLBL matched BULL at positions (4, 5)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "203": {
+    "word": "NEUTRINO",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=NTRN matched TOR at positions (1, 2)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 3} dominant=TOR(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "205": {
+    "word": "ESTABLO",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=STBL matched BULL at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 1} dominant=BULL(7)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 8, 'TOR': 1} dominant=BULL(8) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "206": {
+    "word": "AGRICULTOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=GRCLTR matched TOR at positions (4, 5)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "207": {
+    "word": "LAUDABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=LDBL matched BULL at positions (2, 3)",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "208": {
+    "word": "FRATER",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=FRTR matched TOR at positions (2, 3)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 7} dominant=TOR(7)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 13} dominant=TOR(13) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "210": {
+    "word": "ENDOSPERM",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NDSPRM no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (1 each)",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "211": {
+    "word": "NONCAPABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NNCPBL matched BULL at positions (4, 5)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 0} dominant=BULL(6) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "212": {
+    "word": "OPPRESSOR",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PPRSSR no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "213": {
+    "word": "VARIATE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=VRT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "214": {
+    "word": "COLLABORATOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CLLBRTR matched TOR at positions (5, 6)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 9} dominant=TOR(9) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "216": {
+    "word": "AUTOREGULATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=TRGLTN matched TOR at positions (0, 1)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "217": {
+    "word": "ANESTHESIOLOGIST",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NSTHSLGST no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "220": {
+    "word": "BALCON",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLCN matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 6} dominant=TOR(6) lang=Spanish",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 1
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "222": {
+    "word": "DEMONSTRABLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DMNSTRBL ambiguous (ATUM & BULL & TOR)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4) lang=English",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "224": {
+    "word": "FORMIDABLY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=FRMDBL matched BULL at positions (4, 5)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "225": {
+    "word": "ILLUSTRATOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=LLSTRTR matched TOR at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "227": {
+    "word": "AFFIRMATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FFRMTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 4, 'TOR': 3} dominant=BULL(4) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "229": {
+    "word": "CLOSABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=CLSBL matched BULL at positions (3, 4)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "232": {
+    "word": "SATYA",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=ST no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "233": {
+    "word": "DEFICIENT",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DFCNT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "234": {
+    "word": "PROCREATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PRCRTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "235": {
+    "word": "ESTIMABLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=STMBL ambiguous (ATUM & BULL)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 6, 'TOR': 1} dominant=BULL(6) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "237": {
+    "word": "HYPOTHETICAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=HPTHTCL no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 0, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "238": {
+    "word": "INELIGIBLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NLGBL matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5) lang=French",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "240": {
+    "word": "ANALYSIS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NLSS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 0} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "241": {
+    "word": "LIBEL",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=LBL matched BULL at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 15, 'TOR': 1} dominant=BULL(15) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "243": {
+    "word": "DETER",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DTR matched TOR at positions (1, 2)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 1, 'TOR': 4} dominant=TOR(4)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "245": {
+    "word": "BALAYI",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BL matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Persian",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 1
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "246": {
+    "word": "CONCEIVABILITY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=CNCVBLT matched BULL at positions (4, 5)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "247": {
+    "word": "TURNIER",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=TRNR matched TOR at positions (0, 1)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 6} dominant=TOR(6)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 1, 'TOR': 7} dominant=TOR(7) lang=French",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "250": {
+    "word": "添 TIAN",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=添 TN no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 2} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 6} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "253": {
+    "word": "MASTERY",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=MSTR matched TOR at positions (2, 3)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "254": {
+    "word": "BREED",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=BRD no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "tie between top roots (1 each)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 0} dominant=ATUM(2) lang=English",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "255": {
+    "word": "DEFORESTATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DFRSTTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "256": {
+    "word": "KOSMETICOS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=KSMTCS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 3} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 2} dominant=ATUM(7) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "257": {
+    "word": "FOUNDER",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=FNDR matched TOR at positions (2, 3)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 1} dominant=ATUM(2)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "258": {
+    "word": "INDEFINABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NDFNBL matched BULL at positions (4, 5)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "259": {
+    "word": "ABSTENTION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=BSTNTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "263": {
+    "word": "TURBA",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=TRB matched TOR at positions (0, 1)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "264": {
+    "word": "CHOREOGRAPHOS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CHRGRPHS no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Greek",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "269": {
+    "word": "AGON",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GN no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 1} dominant=ATUM(5)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 4} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "270": {
+    "word": "METAL",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=MTL no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 1} dominant=ATUM(6)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 6, 'BULL': 0, 'TOR': 3} dominant=ATUM(6) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "271": {
+    "word": "ATMOSPHERE",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=TMSPHR matched ATUM at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 1,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "272": {
+    "word": "BOTTOM",
+    "phonetic": "ATUM",
+    "phonetic_reason": "skeleton=BTTM matched ATUM at positions (2, 3)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 1, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 5, 'BULL': 0, 'TOR': 2} dominant=ATUM(5) lang=Unknown",
+    "votes": {
+      "ATUM": 3,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "273": {
+    "word": "ACCEPTATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CCPTTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "281": {
+    "word": "DENOMINATE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DNMNT no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 6, 'BULL': 1, 'TOR': 0} dominant=ATUM(6)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 12, 'BULL': 0, 'TOR': 1} dominant=ATUM(12) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "283": {
+    "word": "DIABOLIC",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=DBLC matched BULL at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 1} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 18, 'TOR': 3} dominant=BULL(18) lang=Greek",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "287": {
+    "word": "TESTABILITY",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=TSTBLT matched BULL at positions (3, 4)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 3, 'BULL': 1, 'TOR': 0} dominant=ATUM(3)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 2, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 1,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "288": {
+    "word": "EMBRYONIC",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=MBRNC no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 1} dominant=ATUM(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 1,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "289": {
+    "word": "INSURMOUNTABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NSRMNTBL matched BULL at positions (6, 7)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "292": {
+    "word": "ACCENTUATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CCNTTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "295": {
+    "word": "LOTION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=LTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "297": {
+    "word": "INITIALIZATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NTLZTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "299": {
+    "word": "CAMPHOR",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=CMPHR no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 7} dominant=TOR(7) lang=Arabic",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "304": {
+    "word": "ZINC",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=ZNC no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "306": {
+    "word": "BALIN",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLN matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 9, 'TOR': 4} dominant=BULL(9) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "307": {
+    "word": "DETERMINATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DTRMNTN matched TOR at positions (1, 2)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "309": {
+    "word": "AFFECTATION",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=FFCTTN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 3} dominant=TOR(3) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "310": {
+    "word": "DURABLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DRBL ambiguous (BULL & TOR)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 6, 'TOR': 3} dominant=BULL(6) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "314": {
+    "word": "ACCOUNTABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=CCNTBL matched BULL at positions (4, 5)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "315": {
+    "word": "ACTEUR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CTR matched TOR at positions (1, 2)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 6} dominant=TOR(6)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 2, 'BULL': 0, 'TOR': 5} dominant=TOR(5) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "316": {
+    "word": "BULLDOZE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLLDZ matched BULL at positions (0, 1)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "317": {
+    "word": "TRANSFORMABLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=TRNSFRMBL ambiguous (BULL & TOR)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 2} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "320": {
+    "word": "PATERNALISM",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=PTRNLSM matched TOR at positions (1, 2)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "322": {
+    "word": "PASTOR",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=PSTR matched TOR at positions (2, 3)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 6} dominant=TOR(6)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 4} dominant=TOR(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 3
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "323": {
+    "word": "ATTRIBUTABLE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=TTRBTBL ambiguous (BULL & TOR)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "324": {
+    "word": "UNRELIABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=NRLBL matched BULL at positions (3, 4)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "326": {
+    "word": "BIOLOGICAL",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=BLGCL matched BULL at positions (0, 1)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 1,
+      "TOR": 0
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "327": {
+    "word": "DENATURATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=DNTRTN matched TOR at positions (2, 3)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "tie in etymology (6 each)",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "329": {
+    "word": "AGNATUS",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=GNTS no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 0} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 7, 'BULL': 0, 'TOR': 1} dominant=ATUM(7) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "330": {
+    "word": "ONOMAZO",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=NMZ no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 5, 'BULL': 1, 'TOR': 0} dominant=ATUM(5)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 9, 'BULL': 0, 'TOR': 3} dominant=ATUM(9) lang=Latin",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "331": {
+    "word": "PRIMARY",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=PRMR no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "332": {
+    "word": "NATURALIZATION",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=NTRLZTN matched TOR at positions (1, 2)",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 1, 'TOR': 2} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 11, 'BULL': 0, 'TOR': 6} dominant=ATUM(11) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "336": {
+    "word": "ATTAINABLE",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=TTNBL matched BULL at positions (3, 4)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 1, 'TOR': 0} dominant=BULL(1)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 0} dominant=BULL(4) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "337": {
+    "word": "暴 BAO",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=暴 B no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 1} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 5} dominant=BULL(7) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "338": {
+    "word": "HERBIVORE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=HRBVR no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 2, 'TOR': 0} dominant=BULL(2)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 2} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "339": {
+    "word": "TERRORIZE",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=TRRRZ matched TOR at positions (0, 1)",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "NONE",
+    "etymological_reason": "no etymological signals detected",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "341": {
+    "word": "RECREATE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=RCRT no root pattern found",
+    "semantic": "ATUM",
+    "semantic_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 1} dominant=ATUM(4)",
+    "etymological": "ATUM",
+    "etymological_reason": "scores={'ATUM': 8, 'BULL': 0, 'TOR': 2} dominant=ATUM(8) lang=Unknown",
+    "votes": {
+      "ATUM": 2,
+      "BULL": 0,
+      "TOR": 0
+    },
+    "assigned": [
+      "ATUM"
+    ],
+    "method": "ATUM"
+  },
+  "343": {
+    "word": "DIABOLUS",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=DBLS matched BULL at positions (1, 2)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 4, 'TOR': 1} dominant=BULL(4)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 1, 'BULL': 7, 'TOR': 5} dominant=BULL(7) lang=Greek",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "344": {
+    "word": "DISABLEMENT",
+    "phonetic": "BULL",
+    "phonetic_reason": "skeleton=DSBLMNT matched BULL at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 0} dominant=BULL(5)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 15, 'TOR': 0} dominant=BULL(15) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 3,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "345": {
+    "word": "RNA",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=RN no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=English",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  },
+  "348": {
+    "word": "DOMINATOR",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=DMNTR ambiguous (ATUM & TOR)",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 2} dominant=TOR(2) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "349": {
+    "word": "SILICON",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SLCN no root pattern found",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 0} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 5, 'TOR': 4} dominant=BULL(5) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 0
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "353": {
+    "word": "CENTRIFUGAL",
+    "phonetic": "TOR",
+    "phonetic_reason": "skeleton=CNTRFGL matched TOR at positions (2, 3)",
+    "semantic": "BULL",
+    "semantic_reason": "scores={'ATUM': 0, 'BULL': 3, 'TOR': 2} dominant=BULL(3)",
+    "etymological": "BULL",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 7, 'TOR': 0} dominant=BULL(7) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 2,
+      "TOR": 1
+    },
+    "assigned": [
+      "BULL"
+    ],
+    "method": "BULL"
+  },
+  "356": {
+    "word": "TZOHAR",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=TZHR no root pattern found",
+    "semantic": "TOR",
+    "semantic_reason": "scores={'ATUM': 1, 'BULL': 0, 'TOR': 2} dominant=TOR(2)",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 4, 'BULL': 0, 'TOR': 6} dominant=TOR(6) lang=Unknown",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 2
+    },
+    "assigned": [
+      "TOR"
+    ],
+    "method": "TOR"
+  },
+  "357": {
+    "word": "SUBSTANTIATE",
+    "phonetic": "NONE",
+    "phonetic_reason": "skeleton=SBSTNTT no root pattern found",
+    "semantic": "NONE",
+    "semantic_reason": "no semantic signals detected",
+    "etymological": "TOR",
+    "etymological_reason": "scores={'ATUM': 0, 'BULL': 0, 'TOR': 1} dominant=TOR(1) lang=Latin",
+    "votes": {
+      "ATUM": 0,
+      "BULL": 0,
+      "TOR": 1
+    },
+    "assigned": [],
+    "method": "NONE"
+  }
+}
